@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "لقطة LOO2TAA // رادار صفقات الجيمنج والبي سي في مصر",
+  title: "لقطة LO2TAA // رادار صفقات الجيمنج والبي سي في مصر",
   description:
     "المنصة السيبرانية الأولى في مصر لرصد صفقات الجيمرز وهاردوير الـ PC، بلايستيشن 5، شاشات الـ 165Hz، وسماعات وماوسات الألعاب مع سجل تاريخي حقيقي للأسعار وكشف التخفيضات الوهمية.",
   keywords: [
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     "سعر بلايستيشن 5 سليم في مصر",
     "شاشات ألعاب 144Hz و 165Hz",
     "كيبورد ميكانيكال",
+    "LO2TAA",
     "لقطة",
-    "Loo2taa",
     "سايبر بانك مصر",
   ],
   icons: {

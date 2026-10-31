@@ -94,7 +94,7 @@ export default function HomePage() {
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
-            لقطة.. عتاد الجيمنج والسيت أب <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f0ff] to-[#00a3ff]">بأقل سعر حقيقي</span>
+            <span className="font-mono text-[#00f0ff]">LO2TAA</span> // عتاد الجيمنج والسيت أب <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f0ff] to-[#00a3ff]">بأقل سعر حقيقي</span>
           </h1>
 
           <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">

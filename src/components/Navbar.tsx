@@ -42,11 +42,12 @@ export default function Navbar() {
               </div>
             </div>
             <div className="flex flex-col">
-              <span className="text-xl font-black text-white tracking-tight flex items-center gap-1">
-                لقطة
+              <span className="text-xl font-black text-white tracking-tight flex items-center gap-1 font-mono">
+                LO2TAA
+                <span className="text-[11px] px-1.5 py-0.2 rounded bg-[#00f0ff]/10 text-[#00f0ff] font-sans border border-[#00f0ff]/30">لقطة</span>
                 <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-pulse" />
               </span>
-              <span className="text-[10px] text-[#94a3b8] font-semibold -mt-1 tracking-wider">
+              <span className="text-[10px] text-[#94a3b8] font-semibold -mt-0.5 tracking-wider">
                 رادار صفقات الجيمنج
               </span>
             </div>

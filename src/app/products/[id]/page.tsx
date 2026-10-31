@@ -179,7 +179,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         currentPrice={product.price}
       />
 
-      {/* Loo2taa AI Review & Verdict */}
+      {/* LO2TAA AI Review & Verdict */}
       <AiReviewCard
         review={product.ai_review}
         brand={product.brand}

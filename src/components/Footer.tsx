@@ -16,8 +16,9 @@ export default function Footer() {
                   <Gamepad2 className="w-4 h-4" />
                 </div>
               </div>
-              <span className="text-lg font-black text-white">
-                لقطة <span className="text-xs text-[#00f0ff] font-bold">Loo2taa</span>
+              <span className="text-lg font-black text-white flex items-center gap-2">
+                <span className="font-mono text-[#00f0ff]">LO2TAA</span>
+                <span className="text-xs text-gray-400 font-bold">لقطة</span>
               </span>
             </div>
             <p className="text-xs text-gray-400 leading-relaxed">
@@ -117,8 +118,8 @@ export default function Footer() {
           <p>
             تنويه: لقطة تشارك في برامج التسويق بالعمولة (Amazon Associates وغيرها). عند الشراء من خلال روابطنا، قد نحصل على عمولة بسيطة تدعم استمرار الخدمة مجاناً دون أي تكلفة إضافية عليك.
           </p>
-          <p className="shrink-0 font-medium">
-            © 2026 لقطة Loo2taa. جميع الحقوق محفوظة.
+          <p className="shrink-0 font-medium font-mono">
+            © 2026 LO2TAA (لقطة). جميع الحقوق محفوظة.
           </p>
         </div>
       </div>
