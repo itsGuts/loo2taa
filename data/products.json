@@ -56,11 +56,11 @@
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B07GBZ4Q68?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/31leNBl7StL._SL500_.jpg",
-    "price": 1999,
-    "previous_price": 2750,
-    "savings": 751,
-    "discount_percent": 27,
-    "price_checked_at": "2026-10-31T03:40:00.000Z",
+    "price": 2501,
+    "previous_price": 1999,
+    "savings": 0,
+    "discount_percent": -25,
+    "price_checked_at": "2026-10-31T12:26:03.929Z",
     "rating": 4.8,
     "review_count": 1850,
     "price_history": [
@@ -88,8 +88,14 @@
         "date": "2026-10-31",
         "price": 1999,
         "label": "كسر حاجز الـ 2000 ج.م ⚡"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 2501,
+        "label": "تحديث سعر"
       }
-    ]
+    ],
+    "price_change_direction": "up"
   },
   {
     "id": "g-03-hyperx-cloud2",
@@ -106,7 +112,7 @@
     "previous_price": 3199,
     "savings": 0,
     "discount_percent": -50,
-    "price_checked_at": "2026-10-31T06:29:40.729Z",
+    "price_checked_at": "2026-10-31T12:26:07.187Z",
     "rating": 4.8,
     "review_count": 2400,
     "price_history": [
@@ -388,7 +394,7 @@
     "previous_price": 3299,
     "savings": 0,
     "discount_percent": -164,
-    "price_checked_at": "2026-10-31T06:29:51.940Z",
+    "price_checked_at": "2026-10-31T12:26:18.752Z",
     "rating": 4.8,
     "review_count": 670,
     "price_history": [
@@ -965,7 +971,7 @@
     "discount_percent": -93,
     "is_record_low": true,
     "price_change_direction": "up",
-    "price_checked_at": "2026-10-31T06:30:13.323Z",
+    "price_checked_at": "2026-10-31T12:26:39.443Z",
     "rating": 4.8,
     "review_count": 14200,
     "price_history": [
