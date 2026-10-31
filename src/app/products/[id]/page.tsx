@@ -5,12 +5,17 @@ import { PRODUCTS, getProductById, getRelatedProducts, MARKETPLACE_SETTINGS } fr
 import PriceHistoryChart from "@/components/PriceHistoryChart";
 import AiReviewCard from "@/components/AiReviewCard";
 import ProductCard from "@/components/ProductCard";
+import ProductShareButtons from "@/components/ProductShareButtons";
+import { getDealVerdict } from "@/lib/sharing";
 import {
   ExternalLink,
   ChevronLeft,
   Clock,
   Zap,
-  ArrowUpRight
+  ArrowUpRight,
+  ShieldCheck,
+  ShieldAlert,
+  CreditCard
 } from "lucide-react";
 
 export function generateStaticParams() {
@@ -38,6 +43,8 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
   const formattedPrice = Number(product.price).toLocaleString("ar-EG");
   const formattedOldPrice = Number(product.previous_price).toLocaleString("ar-EG");
   const formattedSavings = Number(product.savings).toLocaleString("ar-EG");
+  const verdict = getDealVerdict(product);
+  const VerdictIcon = verdict.type === "genuine" ? ShieldCheck : verdict.type === "fake" ? ShieldAlert : ShieldCheck;
 
   return (
     <div className="space-y-8">
@@ -144,6 +151,22 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               </div>
             )}
 
+            {/* Verdict Box */}
+            <div
+              className="flex items-start gap-2.5 p-3 rounded-xl border"
+              style={{
+                backgroundColor: verdict.bgColor,
+                borderColor: verdict.borderColor,
+                color: verdict.color,
+              }}
+            >
+              <VerdictIcon className="w-4 h-4 shrink-0 mt-0.5" />
+              <div className="text-xs">
+                <span className="font-black block">{verdict.labelShort}</span>
+                <span className="opacity-80 text-[11px]">{verdict.label}</span>
+              </div>
+            </div>
+
             <div className="pt-2 border-t border-white/5 flex flex-wrap items-center justify-between text-xs text-[#94a3b8] gap-2">
               <span>البائع: <strong className="text-white">{product.seller}</strong></span>
               <span className="flex items-center gap-1 text-[#00ff9d]">
@@ -154,7 +177,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           </div>
 
           {/* Direct Buy CTA */}
-          <div className="space-y-2">
+          <div className="space-y-3">
             <a
               href={product.url}
               target="_blank"
@@ -169,6 +192,9 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               <span>ينقلك مباشرة لصفحة المنتج الرسمية على المتجر.</span>
               <span className="text-[#00ff9d] font-bold">متوفر للشحن الآن ✓</span>
             </div>
+
+            {/* Social Share & Telegram Copy Buttons */}
+            <ProductShareButtons product={product} />
           </div>
         </div>
       </div>

@@ -5,14 +5,19 @@ import Link from "next/link";
 import { Product } from "@/lib/types";
 import { MARKETPLACE_SETTINGS } from "@/lib/loo2taa-data";
 import { useFavorites } from "@/lib/favorites";
+import { getDealVerdict, getWhatsAppShareUrl, getTelegramPost } from "@/lib/sharing";
 import {
-  ExternalLink,
   Heart,
   TrendingDown,
   Share2,
   Check,
   Zap,
-  ArrowUpRight
+  ArrowUpRight,
+  MessageCircle,
+  Send,
+  Copy,
+  ShieldCheck,
+  ShieldAlert,
 } from "lucide-react";
 
 interface ProductCardProps {
@@ -23,11 +28,31 @@ interface ProductCardProps {
 export default function ProductCard({ product, viewMode = "grid" }: ProductCardProps) {
   const { isFavorite, toggle, mounted } = useFavorites();
   const [copied, setCopied] = useState(false);
+  const [tgCopied, setTgCopied] = useState(false);
+  const [showShareMenu, setShowShareMenu] = useState(false);
   const isFav = mounted && isFavorite(product.id);
+  const verdict = getDealVerdict(product);
 
   const store = MARKETPLACE_SETTINGS[product.marketplace] || MARKETPLACE_SETTINGS.amazon;
 
-  const handleShare = async (e: React.MouseEvent) => {
+  const handleWhatsAppShare = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    window.open(getWhatsAppShareUrl(product), "_blank");
+  };
+
+  const handleTelegramCopy = async (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const post = getTelegramPost(product);
+    if (navigator.clipboard) {
+      await navigator.clipboard.writeText(post);
+      setTgCopied(true);
+      setTimeout(() => setTgCopied(false), 2500);
+    }
+  };
+
+  const handleShareLink = async (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
     const shareUrl = `${window.location.origin}/products/${product.asin || product.id}`;
@@ -38,9 +63,66 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
     }
   };
 
+  const toggleShareMenu = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setShowShareMenu(!showShareMenu);
+  };
+
   const formattedPrice = Number(product.price).toLocaleString("ar-EG");
   const formattedOldPrice = Number(product.previous_price).toLocaleString("ar-EG");
   const formattedSavings = Number(product.savings).toLocaleString("ar-EG");
+
+  // Deal verdict badge component
+  const VerdictBadge = ({ compact = false }: { compact?: boolean }) => {
+    const Icon = verdict.type === "genuine" ? ShieldCheck : verdict.type === "fake" ? ShieldAlert : ShieldCheck;
+    return (
+      <span
+        className={`inline-flex items-center gap-1 font-bold rounded-md border ${compact ? "text-[9px] px-1.5 py-0.5" : "text-[10px] px-2 py-0.5"}`}
+        style={{
+          color: verdict.color,
+          backgroundColor: verdict.bgColor,
+          borderColor: verdict.borderColor,
+        }}
+        title={verdict.label}
+      >
+        <Icon className={compact ? "w-2.5 h-2.5" : "w-3 h-3"} />
+        {compact ? verdict.labelShort : verdict.label}
+      </span>
+    );
+  };
+
+  // Share dropdown menu
+  const ShareMenu = () => (
+    showShareMenu ? (
+      <div
+        className="absolute z-20 top-full mt-1 left-0 bg-[#0b101c] border border-white/10 rounded-xl shadow-2xl p-1.5 space-y-0.5 min-w-[180px]"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button
+          onClick={handleWhatsAppShare}
+          className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-white hover:bg-[#25d366]/15 hover:text-[#25d366] transition-colors"
+        >
+          <MessageCircle className="w-3.5 h-3.5" />
+          شير على واتساب
+        </button>
+        <button
+          onClick={handleTelegramCopy}
+          className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-white hover:bg-[#0088cc]/15 hover:text-[#00f0ff] transition-colors"
+        >
+          {tgCopied ? <Check className="w-3.5 h-3.5 text-[#00ff9d]" /> : <Send className="w-3.5 h-3.5" />}
+          {tgCopied ? "تم نسخ البوست! ✅" : "انسخ بوست تليجرام"}
+        </button>
+        <button
+          onClick={handleShareLink}
+          className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-white hover:bg-white/5 hover:text-[#00f0ff] transition-colors"
+        >
+          {copied ? <Check className="w-3.5 h-3.5 text-[#00ff9d]" /> : <Copy className="w-3.5 h-3.5" />}
+          {copied ? "تم نسخ الرابط! ✅" : "انسخ الرابط"}
+        </button>
+      </div>
+    ) : null
+  );
 
   if (viewMode === "list") {
     return (
@@ -86,6 +168,8 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
                 أقل سعر مسجل
               </span>
             )}
+
+            <VerdictBadge compact />
           </div>
 
           <Link href={`/products/${product.asin || product.id}`}>
@@ -129,13 +213,16 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
               <Heart className={`w-4 h-4 ${isFav ? "fill-current" : ""}`} />
             </button>
 
-            <button
-              onClick={handleShare}
-              className="p-2 rounded-xl border border-white/10 text-gray-400 hover:text-[#00f0ff] transition-colors"
-              title="مشاركة"
-            >
-              {copied ? <Check className="w-4 h-4 text-[#00ff9d]" /> : <Share2 className="w-4 h-4" />}
-            </button>
+            <div className="relative">
+              <button
+                onClick={toggleShareMenu}
+                className="p-2 rounded-xl border border-white/10 text-gray-400 hover:text-[#00f0ff] transition-colors"
+                title="مشاركة"
+              >
+                <Share2 className="w-4 h-4" />
+              </button>
+              <ShareMenu />
+            </div>
 
             <a
               href={product.url}
@@ -182,13 +269,16 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
             <Heart className={`w-3.5 h-3.5 ${isFav ? "fill-current" : ""}`} />
           </button>
 
-          <button
-            onClick={handleShare}
-            className="p-1.5 rounded-lg border border-white/10 text-gray-400 hover:text-[#00f0ff] bg-[#070a12] transition-colors"
-            title="مشاركة"
-          >
-            {copied ? <Check className="w-3.5 h-3.5 text-[#00ff9d]" /> : <Share2 className="w-3.5 h-3.5" />}
-          </button>
+          <div className="relative">
+            <button
+              onClick={toggleShareMenu}
+              className="p-1.5 rounded-lg border border-white/10 text-gray-400 hover:text-[#00f0ff] bg-[#070a12] transition-colors"
+              title="مشاركة"
+            >
+              <Share2 className="w-3.5 h-3.5" />
+            </button>
+            <ShareMenu />
+          </div>
         </div>
       </div>
 
@@ -219,7 +309,7 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
 
       {/* Card Body */}
       <div className="p-4 flex-1 flex flex-col justify-between space-y-3">
-        <div className="space-y-1">
+        <div className="space-y-1.5">
           <div className="flex items-center justify-between text-[11px] text-[#94a3b8]">
             <span>{product.category_ar}</span>
             <span className="font-bold text-[#00f0ff]">{product.brand}</span>
@@ -230,6 +320,9 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
               {product.display_title}
             </h3>
           </Link>
+
+          {/* Deal Verdict Badge */}
+          <VerdictBadge compact />
         </div>
 
         {/* Price & Savings */}
@@ -267,12 +360,21 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
             <ArrowUpRight className="w-3.5 h-3.5" />
           </a>
 
-          <Link
-            href={`/products/${product.asin || product.id}`}
-            className="w-full py-2 px-3 rounded-xl text-[11px] font-bold text-gray-300 hover:text-[#00f0ff] bg-white/[0.04] hover:bg-white/[0.08] border border-white/5 flex items-center justify-center transition-colors"
-          >
-            سجل السعر وتقييم العتاد ↗
-          </Link>
+          <div className="flex gap-1.5">
+            <Link
+              href={`/products/${product.asin || product.id}`}
+              className="flex-1 py-2 px-3 rounded-xl text-[11px] font-bold text-gray-300 hover:text-[#00f0ff] bg-white/[0.04] hover:bg-white/[0.08] border border-white/5 flex items-center justify-center transition-colors"
+            >
+              سجل السعر والتقييم ↗
+            </Link>
+            <button
+              onClick={handleWhatsAppShare}
+              className="p-2 rounded-xl bg-[#25d366]/10 border border-[#25d366]/20 text-[#25d366] hover:bg-[#25d366]/20 transition-colors"
+              title="شير على واتساب"
+            >
+              <MessageCircle className="w-4 h-4" />
+            </button>
+          </div>
         </div>
       </div>
     </div>

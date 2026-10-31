@@ -79,6 +79,11 @@ export default function HomePage() {
     return list;
   }, [filters]);
 
+  // Dynamic hero metrics
+  const totalDeals = PRODUCTS.filter(p => p.discount_percent > 0).length;
+  const maxSavings = Math.max(...PRODUCTS.map(p => p.savings));
+  const recordLowCount = PRODUCTS.filter(p => p.is_record_low).length;
+
   return (
     <div className="space-y-8">
       
@@ -101,19 +106,19 @@ export default function HomePage() {
             بنرصد أسعار كروت الشاشة، البلايستيشن، شاشات الـ 165Hz، وسماعات الألعاب على أمازون ونون. بنكشف الخصومات الوهمية ونعرضلك سجل السعر لآخر 90 يوم.
           </p>
 
-          {/* Quick Metrics */}
+          {/* Dynamic Metrics */}
           <div className="grid grid-cols-3 gap-2.5 pt-2">
             <div className="bg-[#05070c]/70 rounded-2xl p-3 border border-white/5">
-              <span className="text-[10px] text-gray-400 block font-medium">صفقات موثقة اليوم</span>
-              <span className="text-xl sm:text-2xl font-black text-[#00f0ff]">١٢ صفقة</span>
+              <span className="text-[10px] text-gray-400 block font-medium">صفقات مرصودة</span>
+              <span className="text-xl sm:text-2xl font-black text-[#00f0ff]">{totalDeals} صفقة</span>
             </div>
             <div className="bg-[#05070c]/70 rounded-2xl p-3 border border-white/5">
               <span className="text-[10px] text-gray-400 block font-medium">أعلى توفير</span>
-              <span className="text-xl sm:text-2xl font-black text-[#00ff9d]">٨,٥٠٠ ج.م</span>
+              <span className="text-xl sm:text-2xl font-black text-[#00ff9d]">{maxSavings.toLocaleString("ar-EG")} ج.م</span>
             </div>
             <div className="bg-[#05070c]/70 rounded-2xl p-3 border border-white/5">
-              <span className="text-[10px] text-gray-400 block font-medium">تحديث السعر</span>
-              <span className="text-lg sm:text-xl font-black text-white">يومي فوري</span>
+              <span className="text-[10px] text-gray-400 block font-medium">أقل سعر تاريخي</span>
+              <span className="text-lg sm:text-xl font-black text-white">{recordLowCount} منتج ⚡</span>
             </div>
           </div>
         </div>

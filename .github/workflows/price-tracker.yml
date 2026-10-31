@@ -1,0 +1,49 @@
+name: LO2TAA Deals Tracker & Auto-Poster
+
+on:
+  schedule:
+    # Runs every 6 hours automatically (00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    # Allows manual trigger anytime from GitHub Actions tab
+
+jobs:
+  track-deals:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Deals Tracker & Telegram Auto-Poster
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL_ID: ${{ secrets.TELEGRAM_CHANNEL_ID || '@lo2taa' }}
+          AMAZON_AFFILIATE_TAG: 'lo2taa-21'
+          MIN_DROP_PERCENT: 5
+        run: node scripts/tracker.mjs
+
+      - name: Commit and push price updates (if changed)
+        run: |
+          git config --global user.name "LO2TAA Deals Bot"
+          git config --global user.email "bot@lo2taa.local"
+          git add data/products.json data/last-check.json
+          if git diff --staged --quiet; then
+            echo "No price changes detected. Everything up to date."
+          else
+            git commit -m "chore(tracker): auto-update live deals and price history [skip ci]"
+            git push origin main
+          fi
