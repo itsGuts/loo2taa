@@ -21,8 +21,8 @@ export default function FavoritesPage() {
 
   if (!mounted) {
     return (
-      <div className="p-12 text-center text-xs text-gray-500 font-mono">
-        SYS_LOADING_GEAR...
+      <div className="p-12 text-center text-xs text-gray-500">
+        جاري تحميل الصفقات...
       </div>
     );
   }
@@ -35,19 +35,19 @@ export default function FavoritesPage() {
         <div className="space-y-1">
           <h1 className="text-2xl sm:text-3xl font-black text-white flex items-center gap-2.5">
             <Heart className="w-6 h-6 text-[#ff007f] fill-current" />
-            العتاد وصفقات السيت أب المحفوظة
+            العتاد المحفوظ
           </h1>
-          <p className="text-xs sm:text-sm text-[#94a3b8]">
-            قائمة أمنياتك الخاصة لمتابعة تغيرات أسعار القطع التي تخطط لشرائها
+          <p className="text-xs text-[#94a3b8]">
+            قائمتك الخاصة لتتبع أسعار القطع التي تخطط لشرائها
           </p>
         </div>
 
         {favoriteProducts.length > 0 && (
           <button
             onClick={handleClearAll}
-            className="text-xs font-bold text-[#ff007f] hover:text-white flex items-center gap-1.5 px-3 py-2 rounded-xl border border-[#ff007f]/40 hover:bg-[#ff007f]/20 transition-colors self-start sm:self-auto"
+            className="text-xs font-bold text-[#ff007f] hover:text-white flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-[#ff007f]/30 hover:bg-[#ff007f]/10 transition-colors self-start sm:self-auto"
           >
-            <Trash2 className="w-4 h-4" />
+            <Trash2 className="w-3.5 h-3.5" />
             مسح القائمة
           </button>
         )}
@@ -55,26 +55,26 @@ export default function FavoritesPage() {
 
       {/* Grid or Empty */}
       {favoriteProducts.length === 0 ? (
-        <div className="cyber-card rounded-3xl p-12 text-center space-y-4">
-          <div className="w-16 h-16 rounded-full bg-[#ff007f]/10 text-[#ff007f] flex items-center justify-center mx-auto border border-[#ff007f]/30">
-            <Gamepad2 className="w-8 h-8" />
+        <div className="cyber-card rounded-3xl p-12 text-center space-y-3.5">
+          <div className="w-14 h-14 rounded-full bg-[#ff007f]/10 text-[#ff007f] flex items-center justify-center mx-auto border border-[#ff007f]/20">
+            <Gamepad2 className="w-7 h-7" />
           </div>
-          <h2 className="text-lg font-bold text-white">
+          <h2 className="text-base font-bold text-white">
             لم تقم بحفظ أي عتاد بعد
           </h2>
           <p className="text-xs text-gray-400 max-w-sm mx-auto leading-relaxed">
-            اضغط على علامة القلب في أي كارت شاشة، كيبورد، أو شاشة لإضافته هنا ومتابعة سعره وتنزيلاته فوراً.
+            اضغط على علامة القلب في أي كارت شاشة أو كيبورد أو شاشة لإضافته هنا ومتابعة سعره.
           </p>
           <Link
             href="/catalog"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-[#00f0ff] to-[#00a3ff] text-[#07090e] font-black text-xs hover:shadow-lg hover:shadow-[#00f0ff]/30 transition-all"
+            className="btn-cyber-primary inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl text-xs"
           >
             <Cpu className="w-4 h-4" />
-            استكشف صفقات الجيمرز الآن
+            تصفح صفقات الجيمرز الآن
           </Link>
         </div>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {favoriteProducts.map((p) => (
             <ProductCard key={p.id} product={p} />
           ))}

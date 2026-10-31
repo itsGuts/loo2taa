@@ -4,18 +4,15 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import {
-  Crosshair,
   Search,
   Heart,
-  ExternalLink,
   Menu,
   X,
   TrendingDown,
   Gamepad2,
   Cpu,
   Send,
-  Zap,
-  Radio
+  Zap
 } from "lucide-react";
 import { useFavorites } from "@/lib/favorites";
 
@@ -33,122 +30,109 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-[#07090e]/90 backdrop-blur-xl border-b border-white/10 shadow-2xl">
+    <header className="sticky top-0 z-50 bg-[#05070c]/85 backdrop-blur-xl border-b border-white/[0.07] shadow-xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 gap-4">
+        <div className="flex items-center justify-between h-18 gap-4">
           
-          {/* Cyberpunk Egyptian Logo */}
-          <Link href="/" className="flex items-center gap-3 shrink-0 group">
-            <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#00f0ff] to-[#ff007f] p-[1px] shadow-lg shadow-[#00f0ff]/20 group-hover:shadow-[#00f0ff]/40 transition-all">
-              <div className="w-full h-full bg-[#07090e] rounded-[11px] flex items-center justify-center text-[#00f0ff] group-hover:text-white transition-colors">
-                <Gamepad2 className="w-6 h-6 -rotate-6" />
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-2.5 shrink-0 group">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#00f0ff] to-[#ff007f] p-[1px] shadow-lg shadow-[#00f0ff]/15 group-hover:shadow-[#00f0ff]/30 transition-all">
+              <div className="w-full h-full bg-[#070a12] rounded-[11px] flex items-center justify-center text-[#00f0ff] group-hover:text-white transition-colors">
+                <Gamepad2 className="w-5 h-5 -rotate-6" />
               </div>
             </div>
             <div className="flex flex-col">
-              <div className="flex items-center gap-1.5">
-                <span className="text-2xl font-black text-white tracking-tight flex items-center">
-                  لقطة
-                  <span className="text-[#00f0ff] text-xl mr-0.5">.</span>
-                </span>
-                <span className="text-[10px] font-black px-1.5 py-0.5 rounded-md bg-[#00f0ff]/10 text-[#00f0ff] border border-[#00f0ff]/30 tracking-wider">
-                  LOO2TAA // CYBER
-                </span>
-              </div>
-              <span className="text-[11px] text-[#94a3b8] font-medium flex items-center gap-1.5 -mt-0.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#00ff9d] animate-ping" />
-                رادار صفقات الجيمرز في مصر
+              <span className="text-xl font-black text-white tracking-tight flex items-center gap-1">
+                لقطة
+                <span className="w-1.5 h-1.5 rounded-full bg-[#00f0ff] animate-pulse" />
+              </span>
+              <span className="text-[10px] text-[#94a3b8] font-semibold -mt-1 tracking-wider">
+                رادار صفقات الجيمنج
               </span>
             </div>
           </Link>
 
-          {/* Desktop Cyber Search Bar */}
+          {/* Desktop Clean Search Bar */}
           <form
             onSubmit={handleSearchSubmit}
             className="hidden md:flex flex-1 max-w-md relative"
           >
             <input
               type="text"
-              placeholder="ابحث: كارت شاشة، كيبورد، PS5، هيدست، ماوس..."
+              placeholder="ابحث عن كارت شاشة، كيبورد، PS5، هيدست..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full bg-[#0d121f] text-white placeholder-gray-500 border border-white/10 rounded-xl py-2.5 pr-10 pl-10 text-xs focus:outline-hidden focus:border-[#00f0ff] focus:ring-1 focus:ring-[#00f0ff]/50 transition-all shadow-inner"
+              className="w-full bg-[#0b101c] text-white placeholder-gray-400 border border-white/10 rounded-xl py-2 pr-10 pl-10 text-xs focus:outline-hidden focus:border-[#00f0ff] focus:ring-1 focus:ring-[#00f0ff]/40 transition-all"
             />
-            <Search className="w-4 h-4 text-[#00f0ff] absolute right-3.5 top-3 pointer-events-none" />
+            <Search className="w-4 h-4 text-gray-400 absolute right-3.5 top-2.5 pointer-events-none" />
             {searchQuery && (
               <button
                 type="button"
                 onClick={() => setSearchQuery("")}
-                className="absolute left-3 top-2 text-xs text-gray-500 hover:text-white px-1 py-0.5"
+                className="absolute left-3 top-2 text-xs text-gray-400 hover:text-white px-1"
               >
                 ✕
               </button>
             )}
           </form>
 
-          {/* Navigation Links (Desktop) */}
+          {/* Navigation Links */}
           <nav className="hidden lg:flex items-center gap-6 text-xs font-bold">
             <Link
               href="/"
-              className="text-white hover:text-[#00f0ff] transition-colors flex items-center gap-1"
+              className="text-white hover:text-[#00f0ff] transition-colors flex items-center gap-1.5"
             >
               <Zap className="w-3.5 h-3.5 text-[#00f0ff]" />
               الرئيسية
             </Link>
             <Link
               href="/catalog"
-              className="text-[#94a3b8] hover:text-[#00f0ff] transition-colors flex items-center gap-1"
+              className="text-[#94a3b8] hover:text-[#00f0ff] transition-colors flex items-center gap-1.5"
             >
               <Cpu className="w-3.5 h-3.5 text-[#ff007f]" />
-              كنز الهاردوير
+              كل الصفقات
             </Link>
             <Link
               href="/amazon-deals"
-              className="text-[#94a3b8] hover:text-[#00f0ff] transition-colors flex items-center gap-1"
+              className="text-[#94a3b8] hover:text-[#00f0ff] transition-colors flex items-center gap-1.5"
             >
               <TrendingDown className="w-3.5 h-3.5 text-[#00ff9d]" />
               عروض أمازون مصر
             </Link>
-            <Link
-              href="/about"
-              className="text-[#94a3b8] hover:text-[#00f0ff] transition-colors flex items-center gap-1"
-            >
-              <Radio className="w-3.5 h-3.5 text-[#ffb800]" />
-              عن الرادار
-            </Link>
           </nav>
 
-          {/* Right Action Buttons */}
-          <div className="flex items-center gap-3">
-            {/* Telegram Gamer Squad Pill */}
+          {/* Right Actions */}
+          <div className="flex items-center gap-2.5">
+            {/* Telegram Channel Pill */}
             <a
               href="https://t.me/loo2taa"
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-[#0088cc]/20 to-[#00f0ff]/10 hover:from-[#0088cc]/30 hover:to-[#00f0ff]/20 text-[#00f0ff] border border-[#00f0ff]/30 text-xs font-bold transition-all shadow-xs"
-              title="انضم لقناة تليجرام صفقات الجيمنج والبي سي في مصر"
+              className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#0088cc]/15 hover:bg-[#0088cc]/25 text-[#00f0ff] border border-[#0088cc]/30 text-xs font-bold transition-all"
+              title="تليجرام الصفقات"
             >
               <Send className="w-3.5 h-3.5 text-[#0088cc]" />
-              <span>قناة الصفقات</span>
+              <span>تليجرام</span>
             </a>
 
-            {/* Wishlist / Favorites */}
+            {/* Favorites Button */}
             <Link
               href="/favorites"
-              className="relative p-2.5 rounded-xl bg-[#0d121f] border border-white/10 text-white hover:text-[#ff007f] hover:border-[#ff007f]/50 transition-all"
-              title="عتادك المحفوظ"
+              className="relative p-2 rounded-xl bg-[#0b101c] border border-white/10 text-white hover:text-[#ff007f] hover:border-[#ff007f]/40 transition-all"
+              title="المفضلة"
             >
               <Heart className="w-4 h-4" />
               {mounted && count > 0 && (
-                <span className="absolute -top-1 -right-1 w-4 h-4 bg-[#ff007f] text-white text-[10px] font-black rounded-full flex items-center justify-center shadow-lg shadow-[#ff007f]/50">
+                <span className="absolute -top-1 -right-1 w-4 h-4 bg-[#ff007f] text-white text-[9px] font-black rounded-full flex items-center justify-center">
                   {count}
                 </span>
               )}
             </Link>
 
-            {/* Mobile Menu Toggle */}
+            {/* Mobile Menu */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2.5 lg:hidden rounded-xl bg-[#0d121f] border border-white/10 text-white hover:text-[#00f0ff]"
+              className="p-2 lg:hidden rounded-xl bg-[#0b101c] border border-white/10 text-white hover:text-[#00f0ff]"
               aria-label="القائمة"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -162,49 +146,42 @@ export default function Navbar() {
             <form onSubmit={handleSearchSubmit} className="relative">
               <input
                 type="text"
-                placeholder="ابحث عن هاردوير أو كونسول..."
+                placeholder="ابحث عن منتج..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full bg-[#0d121f] border border-white/10 rounded-xl py-2 pr-10 pl-4 text-xs text-white"
+                className="w-full bg-[#0b101c] border border-white/10 rounded-xl py-2 pr-10 pl-4 text-xs text-white"
               />
-              <Search className="w-4 h-4 text-[#00f0ff] absolute right-3 top-2.5" />
+              <Search className="w-4 h-4 text-gray-400 absolute right-3 top-2.5" />
             </form>
 
-            <div className="grid grid-cols-2 gap-2 pt-2 text-xs font-bold">
+            <div className="grid grid-cols-2 gap-2 pt-1 text-xs font-bold">
               <Link
                 href="/"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-3 rounded-xl bg-[#0d121f] text-white hover:text-[#00f0ff] border border-white/5"
+                className="p-2.5 rounded-xl bg-[#0b101c] text-white hover:text-[#00f0ff] border border-white/5"
               >
                 الرئيسية
               </Link>
               <Link
                 href="/catalog"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-3 rounded-xl bg-[#0d121f] text-white hover:text-[#00f0ff] border border-white/5"
+                className="p-2.5 rounded-xl bg-[#0b101c] text-white hover:text-[#00f0ff] border border-white/5"
               >
-                كنز الهاردوير
+                كل الصفقات
               </Link>
               <Link
                 href="/amazon-deals"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-3 rounded-xl bg-[#0d121f] text-white hover:text-[#00f0ff] border border-white/5"
+                className="p-2.5 rounded-xl bg-[#0b101c] text-white hover:text-[#00f0ff] border border-white/5"
               >
                 عروض أمازون
               </Link>
               <Link
                 href="/favorites"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-3 rounded-xl bg-[#0d121f] text-white hover:text-[#ff007f] border border-white/5"
+                className="p-2.5 rounded-xl bg-[#0b101c] text-white hover:text-[#ff007f] border border-white/5"
               >
                 المفضلة ({mounted ? count : 0})
-              </Link>
-              <Link
-                href="/about"
-                onClick={() => setMobileMenuOpen(false)}
-                className="col-span-2 p-3 rounded-xl bg-[#0d121f] text-white hover:text-[#00f0ff] border border-white/5 text-center"
-              >
-                عن الرادار وكيف نكشف الأسعار الوهمية
               </Link>
             </div>
           </div>

@@ -1,47 +1,44 @@
 import React from "react";
 import Link from "next/link";
-import { Gamepad2, Send, ShieldCheck, LineChart, Radio, Crosshair } from "lucide-react";
+import { Gamepad2, Send, ShieldCheck, LineChart } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#07090e] border-t border-white/10 pt-12 pb-8 mt-16 text-gray-400">
+    <footer className="bg-[#05070c] border-t border-white/[0.06] pt-10 pb-8 mt-16 text-gray-400">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-white/[0.06]">
           
-          {/* Brand & Mission */}
-          <div className="space-y-4 md:col-span-1">
-            <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#00f0ff] to-[#ff007f] p-[1px]">
-                <div className="w-full h-full bg-[#07090e] rounded-[11px] flex items-center justify-center text-[#00f0ff]">
-                  <Gamepad2 className="w-5 h-5 -rotate-6" />
+          {/* Brand */}
+          <div className="space-y-3 md:col-span-1">
+            <div className="flex items-center gap-2.5">
+              <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-[#00f0ff] to-[#ff007f] p-[1px]">
+                <div className="w-full h-full bg-[#070a12] rounded-[11px] flex items-center justify-center text-[#00f0ff]">
+                  <Gamepad2 className="w-4 h-4" />
                 </div>
               </div>
-              <span className="text-xl font-black text-white">
-                لقطة <span className="text-xs text-[#00f0ff] font-mono">[CYBER_RADAR]</span>
+              <span className="text-lg font-black text-white">
+                لقطة <span className="text-xs text-[#00f0ff] font-bold">Loo2taa</span>
               </span>
             </div>
             <p className="text-xs text-gray-400 leading-relaxed">
-              المنصة السيبرانية الأولى في مصر المتخصصة في تتبع أسعار عتاد الجيمنج، تجميعات الـ PC، أجهزة الكونسول وشاشات الألعاب ومعدات الاستريمرز، لنساعدك تشتري بأقل سعر حقيقي.
+              منصة تتبع ورصد أسعار عتاد الجيمنج وهاردوير الـ PC في المتاجر المصرية. نساعدك في كشف الخصومات الحقيقية والتأكد من أدنى سعر قبل الشراء.
             </p>
-            <div className="flex items-center gap-3 pt-2">
+            <div className="pt-1">
               <a
                 href="https://t.me/loo2taa"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-xl bg-[#0d121f] border border-white/10 text-[#00f0ff] flex items-center justify-center hover:border-[#00f0ff] hover:bg-[#00f0ff]/10 transition-colors"
-                title="تليجرام الجيمرز"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#0b101c] border border-white/10 text-xs font-bold text-[#00f0ff] hover:border-[#00f0ff]/40 transition-colors"
               >
-                <Send className="w-4 h-4" />
+                <Send className="w-3.5 h-3.5" />
+                <span>انضم لقناة تليجرام</span>
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-3">
-            <h4 className="text-sm font-black text-white flex items-center gap-1.5">
-              <Crosshair className="w-4 h-4 text-[#00f0ff]" />
-              رادار الصفقات
-            </h4>
+          <div className="space-y-2.5">
+            <h4 className="text-xs font-bold text-white uppercase tracking-wider">تصفح لقطة</h4>
             <ul className="space-y-2 text-xs">
               <li>
                 <Link href="/" className="hover:text-[#00f0ff] transition-colors">
@@ -50,17 +47,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/catalog?sort=record-low" className="hover:text-[#00f0ff] transition-colors">
-                  أقل أسعار الهاردوير تاريخياً
-                </Link>
-              </li>
-              <li>
-                <Link href="/catalog?sort=price-changed" className="hover:text-[#00f0ff] transition-colors">
-                  أحدث نزول في الأسعار
+                  أقل الأسعار المسجلة
                 </Link>
               </li>
               <li>
                 <Link href="/amazon-deals" className="hover:text-[#00f0ff] transition-colors">
-                  عروض أمازون مصر الرسمية
+                  عروض أمازون مصر
                 </Link>
               </li>
               <li>
@@ -72,11 +64,8 @@ export default function Footer() {
           </div>
 
           {/* Categories */}
-          <div className="space-y-3">
-            <h4 className="text-sm font-black text-white flex items-center gap-1.5">
-              <Gamepad2 className="w-4 h-4 text-[#ff007f]" />
-              أقسام الجيمنج
-            </h4>
+          <div className="space-y-2.5">
+            <h4 className="text-xs font-bold text-white uppercase tracking-wider">الأقسام</h4>
             <ul className="space-y-2 text-xs">
               <li>
                 <Link href="/catalog?category=pc-hardware" className="hover:text-[#00f0ff] transition-colors">
@@ -85,7 +74,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/catalog?category=monitors" className="hover:text-[#00f0ff] transition-colors">
-                  شاشات ألعاب 144Hz و 165Hz
+                  شاشات جيمنج 144Hz+
                 </Link>
               </li>
               <li>
@@ -94,50 +83,42 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/catalog?category=audio-headsets" className="hover:text-[#00f0ff] transition-colors">
-                  سماعات وهيدست محيطي
-                </Link>
-              </li>
-              <li>
                 <Link href="/catalog?category=consoles" className="hover:text-[#00f0ff] transition-colors">
-                  بلايستيشن 5 وأذرع تحكم
+                  بلايستيشن وكروت ألعاب
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Trust & Transparency */}
-          <div className="space-y-3">
-            <h4 className="text-sm font-black text-white flex items-center gap-1.5">
-              <Radio className="w-4 h-4 text-[#00ff9d]" />
-              مصداقية الرادار
-            </h4>
-            <div className="space-y-2.5 text-xs">
+          {/* Trust */}
+          <div className="space-y-2.5">
+            <h4 className="text-xs font-bold text-white uppercase tracking-wider">الشفافية</h4>
+            <div className="space-y-2 text-xs text-gray-400">
               <div className="flex items-start gap-2">
                 <ShieldCheck className="w-4 h-4 text-[#00ff9d] shrink-0 mt-0.5" />
-                <span>رصد آلي محايد لأسعار المتاجر والتجار المعتمدين.</span>
+                <span>رصد تلقائي للأسعار من المتاجر الرسمية المعتمدة.</span>
               </div>
               <div className="flex items-start gap-2">
                 <LineChart className="w-4 h-4 text-[#00f0ff] shrink-0 mt-0.5" />
-                <span>سجل أسعار تاريخي لآخر ٩٠ يوم لمنع العروض الوهمية.</span>
+                <span>سجل أسعار تاريخي لآخر 90 يوماً لمنع العروض الوهمية.</span>
               </div>
             </div>
             <Link
               href="/about"
-              className="inline-block text-xs font-black text-[#00f0ff] hover:underline pt-1"
+              className="inline-block text-xs font-bold text-[#00f0ff] hover:underline pt-1"
             >
-              اقرأ بروتوكول فحص الأسعار السيبراني ↗
+              عن لقطة وكيف نعمل ↗
             </Link>
           </div>
         </div>
 
-        {/* Affiliate Disclaimer & Copyright */}
-        <div className="pt-6 flex flex-col md:flex-row items-center justify-between text-[11px] text-gray-500 gap-4 text-center md:text-right font-medium">
+        {/* Affiliate Disclaimer */}
+        <div className="pt-6 flex flex-col md:flex-row items-center justify-between text-[11px] text-gray-500 gap-3 text-center md:text-right">
           <p>
-            تنويه الشفافية: منصة «لقطة» مستقلة تماماً وتهدف لخدمة مجتمع الجيمرز في مصر. قد نحصل على عمولة تسويقية رمزية عند الشراء من خلال روابطنا دون أي تكلفة إضافية عليك إطلاقاً.
+            تنويه: لقطة تشارك في برامج التسويق بالعمولة (Amazon Associates وغيرها). عند الشراء من خلال روابطنا، قد نحصل على عمولة بسيطة تدعم استمرار الخدمة مجاناً دون أي تكلفة إضافية عليك.
           </p>
-          <p className="shrink-0 font-mono text-gray-400">
-            © 2026 LOO2TAA // EGYPTIAN GAMING RADAR. ALL RIGHTS RESERVED.
+          <p className="shrink-0 font-medium">
+            © 2026 لقطة Loo2taa. جميع الحقوق محفوظة.
           </p>
         </div>
       </div>

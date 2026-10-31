@@ -5,7 +5,7 @@ import { PRODUCTS } from "@/lib/loo2taa-data";
 import { FilterOptions } from "@/lib/types";
 import ProductCard from "@/components/ProductCard";
 import FilterBar from "@/components/FilterBar";
-import { TrendingDown, ShieldCheck, Flame, Radio } from "lucide-react";
+import { ShieldCheck, Radio } from "lucide-react";
 
 export default function AmazonDealsPage() {
   const [filters, setFilters] = useState<FilterOptions>({
@@ -61,32 +61,30 @@ export default function AmazonDealsPage() {
   return (
     <div className="space-y-6">
       
-      {/* Amazon Banner with Egyptian Cyberpunk Flair */}
-      <div className="cyber-card rounded-3xl p-6 sm:p-10 relative overflow-hidden border border-[#00f0ff]/30">
-        <div className="absolute -left-10 -bottom-10 w-72 h-72 bg-[#00f0ff]/10 rounded-full blur-3xl pointer-events-none" />
-        
-        <div className="relative z-10 max-w-2xl space-y-3">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ff9900]/10 border border-[#ff9900]/30 text-xs font-black text-[#ff9900]">
-            <span className="w-2 h-2 rounded-full bg-[#ff9900] animate-ping" />
-            عروض أمازون مصر الرسمية للألعاب // AMAZON.EG GAMING
+      {/* Banner */}
+      <div className="cyber-card rounded-3xl p-6 sm:p-8 relative overflow-hidden border border-white/10">
+        <div className="relative z-10 max-w-2xl space-y-2.5">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#ff9900]/10 border border-[#ff9900]/30 text-xs font-bold text-[#ff9900]">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#ff9900] animate-pulse" />
+            عروض أمازون مصر الرسمية (Amazon.eg)
           </div>
 
-          <h1 className="text-3xl sm:text-4xl font-black text-white">
-            دروبات عتاد أمازون مصر الموثقة
+          <h1 className="text-2xl sm:text-3xl font-black text-white">
+            تخفيضات عتاد أمازون مصر الموثقة
           </h1>
 
-          <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-            جميع صفقات أجهزة الجيمنج وقطع الـ PC المفحوصة آلياً بواسطة رادار لقطة للتأكد من أن الخصم حقيقي مقارنة بأسعار المحلات في البستان والتجار المحليين.
+          <p className="text-xs text-gray-300 leading-relaxed">
+            جميع صفقات الألعاب وقطع الهاردوير المفحوصة آلياً بواسطة لقطة للتأكد من أن السعر يمثل انخفاضاً حقيقياً وموثوقاً.
           </p>
 
-          <div className="flex flex-wrap items-center gap-4 pt-2 text-xs text-gray-300">
+          <div className="flex flex-wrap items-center gap-4 pt-1 text-xs text-gray-400">
             <span className="flex items-center gap-1.5">
               <ShieldCheck className="w-4 h-4 text-[#00ff9d]" />
-              بائعين معتمدين وضمان وكلاء محليين
+              بائعين معتمدين وضمان محلي
             </span>
             <span className="flex items-center gap-1.5">
               <Radio className="w-4 h-4 text-[#00f0ff]" />
-              تتبع فوري لمخزون المستودعات
+              تتبع فوري للمخزون
             </span>
           </div>
         </div>
@@ -105,8 +103,8 @@ export default function AmazonDealsPage() {
       <div
         className={
           viewMode === "grid"
-            ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
-            : "space-y-4"
+            ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+            : "space-y-3"
         }
       >
         {amazonProducts.map((product) => (

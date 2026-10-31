@@ -2,11 +2,11 @@
 
 import React, { useState, useMemo, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
-import { PRODUCTS, CATEGORIES, getUniqueBrands } from "@/lib/loo2taa-data";
+import { PRODUCTS } from "@/lib/loo2taa-data";
 import { FilterOptions } from "@/lib/types";
 import ProductCard from "@/components/ProductCard";
 import FilterBar from "@/components/FilterBar";
-import { Gamepad2, Sparkles, Cpu, Crosshair } from "lucide-react";
+import { Cpu, Crosshair } from "lucide-react";
 
 function CatalogInner() {
   const searchParams = useSearchParams();
@@ -93,16 +93,16 @@ function CatalogInner() {
       <div className="cyber-card rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h1 className="text-2xl sm:text-3xl font-black text-white flex items-center gap-2.5">
-            <Cpu className="w-7 h-7 text-[#00f0ff]" />
-            كنز عتاد الجيمنج والهاردوير
+            <Cpu className="w-6 h-6 text-[#00f0ff]" />
+            كتالوج عتاد الجيمنج والبي سي
           </h1>
-          <p className="text-xs sm:text-sm text-gray-400 mt-1">
-            قاعدة بيانات الصفقات المفحوصة والمحدثة لحظياً لكروت الشاشة، الشاشات، وإكسسوارات السيت أب في مصر
+          <p className="text-xs text-gray-400 mt-1">
+            تصفح جميع الصفقات المحدثة لكروت الشاشة، الشاشات، وإكسسوارات السيت أب في مصر
           </p>
         </div>
 
-        <div className="text-xs font-black px-3.5 py-1.5 rounded-full bg-[#00f0ff]/10 text-[#00f0ff] border border-[#00f0ff]/30 self-start sm:self-auto">
-          {filteredProducts.length} قطعة مرصودة بالرادار
+        <div className="text-xs font-black px-3 py-1.5 rounded-full bg-[#00f0ff]/10 text-[#00f0ff] border border-[#00f0ff]/20 self-start sm:self-auto">
+          {filteredProducts.length} قطعة متوفرة
         </div>
       </div>
 
@@ -118,16 +118,16 @@ function CatalogInner() {
       {/* Products Grid */}
       {filteredProducts.length === 0 ? (
         <div className="cyber-card rounded-3xl p-12 text-center space-y-3">
-          <div className="w-12 h-12 rounded-full bg-[#00f0ff]/10 text-[#00f0ff] flex items-center justify-center mx-auto border border-[#00f0ff]/30">
+          <div className="w-12 h-12 rounded-full bg-[#00f0ff]/10 text-[#00f0ff] flex items-center justify-center mx-auto border border-[#00f0ff]/20">
             <Crosshair className="w-6 h-6" />
           </div>
-          <h3 className="text-base font-bold text-white">لا توجد قطع مطابقة لاختياراتك</h3>
+          <h3 className="text-sm font-bold text-white">لا توجد قطع مطابقة لاختياراتك</h3>
           <p className="text-xs text-gray-400 max-w-sm mx-auto">
-            جرّب تقليل شروط التصفية أو مسح كلمات البحث لتصفح المزيد من صفقات الجيمرز.
+            جرّب تغيير كلمات البحث أو إعادة ضبط الفلاتر لتصفح باقي الصفقات.
           </p>
           <button
             onClick={() => setFilters({ sort: "newest" })}
-            className="mt-2 px-4 py-2 bg-gradient-to-r from-[#00f0ff] to-[#00a3ff] text-[#07090e] text-xs font-black rounded-xl hover:shadow-lg hover:shadow-[#00f0ff]/30"
+            className="mt-2 px-4 py-2 btn-cyber-primary text-xs rounded-xl"
           >
             إعادة الضبط
           </button>
@@ -136,8 +136,8 @@ function CatalogInner() {
         <div
           className={
             viewMode === "grid"
-              ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"
-              : "space-y-4"
+              ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+              : "space-y-3"
           }
         >
           {filteredProducts.map((product) => (
@@ -155,7 +155,7 @@ function CatalogInner() {
 
 export default function CatalogPage() {
   return (
-    <Suspense fallback={<div className="p-12 text-center text-xs text-gray-400 font-mono">SYS_SCANNING_INVENTORY...</div>}>
+    <Suspense fallback={<div className="p-12 text-center text-xs text-gray-400">جاري تحميل الصفقات...</div>}>
       <CatalogInner />
     </Suspense>
   );
