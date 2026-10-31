@@ -1,16 +1,7 @@
 {
-  "last_run_at": "2026-10-31T12:26:45.773Z",
+  "last_run_at": "2026-10-31T18:25:42.993Z",
   "products_checked": 20,
-  "price_changes_detected": 1,
+  "price_changes_detected": 0,
   "telegram_alerts_sent": 0,
-  "changes": [
-    {
-      "id": "g-02-g502-hero",
-      "title": "ماوس الألعاب الأسطوري لوجيتيك G502 هيرو (Logitech G502 HERO) مستشعر 25,600 DPI مع أوزان قابلة للتعديل وإضاءة RGB",
-      "oldPrice": 1999,
-      "newPrice": 2501,
-      "dropPercent": -25,
-      "alertSent": false
-    }
-  ]
+  "changes": []
 }
