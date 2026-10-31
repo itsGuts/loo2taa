@@ -102,11 +102,11 @@
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B00SAYCXWG?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/41T-nO50RJL._SL500_.jpg",
-    "price": 3199,
-    "previous_price": 4300,
-    "savings": 1101,
-    "discount_percent": 26,
-    "price_checked_at": "2026-10-31T03:50:00.000Z",
+    "price": 4799,
+    "previous_price": 3199,
+    "savings": 0,
+    "discount_percent": -50,
+    "price_checked_at": "2026-10-31T06:29:40.729Z",
     "rating": 4.8,
     "review_count": 2400,
     "price_history": [
@@ -134,8 +134,14 @@
         "date": "2026-10-31",
         "price": 3199,
         "label": "لقطة الشهر لسماعة البطولات ⚡"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 4799,
+        "label": "تحديث سعر"
       }
-    ]
+    ],
+    "price_change_direction": "up"
   },
   {
     "id": "g-04-rtx4060-gpu",
@@ -378,11 +384,11 @@
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B0B25NXWC7?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/41D8zS5rX8L._SL500_.jpg",
-    "price": 3299,
-    "previous_price": 4100,
-    "savings": 801,
-    "discount_percent": 20,
-    "price_checked_at": "2026-10-31T03:35:00.000Z",
+    "price": 8700,
+    "previous_price": 3299,
+    "savings": 0,
+    "discount_percent": -164,
+    "price_checked_at": "2026-10-31T06:29:51.940Z",
     "rating": 4.8,
     "review_count": 670,
     "price_history": [
@@ -410,8 +416,14 @@
         "date": "2026-10-31",
         "price": 3299,
         "label": "لقطة ترقية الـ PC والبلايستيشن 5 ⚡"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 8700,
+        "label": "تحديث سعر"
       }
-    ]
+    ],
+    "price_change_direction": "up"
   },
   {
     "id": "g-10-govee-rgbic",
@@ -516,11 +528,11 @@
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B07F7T8J9P?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/31HQh1bD5nL._SL500_.jpg",
-    "price": 949,
-    "previous_price": 1399,
-    "savings": 450,
-    "discount_percent": 32,
-    "price_checked_at": "2026-10-31T03:25:00.000Z",
+    "price": 3349,
+    "previous_price": 949,
+    "savings": 0,
+    "discount_percent": -253,
+    "price_checked_at": "2026-10-31T06:29:59.037Z",
     "rating": 4.7,
     "review_count": 3200,
     "price_history": [
@@ -548,8 +560,14 @@
         "date": "2026-10-31",
         "price": 949,
         "label": "أرخص ماوس ريزر براند في مصر ⚡"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 3349,
+        "label": "تحديث سعر"
       }
-    ]
+    ],
+    "price_change_direction": "up"
   },
   {
     "id": "g-13-ryzen5-5600x",
@@ -941,13 +959,13 @@
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B084RPZD6T?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/611vjUvB2nL._AC_SL500_.jpg",
-    "price": 1350,
-    "previous_price": 1750,
-    "savings": 400,
-    "discount_percent": 23,
+    "price": 2599,
+    "previous_price": 1350,
+    "savings": 0,
+    "discount_percent": -93,
     "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-10-31T05:00:00.000Z",
+    "price_change_direction": "up",
+    "price_checked_at": "2026-10-31T06:30:13.323Z",
     "rating": 4.8,
     "review_count": 14200,
     "price_history": [
@@ -975,6 +993,11 @@
         "date": "2026-10-31",
         "price": 1350,
         "label": "أقوى خصم 23% ماوس احترافي ⚡"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 2599,
+        "label": "أقل سعر قياسي جديد ⚡"
       }
     ],
     "ai_review": {
@@ -1012,13 +1035,13 @@
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B083X24CFF?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/61Nl8XgR0KL._AC_SL500_.jpg",
-    "price": 1499,
-    "previous_price": 1950,
-    "savings": 451,
-    "discount_percent": 23,
+    "price": 1999,
+    "previous_price": 1499,
+    "savings": 0,
+    "discount_percent": -33,
     "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-10-31T05:00:00.000Z",
+    "price_change_direction": "up",
+    "price_checked_at": "2026-10-31T06:30:16.165Z",
     "rating": 4.6,
     "review_count": 6300,
     "price_history": [
@@ -1046,6 +1069,11 @@
         "date": "2026-10-31",
         "price": 1499,
         "label": "أرخص هيدست ماركة عالمية في مصر ⚡"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 1999,
+        "label": "أقل سعر قياسي جديد ⚡"
       }
     ],
     "ai_review": {
