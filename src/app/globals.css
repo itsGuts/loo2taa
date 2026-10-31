@@ -1,0 +1,167 @@
+@import "tailwindcss";
+
+:root {
+  --background: #07090e;
+  --foreground: #f1f5f9;
+  --card: #0d121f;
+  --card-foreground: #f8fafc;
+  --brand: #00f0ff;
+  --brand-hover: #00c8d7;
+  --brand-soft: rgba(0, 240, 255, 0.1);
+  --brand-border: rgba(0, 240, 255, 0.25);
+  --cyber-magenta: #ff007f;
+  --cyber-magenta-soft: rgba(255, 0, 127, 0.12);
+  --cyber-green: #00ff9d;
+  --cyber-green-soft: rgba(0, 255, 157, 0.12);
+  --cyber-amber: #ffb800;
+  --cyber-amber-soft: rgba(255, 184, 0, 0.12);
+  --muted: #94a3b8;
+  --muted-dark: #64748b;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-neon: rgba(0, 240, 255, 0.2);
+  --amazon-navy: #172033;
+  --noon-yellow: #ffd600;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-brand: var(--brand);
+  --color-brand-hover: var(--brand-hover);
+  --color-brand-soft: var(--brand-soft);
+  --color-brand-border: var(--brand-border);
+  --color-magenta: var(--cyber-magenta);
+  --color-emerald: var(--cyber-green);
+  --color-amber: var(--cyber-amber);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --font-arabic: var(--font-arabic-sans, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Cairo", "Tajawal", "Helvetica Neue", Arial, sans-serif);
+}
+
+html {
+  direction: rtl;
+  text-align: right;
+  scroll-behavior: smooth;
+  font-family: var(--font-arabic);
+  background-color: #07090e;
+  color: #f1f5f9;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(0, 240, 255, 0.06) 0%, transparent 50%),
+    radial-gradient(circle at 100% 50%, rgba(255, 0, 127, 0.04) 0%, transparent 40%),
+    linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.015) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 36px 36px, 36px 36px;
+}
+
+/* Custom Cyber Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #090c14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 240, 255, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00f0ff;
+}
+
+/* Cyber Neon Glow Utilities */
+.neon-glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
+}
+
+.neon-glow-magenta {
+  box-shadow: 0 0 20px rgba(255, 0, 127, 0.25);
+}
+
+.neon-border-cyan {
+  border: 1px solid rgba(0, 240, 255, 0.4);
+}
+
+.neon-border-magenta {
+  border: 1px solid rgba(255, 0, 127, 0.4);
+}
+
+.cyber-card {
+  background: rgba(13, 18, 31, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: all 0.25s ease-in-out;
+}
+
+.cyber-card:hover {
+  border-color: rgba(0, 240, 255, 0.35);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 240, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.cyber-badge {
+  position: relative;
+  overflow: hidden;
+}
+
+.cyber-badge::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    60deg,
+    transparent,
+    rgba(255, 255, 255, 0.15),
+    transparent
+  );
+  transform: rotate(30deg);
+  animation: cyberShine 4s infinite linear;
+}
+
+@keyframes cyberShine {
+  0% { transform: translateX(-100%) rotate(30deg); }
+  20%, 100% { transform: translateX(100%) rotate(30deg); }
+}
+
+@keyframes pulseNeon {
+  0%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 6px #00f0ff);
+  }
+  50% {
+    opacity: 0.8;
+    filter: drop-shadow(0 0 14px #00f0ff);
+  }
+}
+
+.animate-pulse-neon {
+  animation: pulseNeon 2.5s infinite ease-in-out;
+}
+
+/* Cyber scanlines overlay on images */
+.cyber-image-frame {
+  position: relative;
+}
+.cyber-image-frame::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+  background-size: 100% 4px;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.3;
+}
