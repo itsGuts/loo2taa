@@ -1,11 +1,13 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 console.log('\n======================================================');
 console.log('🧪 LO2TAA Step 3 Verification: Listing, Sorts & Filters');
 console.log('======================================================\n');
 
-const products = JSON.parse(fs.readFileSync('data/products.json', 'utf8'));
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const products = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/products.json'), 'utf8'));
 
 let failed = 0;
 function assert(condition, testName) {

@@ -387,4 +387,54 @@ export const db = {
 
     return memoryCronLogs.slice(0, limit);
   },
+
+  /**
+   * Count active alerts across all products
+   */
+  async getActiveAlertsCount(): Promise<number> {
+    if (isSupabaseConfigured) {
+      const remote = await supabaseFetch<any[]>('alerts?active=eq.true&select=id');
+      if (remote) return remote.length;
+    }
+    return memoryAlerts.filter((a) => a.active).length;
+  },
+
+  /**
+   * Toggle pinned state for a product (featured deal)
+   */
+  async togglePinProduct(productId: string): Promise<boolean> {
+    initializeSeedData();
+    const prod = memoryProducts.get(productId);
+    if (!prod) return false;
+    prod.is_pinned = !prod.is_pinned;
+
+    if (isSupabaseConfigured) {
+      await supabaseFetch(`products?id=eq.${productId}`, {
+        method: 'PATCH',
+        body: JSON.stringify({ is_pinned: prod.is_pinned }),
+      });
+    }
+    return prod.is_pinned;
+  },
+
+  /**
+   * Delete a tracked product
+   */
+  async deleteProduct(productId: string): Promise<boolean> {
+    initializeSeedData();
+    const prod = memoryProducts.get(productId);
+    if (prod) {
+      memoryProducts.delete(prod.id);
+      memoryProducts.delete(prod.asin);
+      memoryHistory.delete(prod.id);
+      memoryHistory.delete(prod.asin);
+    }
+
+    if (isSupabaseConfigured) {
+      await supabaseFetch(`products?id=eq.${productId}`, {
+        method: 'DELETE',
+      });
+    }
+    return true;
+  },
 };

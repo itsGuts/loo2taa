@@ -137,14 +137,17 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Affiliate Disclaimer */}
-        <div className="pt-6 flex flex-col md:flex-row items-center justify-between text-[11px] text-gray-500 gap-3 text-center md:text-right">
-          <p>
-            تنويه: لقطة تشارك في برنامج التسويق بالعمولة لأمازون مصر (Amazon Associates) ومتاجر التجزئة المصرية المعتمدة. عند الشراء عبر روابطنا، نحصل على عمولة رسمية تدعم استمرار الخدمة مجاناً دون أي زيادة في السعر عليك.
+        {/* Legal & Affiliate Disclaimer */}
+        <div className="pt-6 border-t border-white/[0.04] mt-6 flex flex-col md:flex-row items-center justify-between text-[11px] text-gray-500 gap-3 text-center md:text-right">
+          <p className="max-w-4xl leading-relaxed">
+            إخلاء مسؤولية قانوني: أسعار المنتجات وتوافرها دقيقة اعتباراً من تاريخ ووقت الرصد المعروض وتخضع للتغيير المستمر من المتاجر. بصفتنا شريكاً في برنامج Amazon Associates ومتاجر التجزئة المعتمدة في مصر، قد نربح عمولة عند إتمام عمليات شراء مؤهلة من خلال الروابط دون أي تكلفة إضافية عليك. نحرص دائماً على عدم عرض أي أرقام غير موثقة، وفي حال غياب البيانات تظهر كـ &quot;غير متاح&quot;.
           </p>
-          <p className="shrink-0 font-medium font-mono">
-            © 2026 LO2TAA (لقطة). جميع الحقوق محفوظة.
-          </p>
+          <div className="flex items-center gap-4 shrink-0 font-medium font-mono text-[11px]">
+            <Link href="/admin" className="text-gray-600 hover:text-gray-400 transition-colors">
+              لوحة الإدارة 🔒
+            </Link>
+            <span>© 2026 LO2TAA (لقطة). جميع الحقوق محفوظة.</span>
+          </div>
         </div>
       </div>
     </footer>
