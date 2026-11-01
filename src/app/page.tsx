@@ -86,6 +86,31 @@ export default function HomePage() {
 
   return (
     <div className="space-y-6">
+      {/* White Friday November 2026 Radar Alert Banner */}
+      <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#ff007f]/20 via-[#ff9900]/25 to-[#00f0ff]/20 border border-[#ff9900]/40 p-3.5 sm:p-4.5 flex flex-col sm:flex-row items-center justify-between gap-4 shadow-xl">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-xl bg-[#ff9900]/20 border border-[#ff9900]/50 flex items-center justify-center text-[#ff9900] shrink-0 shadow-[0_0_15px_rgba(255,153,0,0.3)]">
+            <Flame className="w-5 h-5 animate-pulse" />
+          </div>
+          <div className="space-y-0.5">
+            <div className="flex items-center gap-2">
+              <span className="text-xs sm:text-sm font-black text-white">رادار عروض الجمعة البيضاء 11.11 (نوفمبر 2026) ⚡</span>
+              <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-[#ff007f] text-white shadow-sm">White Friday Live</span>
+            </div>
+            <p className="text-[11px] text-gray-300 leading-relaxed">
+              تنبيه حماية الجيمرز: مع بداية نوفمبر، يلجأ بعض التجار لرفع الأسعار قبل خصومات 11.11. خوارزمية لقطة تكشف الخصم الوهمي فوراً وتقارن مع متوسط الـ 90 يوماً.
+            </p>
+          </div>
+        </div>
+        <button
+          onClick={() => setFilters({ sort: 'discount-desc' })}
+          className="px-4 py-2 rounded-xl bg-gradient-to-r from-[#ff9900] to-[#ffaa00] hover:from-[#ffaa00] hover:to-[#ffbb00] text-black text-xs font-black shrink-0 transition-transform active:scale-95 flex items-center gap-1.5 shadow-lg shadow-[#ff9900]/20"
+        >
+          <Flame className="w-3.5 h-3.5" />
+          <span>أقوى خصومات نوفمبر الحقيقية</span>
+        </button>
+      </div>
+
       
       {/* Modern Discord-Centric Hero Section */}
       <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#0a0f1d] via-[#070a14] to-[#140824] border border-white/[0.08] p-6 sm:p-10 shadow-2xl">

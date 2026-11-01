@@ -1512,10 +1512,10 @@ export const PRODUCTS: Product[] = [
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B098RKWHHZ?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/61nqNujSF2L._AC_SL1330_.jpg",
-    "price": 26624,
-    "previous_price": 32481,
-    "savings": 5857,
-    "discount_percent": 18,
+    "price": 17499,
+    "previous_price": 21200,
+    "savings": 3701,
+    "discount_percent": 17,
     "is_record_low": true,
     "price_change_direction": "down",
     "price_checked_at": "2026-11-01T04:23:39.955Z",
@@ -1527,22 +1527,22 @@ export const PRODUCTS: Product[] = [
     "price_history": [
       {
         "date": "2026-08-15",
-        "price": 23850,
+        "price": 23500,
         "label": "سعر سابق"
       },
       {
         "date": "2026-09-20",
-        "price": 22500,
+        "price": 21200,
         "label": "قبل الخصم"
       },
       {
         "date": "2026-10-15",
-        "price": 19379,
+        "price": 18500,
         "label": "بداية النزول"
       },
       {
-        "date": "2026-10-31",
-        "price": 18999,
+        "date": "2026-11-01",
+        "price": 17499,
         "label": "أقل سعر لقطة ⚡"
       }
     ],
@@ -2171,9 +2171,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b0bmfqp2zz",
     "asin": "B0BMFQP2ZZ",
-    "display_title": "فيفين ميكروفون ديناميكي USB - XLR لتسجيل البودكاست العاب الكمبيوتر مع ضوء RGB وزر كتم الصوت ومقبس سماعات راس و",
+    "display_title": "فيفين ميكروفون ديناميكي USB - XLR لتسجيل البودكاست العاب الكمبيوتر مع ضوء RGB وزر كتم الصوت ومقبس سماعات راس",
     "title": "فيفين ميكروفون ديناميكي USB - XLR لتسجيل البودكاست العاب الكمبيوتر مع ضوء RGB وزر كتم الصوت ومقبس سماعات راس وحامل سطح المكتب وميكروفون صوتي للغناء على اليوتيوب- امبليجيم AM8 أحادي الاتجاه أسود",
-    "brand": "<!--This check is an indicator",
+    "brand": "Fifine",
     "category": "streaming-voice",
     "category_ar": "مايكات وصوتيات ديسكورد",
     "marketplace": "amazon",
@@ -2224,7 +2224,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%81%D9%8A%D9%81%D9%8A%D9%86\">العلامة التجارية: فيفين من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Fifine من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -2240,7 +2240,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0B8SNVK5K",
     "display_title": "ميكروفون من فيفاين موديل K688 باللون الأسود مع اتصال USB وXLR، يتميز بكتم الصوت وتقليل الضوضاء ومقبس سماعة ومر",
     "title": "ميكروفون من فيفاين موديل K688 باللون الأسود مع اتصال USB وXLR، يتميز بكتم الصوت وتقليل الضوضاء ومقبس سماعة ومراقبة فورية، متوافق مع الكمبيوتر",
-    "brand": "<!--This check is an indicator",
+    "brand": "Fifine",
     "category": "streaming-voice",
     "category_ar": "مايكات وصوتيات ديسكورد",
     "marketplace": "amazon",
@@ -2291,7 +2291,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%81%D9%8A%D9%81%D9%8A%D9%86\">العلامة التجارية: فيفين من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Fifine من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -2305,9 +2305,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b0d8bdfq22",
     "asin": "B0D8BDFQ22",
-    "display_title": "ميكروفون للكمبيوتر من يو جرين، ميكروفون USB بإضاءة ار جي بي وزر كتم، دقة 24 بت/96 كيلوهرتز، نمط قطبي قلبي، تحك",
+    "display_title": "ميكروفون كمبيوتر USB من يو جرين مع إضاءة RGB وزر لمسي لكتم الصوت للديسكورد (UGREEN USB Gaming Mic)",
     "title": "ميكروفون للكمبيوتر من يو جرين، ميكروفون USB بإضاءة ار جي بي وزر كتم، دقة 24 بت/96 كيلوهرتز، نمط قطبي قلبي، تحكم في مستوى الصوت، ميكروفون مكثف للبث والألعاب والبودكاست، متوافق مع اللابتوب وجهاز PS5",
-    "brand": "<!--This check is an indicator",
+    "brand": "UGREEN",
     "category": "streaming-voice",
     "category_ar": "مايكات وصوتيات ديسكورد",
     "marketplace": "amazon",
@@ -2358,7 +2358,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%8A%D9%88%D8%AC%D8%B1%D9%8A%D9%86\">العلامة التجارية: يوجرين من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "UGREEN من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -2374,7 +2374,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0HMS97S58",
     "display_title": "طقم ميكروفون مكثف يو اس بي اس يو 9 192 كيلو هرتز/24 بت مع ذراع بوم",
     "title": "طقم ميكروفون مكثف يو اس بي اس يو 9 192 كيلو هرتز/24 بت مع ذراع بوم",
-    "brand": "<!--This check is an indicator",
+    "brand": "Zealsound",
     "category": "streaming-voice",
     "category_ar": "مايكات وصوتيات ديسكورد",
     "marketplace": "amazon",
@@ -2425,7 +2425,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%AC%D9%8A%D9%86%D9%8A%D8%B1%D9%8A%D9%83\">العلامة التجارية: جينيريك من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Zealsound من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -2441,7 +2441,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B07M6Y7355",
     "display_title": "كاميرا ويب C960 بدقة 1080 بيكسل وزاوية 90 درجة مزودة بميكرفونين ومنفذ USB للتوصيل والتشغيل من اي ميت، للاب توب",
     "title": "كاميرا ويب C960 بدقة 1080 بيكسل وزاوية 90 درجة مزودة بميكرفونين ومنفذ USB للتوصيل والتشغيل من اي ميت، للاب توب والكمبيوتر، بصري، أسود",
-    "brand": "<!--This check is an indicator",
+    "brand": "eMeet",
     "category": "streaming-voice",
     "category_ar": "مايكات وصوتيات ديسكورد",
     "marketplace": "amazon",
@@ -2492,7 +2492,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%A7%D9%8A+%D9%85%D9%8A%D8%AA\">العلامة التجارية: اي ميت من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "eMeet من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -2508,7 +2508,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0H75RQXL9",
     "display_title": "كاميرا ويب بدقة FHD، كاميرا USB بدقة 1080P مع ميكروفون مدمج، تعمل بالتوصيل والاستخدام مباشرة، مناسبة للكمبيوتر",
     "title": "كاميرا ويب بدقة FHD، كاميرا USB بدقة 1080P مع ميكروفون مدمج، تعمل بالتوصيل والاستخدام مباشرة، مناسبة للكمبيوتر واللاب توب لمكالمات الفيديو والبث المباشر والدروس والاجتماعات عبر الانترنت من تك زون",
-    "brand": "<!--This check is an indicator",
+    "brand": "Generic FHD",
     "category": "streaming-voice",
     "category_ar": "مايكات وصوتيات ديسكورد",
     "marketplace": "amazon",
@@ -2559,7 +2559,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%AA%D9%8A%D9%83%D8%B2%D9%88%D9%86\">العلامة التجارية: تيكزون من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Generic FHD من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -2575,7 +2575,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0C45H4WG9",
     "display_title": "حامل ميكروفون بذراع من فيفين، حامل بذراع بوم مع مشبك تثبيت مكتبي ومساحة لإدارة الكابلات ومحول لولبي ومشبك للبو",
     "title": "حامل ميكروفون بذراع من فيفين، حامل بذراع بوم مع مشبك تثبيت مكتبي ومساحة لإدارة الكابلات ومحول لولبي ومشبك للبودكاست والألعاب واستوديو البث - موديل BM88",
-    "brand": "<!--This check is an indicator",
+    "brand": "Fifine",
     "category": "streaming-voice",
     "category_ar": "مايكات وصوتيات ديسكورد",
     "marketplace": "amazon",
@@ -2626,7 +2626,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%81%D9%8A%D9%81%D9%8A%D9%86\">العلامة التجارية: فيفين من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Fifine من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -2640,9 +2640,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b0hbn2fxzm",
     "asin": "B0HBN2FXZM",
-    "display_title": "حامل ذراع ميكروفون بوم ارم قابل للتعديل من تيك زون، ذراع مقصي بنظام تعليق شديد التحمل مع مشبك تثبيت للمكتب، حا",
+    "display_title": "حامل ميكروفون بذراع من فيفين مع مشبك تثبيت مكتبي قابل للتعديل (Fifine Boom Arm)",
     "title": "حامل ذراع ميكروفون بوم ارم قابل للتعديل من تيك زون، ذراع مقصي بنظام تعليق شديد التحمل مع مشبك تثبيت للمكتب، حامل ميكروفون معدني دوار 360 درجة للبودكاست، والبث المباشر، والألعاب، والتسجيل، والإذاعة",
-    "brand": "<!--This check is an indicator",
+    "brand": "TechZone",
     "category": "streaming-voice",
     "category_ar": "مايكات وصوتيات ديسكورد",
     "marketplace": "amazon",
@@ -2693,7 +2693,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%AA%D9%8A%D9%83%D8%B2%D9%88%D9%86\">العلامة التجارية: تيكزون من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "TechZone من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -2707,9 +2707,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b09qfynjmb",
     "asin": "B09QFYNJMB",
-    "display_title": "سماعة V2 على الاذن سلكي رأس بلاك شارك v2 X متعددة المنصات بسلك من رازر للرياضات الالكترونية مشغلات تريفورس 50 ",
+    "display_title": "سماعة V2 على الاذن سلكي رأس بلاك شارك v2 X متعددة المنصات بسلك من رازر للرياضات الالكترونية مشغلات تريفورس 50",
     "title": "سماعة V2 على الاذن سلكي رأس بلاك شارك v2 X متعددة المنصات بسلك من رازر للرياضات الالكترونية مشغلات تريفورس 50 ملم وخاصية الغار الضوضاء المتطورة وصوت محيطي 7.1 وميكروفون التقاط قلبي هايبر كلير أبيض",
-    "brand": "<!--This check is an indicator",
+    "brand": "Razer",
     "category": "headsets",
     "category_ar": "سماعات ديسكورد وقيمنق",
     "marketplace": "amazon",
@@ -2760,7 +2760,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%B1%D9%8A%D8%B2%D8%B1\">العلامة التجارية: ريزر من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Razer من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -2776,7 +2776,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0DGH2D1NJ",
     "display_title": "سماعة رأس لاسلكية باراكودا اكس كروما للألعاب من ريزر، لون أسود",
     "title": "سماعة رأس لاسلكية باراكودا اكس كروما للألعاب من ريزر، لون أسود",
-    "brand": "<!--This check is an indicator",
+    "brand": "Razer",
     "category": "headsets",
     "category_ar": "سماعات ديسكورد وقيمنق",
     "marketplace": "amazon",
@@ -2827,7 +2827,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%B1%D9%8A%D8%B2%D8%B1\">العلامة التجارية: ريزر من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Razer من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -2843,7 +2843,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B08KKZ8S36",
     "display_title": "سماعات رأس بسلك موديل G335 من لوجيتك باللون الابيض مزودة بميكروفون كاتم للصوت ووسائد اذن فوم ميموري خفيف الوزن",
     "title": "سماعات رأس بسلك موديل G335 من لوجيتك باللون الابيض مزودة بميكروفون كاتم للصوت ووسائد اذن فوم ميموري خفيف الوزن ومقبس صوت 3.5 ملم متوافقة مع الكمبيوتر والاكس بوكس والبلاي ستيشن ونينتندو سويتش",
-    "brand": "<!--This check is an indicator",
+    "brand": "Logitech G",
     "category": "headsets",
     "category_ar": "سماعات ديسكورد وقيمنق",
     "marketplace": "amazon",
@@ -2894,7 +2894,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%84%D9%88%D8%AC%D9%8A%D8%AA%D9%83+%D8%AC%D9%8A\">العلامة التجارية: لوجيتك جي من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Logitech G من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -2908,9 +2908,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b0brxjn3ky",
     "asin": "B0BRXJN3KY",
-    "display_title": "سماعة رأس لاسلكية للألعاب A50X لايت سبيد + قاعدة من أسترو، مع اتصال بلوتوث ومنفذ HDMI 2.1 من لوجي تيك، تقنية ب",
+    "display_title": "سماعة رأس لاسلكية للألعاب A50X لايت سبيد مع قاعدة شحن واتصال بلوتوث من لوجيتك أسترو (Logitech Astro A50X)",
     "title": "سماعة رأس لاسلكية للألعاب A50X لايت سبيد + قاعدة من أسترو، مع اتصال بلوتوث ومنفذ HDMI 2.1 من لوجي تيك، تقنية بلاي سينك، متوافقة مع اكس بوكس سيريز X|S وبلاي ستيشن والكمبيوتر وماك",
-    "brand": "<!--This check is an indicator",
+    "brand": "Logitech Astro",
     "category": "headsets",
     "category_ar": "سماعات ديسكورد وقيمنق",
     "marketplace": "amazon",
@@ -2961,7 +2961,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%84%D9%88%D8%AC%D9%8A%D8%AA%D9%83+%D8%AC%D9%8A\">العلامة التجارية: لوجيتك جي من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Logitech Astro من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -2977,7 +2977,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0G2MJWY6W",
     "display_title": "سماعة رأس B2 للألعاب، سماعة لاسلكية باتصال ثلاثي الوضعيات بتردد 2.4 جيجاهرتز/ بلوتوث/ بسلك بمنفذ 3.5 ملم، سماع",
     "title": "سماعة رأس B2 للألعاب، سماعة لاسلكية باتصال ثلاثي الوضعيات بتردد 2.4 جيجاهرتز/ بلوتوث/ بسلك بمنفذ 3.5 ملم، سماعات رأس فوق الأذن من اونيكوما، لون أبيض",
-    "brand": "<!--This check is an indicator",
+    "brand": "B2 Wireless",
     "category": "headsets",
     "category_ar": "سماعات ديسكورد وقيمنق",
     "marketplace": "amazon",
@@ -3028,7 +3028,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%A7%D9%88%D9%86%D9%8A%D9%83%D9%8A%D9%88%D9%85%D8%A7\">العلامة التجارية: اونيكيوما من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "B2 Wireless من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -3044,7 +3044,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0H5KWKPVK",
     "display_title": "سماعة ألعاب اونكوما K9 بفضاء لوني ار جي بي مع آذان قط قابلة للإزالة، صوت محيطي 7.1، ميكروفون قابل للسحب بخاصية",
     "title": "سماعة ألعاب اونكوما K9 بفضاء لوني ار جي بي مع آذان قط قابلة للإزالة، صوت محيطي 7.1، ميكروفون قابل للسحب بخاصية إلغاء الضوضاء، مشغلات 50 ملم، متوافقة مع PS5 وPS4 وXbox One والكمبيوتر، لون بينك",
-    "brand": "<!--This check is an indicator",
+    "brand": "ONIKUMA",
     "category": "headsets",
     "category_ar": "سماعات ديسكورد وقيمنق",
     "marketplace": "amazon",
@@ -3095,7 +3095,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%AC%D9%8A%D9%86%D9%8A%D8%B1%D9%8A%D9%83\">العلامة التجارية: جينيريك من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "ONIKUMA من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -3111,7 +3111,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0DG5PMZJX",
     "display_title": "سماعة رأس بلوتوث لاسلكية لألعاب H878 خفيفة الوزن بصوت محيطي 3 ومكبر صوت داخلي 40 ملم وميكروفون قابل للفصل للمن",
     "title": "سماعة رأس بلوتوث لاسلكية لألعاب H878 خفيفة الوزن بصوت محيطي 3 ومكبر صوت داخلي 40 ملم وميكروفون قابل للفصل للمنصات المتعددة والكمبيوتر وبلاي ستيشن 1/7/5 وسويتش والجوال من ريدراجون، أبيض وأزرق",
-    "brand": "<!--This check is an indicator",
+    "brand": "Redragon",
     "category": "headsets",
     "category_ar": "سماعات ديسكورد وقيمنق",
     "marketplace": "amazon",
@@ -3162,7 +3162,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%B1%D9%8A%D8%AF%D8%B1%D8%A7%D8%AC%D9%88%D9%86\">العلامة التجارية: ريدراجون من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Redragon من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -3178,7 +3178,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0DNFJCLXG",
     "display_title": "سماعة رأس H858 لاسلكية للألعاب بـ3 أوضاع وصوت محيطي 7.1 ومكبر صوت داخلي 53 ملم ووسائد أذن من الميموري فوم وميك",
     "title": "سماعة رأس H858 لاسلكية للألعاب بـ3 أوضاع وصوت محيطي 7.1 ومكبر صوت داخلي 53 ملم ووسائد أذن من الميموري فوم وميكروفون قابل للفصل بخاصية إلغاء الضوضاء للموبايل والكمبيوتر والبلاي ستيشن 5 ونينتندو، أسود",
-    "brand": "<!--This check is an indicator",
+    "brand": "Redragon",
     "category": "headsets",
     "category_ar": "سماعات ديسكورد وقيمنق",
     "marketplace": "amazon",
@@ -3229,7 +3229,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%B1%D9%8A%D8%AF%D8%B1%D8%A7%D8%AC%D9%88%D9%86\">العلامة التجارية: ريدراجون من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Redragon من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -3243,9 +3243,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b0c6kqh58l",
     "asin": "B0C6KQH58L",
-    "display_title": "كيبورد بسلك 60% للألعاب بإضاءة ملونة ار جي بي K617 من ريدراجون، لوحة مفاتيح ميكانيكال مدمجة بـ61 مفتاح وأغطية ",
+    "display_title": "كيبورد بسلك 60% للألعاب بإضاءة ملونة ار جي بي K617 من ريدراجون، لوحة مفاتيح ميكانيكال مدمجة بـ61 مفتاح وأغطية",
     "title": "كيبورد بسلك 60% للألعاب بإضاءة ملونة ار جي بي K617 من ريدراجون، لوحة مفاتيح ميكانيكال مدمجة بـ61 مفتاح وأغطية مفاتيح شفافة بالكامل، مفتاح خطي قابل للتخصيص، يدعم مشغل/ برنامج برو",
-    "brand": "<!--This check is an indicator",
+    "brand": "Redragon",
     "category": "keyboards-mice",
     "category_ar": "كيبوردات ميكانيكال وماوسات",
     "marketplace": "amazon",
@@ -3296,7 +3296,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%B1%D9%8A%D8%AF%D8%B1%D8%A7%D8%AC%D9%88%D9%86\">العلامة التجارية: ريدراجون من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Redragon من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -3312,7 +3312,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B07DS5J1ST",
     "display_title": "كيبورد ميكانيكي للالعاب كومارا K552 من ريدراجون - مفتاح احمر، اضاءة LED بالوان قوس قزح، مفاتيح انجليزية وعربية",
     "title": "كيبورد ميكانيكي للالعاب كومارا K552 من ريدراجون - مفتاح احمر، اضاءة LED بالوان قوس قزح، مفاتيح انجليزية وعربية (اسود)، USB",
-    "brand": "<!--This check is an indicator",
+    "brand": "Redragon",
     "category": "keyboards-mice",
     "category_ar": "كيبوردات ميكانيكال وماوسات",
     "marketplace": "amazon",
@@ -3363,7 +3363,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%B1%D9%8A%D8%AF%D8%B1%D8%A7%D8%AC%D9%88%D9%86\">العلامة التجارية: ريدراجون من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Redragon من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -3377,9 +3377,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b0dk1kzs64",
     "asin": "B0DK1KZS64",
-    "display_title": "اولا كيبورد العاب ميكانيكية للالعاب F75 75% محفورة على الجانب قابلة للتبديل السريع | مفاتيح خطية مشحمة مسبقًا ",
+    "display_title": "اولا كيبورد العاب ميكانيكية للالعاب F75 75% محفورة على الجانب قابلة للتبديل السريع | مفاتيح خطية مشحمة مسبقًا",
     "title": "اولا كيبورد العاب ميكانيكية للالعاب F75 75% محفورة على الجانب قابلة للتبديل السريع | مفاتيح خطية مشحمة مسبقًا | اضاءة خلفية RGB | 2.4GHz/نوع C/بلوتوث ميكانيكية للالعاب (محفورة على الجانب + مفتاح ريبر",
-    "brand": "<!--This check is an indicator",
+    "brand": "AULA",
     "category": "keyboards-mice",
     "category_ar": "كيبوردات ميكانيكال وماوسات",
     "marketplace": "amazon",
@@ -3430,7 +3430,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%A7%D9%88%D9%84%D8%A7\">العلامة التجارية: اولا من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "AULA من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -3446,7 +3446,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0DYTJJ2C5",
     "display_title": "ATTACK SHARK X85PRO 75% Wireless Mechanical Keyboard,TFT Smart Display & Knob,BT/2.4GHz/Wired Gaming Keyboard,",
     "title": "ATTACK SHARK X85PRO 75% Wireless Mechanical Keyboard,TFT Smart Display & Knob,BT/2.4GHz/Wired Gaming Keyboard,Side Printed & 5 Color PBT Keycaps,Gasket, RGB,Hot-Swap,with Pro Cable, for PC/MAC (Moon)",
-    "brand": "<!--This check is an indicator",
+    "brand": "Attack Shark",
     "category": "keyboards-mice",
     "category_ar": "كيبوردات ميكانيكال وماوسات",
     "marketplace": "amazon",
@@ -3497,7 +3497,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%85%D8%A7%D8%AC%D9%8A%D9%83+%D8%B1%D9%8A%D9%81%D8%A7%D9%8A%D9%86%D8%B1\">العلامة التجارية: ماجيك ريفاينر من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Attack Shark من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -3511,9 +3511,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b0d3kqvqxk",
     "asin": "B0D3KQVQXK",
-    "display_title": "ماوس PAW3311 ألعاب لاسلكي خفيف الوزن X11 مع قاعدة شحن بإضاءة 3 أوضاع لاسلكي 2.4G، سلكي USB-C، بلوتوث 22 ألف نق",
+    "display_title": "ماوس PAW3311 ألعاب لاسلكي خفيف الوزن X11 مع قاعدة شحن بإضاءة 3 أوضاع لاسلكي 2.4G، سلكي USB-C، بلوتوث 22 ألف",
     "title": "ماوس PAW3311 ألعاب لاسلكي خفيف الوزن X11 مع قاعدة شحن بإضاءة 3 أوضاع لاسلكي 2.4G، سلكي USB-C، بلوتوث 22 ألف نقطة بالبوصة، بمستشعر بصري ومفتاح هويو و5 أزرار قابلة للبرمجة للكمبيوتر من اتاك شارك، أبيض",
-    "brand": "<!--This check is an indicator",
+    "brand": "Attack Shark",
     "category": "keyboards-mice",
     "category_ar": "كيبوردات ميكانيكال وماوسات",
     "marketplace": "amazon",
@@ -3564,7 +3564,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=ATTACK+SHARK\">العلامة التجارية: ATTACK SHARK من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Attack Shark من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -3578,9 +3578,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b0fmdyyfd2",
     "asin": "B0FMDYYFD2",
-    "display_title": "ماوس العاب لاسلكي شارك R1 من اتاك، اتصال ثلاثي الاوضاع (2.4G/سلكي/BT5.2)، خفيف الوزن 55 غرام، مستشعر بصري 18K ",
+    "display_title": "ماوس العاب لاسلكي شارك R1 من اتاك، اتصال ثلاثي الاوضاع (2.4G/سلكي/BT5.2)، خفيف الوزن 55 غرام، مستشعر بصري 18K",
     "title": "ماوس العاب لاسلكي شارك R1 من اتاك، اتصال ثلاثي الاوضاع (2.4G/سلكي/BT5.2)، خفيف الوزن 55 غرام، مستشعر بصري 18K DPI تصميم مريح، للكمبيوتر/اللابتوب/ويندوز/ماك (ابيض + ملصق) (ضمان لمدة عام)",
-    "brand": "<!--This check is an indicator",
+    "brand": "Attack Shark",
     "category": "keyboards-mice",
     "category_ar": "كيبوردات ميكانيكال وماوسات",
     "marketplace": "amazon",
@@ -3631,7 +3631,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=ATTACK+SHARK\">العلامة التجارية: ATTACK SHARK من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Attack Shark من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -3645,9 +3645,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b0c51j2zxn",
     "asin": "B0C51J2ZXN",
-    "display_title": "ماوس ألعاب سلكي خفيف الوزن من ريزر كوبرا: تصميم خفيف الوزن 58 جرام - مفاتيح بصرية الجيل الثالث - إضاءة كروما ا",
+    "display_title": "ماوس ألعاب سلكي خفيف الوزن من ريزر كوبرا: تصميم خفيف الوزن 58 جرام - مفاتيح بصرية الجيل الثالث - إضاءة كروما",
     "title": "ماوس ألعاب سلكي خفيف الوزن من ريزر كوبرا: تصميم خفيف الوزن 58 جرام - مفاتيح بصرية الجيل الثالث - إضاءة كروما ار جي بي مع اندرجلو متدرج - مستشعر بصري 8500 نقطة لكل بوصة - كابل سبيد فليكس - أسود",
-    "brand": "<!--This check is an indicator",
+    "brand": "Razer",
     "category": "keyboards-mice",
     "category_ar": "كيبوردات ميكانيكال وماوسات",
     "marketplace": "amazon",
@@ -3698,7 +3698,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%B1%D9%8A%D8%B2%D8%B1\">العلامة التجارية: ريزر من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Razer من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -3714,7 +3714,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0C5XNRVWM",
     "display_title": "ماوس ألعاب كوبرا سلكي من رايزر: تصميم خفيف الوزن 58 جم، مفاتيح ضوئية جيل 3، إضاءة كروما RGB سفلية، مستشعر بصري",
     "title": "ماوس ألعاب كوبرا سلكي من رايزر: تصميم خفيف الوزن 58 جم، مفاتيح ضوئية جيل 3، إضاءة كروما RGB سفلية، مستشعر بصري دقيق 8500 DPI، قواعد ماوس 100% PTFE، كابل سبيد فليكس، أسود",
-    "brand": "<!--This check is an indicator",
+    "brand": "Razer",
     "category": "keyboards-mice",
     "category_ar": "كيبوردات ميكانيكال وماوسات",
     "marketplace": "amazon",
@@ -3765,7 +3765,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%B1%D9%8A%D8%B2%D8%B1\">العلامة التجارية: ريزر من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Razer من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -3781,7 +3781,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0HFG39GC9",
     "display_title": "مصباح طاولة أناناس مودرن من الراتينج (ارتفاع 60 سم، عرض 35 سم)، وشاح أسود مع بطانة ذهبية وقاعدة ذهبية، جسم أصف",
     "title": "مصباح طاولة أناناس مودرن من الراتينج (ارتفاع 60 سم، عرض 35 سم)، وشاح أسود مع بطانة ذهبية وقاعدة ذهبية، جسم أصفر",
-    "brand": "<!--This check is an indicator",
+    "brand": "Decor & Ambient",
     "category": "setup-aesthetic",
     "category_ar": "سيت أب وديكور وإضاءة RGB",
     "marketplace": "amazon",
@@ -3832,7 +3832,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/RozaLighting/page/DA44C584-FE7D-4435-984A-ABAA4E54F7C9?lp_asin=B0HFG39GC9&amp;ref_=ast_bln\">قم بRoza Lighting من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Decor & Ambient من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -3848,7 +3848,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0F8P9BVY3",
     "display_title": "مصباح طاولة خزفي مع غطاء زهور سوداء، قاعدة بلون وردي، تصميم عصري، مقاس 55 × 30 سم",
     "title": "مصباح طاولة خزفي مع غطاء زهور سوداء، قاعدة بلون وردي، تصميم عصري، مقاس 55 × 30 سم",
-    "brand": "<!--This check is an indicator",
+    "brand": "Decor & Ambient",
     "category": "setup-aesthetic",
     "category_ar": "سيت أب وديكور وإضاءة RGB",
     "marketplace": "amazon",
@@ -3899,7 +3899,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/RozaLighting/page/DA44C584-FE7D-4435-984A-ABAA4E54F7C9?lp_asin=B0F8P9BVY3&amp;ref_=ast_bln\">قم بRoza Lighting من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Decor & Ambient من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -3913,9 +3913,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b0ckykrymr",
     "asin": "B0CKYKRYMR",
-    "display_title": "مسند معصم جلدي مطور شكل سحابة للوحة المفاتيح، مسند معصم مع قاعدة من البولي يوريثين غير قابلة للانزلاق، مسند مع",
+    "display_title": "مسند معصم جلدي مطور شكل سحابة للوحة المفاتيح، مسند معصم مع قاعدة من البولي يوريثين غير قابلة للانزلاق، مسند",
     "title": "مسند معصم جلدي مطور شكل سحابة للوحة المفاتيح، مسند معصم مع قاعدة من البولي يوريثين غير قابلة للانزلاق، مسند معصم مريح من الميموري فوم للكمبيوتر واللاب توب وماك والألعاب والمكتب وتخفيف الآلام من جيكيو",
-    "brand": "<!--This check is an indicator",
+    "brand": "Cloud Rest",
     "category": "setup-aesthetic",
     "category_ar": "سيت أب وديكور وإضاءة RGB",
     "marketplace": "amazon",
@@ -3966,7 +3966,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%AC%D9%8A%D9%83%D9%8A%D9%88\">العلامة التجارية: جيكيو من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Cloud Rest من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -3982,7 +3982,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0C3WKSTV7",
     "display_title": "مسند معصم سحابي للوحة المفاتيح بسطح جلدي ورغوة الذاكرة وقاعدة غير قابلة للانزلاق مصمم لتخفيف آلام المعصم والذر",
     "title": "مسند معصم سحابي للوحة المفاتيح بسطح جلدي ورغوة الذاكرة وقاعدة غير قابلة للانزلاق مصمم لتخفيف آلام المعصم والذراع، مناسب لممارسة الألعاب والكمبيوتر والمكتب، وأجهزة اللاب توب من ليولي، لون أزرق",
-    "brand": "<!--This check is an indicator",
+    "brand": "Cloud Rest",
     "category": "setup-aesthetic",
     "category_ar": "سيت أب وديكور وإضاءة RGB",
     "marketplace": "amazon",
@@ -4033,7 +4033,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%84%D9%8A%D9%88%D9%84%D9%8A\">العلامة التجارية: ليولي من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Cloud Rest من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -4047,9 +4047,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b0991q94kp",
     "asin": "B0991Q94KP",
-    "display_title": "اشرطة اضواء LED ذكية بالوان RGBIC من جوفي بطول 16.4 قدم لغرفة النوم يعمل بالبلوتوث بتحكم خلال التطبيق الوان مت",
+    "display_title": "اشرطة اضواء LED ذكية بالوان RGBIC من جوفي بطول 16.4 قدم لغرفة النوم يعمل بالبلوتوث بتحكم خلال التطبيق الوان",
     "title": "اشرطة اضواء LED ذكية بالوان RGBIC من جوفي بطول 16.4 قدم لغرفة النوم يعمل بالبلوتوث بتحكم خلال التطبيق الوان متعددة يمكنك تركيبها بنفسك على خط واحد تتزامن مع الموسيقى للسقف وغرفة الالعاب",
-    "brand": "<!--This check is an indicator",
+    "brand": "Govee",
     "category": "setup-aesthetic",
     "category_ar": "سيت أب وديكور وإضاءة RGB",
     "marketplace": "amazon",
@@ -4100,7 +4100,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%AC%D9%88%D9%81%D9%8A\">العلامة التجارية: جوفي من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Govee من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -4116,7 +4116,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0DDPZZ9VY",
     "display_title": "شريط إضاءة خلفية للتلفزيون الذكي مع كاميرا وإضاءة ار جي بي ليد لغرفة المعيشة (3.8 متر)، من بيوتي بيست",
     "title": "شريط إضاءة خلفية للتلفزيون الذكي مع كاميرا وإضاءة ار جي بي ليد لغرفة المعيشة (3.8 متر)، من بيوتي بيست",
-    "brand": "<!--This check is an indicator",
+    "brand": "Smart Ambient",
     "category": "setup-aesthetic",
     "category_ar": "سيت أب وديكور وإضاءة RGB",
     "marketplace": "amazon",
@@ -4167,7 +4167,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/BeautyBeast/page/113AC719-D423-4730-B0B7-BFAB07A3901E?lp_asin=B0DDPZZ9VY&amp;ref_=ast_bln\">قم ببيوتي بيست من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Smart Ambient من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -4183,7 +4183,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0DSL1GKCH",
     "display_title": "قاعدة ماوس ألعاب اي سبورتس CM02 من اتاك شارك، قاعدة ماوس كبيرة بطلاء مقاوم للماء، سطح تحكم ناعم بملمس ثقيل وقا",
     "title": "قاعدة ماوس ألعاب اي سبورتس CM02 من اتاك شارك، قاعدة ماوس كبيرة بطلاء مقاوم للماء، سطح تحكم ناعم بملمس ثقيل وقاعدة مطاطية غير قابلة للانزلاق، حواف مخيطة دقيقة، 450 × 400 × 4 ملم - حواف بلون أبيض",
-    "brand": "<!--This check is an indicator",
+    "brand": "Attack Shark",
     "category": "setup-aesthetic",
     "category_ar": "سيت أب وديكور وإضاءة RGB",
     "marketplace": "amazon",
@@ -4234,7 +4234,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=ATTACK+SHARK\">العلامة التجارية: ATTACK SHARK من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Attack Shark من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -4248,9 +4248,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b0f196mlc4",
     "asin": "B0F196MLC4",
-    "display_title": "لوحة ماوس CM05 زجاجية كبيرة 450 × 400 ملم زجاج نانو للدقة والسرعة مع قاعدة من البولي يوريثان مضادة للانزلاق بد",
+    "display_title": "لوحة ماوس CM05 زجاجية كبيرة 450 × 400 ملم زجاج نانو للدقة والسرعة مع قاعدة من البولي يوريثان مضادة للانزلاق",
     "title": "لوحة ماوس CM05 زجاجية كبيرة 450 × 400 ملم زجاج نانو للدقة والسرعة مع قاعدة من البولي يوريثان مضادة للانزلاق بدرجة صلابة 9H ولمسة فائقة النعومة والمتانة لماوسات الألعاب عالية الدقة من اتاك شارك، أسود",
-    "brand": "<!--This check is an indicator",
+    "brand": "Glass Pad",
     "category": "setup-aesthetic",
     "category_ar": "سيت أب وديكور وإضاءة RGB",
     "marketplace": "amazon",
@@ -4301,7 +4301,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=ATTACK+SHARK\">العلامة التجارية: ATTACK SHARK من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Glass Pad من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -4317,7 +4317,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0B8HZSPQ7",
     "display_title": "وحدة إنارة من نجافة شوب باللون الأسود لغرفة المعيشة و النوم و المكتب مصنوعة من الألومنيوم زخرفية",
     "title": "وحدة إنارة من نجافة شوب باللون الأسود لغرفة المعيشة و النوم و المكتب مصنوعة من الألومنيوم زخرفية",
-    "brand": "<!--This check is an indicator",
+    "brand": "Setup Lighting",
     "category": "setup-aesthetic",
     "category_ar": "سيت أب وديكور وإضاءة RGB",
     "marketplace": "amazon",
@@ -4368,7 +4368,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/NAGAFA/page/6C19A93F-BCC3-43CC-A4D3-0B87762CA2F8?lp_asin=B0B8HZSPQ7&amp;ref_=ast_bln\">قم بنجفة شوب من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Setup Lighting من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -4384,7 +4384,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0D3B54CNG",
     "display_title": "نجفة مثبتة على الحائط من نجفا شوب لون ذهبي موديل WG701-G اي - اوتستاندينغ زجاج",
     "title": "نجفة مثبتة على الحائط من نجفا شوب لون ذهبي موديل WG701-G اي - اوتستاندينغ زجاج",
-    "brand": "<!--This check is an indicator",
+    "brand": "Setup Lighting",
     "category": "setup-aesthetic",
     "category_ar": "سيت أب وديكور وإضاءة RGB",
     "marketplace": "amazon",
@@ -4435,7 +4435,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/NAGAFA/page/6C19A93F-BCC3-43CC-A4D3-0B87762CA2F8?lp_asin=B0D3B54CNG&amp;ref_=ast_bln\">قم بنجفة شوب من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Setup Lighting من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -4449,9 +4449,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b0b2vgs485",
     "asin": "B0B2VGS485",
-    "display_title": "فيفين حامل سماعة راس، حامل سماعات راس RGB مع منافذ USB، ملحقات سماعات العاب الكمبيوتر الشخصي قاعدة مكتب صلبة م",
+    "display_title": "فيفين حامل سماعة راس، حامل سماعات راس RGB مع منافذ USB، ملحقات سماعات العاب الكمبيوتر الشخصي قاعدة مكتب صلبة",
     "title": "فيفين حامل سماعة راس، حامل سماعات راس RGB مع منافذ USB، ملحقات سماعات العاب الكمبيوتر الشخصي قاعدة مكتب صلبة مع مزامنة ضوء الصوت، مفاتيح التحكم في الضوء، S3، مطاط",
-    "brand": "<!--This check is an indicator",
+    "brand": "Fifine",
     "category": "setup-aesthetic",
     "category_ar": "سيت أب وديكور وإضاءة RGB",
     "marketplace": "amazon",
@@ -4502,7 +4502,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%81%D9%8A%D9%81%D9%8A%D9%86\">العلامة التجارية: فيفين من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Fifine من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -4518,7 +4518,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0DDQFFKB3",
     "display_title": "حامل سماعة رأس بإضاءة ار جي بي للألعاب مع 3 منافذ USB يتميز بـ6 ألوان ليد + وضع إضاءة متنوع مناسب لمختلف الأما",
     "title": "حامل سماعة رأس بإضاءة ار جي بي للألعاب مع 3 منافذ USB يتميز بـ6 ألوان ليد + وضع إضاءة متنوع مناسب لمختلف الأماكن مثالي للاعبين - لون أبيض",
-    "brand": "<!--This check is an indicator",
+    "brand": "RGB Stand",
     "category": "setup-aesthetic",
     "category_ar": "سيت أب وديكور وإضاءة RGB",
     "marketplace": "amazon",
@@ -4569,7 +4569,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=jomtown\">العلامة التجارية: jomtown من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "RGB Stand من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -4583,9 +4583,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b0714dn1qh",
     "asin": "B0714DN1QH",
-    "display_title": "حامل شاشة مكتبي مزدوج H180 بذراع دوار كامل الحركة بزنبرك غاز لشاشة الكمبيوتر من ان بي نورث بايو، 43 سم إلى 69 ",
+    "display_title": "حامل شاشة مكتبي مزدوج H180 بذراع دوار كامل الحركة بزنبرك غاز لشاشة الكمبيوتر من ان بي نورث بايو، 43 سم إلى 69",
     "title": "حامل شاشة مكتبي مزدوج H180 بذراع دوار كامل الحركة بزنبرك غاز لشاشة الكمبيوتر من ان بي نورث بايو، 43 سم إلى 69 سم ومن 2 كيلوجرام الى 9 كيلوجرام",
-    "brand": "<!--This check is an indicator",
+    "brand": "North Bayou",
     "category": "setup-aesthetic",
     "category_ar": "سيت أب وديكور وإضاءة RGB",
     "marketplace": "amazon",
@@ -4636,7 +4636,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%A7%D9%86+%D8%A8%D9%8A+%D9%86%D9%88%D8%B1%D8%AB+%D8%A8%D8%A7%D9%8A%D9%88\">العلامة التجارية: ان بي نورث بايو من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "North Bayou من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -4652,7 +4652,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0GKX1QW6F",
     "display_title": "ذراع شاشة كامل الحركة قابل للتعديل، حامل مكتب لشاشات 17 بوصة - 30 بوصة مع دوران وإمالة وتعديل الارتفاع من تيكز",
     "title": "ذراع شاشة كامل الحركة قابل للتعديل، حامل مكتب لشاشات 17 بوصة - 30 بوصة مع دوران وإمالة وتعديل الارتفاع من تيكزون (حامل مزدوج)",
-    "brand": "<!--This check is an indicator",
+    "brand": "Monitor Arm",
     "category": "setup-aesthetic",
     "category_ar": "سيت أب وديكور وإضاءة RGB",
     "marketplace": "amazon",
@@ -4703,7 +4703,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%AA%D9%8A%D9%83%D8%B2%D9%88%D9%86\">العلامة التجارية: تيكزون من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Monitor Arm من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -4717,9 +4717,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b0dxntyhnd",
     "asin": "B0DXNTYHND",
-    "display_title": "شاشة ألعاب موبيوز EX271، FHD 1920×1080، ‏180Hz، ‏1ms GTG، ‏AMD FreeSync، ‏DP1.2 وHDMI2.0 وUSB، ‏95% P3، ألوان ",
+    "display_title": "شاشة ألعاب موبيوز EX271، FHD 1920×1080، ‏180Hz، ‏1ms GTG، ‏AMD FreeSync، ‏DP1.2 وHDMI2.0 وUSB، ‏95% P3، ألوان",
     "title": "شاشة ألعاب موبيوز EX271، FHD 1920×1080، ‏180Hz، ‏1ms GTG، ‏AMD FreeSync، ‏DP1.2 وHDMI2.0 وUSB، ‏95% P3، ألوان ألعاب بالذكاء الاصطناعي وسماعات 2.5 واط من بينكيو، أسود، 27 بوصة",
-    "brand": "<!--This check is an indicator",
+    "brand": "BenQ MOBIUZ",
     "category": "monitors",
     "category_ar": "شاشات قيمنق 144Hz+",
     "marketplace": "amazon",
@@ -4770,7 +4770,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/BenQ/page/547AA204-03A9-428C-B40F-9CA75C27A5E4?lp_asin=B0DXNTYHND&amp;ref_=ast_bln\">قم بBenQ من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "BenQ MOBIUZ من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -4786,7 +4786,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0DXF9G63H",
     "display_title": "شاشة ألعاب موبيوز EX251 24.5 بوصة FHD ومعدل تحديث 220 هرتز، زمن استجابة 1 مللي ثانية، تقنية AMD FreeSync، منفذ",
     "title": "شاشة ألعاب موبيوز EX251 24.5 بوصة FHD ومعدل تحديث 220 هرتز، زمن استجابة 1 مللي ثانية، تقنية AMD FreeSync، منفذ DisplayPort 1.2، منفذ HDMI 2.0، موزع USB، مكبرات صوت مدمجة بقوة 2.5 وات من بينكيو، أبيض",
-    "brand": "<!--This check is an indicator",
+    "brand": "BenQ MOBIUZ",
     "category": "monitors",
     "category_ar": "شاشات قيمنق 144Hz+",
     "marketplace": "amazon",
@@ -4837,7 +4837,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/BenQ/page/547AA204-03A9-428C-B40F-9CA75C27A5E4?lp_asin=B0DXF9G63H&amp;ref_=ast_bln\">قم بBenQ من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "BenQ MOBIUZ من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -4853,7 +4853,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0DXTHQTGM",
     "display_title": "شاشة ألعاب موبيوز EX271Q 27&#34; دقة 2K QHD تحديث 180Hz استجابة 1ms، لوحة IPS ألوان 95% DCI-P3 دعم HDR400 وUSB",
     "title": "شاشة ألعاب موبيوز EX271Q 27&#34; دقة 2K QHD تحديث 180Hz استجابة 1ms، لوحة IPS ألوان 95% DCI-P3 دعم HDR400 وUSB-C 65 W PD تقنية KVM، تحسين التباين بAI، دعم AMD فريسينك وDP 1.4 وريموت من بينكيو، أسود",
-    "brand": "<!--This check is an indicator",
+    "brand": "BenQ MOBIUZ",
     "category": "monitors",
     "category_ar": "شاشات قيمنق 144Hz+",
     "marketplace": "amazon",
@@ -4904,7 +4904,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/BenQ/page/547AA204-03A9-428C-B40F-9CA75C27A5E4?lp_asin=B0DXTHQTGM&amp;ref_=ast_bln\">قم بBenQ من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "BenQ MOBIUZ من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -4920,7 +4920,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0G6D4ZV3W",
     "display_title": "فيليبس شاشة (27M2N3500PF) 27 انش WQHD LDE IPS 300 وحدة مضيئة في البكسل، حتى 260 هرتز، 0.3 مللي ثانية، جي سينك،",
     "title": "فيليبس شاشة (27M2N3500PF) 27 انش WQHD LDE IPS 300 وحدة مضيئة في البكسل، حتى 260 هرتز، 0.3 مللي ثانية، جي سينك، لون فحمي، ضمان 3 سنوات",
-    "brand": "<!--This check is an indicator",
+    "brand": "Philips",
     "category": "monitors",
     "category_ar": "شاشات قيمنق 144Hz+",
     "marketplace": "amazon",
@@ -4971,7 +4971,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/PHILIPS/page/0F115B13-B448-45B0-9A6E-CD3A7059F0BE?lp_asin=B0G6D4ZV3W&amp;ref_=ast_bln\">قم بكتاب فيليب من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Philips من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -4985,9 +4985,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b09cmf65v5",
     "asin": "B09CMF65V5",
-    "display_title": "اسس بطاقة رسومات للالعاب جيفورس RTX 5050 8GB GDDR6 اصدار كسر سرعة المعالج (انفيديا جيفورس RTX5060 DLSS 4، تصمي",
-    "title": "اسس بطاقة رسومات للالعاب جيفورس RTX 5050 8GB GDDR6 اصدار كسر سرعة المعالج (انفيديا جيفورس RTX5060 DLSS 4، تصميم 2.5 فتحة، منفذ PCIe 5.0، 3X منفذ عرض 2.1b، منفذ HDMI 2.1b، DUAL-RTX5050-O8G)",
-    "brand": "<!--This check is an indicator",
+    "display_title": "كارت شاشة أسوس دوال جيفورس RTX 5050 سعة 8GB GDDR6 إصدار OC لكسر السرعة (ASUS Dual RTX 5050 8GB OC)",
+    "title": "ASUS Dual GeForce RTX 5050 OC Edition 8GB GDDR6 Gaming Graphics Card (PCIe 5.0, HDMI 2.1b, DisplayPort 2.1b)",
+    "brand": "ASUS",
     "category": "pc-hardware",
     "category_ar": "تجميعات وهاردوير البي سي",
     "marketplace": "amazon",
@@ -5038,7 +5038,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%A7%D8%B3%D8%B3\">العلامة التجارية: اسس من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "ASUS من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -5052,9 +5052,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b0cvcg2vpk",
     "asin": "B0CVCG2VPK",
-    "display_title": "اسس بطاقة رسومات العاب انفيديا جيفورس RTX 3050 6GB اصدار كسر سرعة المعالج بمنفذ PCIe 4.0 وذاكرة GDDR6 ومنفذ HD",
+    "display_title": "اسس بطاقة رسومات العاب انفيديا جيفورس RTX 3050 6GB اصدار كسر سرعة المعالج بمنفذ PCIe 4.0 وذاكرة GDDR6 ومنفذ",
     "title": "اسس بطاقة رسومات العاب انفيديا جيفورس RTX 3050 6GB اصدار كسر سرعة المعالج بمنفذ PCIe 4.0 وذاكرة GDDR6 ومنفذ HDMI 2.1 عرض 1.4a وتصميم بفتحتين ومروحة بتقنية اكسيال تيك وتقنية 0 ديسيبل ودعامة",
-    "brand": "<!--This check is an indicator",
+    "brand": "ASUS",
     "category": "pc-hardware",
     "category_ar": "تجميعات وهاردوير البي سي",
     "marketplace": "amazon",
@@ -5105,7 +5105,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%A7%D8%B3%D8%B3\">العلامة التجارية: اسس من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "ASUS من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -5119,9 +5119,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b0gvywqzd7",
     "asin": "B0GVYWQZD7",
-    "display_title": "مبرد هواء كوريليكويد ماج كور فروزر AA13 لوحدة المعالجة المركزية من ام اس اي، مروحة 120 ملم ARGB PWM وانابيب حر",
+    "display_title": "مبرد هواء كوريليكويد ماج كور فروزر AA13 لوحدة المعالجة المركزية من ام اس اي، مروحة 120 ملم ARGB PWM وانابيب",
     "title": "مبرد هواء كوريليكويد ماج كور فروزر AA13 لوحدة المعالجة المركزية من ام اس اي، مروحة 120 ملم ARGB PWM وانابيب حرارية تعمل باللمس المباشر، متوافق مع LGA 1700/1851، AM5/AM4، اسود",
-    "brand": "<!--This check is an indicator",
+    "brand": "MSI",
     "category": "pc-hardware",
     "category_ar": "تجميعات وهاردوير البي سي",
     "marketplace": "amazon",
@@ -5172,7 +5172,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%B9%D8%A7%D9%85\">العلامة التجارية: عام من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "MSI من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -5188,7 +5188,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0B9C82TG9",
     "display_title": "مبرد معالج كولر ماستر i70C لمنفذ LGA 1700 مع إضاءة ARGB، لون أسود، أبعاد 12 × 12 × 7 سم، جهد 12 فولت، قدرة 1.4",
     "title": "مبرد معالج كولر ماستر i70C لمنفذ LGA 1700 مع إضاءة ARGB، لون أسود، أبعاد 12 × 12 × 7 سم، جهد 12 فولت، قدرة 1.44 واط، سرعة دوران 1800 دورة في الدقيقة، تدفق هواء 37.08 قدم مكعب/دقيقة، صوت 28 ديسيبل",
-    "brand": "<!--This check is an indicator",
+    "brand": "Cooler Master",
     "category": "pc-hardware",
     "category_ar": "تجميعات وهاردوير البي سي",
     "marketplace": "amazon",
@@ -5239,7 +5239,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%83%D9%88%D9%84%D8%B1+%D9%85%D8%A7%D8%B3%D8%AA%D8%B1\">العلامة التجارية: كولر ماستر من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Cooler Master من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -5253,9 +5253,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b095kx95sm",
     "asin": "B095KX95SM",
-    "display_title": "رام تيم D4 3200 سعة 16 جيجابايت C16 دلتا بالفضاء اللوني ار جي بي لون اسود من جروب GB DDR4",
-    "title": "رام تيم D4 3200 سعة 16 جيجابايت C16 دلتا بالفضاء اللوني ار جي بي لون اسود من جروب GB DDR4",
-    "brand": "<!--This check is an indicator",
+    "display_title": "رامات تيم جروب تي فورس دلتا RGB سعة 32GB (2x16GB) DDR5 تردد 6000MHz كيت ثنائي للجيمنج (TeamGroup T-Force Delta DDR5)",
+    "title": "TeamGroup T-Force Delta RGB DDR5 32GB (2x16GB) 6000MHz CL30 Desktop Gaming Memory Kit Black",
+    "brand": "TeamGroup",
     "category": "pc-hardware",
     "category_ar": "تجميعات وهاردوير البي سي",
     "marketplace": "amazon",
@@ -5265,9 +5265,9 @@ export const PRODUCTS: Product[] = [
     "url": "https://www.amazon.eg/dp/B095KX95SM?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/51WMG-qMFOL._AC_SL1500_.jpg",
     "price": 7250,
-    "previous_price": 8265,
-    "savings": 1015,
-    "discount_percent": 12,
+    "previous_price": 8500,
+    "savings": 1250,
+    "discount_percent": 15,
     "is_record_low": true,
     "price_change_direction": "down",
     "price_checked_at": "2026-11-01T04:24:05.369Z",
@@ -5279,17 +5279,17 @@ export const PRODUCTS: Product[] = [
     "price_history": [
       {
         "date": "2026-08-15",
-        "price": 8678,
+        "price": 8900,
         "label": "سعر سابق"
       },
       {
         "date": "2026-09-20",
-        "price": 8265,
+        "price": 8500,
         "label": "قبل الخصم"
       },
       {
         "date": "2026-10-15",
-        "price": 7395,
+        "price": 7600,
         "label": "بداية النزول"
       },
       {
@@ -5306,7 +5306,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%AA%D9%8A%D9%85+%D8%AC%D8%B1%D9%88%D8%A8\">العلامة التجارية: تيم جروب من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "TeamGroup من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -5322,7 +5322,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B08C56GZGK",
     "display_title": "ذاكرة داخلية من كروشال CT16G4DFRA32A بتصميم DIMM لحواسيب مكتبية متعدد الألوان DDR4",
     "title": "ذاكرة داخلية من كروشال CT16G4DFRA32A بتصميم DIMM لحواسيب مكتبية متعدد الألوان DDR4",
-    "brand": "<!--This check is an indicator",
+    "brand": "Crucial",
     "category": "pc-hardware",
     "category_ar": "تجميعات وهاردوير البي سي",
     "marketplace": "amazon",
@@ -5373,7 +5373,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%83%D8%B1%D9%88%D8%B4%D8%A7%D9%84\">العلامة التجارية: كروشال من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Crucial من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -5389,7 +5389,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0DBR3DZWG",
     "display_title": "وحدة تخزين داخلية من كينجستون بسعة 1 تيرابايت موديل NV3 بتقنية NVMe واتصال PCIe متوافقة مع الكمبيوتر نوع سوليد",
     "title": "وحدة تخزين داخلية من كينجستون بسعة 1 تيرابايت موديل NV3 بتقنية NVMe واتصال PCIe متوافقة مع الكمبيوتر نوع سوليد ستيت درايف",
-    "brand": "<!--This check is an indicator",
+    "brand": "Kingston",
     "category": "pc-hardware",
     "category_ar": "تجميعات وهاردوير البي سي",
     "marketplace": "amazon",
@@ -5440,7 +5440,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%83%D9%86%D8%BA%D8%B3%D8%AA%D9%88%D9%86\">العلامة التجارية: كنغستون من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Kingston من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -5456,7 +5456,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0DQSJYD12",
     "display_title": "هارد Crucial E100 سعة 1 تيرابايت M.2 NVMe بمنفذ PCIe الجيل الرابع SSD داخلي - حتى 5,000 ميجابايت/ثانية - متواف",
     "title": "هارد Crucial E100 سعة 1 تيرابايت M.2 NVMe بمنفذ PCIe الجيل الرابع SSD داخلي - حتى 5,000 ميجابايت/ثانية - متوافق مع اللابتوب وسطح المكتب - CT1000E100SSD8",
-    "brand": "<!--This check is an indicator",
+    "brand": "Crucial",
     "category": "pc-hardware",
     "category_ar": "تجميعات وهاردوير البي سي",
     "marketplace": "amazon",
@@ -5507,7 +5507,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%83%D8%B1%D9%88%D8%B4%D8%A7%D9%84\">العلامة التجارية: كروشال من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Crucial من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -5523,7 +5523,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0DJ1VD925",
     "display_title": "يد تحكم ألعاب فيديو من سوني موديل دوال سينس للبلايستيشن 5، بتقنية لاسلكية، متوافقة مع بلايستيشن 5، تتميز بالات",
     "title": "يد تحكم ألعاب فيديو من سوني موديل دوال سينس للبلايستيشن 5، بتقنية لاسلكية، متوافقة مع بلايستيشن 5، تتميز بالاتصال اللاسلكي، باللون كروما نيلي",
-    "brand": "<!--This check is an indicator",
+    "brand": "Sony PlayStation",
     "category": "consoles-handheld",
     "category_ar": "كونسول واكسسوارات",
     "marketplace": "amazon",
@@ -5574,7 +5574,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=Playstation\">العلامة التجارية: Playstation من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Sony PlayStation من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -5590,7 +5590,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B09Q4ZXSY1",
     "display_title": "وحدة تحكم الالعاب بلاي ستيشن 5 دوال سينس لاسلكية من سوني - لون ارجواني، اصدار الامارات العربية المتحدة، بلوتوث",
     "title": "وحدة تحكم الالعاب بلاي ستيشن 5 دوال سينس لاسلكية من سوني - لون ارجواني، اصدار الامارات العربية المتحدة، بلوتوث , بنفسجي",
-    "brand": "<!--This check is an indicator",
+    "brand": "Sony PlayStation",
     "category": "consoles-handheld",
     "category_ar": "كونسول واكسسوارات",
     "marketplace": "amazon",
@@ -5641,7 +5641,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=Playstation\">العلامة التجارية: Playstation من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Sony PlayStation من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -5657,7 +5657,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0CWH9WCWT",
     "display_title": "قرص جهاز تشغيل ألعاب الفيديو بلاي ستيشن 5 رفيع، سعة تخزين 1 تيرابايت، لون أبيض، من سونى",
     "title": "قرص جهاز تشغيل ألعاب الفيديو بلاي ستيشن 5 رفيع، سعة تخزين 1 تيرابايت، لون أبيض، من سونى",
-    "brand": "<!--This check is an indicator",
+    "brand": "Sony PlayStation",
     "category": "consoles-handheld",
     "category_ar": "كونسول واكسسوارات",
     "marketplace": "amazon",
@@ -5708,7 +5708,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=Playstation\">العلامة التجارية: Playstation من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Sony PlayStation من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -5724,7 +5724,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0CM9VKQ5N",
     "display_title": "بلاي ستيشن 5 سوني - وحدات تحكم رقمية - 825 جيجابايت - لون أبيض - موديل CFI-2116",
     "title": "بلاي ستيشن 5 سوني - وحدات تحكم رقمية - 825 جيجابايت - لون أبيض - موديل CFI-2116",
-    "brand": "<!--This check is an indicator",
+    "brand": "Sony PlayStation",
     "category": "consoles-handheld",
     "category_ar": "كونسول واكسسوارات",
     "marketplace": "amazon",
@@ -5775,7 +5775,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=Playstation\">العلامة التجارية: Playstation من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "Sony PlayStation من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -5791,7 +5791,7 @@ export const PRODUCTS: Product[] = [
     "asin": "B0DN5RWNNC",
     "display_title": "لابتوب من اتش بي، بمعالج انتل، شاشة 15.6 إنش، وذاكرة رام 16 جيجابايت",
     "title": "لابتوب من اتش بي، بمعالج انتل، شاشة 15.6 إنش، وذاكرة رام 16 جيجابايت",
-    "brand": "<!--This check is an indicator",
+    "brand": "HP Victus",
     "category": "laptops",
     "category_ar": "لابتوبات قيمنق ومونتاج",
     "marketplace": "amazon",
@@ -5842,7 +5842,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/HP/page/67CD1D19-00F0-4CE0-B7C7-026B607DDFC0?lp_asin=B0DN5RWNNC&amp;ref_=ast_bln\">قم بHP من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "HP Victus من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
@@ -5856,9 +5856,9 @@ export const PRODUCTS: Product[] = [
   {
     "id": "eg-b0h2jft6fv",
     "asin": "B0H2JFT6FV",
-    "display_title": "لابتوب ألعاب رفيع 15 B13UC انتل كورi7 13620H، رام 16جيجابايت DDR4، الذاكرة المستديمة SSD 512 جيجابايت، 15.6 بو",
+    "display_title": "لابتوب ألعاب رفيع 15 B13UC انتل كورi7 13620H، رام 16جيجابايت DDR4، الذاكرة المستديمة SSD 512 جيجابايت، 15.6",
     "title": "لابتوب ألعاب رفيع 15 B13UC انتل كورi7 13620H، رام 16جيجابايت DDR4، الذاكرة المستديمة SSD 512 جيجابايت، 15.6 بوصة بمعدل تحديث 13620 هرتز انفيديا RTX 3050 بسعة 4 جيجابايتGDDR6 من ام اس اي، رمادي Cosmos",
-    "brand": "<!--This check is an indicator",
+    "brand": "MSI Gaming",
     "category": "laptops",
     "category_ar": "لابتوبات قيمنق ومونتاج",
     "marketplace": "amazon",
@@ -5909,7 +5909,7 @@ export const PRODUCTS: Product[] = [
       "cons": [
         "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/MSI/page/E08939C1-7C50-47C3-AF01-07C61CF08CE1?lp_asin=B0H2JFT6FV&amp;ref_=ast_bln\">قم بام اس اي من الماركات الموثوقة على أمازون مصر.",
+      "brand_summary": "MSI Gaming من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {

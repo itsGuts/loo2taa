@@ -86,6 +86,18 @@ export default function FilterBar({
           </div>
 
           <button
+            onClick={() => handleSortSelect("discount-desc")}
+            className={`px-3 py-1.5 rounded-xl transition-all shrink-0 flex items-center gap-1.5 ${
+              filters.sort === "discount-desc"
+                ? "bg-[#ff9900] text-black shadow-sm shadow-[#ff9900]/30 font-black"
+                : "bg-[#ff9900]/10 text-[#ff9900] hover:bg-[#ff9900]/20 border border-[#ff9900]/30"
+            }`}
+          >
+            <Flame className="w-3.5 h-3.5" />
+            عروض الجمعة البيضاء 11.11
+          </button>
+
+          <button
             onClick={() => handleSortSelect("record-low")}
             className={`px-3 py-1.5 rounded-xl transition-all shrink-0 flex items-center gap-1.5 ${
               filters.sort === "record-low"

@@ -155,7 +155,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
             </span>
           )}
 
-          {product.is_record_low && (
+          {product.is_record_low && verdict.type !== 'fake' && (
             <span className="absolute bottom-3.5 right-3.5 flex items-center gap-1 px-2.5 py-1 rounded-xl bg-[#00ff9d]/15 text-[#00ff9d] text-xs font-black border border-[#00ff9d]/30 z-20">
               <Zap className="w-3.5 h-3.5" />
               أقل سعر مرصود ⚡
@@ -173,7 +173,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff9d] opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00ff9d]"></span>
                 </span>
-                <span>تم الفحص على أمازون مصر منذ دقائق • السعر ساري الآن</span>
+                <span>تم الفحص على أمازون مصر مؤخراً • السعر ساري الآن (موسم عروض نوفمبر 2026)</span>
               </div>
               <span className="text-[11px] text-gray-400 font-mono">ASIN: {product.asin}</span>
             </div>
@@ -246,7 +246,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               <div className="flex items-center gap-2 text-xs text-gray-300 bg-white/[0.03] border border-white/5 px-3 py-2 rounded-xl">
                 <CreditCard className="w-4 h-4 text-[#00f0ff] shrink-0" />
                 <span>
-                  متاح تقسيط يبدأ من <strong className="text-white font-bold">{installmentMonthly.toLocaleString("ar-EG")} ج.م</strong>/شهر عبر ValU أو كروت البنوك بـ 0% فوائد
+                  متاح قسط تقديري (6 شهور) يبدأ من <strong className="text-white font-bold">{installmentMonthly.toLocaleString("ar-EG")} ج.م</strong>/شهر (عبر ValU أو بطاقات البنوك المؤهلة)
                 </span>
               </div>
             )}

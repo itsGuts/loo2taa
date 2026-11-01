@@ -165,7 +165,7 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
             <span className="text-white/20">•</span>
             <span className="font-bold text-[#00f0ff] text-[11px]">{product.brand}</span>
 
-            {product.is_record_low && (
+            {product.is_record_low && verdict.type !== 'fake' && (
               <span className="inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-md bg-[#00ff9d]/10 text-[#00ff9d]">
                 <TrendingDown className="w-3 h-3" />
                 أقل سعر مسجل
@@ -258,7 +258,7 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff9d] opacity-75"></span>
               <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#00ff9d]"></span>
             </span>
-            <span>ساري</span>
+            <span>ساري • رصد حي ⚡</span>
           </span>
         </div>
 
@@ -314,7 +314,7 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
           </span>
         )}
 
-        {product.is_record_low && (
+        {product.is_record_low && verdict.type !== 'fake' && (
           <span className="absolute top-2.5 right-2.5 flex items-center gap-1 text-[9px] font-black px-2 py-0.5 rounded-md bg-[#00ff9d]/15 text-[#00ff9d] border border-[#00ff9d]/30">
             <Zap className="w-2.5 h-2.5" />
             أقل سعر مرصود
@@ -363,7 +363,7 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
           </div>
           {product.price >= 2000 && (
             <div className="text-[10px] text-gray-400 flex items-center gap-1 pt-1 font-mono">
-              <span>💳 تقسيط من {Math.round(product.price / 6).toLocaleString('ar-EG')} ج.م/ش</span>
+              <span>💳 قسط تقديري (6 شهور): {Math.round(product.price / 6).toLocaleString('ar-EG')} ج.م/ش</span>
             </div>
           )}
         </div>
