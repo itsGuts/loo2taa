@@ -323,9 +323,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T08:29:02.749Z",
     "rating": 4.9,
     "review_count": 4800,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -880,9 +880,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T08:29:07.596Z",
     "rating": 4.9,
     "review_count": 670,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -1797,9 +1797,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T08:29:13.173Z",
     "rating": 4.7,
     "review_count": 340,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -1935,9 +1935,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T08:29:14.891Z",
     "rating": 4.8,
     "review_count": 2800,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -2492,9 +2492,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T08:29:18.161Z",
     "rating": 4.6,
     "review_count": 249,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -2640,9 +2640,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T08:29:19.771Z",
     "rating": 3.1,
     "review_count": 477,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -3061,7 +3061,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 15,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T08:29:22.330Z",
+    "price_checked_at": "2026-11-01T09:17:41.083Z",
     "rating": 4.4,
     "review_count": 335,
     "in_stock": true,
@@ -3133,9 +3133,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T08:29:22.282Z",
     "rating": 5,
     "review_count": 198,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -3425,18 +3425,18 @@ export const PRODUCTS: Product[] = [
     "seller": "أمازون مصر (Amazon.eg)",
     "url": "https://www.amazon.eg/dp/B0C6KQH58L?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/61RvXXvnrdL._AC_SL1500_.jpg",
-    "price": 1575,
-    "previous_price": 1999,
-    "savings": 424,
-    "discount_percent": 21,
+    "price": 1999,
+    "previous_price": 1575,
+    "savings": 0,
+    "discount_percent": -27,
     "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T07:42:23.446Z",
+    "price_change_direction": "up",
+    "price_checked_at": "2026-11-01T09:17:43.789Z",
     "rating": 4.5,
     "review_count": 114,
-    "in_stock": false,
+    "in_stock": true,
     "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -3461,6 +3461,11 @@ export const PRODUCTS: Product[] = [
       {
         "date": "2026-11-01",
         "price": 1575,
+        "label": "أقل سعر قياسي جديد ⚡"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 1999,
         "label": "أقل سعر قياسي جديد ⚡"
       }
     ],
@@ -3508,9 +3513,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T08:29:24.809Z",
     "rating": 4.3,
     "review_count": 419,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -4639,12 +4644,12 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 15,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T07:42:29.614Z",
+    "price_checked_at": "2026-11-01T09:17:52.103Z",
     "rating": 3.6,
     "review_count": 261,
-    "in_stock": false,
-    "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -4854,9 +4859,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T08:29:34.355Z",
     "rating": 4.5,
     "review_count": 252,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -5214,9 +5219,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T08:29:36.826Z",
     "rating": 3,
     "review_count": 288,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -5502,12 +5507,12 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 17,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01",
+    "price_checked_at": "2026-11-01T09:17:57.389Z",
     "rating": 4.2,
     "review_count": 121,
-    "in_stock": false,
-    "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -5565,18 +5570,18 @@ export const PRODUCTS: Product[] = [
     "seller": "أمازون مصر (Amazon.eg)",
     "url": "https://www.amazon.eg/dp/B095KX95SM?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/51WMG-qMFOL._AC_SL1500_.jpg",
-    "price": 6330,
-    "previous_price": 7250,
-    "savings": 920,
-    "discount_percent": 13,
+    "price": 7250,
+    "previous_price": 6330,
+    "savings": 0,
+    "discount_percent": -15,
     "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T07:42:36.163Z",
+    "price_change_direction": "up",
+    "price_checked_at": "2026-11-01T09:17:59.014Z",
     "rating": 3.8,
     "review_count": 360,
-    "in_stock": false,
+    "in_stock": true,
     "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -5601,6 +5606,11 @@ export const PRODUCTS: Product[] = [
       {
         "date": "2026-11-01",
         "price": 6330,
+        "label": "أقل سعر قياسي جديد ⚡"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 7250,
         "label": "أقل سعر قياسي جديد ⚡"
       }
     ],
@@ -5995,12 +6005,12 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 15,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T05:14:14.520Z",
+    "price_checked_at": "2026-11-01T09:18:02.558Z",
     "rating": 3.6,
     "review_count": 475,
-    "in_stock": false,
-    "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6132,18 +6142,18 @@ export const PRODUCTS: Product[] = [
     "seller": "أمازون مصر (Amazon.eg)",
     "url": "https://www.amazon.eg/dp/B0DN5RWNNC?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/81obPsMhewL._AC_SL1500_.jpg",
-    "price": 59499,
-    "previous_price": 64000,
-    "savings": 4501,
-    "discount_percent": 7,
+    "price": 64000,
+    "previous_price": 59499,
+    "savings": 0,
+    "discount_percent": -8,
     "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T07:42:38.184Z",
+    "price_change_direction": "up",
+    "price_checked_at": "2026-11-01T09:18:02.530Z",
     "rating": 4.4,
     "review_count": 212,
-    "in_stock": false,
+    "in_stock": true,
     "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6168,6 +6178,11 @@ export const PRODUCTS: Product[] = [
       {
         "date": "2026-11-01",
         "price": 59499,
+        "label": "أقل سعر قياسي جديد ⚡"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 64000,
         "label": "أقل سعر قياسي جديد ⚡"
       }
     ],
@@ -6206,18 +6221,18 @@ export const PRODUCTS: Product[] = [
     "seller": "أمازون مصر (Amazon.eg)",
     "url": "https://www.amazon.eg/dp/B0H2JFT6FV?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/71r5TcvKn-L._AC_SL1500_.jpg",
-    "price": 47999,
-    "previous_price": 48595,
-    "savings": 596,
-    "discount_percent": 1,
+    "price": 48595,
+    "previous_price": 47999,
+    "savings": 0,
+    "discount_percent": -1,
     "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T07:42:39.273Z",
+    "price_change_direction": "up",
+    "price_checked_at": "2026-11-01T09:18:04.065Z",
     "rating": 5,
     "review_count": 146,
-    "in_stock": false,
+    "in_stock": true,
     "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6242,6 +6257,11 @@ export const PRODUCTS: Product[] = [
       {
         "date": "2026-11-01",
         "price": 47999,
+        "label": "أقل سعر قياسي جديد ⚡"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 48595,
         "label": "أقل سعر قياسي جديد ⚡"
       }
     ],
@@ -6289,9 +6309,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T08:29:42.982Z",
     "rating": 4.6,
     "review_count": 339,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6349,18 +6369,18 @@ export const PRODUCTS: Product[] = [
     "seller": "أمازون مصر (Amazon.eg)",
     "url": "https://www.amazon.eg/dp/B086ZSQZZ7?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/81mwcITtHBL._AC_SL1500_.jpg",
-    "price": 15000,
-    "previous_price": 15980,
-    "savings": 980,
-    "discount_percent": 6,
+    "price": 15980,
+    "previous_price": 15000,
+    "savings": 0,
+    "discount_percent": -7,
     "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T07:42:39.440Z",
+    "price_change_direction": "up",
+    "price_checked_at": "2026-11-01T09:18:04.164Z",
     "rating": 4.6,
     "review_count": 129,
-    "in_stock": false,
+    "in_stock": true,
     "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6385,6 +6405,11 @@ export const PRODUCTS: Product[] = [
       {
         "date": "2026-11-01",
         "price": 15000,
+        "label": "أقل سعر قياسي جديد ⚡"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 15980,
         "label": "أقل سعر قياسي جديد ⚡"
       }
     ],
@@ -6635,18 +6660,18 @@ export const PRODUCTS: Product[] = [
     "seller": "أمازون مصر (Amazon.eg)",
     "url": "https://www.amazon.eg/dp/B096Y5WCCZ?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/71I6T45IdjL._AC_SL1500_.jpg",
-    "price": 21000,
-    "previous_price": 21329,
-    "savings": 329,
-    "discount_percent": 2,
+    "price": 21329,
+    "previous_price": 21000,
+    "savings": 0,
+    "discount_percent": -2,
     "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T07:42:41.662Z",
+    "price_change_direction": "up",
+    "price_checked_at": "2026-11-01T09:18:07.175Z",
     "rating": 4.7,
     "review_count": 335,
-    "in_stock": false,
+    "in_stock": true,
     "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6671,6 +6696,11 @@ export const PRODUCTS: Product[] = [
       {
         "date": "2026-11-01",
         "price": 21000,
+        "label": "أقل سعر قياسي جديد ⚡"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 21329,
         "label": "أقل سعر قياسي جديد ⚡"
       }
     ],
@@ -6996,12 +7026,12 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 20,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T05:59:05.748Z",
+    "price_checked_at": "2026-11-01T09:18:08.725Z",
     "rating": 4.6,
     "review_count": 213,
-    "in_stock": false,
-    "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -7206,9 +7236,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T08:29:47.360Z",
     "rating": 4.6,
     "review_count": 203,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -8479,18 +8509,18 @@ export const PRODUCTS: Product[] = [
     "seller": "أمازون مصر (Amazon.eg)",
     "url": "https://www.amazon.eg/dp/B0C8XNRGPQ?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/71szSfANvHL._AC_SL1500_.jpg",
-    "price": 4891,
-    "previous_price": 9400,
-    "savings": 4509,
-    "discount_percent": 48,
+    "price": 9400,
+    "previous_price": 4891,
+    "savings": 0,
+    "discount_percent": -92,
     "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T07:42:51.142Z",
+    "price_change_direction": "up",
+    "price_checked_at": "2026-11-01T09:18:18.703Z",
     "rating": 4.3,
     "review_count": 315,
-    "in_stock": false,
+    "in_stock": true,
     "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -8515,6 +8545,11 @@ export const PRODUCTS: Product[] = [
       {
         "date": "2026-11-01",
         "price": 4891,
+        "label": "أقل سعر قياسي جديد ⚡"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 9400,
         "label": "أقل سعر قياسي جديد ⚡"
       }
     ],
