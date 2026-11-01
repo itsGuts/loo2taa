@@ -2,8 +2,8 @@ name: LO2TAA Deals Tracker & Auto-Poster
 
 on:
   schedule:
-    # Runs every 6 hours automatically (00:00, 06:00, 12:00, 18:00 UTC)
-    - cron: '0 */6 * * *'
+    # Runs every 10 minutes automatically (24/7 autonomous deal radar)
+    - cron: '*/10 * * * *'
   workflow_dispatch:
     # Allows manual trigger anytime from GitHub Actions tab
 
@@ -40,7 +40,7 @@ jobs:
         run: |
           git config --global user.name "LO2TAA Deals Bot"
           git config --global user.email "bot@lo2taa.local"
-          git add data/products.json data/last-check.json src/lib/loo2taa-data.ts
+          git add data/products.json src/lib/loo2taa-data.ts
           if git diff --staged --quiet; then
             echo "No price changes detected. Everything up to date."
           else

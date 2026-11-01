@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "tracker": "node scripts/tracker.mjs",
+    "tracker:watch": "node scripts/tracker-daemon.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.60.0",

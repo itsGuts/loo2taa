@@ -316,12 +316,16 @@ async function main() {
     await new Promise(r => setTimeout(r, 1200));
   }
 
-  // Save updated products file
-  fs.writeFileSync(PRODUCTS_FILE, JSON.stringify(products, null, 2), 'utf8');
-  console.log(`\n💾 Saved updated data to ${PRODUCTS_FILE}`);
+  if (priceChangesCount > 0) {
+    // Save updated products file
+    fs.writeFileSync(PRODUCTS_FILE, JSON.stringify(products, null, 2), 'utf8');
+    console.log(`\n💾 Saved updated data to ${PRODUCTS_FILE}`);
 
-  // Synchronize with TypeScript file
-  syncToTypeScript(products);
+    // Synchronize with TypeScript file
+    syncToTypeScript(products);
+  } else {
+    console.log(`\n✓ All ${products.length} product prices are stable. No file modifications needed.`);
+  }
 
   // Write summary status file
   const status = {
