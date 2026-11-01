@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { db } from '@/lib/db';
 import { getPriceProvider } from '@/lib/providers';
+import { sendPriceAlertNotification } from '@/lib/alerts';
 
 // Prevent Vercel edge/ISR caching for cron endpoint
 export const dynamic = 'force-dynamic';
@@ -60,6 +61,22 @@ export async function GET(request: NextRequest) {
           if (triggered.length > 0) {
             alertsTriggered += triggered.length;
             console.log(`[Cron] Triggered ${triggered.length} alert(s) for ${prod.asin} at ${fetched.price} EGP`);
+
+            // Dispatch alert notifications
+            for (const alert of triggered) {
+              await sendPriceAlertNotification({
+                email: alert.email,
+                telegramChatId: alert.telegram_chat_id,
+                productTitle: prod.title,
+                asin: prod.asin,
+                targetPrice: alert.target_price,
+                currentPrice: fetched.price,
+                previousPrice: prod.price,
+                productUrl: prod.url,
+                imageUrl: prod.image_url,
+                unsubscribeToken: alert.unsubscribe_token,
+              });
+            }
           }
         }
       } catch (err: unknown) {

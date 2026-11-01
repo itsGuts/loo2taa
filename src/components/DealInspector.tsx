@@ -10,20 +10,25 @@ import {
   ShieldAlert,
   Loader2,
   Sparkles,
-  CheckCircle2,
   AlertCircle,
-  ExternalLink
+  Bell,
+  Clock,
+  CheckCircle2
 } from "lucide-react";
 import { Product } from "@/lib/types";
+import PriceAlertModal from "./PriceAlertModal";
 
 export default function DealInspector() {
   const [inputUrl, setInputUrl] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [isAlertModalOpen, setIsAlertModalOpen] = useState(false);
   const [result, setResult] = useState<{
     product: Product;
     verdict: { type: string; label: string; labelShort: string; color: string };
     cached: boolean;
+    isNew?: boolean;
+    message?: string;
   } | null>(null);
 
   const handleInspect = async (urlToTest?: string) => {
@@ -48,9 +53,11 @@ export default function DealInspector() {
           product: data.product,
           verdict: data.verdict,
           cached: data.cached,
+          isNew: data.isNew,
+          message: data.message,
         });
       }
-    } catch (err: any) {
+    } catch {
       setError("حدث خطأ أثناء الاتصال بسيرفر الفحص، يرجى المحاولة مرة أخرى.");
     } finally {
       setLoading(false);
@@ -73,11 +80,11 @@ export default function DealInspector() {
             <span className="w-2.5 h-2.5 rounded-full bg-[#00ff9d] animate-pulse" />
             <h2 className="text-lg sm:text-xl font-black text-white flex items-center gap-2">
               <Sparkles className="w-5 h-5 text-[#00f0ff]" />
-              <span>فاحص صفقات أمازون مصر الذكي (مثل صفقة Safqa)</span>
+              <span>فاحص صفقات أمازون مصر المباشر (مثل صفقة Safqa)</span>
             </h2>
           </div>
           <p className="text-xs text-gray-300">
-            الصق رابط أي منتج أو كود (ASIN) من أمازون مصر لنكشف لك فوراً: هل هو لقطة حقيقية أم خصم وهمي؟
+            الصق رابط أي منتج أو كود (ASIN) من أمازون مصر لنكشف لك فوراً: هل هو لقطة حقيقية أم خصم وهمي؟ وسنبدأ بتتبعه تلقائياً.
           </p>
         </div>
         <div className="px-3 py-1 rounded-xl bg-[#00f0ff]/10 border border-[#00f0ff]/30 text-[#00f0ff] text-xs font-black self-start sm:self-auto shrink-0">
@@ -152,7 +159,21 @@ export default function DealInspector() {
 
       {/* Inspection Result Card */}
       {result && (
-        <div className="p-5 rounded-2xl bg-[#060913] border border-white/10 space-y-4 animate-in slide-in-from-top-4 duration-300 shadow-xl">
+        <div className="p-5 sm:p-6 rounded-2xl bg-[#060913] border border-white/10 space-y-4 animate-in slide-in-from-top-4 duration-300 shadow-xl">
+          
+          {/* Tracker Status Alert */}
+          {result.isNew ? (
+            <div className="p-3 rounded-xl bg-[#00ff9d]/10 border border-[#00ff9d]/25 text-[#00ff9d] text-xs font-bold flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 shrink-0" />
+              <span>{result.message || "منتج جديد: تمت إضافته لقاعدة بيانات لقطة وسيقوم الرادار بتتبعه دورياً!"}</span>
+            </div>
+          ) : (
+            <div className="p-2.5 rounded-xl bg-[#00f0ff]/10 border border-[#00f0ff]/20 text-[#00f0ff] text-xs font-bold flex items-center gap-2">
+              <Zap className="w-4 h-4 shrink-0" />
+              <span>{result.message || "تم العثور على سجل الأسعار التاريخي الكامل للمنتج!"}</span>
+            </div>
+          )}
+
           <div className="flex flex-col md:flex-row items-center md:items-start gap-5">
             {/* Image */}
             <div className="w-28 h-28 sm:w-32 sm:h-32 rounded-xl bg-[#070a12] p-2 border border-white/5 flex items-center justify-center shrink-0">
@@ -177,22 +198,16 @@ export default function DealInspector() {
                   {result.verdict.labelShort}
                 </span>
 
-                <span className="text-[11px] font-bold text-gray-400">
+                <span className="text-[11px] font-bold text-gray-300">
                   {result.verdict.label}
                 </span>
-
-                {result.cached && (
-                  <span className="text-[10px] bg-[#00f0ff]/10 text-[#00f0ff] px-2 py-0.5 rounded-md border border-[#00f0ff]/30 font-bold">
-                    مسجل وموثق بالرادار ⚡
-                  </span>
-                )}
               </div>
 
               <h3 className="font-black text-sm sm:text-base text-white line-clamp-2 leading-snug">
                 {result.product.display_title}
               </h3>
 
-              {/* Price & Savings */}
+              {/* Price & Baseline */}
               <div className="flex flex-wrap items-baseline justify-center md:justify-start gap-3 pt-1">
                 <div className="flex items-baseline gap-1">
                   <span className="text-2xl font-black text-white">
@@ -201,9 +216,9 @@ export default function DealInspector() {
                   <span className="text-xs font-bold text-[#00f0ff]">جنيه مصري</span>
                 </div>
 
-                {result.product.previous_price > result.product.price && (
-                  <span className="text-xs text-gray-500 line-through">
-                    السابق: {Number(result.product.previous_price).toLocaleString("ar-EG")} ج.م
+                {result.product.reference_price && result.product.reference_price > result.product.price && (
+                  <span className="text-xs text-gray-500 line-through" title="السعر المرجعي (وسيط 90 يوم)">
+                    المرجعي: {Number(result.product.reference_price).toLocaleString("ar-EG")} ج.م
                   </span>
                 )}
 
@@ -215,7 +230,7 @@ export default function DealInspector() {
               </div>
             </div>
 
-            {/* CTA Button */}
+            {/* Actions */}
             <div className="flex flex-col gap-2 w-full md:w-auto shrink-0 pt-2 md:pt-0">
               <a
                 href={result.product.url}
@@ -223,20 +238,36 @@ export default function DealInspector() {
                 rel="noopener noreferrer"
                 className="btn-cyber-primary py-3 px-6 rounded-xl text-xs font-black flex items-center justify-center gap-2 shadow-lg"
               >
-                <span>اقتنص اللقطة من أمازون ⚡</span>
+                <span>اقتنص اللقطة من المتجر ⚡</span>
                 <ArrowUpRight className="w-4 h-4" />
               </a>
 
-              {result.cached && (
-                <Link
-                  href={`/products/${result.product.asin || result.product.id}`}
-                  className="py-2 px-4 rounded-xl text-center text-xs font-bold text-gray-300 hover:text-[#00f0ff] bg-white/5 hover:bg-white/10 border border-white/5 transition-colors"
-                >
-                  شاهد الرسم البياني لـ 90 يوم ↗
-                </Link>
-              )}
+              <Link
+                href={`/p/${result.product.asin || result.product.id}`}
+                className="py-2.5 px-4 rounded-xl text-center text-xs font-bold text-gray-300 hover:text-[#00f0ff] bg-white/5 hover:bg-white/10 border border-white/5 transition-colors"
+              >
+                شاهد الرسم البياني وسجل الأسعار ↗
+              </Link>
+
+              <button
+                type="button"
+                onClick={() => setIsAlertModalOpen(true)}
+                className="py-2.5 px-4 rounded-xl text-center text-xs font-bold text-[#00ff9d] hover:bg-[#00ff9d]/10 border border-[#00ff9d]/30 transition-colors flex items-center justify-center gap-1.5"
+              >
+                <Bell className="w-3.5 h-3.5" />
+                <span>نبهني عند انخفاض السعر 🔔</span>
+              </button>
             </div>
           </div>
+
+          {/* Price Alert Modal */}
+          {isAlertModalOpen && (
+            <PriceAlertModal
+              product={result.product}
+              isOpen={isAlertModalOpen}
+              onClose={() => setIsAlertModalOpen(false)}
+            />
+          )}
         </div>
       )}
     </div>

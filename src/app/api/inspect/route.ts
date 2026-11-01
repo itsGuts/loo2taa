@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
-import { PRODUCTS } from "@/lib/loo2taa-data";
-import { getDealVerdict } from "@/lib/sharing";
-import https from "node:https";
+import { db } from "@/lib/db";
+import { getPriceProvider } from "@/lib/providers";
+import { computeProductMetrics } from "@/lib/deal-math";
 
-const AFFILIATE_TAG = "lo2taa-21";
+export const dynamic = "force-dynamic";
 
 function extractAsin(input: string): string | null {
   if (!input) return null;
@@ -12,30 +12,11 @@ function extractAsin(input: string): string | null {
   if (/^B[A-Z0-9]{9}$/i.test(trimmed)) {
     return trimmed.toUpperCase();
   }
-  // URL matching /dp/ASIN or /gp/product/ASIN
-  const match = trimmed.match(/(?:dp|gp\/product)\/([A-Z0-9]{10})/i) ||
-                trimmed.match(/([B][A-Z0-9]{9})/i);
+  // URL matching /dp/ASIN or /gp/product/ASIN or raw 10-char
+  const match =
+    trimmed.match(/(?:dp|gp\/product)\/([A-Z0-9]{10})/i) ||
+    trimmed.match(/([B][A-Z0-9]{9})/i);
   return match ? match[1].toUpperCase() : null;
-}
-
-function fetchAmazonPage(asin: string): Promise<{ status: number; body: string }> {
-  return new Promise((resolve) => {
-    const url = `https://www.amazon.eg/dp/${asin}?language=ar_AE`;
-    const req = https.request(url, {
-      headers: {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-        "Accept-Language": "ar-EG,ar;q=0.9,en;q=0.8"
-      }
-    }, (res) => {
-      let body = "";
-      res.on("data", chunk => { if (body.length < 250000) body += chunk; });
-      res.on("end", () => resolve({ status: res.statusCode || 200, body }));
-    });
-    req.on("error", () => resolve({ status: 500, body: "" }));
-    req.setTimeout(6000, () => { req.destroy(); resolve({ status: 408, body: "" }); });
-    req.end();
-  });
 }
 
 export async function GET(request: NextRequest) {
@@ -43,114 +24,131 @@ export async function GET(request: NextRequest) {
   const query = searchParams.get("url") || searchParams.get("q") || "";
 
   if (!query) {
-    return NextResponse.json({ error: "يرجى إدخال رابط أو كود منتج أمازون مصر" }, { status: 400 });
+    return NextResponse.json(
+      { error: "يرجى إدخال رابط أو كود منتج أمازون مصر (ASIN)" },
+      { status: 400 }
+    );
   }
 
   const asin = extractAsin(query);
   if (!asin) {
-    return NextResponse.json({ error: "تعذر استخراج كود المنتج (ASIN) من الرابط المدخل" }, { status: 400 });
+    return NextResponse.json(
+      { error: "تعذر استخراج كود المنتج (ASIN) من الرابط المدخل، تأكد من صحة الرابط." },
+      { status: 400 }
+    );
   }
 
   // 1. Check if already in our database
-  const existing = PRODUCTS.find(p => p.asin === asin || p.id === asin);
-  if (existing) {
-    const verdict = getDealVerdict(existing);
+  try {
+    const existing = await db.getProductByAsin(asin);
+    if (existing) {
+      return NextResponse.json({
+        success: true,
+        cached: true,
+        isNew: false,
+        product: {
+          id: existing.id,
+          asin: existing.asin,
+          title: existing.title,
+          display_title: existing.display_title,
+          brand: existing.brand,
+          category: existing.category,
+          category_ar: existing.category_ar,
+          image: existing.image_url,
+          url: existing.url,
+          price: existing.price,
+          previous_price: existing.list_price,
+          reference_price: existing.metrics.reference_price,
+          savings: existing.metrics.savings_vs_reference,
+          discount_percent: existing.metrics.real_discount_percent,
+          is_record_low: existing.metrics.is_record_low,
+          seller: existing.seller,
+          price_history: existing.history,
+        },
+        metrics: existing.metrics,
+        verdict: existing.metrics.verdict,
+        message: "تم العثور على سجل الأسعار الكامل لـ 90 يوماً في قاعدة البيانات!",
+      });
+    }
+
+    // 2. Product not in DB: Fetch live using our pluggable provider
+    const provider = getPriceProvider();
+    const fetched = await provider.fetchProduct(asin);
+
+    if (!fetched || fetched.price <= 0) {
+      return NextResponse.json(
+        {
+          error: "لم نتمكن من الوصول للمنتج على أمازون مصر. قد يكون الرابط غير دقيق أو المنتج غير متاح حالياً.",
+        },
+        { status: 404 }
+      );
+    }
+
+    // 3. Store in DB and start tracking
+    const newProduct = await db.upsertProduct({
+      asin: fetched.asin,
+      title: fetched.title,
+      display_title: fetched.displayTitle || fetched.title,
+      brand: fetched.brand,
+      category: fetched.category,
+      category_ar: fetched.categoryAr,
+      image_url: fetched.imageUrl,
+      url: fetched.url,
+      seller: fetched.seller,
+      in_stock: fetched.inStock,
+      price: fetched.price,
+      list_price: fetched.listPrice,
+    });
+
+    // 4. Record the initial price observation point
+    await db.addPricePoint(
+      newProduct.id,
+      newProduct.asin,
+      fetched.price,
+      fetched.listPrice,
+      fetched.seller
+    );
+
+    // Compute initial deal verdict
+    const metrics = computeProductMetrics(fetched.price, fetched.listPrice, []);
+
     return NextResponse.json({
       success: true,
-      cached: true,
-      product: existing,
-      verdict: {
-        type: verdict.type,
-        label: verdict.label,
-        labelShort: verdict.labelShort,
-        color: verdict.color,
-      }
+      cached: false,
+      isNew: true,
+      product: {
+        id: newProduct.id,
+        asin: newProduct.asin,
+        title: newProduct.title,
+        display_title: newProduct.display_title,
+        brand: newProduct.brand,
+        category: newProduct.category,
+        category_ar: newProduct.category_ar,
+        image: newProduct.image_url,
+        url: newProduct.url,
+        price: newProduct.price,
+        previous_price: newProduct.list_price,
+        reference_price: metrics.reference_price,
+        savings: metrics.savings_vs_reference,
+        discount_percent: metrics.real_discount_percent,
+        is_record_low: metrics.is_record_low,
+        seller: newProduct.seller,
+        price_history: [{
+          date: new Date().toISOString().slice(0, 10),
+          price: newProduct.price,
+          label: "أول نقطة رصد",
+        }],
+      },
+      metrics,
+      verdict: metrics.verdict,
+      message: "تمت إضافة المنتج بنجاح وبدء تتبعه تلقائياً بواسطة رادار لقطة! سيتراكم سجل الأسعار مع الفحص الدوري.",
     });
+  } catch (err: unknown) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.error("[API/Inspect] Error:", msg);
+    return NextResponse.json(
+      { error: "حدث خطأ أثناء فحص المنتج، يرجى المحاولة مرة أخرى لاحقاً." },
+      { status: 500 }
+    );
   }
-
-  // 2. Live scrape from Amazon.eg
-  const { status, body } = await fetchAmazonPage(asin);
-  if (status !== 200 || !body || body.includes("Page Not Found") || body.includes("Looking for something?")) {
-    return NextResponse.json({
-      error: "لم يتم العثور على هذا المنتج على أمازون مصر (تأكد من صحة الرابط)",
-    }, { status: 404 });
-  }
-
-  // Extract title
-  const titleMatch = body.match(/<span id="productTitle"[^>]*>([\s\S]*?)<\/span>/);
-  const title = titleMatch ? titleMatch[1].replace(/&amp;/g, "&").replace(/\s+/g, " ").trim() : "منتج أمازون مصر";
-
-  // Extract image
-  const imgMatch = body.match(/data-old-hires="([^"]+)"/) || 
-                   body.match(/data-a-dynamic-image="\{&quot;([^&]+)&quot;/) ||
-                   body.match(/id="landingImage"[^>]+src="([^"]+)"/);
-  let image = imgMatch ? (imgMatch[1] || imgMatch[0]).replace(/&quot;/g, "").split('":')[0].trim() : "";
-
-  // Extract price
-  const priceWhole = body.match(/<span class="a-price-whole">([0-9,]+)/);
-  const currentPrice = priceWhole ? parseInt(priceWhole[1].replace(/,/g, ""), 10) : 0;
-
-  // Strikethrough price if exists
-  const strikethroughMatch = body.match(/<span class="a-price a-text-price"[^>]*>[\s\S]*?<span class="a-offscreen">([0-9,]+)/) ||
-                            body.match(/data-a-strike="true">[\s\S]*?([0-9,]+)/);
-  let previousPrice = strikethroughMatch ? parseInt(strikethroughMatch[1].replace(/,/g, ""), 10) : Math.round(currentPrice * 1.18);
-  if (previousPrice <= currentPrice) previousPrice = Math.round(currentPrice * 1.18);
-
-  const savings = previousPrice - currentPrice;
-  const discountPercent = Math.round((savings / previousPrice) * 100);
-
-  // Verdict logic
-  const isGenuine = discountPercent >= 12;
-
-  const scrapedProduct = {
-    id: `custom-${asin.toLowerCase()}`,
-    asin,
-    display_title: title,
-    title,
-    brand: "ماركة معتمدة",
-    category: "pc-hardware",
-    category_ar: "قطع وهاردوير البي سي",
-    marketplace: "amazon",
-    store_name: "أمازون مصر",
-    store_button_label: "اقتنص اللقطة من أمازون ⚡",
-    seller: "أمازون مصر (Amazon.eg)",
-    url: `https://www.amazon.eg/dp/${asin}?tag=${AFFILIATE_TAG}`,
-    image,
-    price: currentPrice,
-    previous_price: previousPrice,
-    savings,
-    discount_percent: discountPercent,
-    is_record_low: isGenuine,
-    price_change_direction: "down",
-    price_checked_at: new Date().toISOString(),
-    rating: 4.6,
-    review_count: 140,
-    in_stock: true,
-    is_deal_active: true,
-    price_history: [
-      { date: "2026-08-15", price: Math.round(previousPrice * 1.05), label: "سعر سابق" },
-      { date: "2026-09-20", price: previousPrice, label: "قبل الخصم" },
-      { date: "2026-10-15", price: Math.round(currentPrice * 1.03), label: "بداية النزول" },
-      { date: "2026-11-01", price: currentPrice, label: "أقل سعر لقطة ⚡" },
-    ],
-    ai_review: {
-      pros: ["منتج تم فحصه وتحليله مباشرة من سيرفرات أمازون مصر", "متوفر للشحن السريع والضمان المعتمد"],
-      cons: ["الأسعار في موسم العروض تتغير بشكل لحظي"],
-      brand_summary: "تم التحقق من بيانات المنتج وحقن كود الأفلييت المعتمد.",
-      user_sentiment: "95% تقييمات إيجابية للمنتج.",
-      sources: [{ name: "فاحص لقطة الذكي", verified: true, date: "نوفمبر 2026" }]
-    }
-  };
-
-  return NextResponse.json({
-    success: true,
-    cached: false,
-    product: scrapedProduct,
-    verdict: {
-      type: isGenuine ? "genuine" : "neutral",
-      label: isGenuine ? `لقطة حقيقية! وفرت ${savings.toLocaleString("ar-EG")} ج.م (${discountPercent}%)` : "سعر متقارب مع متوسط السوق",
-      labelShort: isGenuine ? "لقطة حقيقية ✅" : "سعر عادي",
-      color: isGenuine ? "#00ff9d" : "#00f0ff",
-    }
-  });
 }

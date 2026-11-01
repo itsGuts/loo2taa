@@ -10,6 +10,7 @@ import ProductShareButtons from "@/components/ProductShareButtons";
 import ProductDetailImage from "@/components/ProductDetailImage";
 import StickyMobileBar from "@/components/StickyMobileBar";
 import CommunityVote from "@/components/CommunityVote";
+import ProductAlertAction from "@/components/ProductAlertAction";
 import { computeProductMetrics } from "@/lib/deal-math";
 import {
   ChevronLeft,
@@ -324,6 +325,9 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               <span>ينقلك مباشرة لصفحة المنتج الرسمية على المتجر مع الضمان المعتمد.</span>
               <span className="text-[#00ff9d] font-bold">متوفر للشحن السريع ✓</span>
             </div>
+
+            {/* Price Alert Button */}
+            <ProductAlertAction product={product} />
 
             {/* Social Share & Telegram Copy Buttons */}
             <ProductShareButtons product={product} />

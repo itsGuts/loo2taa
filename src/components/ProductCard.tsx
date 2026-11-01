@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Product } from "@/lib/types";
 import { MARKETPLACE_SETTINGS } from "@/lib/loo2taa-data";
+import PriceAlertModal from "./PriceAlertModal";
 import { useFavorites } from "@/lib/favorites";
 import { getDealVerdict, getWhatsAppShareUrl, getTelegramPost } from "@/lib/sharing";
 import {
@@ -19,7 +20,8 @@ import {
   ShieldCheck,
   ShieldAlert,
   Clock,
-  Store
+  Store,
+  Bell
 } from "lucide-react";
 
 interface ProductCardProps {
@@ -54,6 +56,7 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
   const [copied, setCopied] = useState(false);
   const [tgCopied, setTgCopied] = useState(false);
   const [showShareMenu, setShowShareMenu] = useState(false);
+  const [showAlertModal, setShowAlertModal] = useState(false);
   const [imgError, setImgError] = useState(false);
   const isFav = mounted && isFavorite(product.id);
   const verdict = getDealVerdict(product);
@@ -279,6 +282,18 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
 
           <div className="flex items-center gap-2">
             <button
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                setShowAlertModal(true);
+              }}
+              className="p-2 rounded-xl border border-white/10 text-gray-400 hover:text-[#00ff9d] hover:border-[#00ff9d]/40 transition-colors"
+              title="نبهني عند انخفاض السعر 🔔"
+            >
+              <Bell className="w-4 h-4" />
+            </button>
+
+            <button
               onClick={() => toggle(product.id)}
               className={`p-2 rounded-xl border transition-colors ${
                 isFav
@@ -312,6 +327,14 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
             </a>
           </div>
         </div>
+
+        {showAlertModal && (
+          <PriceAlertModal
+            product={product}
+            isOpen={showAlertModal}
+            onClose={() => setShowAlertModal(false)}
+          />
+        )}
       </div>
     );
   }
@@ -345,6 +368,18 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
         </div>
 
         <div className="flex items-center gap-1">
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              setShowAlertModal(true);
+            }}
+            className="p-1.5 rounded-lg border border-white/10 text-gray-400 hover:text-[#00ff9d] hover:border-[#00ff9d]/40 bg-[#070a12] transition-colors"
+            title="نبهني عند انخفاض السعر 🔔"
+          >
+            <Bell className="w-3.5 h-3.5" />
+          </button>
+
           <button
             onClick={() => toggle(product.id)}
             className={`p-1.5 rounded-lg border transition-colors ${
@@ -493,6 +528,14 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
           </div>
         </div>
       </div>
+
+      {showAlertModal && (
+        <PriceAlertModal
+          product={product}
+          isOpen={showAlertModal}
+          onClose={() => setShowAlertModal(false)}
+        />
+      )}
     </div>
   );
 }
