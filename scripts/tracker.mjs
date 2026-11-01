@@ -172,6 +172,7 @@ async function fetchAmazonStatus(asin) {
 // Synchronize with TypeScript definition
 function syncToTypeScript(products) {
   const tsContent = `import { Product, MarketplaceSetting } from './types';
+import productsData from '../../data/products.json';
 
 export const MARKETPLACE_SETTINGS: Record<string, MarketplaceSetting> = {
   amazon: {
@@ -196,14 +197,14 @@ export const CATEGORIES = [
   { id: 'laptops', name: 'لابتوبات قيمنق ومونتاج', icon: 'Laptop' },
 ];
 
-export const PRODUCTS: Product[] = ${JSON.stringify(products, null, 2)};
+export const PRODUCTS: Product[] = productsData as unknown as Product[];
 
 export function getAllProducts(): Product[] {
   return PRODUCTS;
 }
 
 export function getProductById(idOrAsin: string): Product | undefined {
-  return PRODUCTS.find(p => p.id === idOrAsin || p.asin === idOrAsin);
+  return PRODUCTS.find(p => p.id === idOrAsin || p.asin?.toUpperCase() === idOrAsin?.toUpperCase());
 }
 
 export function getRelatedProducts(product: Product, limit = 4): Product[] {
