@@ -36,10 +36,15 @@ export interface Product {
   image: string;
   price: number;
   previous_price: number;
+  reference_price?: number; // 90-day median baseline
+  lowest_ever?: number;
+  highest_ever?: number;
+  avg_30d?: number;
+  avg_90d?: number;
   savings: number;
   discount_percent: number;
   is_record_low: boolean;
-  price_change_direction: 'down' | 'up';
+  price_change_direction: 'down' | 'up' | 'same';
   price_checked_at: string;
   rating: number;
   review_count: number;
@@ -72,4 +77,6 @@ export interface FilterOptions {
   minPrice?: number;
   maxPrice?: number;
   minDiscount?: number;
+  inStockOnly?: boolean;
+  page?: number;
 }

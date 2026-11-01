@@ -145,9 +145,6 @@ export function computeProductMetrics(
   }
 
   // Algorithmic Verdict Determination
-  // 1. Detect Fake Discounts:
-  //    If listPrice > referencePrice by > 18%, but currentPrice is roughly equal to or above referencePrice,
-  //    the merchant inflated the original strikethrough price right before sale season!
   const isListPriceInflated = safeList > (referencePrice * 1.18);
   const isActuallyCheap = safeCurrent < (referencePrice * 0.95);
 
@@ -214,5 +211,46 @@ export function computeProductMetrics(
     drop_level: dropLevel,
     points_count: pointsCount,
     verdict,
+  };
+}
+
+/**
+ * Enriches any product object with dynamic deal math metrics
+ */
+export function enrichProductWithMetrics<T extends { price: number; previous_price?: number; price_history?: any[] }>(product: T): T & {
+  reference_price: number;
+  lowest_ever: number;
+  highest_ever: number;
+  avg_30d: number;
+  avg_90d: number;
+  savings: number;
+  discount_percent: number;
+  is_record_low: boolean;
+  drop_level?: 'record_low' | 'steep' | 'medium' | 'slight';
+  points_count: number;
+  price_change_direction: 'down' | 'up' | 'same';
+  deal_verdict: DealVerdict;
+} {
+  const history = (product.price_history || []).map((h: any) => ({
+    price: Number(h.price),
+    list_price: Number(product.previous_price || h.price),
+    date: h.date || h.captured_at,
+  }));
+  const metrics = computeProductMetrics(product.price, product.previous_price || product.price, history);
+
+  return {
+    ...product,
+    reference_price: metrics.reference_price,
+    lowest_ever: metrics.lowest_ever,
+    highest_ever: metrics.highest_ever,
+    avg_30d: metrics.avg_30d,
+    avg_90d: metrics.avg_90d,
+    savings: metrics.savings_vs_reference,
+    discount_percent: metrics.real_discount_percent,
+    is_record_low: metrics.is_record_low,
+    drop_level: metrics.drop_level === 'none' ? undefined : metrics.drop_level,
+    points_count: metrics.points_count,
+    price_change_direction: metrics.price_change_direction,
+    deal_verdict: metrics.verdict,
   };
 }
