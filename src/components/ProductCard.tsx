@@ -30,6 +30,7 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
   const [copied, setCopied] = useState(false);
   const [tgCopied, setTgCopied] = useState(false);
   const [showShareMenu, setShowShareMenu] = useState(false);
+  const [imgError, setImgError] = useState(false);
   const isFav = mounted && isFavorite(product.id);
   const verdict = getDealVerdict(product);
 
@@ -130,12 +131,20 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
         {/* Product Image Area */}
         <div className="relative w-32 h-32 shrink-0 bg-[#070a12] border border-white/5 rounded-xl p-3 flex items-center justify-center overflow-hidden">
           <Link href={`/products/${product.asin || product.id}`} className="w-full h-full flex items-center justify-center">
-            <img
-              src={product.image}
-              alt={product.display_title}
-              className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
-              loading="lazy"
-            />
+            {imgError ? (
+              <div className="w-full h-full flex flex-col items-center justify-center text-center p-2 rounded-lg bg-gradient-to-br from-[#0c1222] to-[#162035] border border-cyan-500/20">
+                <Zap className="w-6 h-6 text-[#00f0ff] mb-1 opacity-80" />
+                <span className="text-[10px] font-bold text-gray-300 line-clamp-1">{product.brand}</span>
+              </div>
+            ) : (
+              <img
+                src={product.image}
+                alt={product.display_title}
+                onError={() => setImgError(true)}
+                className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300"
+                loading="lazy"
+              />
+            )}
           </Link>
           {product.discount_percent > 0 && (
             <span className="absolute top-2 right-2 px-2 py-0.5 rounded-md bg-[#ff007f] text-white text-[10px] font-black">
@@ -285,12 +294,21 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
       {/* Product Image Area */}
       <div className="relative h-44 w-full p-4 flex items-center justify-center bg-[#070a12]/50">
         <Link href={`/products/${product.asin || product.id}`} className="w-full h-full flex items-center justify-center">
-          <img
-            src={product.image}
-            alt={product.display_title}
-            className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-sm"
-            loading="lazy"
-          />
+          {imgError ? (
+            <div className="w-full h-full flex flex-col items-center justify-center text-center p-3 rounded-xl bg-gradient-to-br from-[#0c1222] to-[#162035] border border-cyan-500/20">
+              <Zap className="w-8 h-8 text-[#00f0ff] mb-1.5 opacity-80" />
+              <span className="text-xs font-bold text-gray-200 line-clamp-1">{product.brand}</span>
+              <span className="text-[10px] text-cyan-400 font-mono tracking-wider mt-0.5">LO2TAA RADAR</span>
+            </div>
+          ) : (
+            <img
+              src={product.image}
+              alt={product.display_title}
+              onError={() => setImgError(true)}
+              className="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-sm"
+              loading="lazy"
+            />
+          )}
         </Link>
 
         {product.discount_percent > 0 && (

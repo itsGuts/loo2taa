@@ -106,7 +106,7 @@ export default function Navbar() {
           <div className="flex items-center gap-2.5">
             {/* Telegram Channel Pill */}
             <a
-              href="https://t.me/loo2taa"
+              href="https://t.me/lo2taa"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#0088cc]/15 hover:bg-[#0088cc]/25 text-[#00f0ff] border border-[#0088cc]/30 text-xs font-bold transition-all"

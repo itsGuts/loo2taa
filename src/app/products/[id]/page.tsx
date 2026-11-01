@@ -6,6 +6,7 @@ import PriceHistoryChart from "@/components/PriceHistoryChart";
 import AiReviewCard from "@/components/AiReviewCard";
 import ProductCard from "@/components/ProductCard";
 import ProductShareButtons from "@/components/ProductShareButtons";
+import ProductDetailImage from "@/components/ProductDetailImage";
 import { getDealVerdict } from "@/lib/sharing";
 import {
   ExternalLink,
@@ -71,10 +72,10 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         
         {/* Gallery / Product Image (Col 1-5) */}
         <div className="lg:col-span-5 flex flex-col items-center justify-center bg-[#070a12]/70 rounded-2xl border border-white/5 p-6 relative">
-          <img
+          <ProductDetailImage
             src={product.image}
             alt={product.display_title}
-            className="max-h-72 w-auto object-contain hover:scale-105 transition-transform duration-300 drop-shadow-md z-10"
+            brand={product.brand}
           />
 
           {product.discount_percent > 0 && (

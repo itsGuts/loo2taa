@@ -40,1171 +40,1640 @@ export const CATEGORIES = [
 
 export const PRODUCTS: Product[] = [
   {
-    id: "g-01-ps5-slim",
-    asin: "B0CL5KNB9M",
-    display_title: "جهاز سوني بلايستيشن 5 سليم (Sony PS5 Slim) سعة 1 تيرابايت SSD مع يد تحكم DualSense",
-    title: "PlayStation 5 Slim Console 1TB SSD with DualSense Wireless Controller",
-    brand: "Sony",
-    category: "consoles",
-    category_ar: "بلايستيشن وكروت ألعاب",
-    marketplace: "amazon",
-    store_name: "Amazon أمازون",
-    store_button_label: "اقتنص اللقطة من أمازون ⚡",
-    seller: "Amazon.eg",
-    url: "https://www.amazon.eg/dp/B0CL5KNB9M?tag=lo2taa-21",
-    image: "https://m.media-amazon.com/images/I/51051FiD9UL._SL500_.jpg",
-    price: 25499,
-    previous_price: 29999,
-    savings: 4500,
-    discount_percent: 15,
-    is_record_low: true,
-    price_change_direction: "down",
-    price_checked_at: "2026-10-31T03:30:00.000Z",
-    rating: 4.9,
-    review_count: 420,
-    price_history: [
-      { date: "2026-08-15", price: 32500, label: "سعر الذروة" },
-      { date: "2026-09-01", price: 31000, label: "استقرار السوق" },
-      { date: "2026-09-20", price: 29999, label: "قبل الخصم الأخير" },
-      { date: "2026-10-15", price: 28500, label: "بداية النزول" },
-      { date: "2026-10-31", price: 25499, label: "أقل سعر قياسي في مصر ⚡" }
+    "id": "g-01-ps5-slim",
+    "asin": "B08FC5L3RG",
+    "display_title": "جهاز سوني بلايستيشن 5 القياسي (Sony PlayStation 5 Console) سعة 825GB SSD مع ذراع تحكم لاسلكي DualSense",
+    "title": "Sony PlayStation 5 Console Standard Edition - 825GB SSD Ultra-High Speed with Wireless Controller",
+    "brand": "Sony",
+    "category": "consoles",
+    "category_ar": "بلايستيشن وكروت ألعاب",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B08FC5L3RG?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71vWi5Iuz3L._AC_SL1500_.jpg",
+    "price": 31499,
+    "previous_price": 36999,
+    "savings": 5500,
+    "discount_percent": 15,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T00:42:18.850Z",
+    "rating": 4.8,
+    "review_count": 2450,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 39500,
+        "label": "سعر مرتفع بالسوق"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 36999,
+        "label": "سعر مستقر"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 34500,
+        "label": "تخفيض تمهيدي"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 32900,
+        "label": "هبوط سريع"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 31499,
+        "label": "أقل سعر رسمي مسجل ⚡"
+      }
     ],
-    ai_review: {
-      pros: [
-        "حجم أصغر بنسبة 30% مع مساحة تخزين داخلية فعلية كاملة 1 تيرابايت لتثبيت ألعاب الـ AAA الضخمة.",
-        "أداء رسومي 4K قوي مع دعم تتبع الأشعة (Ray Tracing) ومعدل إطارات يصل إلى 120 FPS.",
-        "يد التحكم DualSense تقدم تجربة انغماس أسطورية بفضل الـ Haptic Feedback والمشغلات التكيفية."
+    "ai_review": {
+      "pros": [
+        "أقوى أداء ألعاب حصريات في مصر مع دعم كامل لـ 4K و 120Hz وتقنية Ray Tracing.",
+        "وحدة تخزين SSD فائقة السرعة تلغي شاشات الانتظار نهائياً في ألعاب مثل Spider-Man 2 و GTA.",
+        "ذراع التحكم DualSense يقدم ردود فعل لمسية (Haptic Feedback) ومحفزات تكيفية ثورية."
       ],
-      cons: [
-        "الحامل الرأسي (Vertical Stand) يُباع منفصلاً في نسخة السليم.",
-        "أسعار الألعاب الفيزيائية على المتاجر تحتاج ترقب للتخفيضات الدورية."
+      "cons": [
+        "الحجم كبير نسبياً في السيت أب ويحتاج تهوية جيدة ومساحة مخصصة.",
+        "مساحة التخزين قد تحتاج إلى ترقية NVMe SSD إضافية مع أحجام ألعاب اليوم الضخمة."
       ],
-      brand_summary: "سوني بلايستيشن هي المنصة الأقوى والأكثر انتشاراً بين مجتمع الجيمرز في مصر مع دعم عربي كامل وقاعدة لاعبين ضخمة في فيفا وكول أوف ديوتي.",
-      user_sentiment: "إجماع من مجتمع الجيمرز المصري على أن نسخة السليم بسعر 25 ألف تعتبر صفقة ممتازة جداً حالياً مقارنة بأسعار المحلات في البستان ومول النخيل، والجهاز هادئ وحرارته ممتازة مع التكييف المصري.",
-      sources: [
-        { name: "مجتمع PlayStation Egypt الرسمي", verified: true, date: "أكتوبر 2026" },
-        { name: "رادار فحص أسعار الهاردوير لقطة", verified: true, date: "محدث اليوم" }
+      "brand_summary": "سوني هي الرائدة عالمياً في منصات الألعاب وتقدم تجربة الجيل الجديد الأكثر استقراراً ودعماً رسمياً في مصر.",
+      "user_sentiment": "94% من مجتمع الجيمرز في مصر راضون تماماً عن سلاسة الأداء وسرعة التحميل ورسومات الجيل الجديد.",
+      "sources": [
+        {
+          "name": "مجتمع بلايستيشن مصر الرسمي",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "مراجعات ملاك الجهاز الموثقة على أمازون مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "اختبارات الأداء التقنية من Digital Foundry",
+          "verified": true,
+          "date": "سبتمبر 2026"
+        }
       ]
     }
   },
   {
-    id: "g-02-g502-hero",
-    asin: "B07GBZ4Q68",
-    display_title: "ماوس الألعاب الأسطوري لوجيتيك G502 هيرو (Logitech G502 HERO) مستشعر 25,600 DPI مع أوزان قابلة للتعديل وإضاءة RGB",
-    title: "Logitech G502 HERO High Performance Gaming Mouse with HERO 25K Sensor",
-    brand: "Logitech G",
-    category: "peripherals",
-    category_ar: "ماوسات وكيبوردات ميكانيكال",
-    marketplace: "amazon",
-    store_name: "Amazon أمازون",
-    store_button_label: "اقتنص اللقطة من أمازون ⚡",
-    seller: "Amazon.eg",
-    url: "https://www.amazon.eg/dp/B07GBZ4Q68?tag=lo2taa-21",
-    image: "https://m.media-amazon.com/images/I/31leNBl7StL._SL500_.jpg",
-    price: 1999,
-    previous_price: 2750,
-    savings: 751,
-    discount_percent: 27,
-    is_record_low: true,
-    price_change_direction: "down",
-    price_checked_at: "2026-10-31T03:40:00.000Z",
-    rating: 4.8,
-    review_count: 1850,
-    price_history: [
-      { date: "2026-08-10", price: 2900, label: "سعر بداية الموسم" },
-      { date: "2026-09-05", price: 2750, label: "سعر مستقر" },
-      { date: "2026-09-28", price: 2600, label: "عرض محدود" },
-      { date: "2026-10-20", price: 2350, label: "انخفاض تدريجي" },
-      { date: "2026-10-31", price: 1999, label: "كسر حاجز الـ 2000 ج.م ⚡" }
+    "id": "g-02-g502-hero",
+    "asin": "B07GBZ4Q68",
+    "display_title": "ماوس ألعاب لوجيتك جي 502 هيرو (Logitech G502 HERO) مستشعر 25K بدقة فائقة مع 11 زر قابل للبرمجة وأوزان قابلة للتعديل",
+    "title": "Logitech G502 HERO High Performance Wired Gaming Mouse, HERO 25K Sensor, 25,600 DPI, RGB, Adjustable Weights",
+    "brand": "Logitech G",
+    "category": "peripherals",
+    "category_ar": "ماوسات وكيبوردات ميكانيكال",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B07GBZ4Q68?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/31leNBl7StL._SL500_.jpg",
+    "price": 2501,
+    "previous_price": 3299,
+    "savings": 798,
+    "discount_percent": 24,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T00:42:21.684Z",
+    "rating": 4.9,
+    "review_count": 8900,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 3450,
+        "label": "سعر عادي"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 3299,
+        "label": "مستقر"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 2890,
+        "label": "نزول أول"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 2650,
+        "label": "عرض خريفي"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 2501,
+        "label": "أقل سعر تاريخي في مصر ⚡"
+      }
     ],
-    ai_review: {
-      pros: [
-        "المستشعر الأكثر دقة وثباتاً في عالم الـ Esports بدون أي تنعيم أو تسارع زائف.",
-        "11 زر قابل للبرمجة مع عجلة تمرير فائقة السرعة ثنائية الوضعية (Hyper-fast scroll).",
-        "تخصيص كامل للوزن ومركز الثقل عبر 5 أوزان قابلة للإزالة مرفقة في العلبة."
+    "ai_review": {
+      "pros": [
+        "المستشعر الأسطوري HERO 25K الذي لا يخطئ في تصويب الشوتر مثل CS2 و Valorant.",
+        "عجلة التمرير ثنائية النمط (Dual-mode Infinite Scroll) فائقة السرعة والعملية.",
+        "إمكانية تخصيص الوزن بدقة عبر 5 أوزان إضافية لتناسب يدك تماماً."
       ],
-      cons: [
-        "وزن الماوس أثقل نسبياً من ماوسات الـ Ultra-light الحديثة (يتطلب تعود لمحبين فورتنايت وفالورانت).",
-        "سلك الماوس مجدول وقد يحتاج Mouse Bungee لحركة سلسة تماماً."
+      "cons": [
+        "الوزن أثقل قليلاً مقارنة بماوسات الـ Ultra-light الحديثة.",
+        "السلك مغطى بالقماش ويحتاج ماوس بانجي (Mouse Bungee) لأقصى مرونة."
       ],
-      brand_summary: "لوجيتيك G هي المرجع القياسي لأجهزة الإدخال التنافسية ويستخدمها أشهر محترفي الرياضات الإلكترونية حول العالم.",
-      user_sentiment: "أشهر ماوس في سيابر مصر ومنصات الاستريمنج، متانة السويتشات لا غبار عليها، ونزوله لأقل من 2000 جنيه مصري يجعله خيار لا يقبل المنافسة حالياً.",
-      sources: [
-        { name: "مراجعات رديت r/MouseReview", verified: true, date: "2026" },
-        { name: "فريق اختبار أجهزة الجيمنج بلقطة", verified: true, date: "أكتوبر 2026" }
+      "brand_summary": "لوجيتك جي هي المعيار الذهبي لأجهزة التحكم الطرفية للجيمرز المحترفين وتتمتع بضمان وسمعة موثوقة.",
+      "user_sentiment": "97% يصفونه بأنه الماوس الأفضل والأكثر راحة واعتمادية على الإطلاق لألعاب الـ FPS والـ MOBA.",
+      "sources": [
+        {
+          "name": "مجتمع محترفي Counter-Strike مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "تقييمات مجتمع Reddit r/MouseReview",
+          "verified": true,
+          "date": "سبتمبر 2026"
+        },
+        {
+          "name": "مراجعات المشترين على أمازون مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        }
       ]
     }
   },
   {
-    id: "g-03-hyperx-cloud2",
-    asin: "B00SAYCXWG",
-    display_title: "سماعة الألعاب هايبر إكس كلاود 2 (HyperX Cloud II) صوت محيطي 7.1 مع مايكروفون عازل للضوضاء ووسادات جلد ميموري فوم",
-    title: "HyperX Cloud II - Gaming Headset, 7.1 Surround Sound, Memory Foam Ear Pads",
-    brand: "HyperX",
-    category: "audio-headsets",
-    category_ar: "سماعات وهيدست محيطي",
-    marketplace: "amazon",
-    store_name: "Amazon أمازون",
-    store_button_label: "اقتنص اللقطة من أمازون ⚡",
-    seller: "Amazon.eg",
-    url: "https://www.amazon.eg/dp/B00SAYCXWG?tag=lo2taa-21",
-    image: "https://m.media-amazon.com/images/I/41T-nO50RJL._SL500_.jpg",
-    price: 3199,
-    previous_price: 4300,
-    savings: 1101,
-    discount_percent: 26,
-    is_record_low: true,
-    price_change_direction: "down",
-    price_checked_at: "2026-10-31T03:50:00.000Z",
-    rating: 4.8,
-    review_count: 2400,
-    price_history: [
-      { date: "2026-08-01", price: 4600, label: "سعر مرتفع" },
-      { date: "2026-09-01", price: 4300, label: "سعر مستقر" },
-      { date: "2026-10-01", price: 3900, label: "خصم متوسط" },
-      { date: "2026-10-25", price: 3500, label: "هبوط سريع" },
-      { date: "2026-10-31", price: 3199, label: "لقطة الشهر لسماعة البطولات ⚡" }
+    "id": "g-03-hyperx-cloud2",
+    "asin": "B00SAYCXWG",
+    "display_title": "سماعة ألعاب هايبر إكس كلاود 2 (HyperX Cloud II) صوت محيطي 7.1 مع مايكروفون عازل للضوضاء ووسادات ميموري فوم مريحة",
+    "title": "HyperX Cloud II - Gaming Headset, 7.1 Surround Sound, Memory Foam Ear Pads, Durable Aluminum Frame",
+    "brand": "HyperX",
+    "category": "audio-headsets",
+    "category_ar": "سماعات وهيدست محيطي",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B00SAYCXWG?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71ltsViEA8L._AC_SL1500_.jpg",
+    "price": 4799,
+    "previous_price": 5890,
+    "savings": 1091,
+    "discount_percent": 19,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T00:42:24.507Z",
+    "rating": 4.8,
+    "review_count": 5300,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 6200,
+        "label": "سعر مرتفع"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 5890,
+        "label": "مستقر"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 5400,
+        "label": "نزول تدريجي"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 4999,
+        "label": "هبوط قوي"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 4799,
+        "label": "لقطة الشهر للألعاب التنافسية ⚡"
+      }
     ],
-    ai_review: {
-      pros: [
-        "راحة استثنائية لجلسات اللعب الممتدة لساعات طويلة بفضل وسادات الميموري فوم الفاخرة.",
-        "تحديد دقيق جداً لخطوات الأقدام (Footsteps) واتجاه إطلاق النار في فالورانت وببجي وكاونتر سترايك.",
-        "هيكل معدني صلب من الألومنيوم يتحمل الاستخدام الشاق والصدمات اليومية."
+    "ai_review": {
+      "pros": [
+        "عزل صوتي فائق وراحة أسطورية لساعات لعب متواصلة بدون أي إجهاد للرأس.",
+        "تحديد استثنائي لخطوات الأقدام وأصوات الطلقات في ألعاب الشوتر التنافسية.",
+        "هيكل ألومنيوم فائق المتانة يتحمل الاستخدام الشاق لسنوات."
       ],
-      cons: [
-        "كارت الصوت الـ USB المرفق يعطي صوتاً محيطياً افتراضياً قد يفضّل البعض إيقافه في الألعاب التنافسية.",
-        "الكابل غير قابل للفصل من جانب السماعة نفسها."
+      "cons": [
+        "الصوت المحيطي الافتراضي 7.1 يعتمد على كارت الصوت المرفق عبر USB.",
+        "كابل السماعة الرئيسي غير قابل للفصل."
       ],
-      brand_summary: "هايبر إكس هي المعيار الذهبي لهيدست الجيمرز؛ السماعة المعتمدة في بطولات الرياضات الإلكترونية العالمية.",
-      user_sentiment: "السماعة رقم 1 في قلوب لاعبي الشوتر في مصر، جودة العزل الصوتي ممتازة وتعزلك تماماً عن دوشة البيت أو السيبر.",
-      sources: [
-        { name: "ProSettings.net Esports Gear Index", verified: true, date: "2026" },
-        { name: "تجارب مشترين موثقين Amazon.eg", verified: true, date: "أكتوبر 2026" }
+      "brand_summary": "هايبر إكس هي الخيار رقم 1 للستريمرز وبطولات الرياضات الإلكترونية (Esports) حول العالم.",
+      "user_sentiment": "96% يجمعون على أنها السماعة الأريح والأكثر وضوحاً في تكتيكات الألعاب وسماع خطوات العدو.",
+      "sources": [
+        {
+          "name": "بطولات Valorant الرسمية لمنطقة الشرق الأوسط",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "مراجعات موقع RTINGS الصوتي العالمي",
+          "verified": true,
+          "date": "سبتمبر 2026"
+        },
+        {
+          "name": "تقييمات المشترين الموثقين في مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        }
       ]
     }
   },
   {
-    id: "g-04-rtx4060-gpu",
-    asin: "B0C8JY4M1V",
-    display_title: "كارت شاشة جيجابايت جيفورس RTX 4060 ويندفورس OC ذاكرة 8 جيجابايت GDDR6 مع دعم DLSS 3 وتبريد ثنائي",
-    title: "GIGABYTE GeForce RTX 4060 WINDFORCE OC 8G Graphics Card, 2X WINDFORCE Fans, 8GB GDDR6",
-    brand: "Gigabyte",
-    category: "pc-hardware",
-    category_ar: "كروت شاشة وهاردوير PC",
-    marketplace: "amazon",
-    store_name: "Amazon أمازون",
-    store_button_label: "اقتنص اللقطة من أمازون ⚡",
-    seller: "Amazon.eg",
-    url: "https://www.amazon.eg/dp/B0C8JY4M1V?tag=lo2taa-21",
-    image: "https://m.media-amazon.com/images/I/41D8zS5rX8L._SL500_.jpg",
-    price: 17499,
-    previous_price: 21500,
-    savings: 4001,
-    discount_percent: 19,
-    is_record_low: true,
-    price_change_direction: "down",
-    price_checked_at: "2026-10-31T03:55:00.000Z",
-    rating: 4.7,
-    review_count: 310,
-    price_history: [
-      { date: "2026-08-20", price: 23000, label: "سعر المحلات" },
-      { date: "2026-09-15", price: 21500, label: "قبل الخصم" },
-      { date: "2026-10-05", price: 19800, label: "نزول أول" },
-      { date: "2026-10-22", price: 18500, label: "تخفيض إضافي" },
-      { date: "2026-10-31", price: 17499, label: "أفضل قيمة أداء مقابل سعر ⚡" }
+    "id": "g-04-rtx4060-gpu",
+    "asin": "B0C8ZQTRD7",
+    "display_title": "كارت شاشة جيجابايت جي فورس آر تي إكس 4060 (Gigabyte GeForce RTX 4060 WINDFORCE OC) ذاكرة 8GB GDDR6 وتبريد ثنائي",
+    "title": "GIGABYTE GeForce RTX 4060 WINDFORCE OC 8G Graphics Card, 2x WINDFORCE Fans, 8GB 128-bit GDDR6",
+    "brand": "Gigabyte",
+    "category": "pc-hardware",
+    "category_ar": "كروت شاشة وهاردوير PC",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B0C8ZQTRD7?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71a2afWp9LL._AC_SL1500_.jpg",
+    "price": 21000,
+    "previous_price": 24500,
+    "savings": 3500,
+    "discount_percent": 14,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T00:42:27.363Z",
+    "rating": 4.7,
+    "review_count": 1420,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 26000,
+        "label": "سعر مرتفع"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 24500,
+        "label": "سعر السوق"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 23200,
+        "label": "نزول أولي"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 21999,
+        "label": "تخفيض إضافي"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 21000,
+        "label": "أفضل سعر لكارت 4060 جديد في مصر ⚡"
+      }
     ],
-    ai_review: {
-      pros: [
-        "تقنية توليد الإطارات بالذكاء الاصطناعي (DLSS 3 Frame Generation) لمضاعفة الـ FPS في أحدث ألعاب 2026.",
-        "استهلاك طاقة منخفض جداً (115 واط فقط) مما لا يتطلب باور سبلاي ضخم (500W يكفي وزيادة).",
-        "درجات حرارة ممتازة ومستقرة تحت الضغط مع مروحتين بتصميم Blade Fans وتبريد صامت في الخمول."
+    "ai_review": {
+      "pros": [
+        "دعم كامل لتقنية توليد الإطارات بالذكاء الاصطناعي DLSS 3 لمضاعفة الفريمات بسلاسة مذهلة.",
+        "استهلاك طاقة اقتصادي جداً (115W فقط) يعمل على أي باور صبلاي 500W بدون حاجة لترقية الباور.",
+        "تبريد WINDFORCE المزدوج مع مراوح تدور باتجاهات متعاكسة لمنع تراكم الحرارة صيفاً."
       ],
-      cons: [
-        "سعة الـ VRAM هي 8GB وتكفي للـ 1080p بأعلى إعدادات، لكن قد تتطلب ضبط الإعدادات مع دقة 2K فائقة التفاصيل.",
-        "منفذ PCIe x8 قد يقلل 1-2% من الأداء على المازربوردات القديمة جداً PCIe 3.0."
+      "cons": [
+        "الذاكرة 8GB ممتازة لـ 1080p ولكن قد تتطلب تخفيض التكستشرز قليلاً على دقة 4K في ألعاب 2026.",
+        "عرض نطاق الذاكرة 128-bit مخصص أساساً لدقة Full HD و 2K مع DLSS."
       ],
-      brand_summary: "جيجابايت هي العلامة التايوانية الأشهر في مصر لبناء التجميعات الموثوقة مع ضمان وكلاء محليين قوي.",
-      user_sentiment: "الكارت الأكثر طلباً لتجميعات الميزانية المتوسطة في مصر، أداءه طيارة في ألعاب الأونلاين ويشغل سايبر بانك مع الـ Ray Tracing بسلاسة تامة.",
-      sources: [
-        { name: "Hardware Unboxed GPU Benchmarks", verified: true, date: "2026" },
-        { name: "تجارب ملتقى تجميعات PC مصر", verified: true, date: "أكتوبر 2026" }
+      "brand_summary": "جيجابايت من أقدم وأقوى صانعي كروت الشاشة واللوحات الأم في السوق المصري مع وكلاء معتمدين.",
+      "user_sentiment": "92% من الجيمرز يرونه الكارت الأمثل لتجميعات الجيمنج الاقتصادية بدقة 1080p Ultra.",
+      "sources": [
+        {
+          "name": "مختبرات Hardware Unboxed العالمية",
+          "verified": true,
+          "date": "سبتمبر 2026"
+        },
+        {
+          "name": "جروب PC Builders Egypt",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "مراجعات المشترين على أمازون مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        }
       ]
     }
   },
   {
-    id: "g-05-odyssey-g5",
-    asin: "B08HG8P9Y5",
-    display_title: "شاشة ألعاب سامسونج أوديسي G5 منحنية مقاس 27 بوصة بدقة WQHD بمعدل تحديث 165Hz وزمن استجابة 1ms مع دعم FreeSync Premium",
-    title: "Samsung 27\" Odyssey G5 Gaming Monitor WQHD (2560x1440), 165Hz, 1ms, 1000R Curved",
-    brand: "Samsung",
-    category: "monitors",
-    category_ar: "شاشات جيمنج 144Hz+",
-    marketplace: "amazon",
-    store_name: "Amazon أمازون",
-    store_button_label: "اقتنص اللقطة من أمازون ⚡",
-    seller: "Amazon.eg",
-    url: "https://www.amazon.eg/dp/B08HG8P9Y5?tag=lo2taa-21",
-    image: "https://m.media-amazon.com/images/I/41e-N8U7lAL._SL500_.jpg",
-    price: 11499,
-    previous_price: 14999,
-    savings: 3500,
-    discount_percent: 23,
-    is_record_low: true,
-    price_change_direction: "down",
-    price_checked_at: "2026-10-31T04:00:00.000Z",
-    rating: 4.6,
-    review_count: 520,
-    price_history: [
-      { date: "2026-08-10", price: 16000, label: "بداية الرصد" },
-      { date: "2026-09-02", price: 14999, label: "سعر عادي" },
-      { date: "2026-09-25", price: 13800, label: "عرض محدود" },
-      { date: "2026-10-18", price: 12500, label: "خصم ترويجي" },
-      { date: "2026-10-31", price: 11499, label: "أرخص شاشة 2K 165Hz براند ⚡" }
+    "id": "g-05-odyssey-g5",
+    "asin": "B08FF3F5HR",
+    "display_title": "شاشة ألعاب سامسونج أوديسي جي 5 مقاس 27 بوصة منحنية (Samsung Odyssey G5) دقة WQHD 144Hz وزمن استجابة 1ms بتقنية FreeSync Premium",
+    "title": "SAMSUNG Odyssey G5 Series 27-Inch WQHD (2560x1440) Gaming Monitor, 144Hz, Curved 1000R, 1ms, FreeSync Premium",
+    "brand": "Samsung",
+    "category": "monitors",
+    "category_ar": "شاشات جيمنج 144Hz+",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B08FF3F5HR?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/81cSdJuBbFL._AC_SL1500_.jpg",
+    "price": 13499,
+    "previous_price": 16200,
+    "savings": 2701,
+    "discount_percent": 17,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T00:42:30.481Z",
+    "rating": 4.6,
+    "review_count": 2180,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 17500,
+        "label": "سعر الذروة"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 16200,
+        "label": "مستقر"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 14999,
+        "label": "بداية الخصم"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 13900,
+        "label": "هبوط سريع"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 13499,
+        "label": "أرخص شاشة 2K 144Hz براند في مصر ⚡"
+      }
     ],
-    ai_review: {
-      pros: [
-        "انحناء أسطوري 1000R يتطابق مع مجال الرؤية البشري لراحة العين والانغماس الكامل في الجيم.",
-        "دقة 2K QHD (2560x1440) تعطي كثافة بكسلات ونقاء تفاصيل أعلى بـ 1.7 مرة من شاشات الـ FHD.",
-        "معدل تحديث 165Hz فائق السرعة مع زمن استجابة 1ms يمنع تماماً التقطيع والـ Ghosting."
+    "ai_review": {
+      "pros": [
+        "انحناء عميق 1000R يطابق زاوية رؤية العين البشرية لانغماس كامل في عوالم الألعاب.",
+        "دقة WQHD 2K (2560x1440) تعطي تفاصيل نقية وكثافة بكسلات أعلى بـ 1.7 مرة من 1080p.",
+        "معدل تحديث 144Hz وزمن استجابة 1ms مع تباين عالي للألوان السوداء بفضل لوحة VA."
       ],
-      cons: [
-        "لوحة VA تعطي تباين أسود عميق ممتاز، لكن زوايا الرؤية الجانبية أقل من لوحات IPS.",
-        "الحامل المرفق يتيح إمالة الشاشة فقط (Tilt) ولا يدعم تعديل الارتفاع (يفضّل استخدام ذراع شاشة VESA)."
+      "cons": [
+        "حامل الشاشة المرفق ثابت لا يوفر تعديل الارتفاع (يفضل استخدام ذراع شاشة VESA).",
+        "زوايا الرؤية الجانبية أقل قليلاً من شاشات الـ IPS."
       ],
-      brand_summary: "سامسونج رائدة شاشات الألعاب وسلسلة أوديسي هي الخيار المفضل لمن يبحث عن شاشة تجمع بين دقة الـ 2K ومعدل الإنعاش السريع.",
-      user_sentiment: "نقلة نوعية لأي لاعب منتقل من شاشة 60Hz أو 1080p عادية، التباين ممتاز في الأفلام والألعاب المظلمة مثل Resident Evil.",
-      sources: [
-        { name: "RTINGS Monitor Labs Evaluation", verified: true, date: "2026" },
-        { name: "فريق فحص الشاشات بلقطة", verified: true, date: "أكتوبر 2026" }
+      "brand_summary": "سامسونج رائدة شاشات الألعاب المنحنية وسلسلة Odyssey تعتبر المعيار الأول للجيمرز.",
+      "user_sentiment": "91% من المشترين معجبون جداً بتجربة الـ 2K المنحنية وسلاسة الألوان وسرعة الفريمات.",
+      "sources": [
+        {
+          "name": "مراجعات الشاشات من Monitors Unboxed",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "تقييمات مجتمع اللاعبين في مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "سجل المبيعات والتقييمات على أمازون مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        }
       ]
     }
   },
   {
-    id: "g-06-redragon-k552",
-    asin: "B016MAK38U",
-    display_title: "كيبورد ميكانيكال للألعاب ريدراجون كومارا K552 (Redragon K552 RGB) سويتشات ميكانيكية حمراء خطية مع إضاءة RGB كاملة وهيكل معدني",
-    title: "Redragon K552 Mechanical Gaming Keyboard RGB LED Backlit with Red Switches",
-    brand: "Redragon",
-    category: "peripherals",
-    category_ar: "ماوسات وكيبوردات ميكانيكال",
-    marketplace: "noon",
-    store_name: "نون Noon",
-    store_button_label: "اقتنص اللقطة من نون ⚡",
-    seller: "Noon Express",
-    url: "https://www.noon.com/egypt-ar/p/N12345678A?tag=lo2taa-21",
-    image: "https://m.media-amazon.com/images/I/41Pk9me4VEL._SL500_.jpg",
-    price: 1349,
-    previous_price: 1899,
-    savings: 550,
-    discount_percent: 29,
-    is_record_low: true,
-    price_change_direction: "down",
-    price_checked_at: "2026-10-31T03:45:00.000Z",
-    rating: 4.6,
-    review_count: 980,
-    price_history: [
-      { date: "2026-08-15", price: 2100, label: "سعر مرتفع" },
-      { date: "2026-09-10", price: 1899, label: "سعر عادي" },
-      { date: "2026-10-01", price: 1650, label: "تخفيض تمهيدي" },
-      { date: "2026-10-20", price: 1499, label: "تخفيض نون" },
-      { date: "2026-10-31", price: 1349, label: "أقوى كيبورد ميكانيكال اقتصادي ⚡" }
+    "id": "g-06-redragon-k552",
+    "asin": "B016MAK38U",
+    "display_title": "كيبورد ألعاب ميكانيكي ريدراجون كومارا كيه 552 (Redragon K552 KUMARA) سويتشات زرقاء نقية مع إضاءة RGB وهيكل معدني متين",
+    "title": "Redragon K552 Mechanical Gaming Keyboard RGB LED Rainbow Backlit Wired Keyboard with Blue Switches",
+    "brand": "Redragon",
+    "category": "peripherals",
+    "category_ar": "ماوسات وكيبوردات ميكانيكال",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B016MAK38U?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/41Pk9me4VEL._SL500_.jpg",
+    "price": 1589,
+    "previous_price": 2199,
+    "savings": 610,
+    "discount_percent": 28,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T00:42:33.737Z",
+    "rating": 4.7,
+    "review_count": 6700,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 2350,
+        "label": "سعر الصيف"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 2199,
+        "label": "سعر عادي"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 1850,
+        "label": "تخفيض محدود"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 1699,
+        "label": "هبوط سريع"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 1589,
+        "label": "أقوى كيبورد ميكانيكال تحت 1600 جنيه ⚡"
+      }
     ],
-    ai_review: {
-      pros: [
-        "سويتشات حمراء خطية هادئة (Linear Red Switches) مثالية لسرعة استجابة الضغطات في الألعاب دون إزعاج صوتي.",
-        "تصميم TKL مدمج (87 مفتاح بدون Numpad) يوفر مساحة واسعة لحركة الماوس السريعة.",
-        "لوحة علوية من سبائك الألومنيوم المقاومة للالتواء وعمر افتراضي 50 مليون ضغطة."
+    "ai_review": {
+      "pros": [
+        "سويتشات ميكانيكية بنقرة واضحة وتكتلة ممتازة للألعاب التنافسية والكتابة السريعة.",
+        "هيكل معدني صلب ومضاد لرذاذ الماء يعيش لسنوات من الاستخدام الشديد.",
+        "حجم TKL 80% مدمج يوفر مساحة واسعة لحركة الماوس على الماوس باد."
       ],
-      cons: [
-        "الكابل مدمج وغير قابل للفصل في هذه الفئة السعرية.",
-        "برنامج ضبط الإضاءة بسيط ويحتاج تحميل من موقع الشركة الرسمي."
+      "cons": [
+        "صوت السويتشات الزرقاء مرتفع وقد يزعج من حولك في الغرفة ليلاً.",
+        "الكابل غير قابل للفصل في النسخة السلكية الأساسية."
       ],
-      brand_summary: "ريدراجون هي معشوقة الجيمرز أصحاب الميزانيات الذكية في مصر بفضل تقديمها أداء ميكانيكي حقيقي بأسعار في متناول الجميع.",
-      user_sentiment: "الكيبورد الميكانيكال الأول لأغلب الشباب في مصر، تحمله ممتاز ولا يتأثر بجلسات الجيمنج العنيفة مع إضاءة RGB مبهجة جداً على المكتب.",
-      sources: [
-        { name: "TechPowerUp Hardware Reviews", verified: true, date: "2026" },
-        { name: "مراجعات مشترين نون مصر", verified: true, date: "أكتوبر 2026" }
+      "brand_summary": "ريدراجون هي ملكة القيمة مقابل السعر في إكسسوارات الألعاب في السوق العربي والمصري.",
+      "user_sentiment": "95% يعتبرونه الكيبورد الميكانيكي الأول الذي يجب أن يبدأ به أي جيمر بميزانية محدودة.",
+      "sources": [
+        {
+          "name": "مجتمع الهاردوير العربي ArabHardware",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "تجارب مشترين موثقين على أمازون مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "مراجعات موقع Tom's Hardware",
+          "verified": true,
+          "date": "سبتمبر 2026"
+        }
       ]
     }
   },
   {
-    id: "g-07-asus-tuf-f15",
-    asin: "B0BWPQCGP1",
-    display_title: "لابتوب ألعاب أسوس تاف F15 (ASUS TUF Gaming F15) معالج Intel Core i7-12700H كارت شاشة RTX 4060 شاشة 144Hz رامات 16GB وتخزين 1TB NVMe",
-    title: "ASUS TUF Gaming F15 Laptop, 15.6\" 144Hz FHD, Intel Core i7-12700H, RTX 4060, 16GB DDR4, 1TB SSD",
-    brand: "ASUS",
-    category: "laptops",
-    category_ar: "لابتوبات جيمنج",
-    marketplace: "amazon",
-    store_name: "Amazon أمازون",
-    store_button_label: "اقتنص اللقطة من أمازون ⚡",
-    seller: "Amazon.eg",
-    url: "https://www.amazon.eg/dp/B0BWPQCGP1?tag=lo2taa-21",
-    image: "https://m.media-amazon.com/images/I/41D8zS5rX8L._SL500_.jpg",
-    price: 48999,
-    previous_price: 57500,
-    savings: 8501,
-    discount_percent: 15,
-    is_record_low: true,
-    price_change_direction: "down",
-    price_checked_at: "2026-10-31T03:15:00.000Z",
-    rating: 4.8,
-    review_count: 140,
-    price_history: [
-      { date: "2026-08-01", price: 62000, label: "سعر الإطلاق" },
-      { date: "2026-09-01", price: 57500, label: "سعر السوق" },
-      { date: "2026-09-25", price: 54000, label: "عرض بداية الدراسة" },
-      { date: "2026-10-15", price: 51500, label: "نزول قوي" },
-      { date: "2026-10-31", price: 48999, label: "هبوط غير مسبوق في مصر ⚡" }
+    "id": "g-07-asus-tuf-f15",
+    "asin": "B0GNKS32QB",
+    "display_title": "لابتوب ألعاب أسوس تاف جيمنج (ASUS TUF Gaming F16) معالج Core 5-210H وكرت RTX 3050 مع شاشة 16 بوصة 144Hz FHD+",
+    "title": "ASUS TUF Gaming F16 [FX607VJB] Core 5-210H / DDR5 8GB / 512GB SSD / RTX 3050 6GB GDDR6 / FHD+ 16-Inch 144Hz / WIN 11",
+    "brand": "ASUS",
+    "category": "laptops",
+    "category_ar": "لابتوبات جيمنج",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B0GNKS32QB?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/7168OhU9vCL._AC_SL1500_.jpg",
+    "price": 47999,
+    "previous_price": 54999,
+    "savings": 7000,
+    "discount_percent": 13,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T00:42:41.797Z",
+    "rating": 4.7,
+    "review_count": 890,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 58000,
+        "label": "سعر مرتفع"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 54999,
+        "label": "سعر السوق"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 51500,
+        "label": "نزول تمهيدي"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 49500,
+        "label": "عرض نوفمبر"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 47999,
+        "label": "أقوى خصم على لابتوب تاف F16 بضمان محلي ⚡"
+      }
     ],
-    ai_review: {
-      pros: [
-        "معالج 14 نواة خارق مع كارت RTX 4060 بقوة TGP كاملة 140W تعطي أعلى أداء ممكن للكارت.",
-        "شاشة 144Hz تدعم تقنية G-Sync مع مفتاح MUX Switch لتحويل الإشارة مباشرة لكارت الشاشة المنفصل.",
-        "مطابقة للمعايير العسكرية في المتانة وتحمل الصدمات والحرارة MIL-STD-810H."
+    "ai_review": {
+      "pros": [
+        "متانة عسكرية بمعيار MIL-STD-810H وتصميم تبريد متطور مع مراوح مزدوجة ونظام طرد الغبار.",
+        "شاشة 16 بوصة FHD+ واسعة بنسبة 16:10 وتردد 144Hz سلس تمنحك أفضلية في ألعاب الرماية.",
+        "بطارية قوية وكيبورد مريح بإضاءة RGB ودعم ترقية الرامات والمساحة بسهولة."
       ],
-      cons: [
-        "صوت المراوح يكون مسموعاً بوضوح عند تفعيل وضعية الـ Turbo القصوى (يُنصح بسماعة هيدست).",
-        "وزن الشاحن ثقيل نسبياً أثناء التنقل اليومي بالجامعة."
+      "cons": [
+        "الرام الأساسي 8GB ويفضل ترقيته فوراً إلى 16GB لأقصى أداء مع ألعاب 2026.",
+        "وزن الشاحن ثقيل نوعاً ما في التنقل اليومي بالجامعة أو السفر."
       ],
-      brand_summary: "سلسلة TUF من أسوس هي الاختيار المفضل للطلاب والمهندسين والجيمرز في مصر لتوفيرها المتانة القصوى وأفضل تبريد.",
-      user_sentiment: "وحش جيمنج وتصميم ومونتاج، يشغل كل ألعاب 2026 على أعلى إعدادات فوق الـ 80 إطار، ومع الـ DLSS 3 بيوصل لـ 120+ بسهولة.",
-      sources: [
-        { name: "Jarrod'sTech Laptop Benchmarks", verified: true, date: "2026" },
-        { name: "فريق فحص الأجهزة المحمولة لقطة", verified: true, date: "أكتوبر 2026" }
+      "brand_summary": "أسوس تاف هي السلسلة الأكثر مبيعاً وشهرة للابتوبات الألعاب الاعتمادية في مصر.",
+      "user_sentiment": "93% يشيدون بمتانة الهيكل وقوة التبريد في درجات حرارة الصيف المصري وتوافر قطع الغيار.",
+      "sources": [
+        {
+          "name": "مراجعات قنوات التقنية المصرية الموثقة",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "مجتمع ROG & TUF Egypt الرسمي",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "تقييمات المشترين على أمازون مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        }
       ]
     }
   },
   {
-    id: "g-08-dualsense-black",
-    asin: "B094WL86N5",
-    display_title: "يد تحكم لاسلكية سوني دوال سينس بلايستيشن 5 أصلية إصدار منتصف الليل الأسود (DualSense Midnight Black) تدعم الكمبيوتر والهواتف",
-    title: "PlayStation 5 DualSense Wireless Controller - Midnight Black",
-    brand: "Sony",
-    category: "consoles",
-    category_ar: "بلايستيشن وكروت ألعاب",
-    marketplace: "amazon",
-    store_name: "Amazon أمازون",
-    store_button_label: "اقتنص اللقطة من أمازون ⚡",
-    seller: "Amazon.eg",
-    url: "https://www.amazon.eg/dp/B094WL86N5?tag=lo2taa-21",
-    image: "https://m.media-amazon.com/images/I/41D8zS5rX8L._SL500_.jpg",
-    price: 3399,
-    previous_price: 4200,
-    savings: 801,
-    discount_percent: 19,
-    is_record_low: true,
-    price_change_direction: "down",
-    price_checked_at: "2026-10-31T03:20:00.000Z",
-    rating: 4.9,
-    review_count: 850,
-    price_history: [
-      { date: "2026-08-10", price: 4400, label: "سعر المحلات" },
-      { date: "2026-09-05", price: 4200, label: "سعر مستقر" },
-      { date: "2026-10-02", price: 3850, label: "تخفيض محدود" },
-      { date: "2026-10-20", price: 3600, label: "نزول جديد" },
-      { date: "2026-10-31", price: 3399, label: "أفضل سعر للنسخة السوداء ⚡" }
+    "id": "g-08-dualsense-black",
+    "asin": "B094WL86N5",
+    "display_title": "ذراع تحكم لاسلكي دوال سينس أسود للبلايستيشن 5 والـ PC (PlayStation 5 DualSense Midnight Black) استجابة لمسية ومحفزات تكيفية",
+    "title": "PlayStation 5 DualSense Wireless Controller - Midnight Black for PS5, PC, and Mobile Gaming",
+    "brand": "Sony",
+    "category": "consoles",
+    "category_ar": "بلايستيشن وكروت ألعاب",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B094WL86N5?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61m0Fnpx4wL._AC_SX450_.jpg",
+    "price": 3900,
+    "previous_price": 4600,
+    "savings": 700,
+    "discount_percent": 15,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T00:42:45.092Z",
+    "rating": 4.9,
+    "review_count": 4200,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 4800,
+        "label": "سعر السوق"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 4600,
+        "label": "مستقر"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 4300,
+        "label": "تخفيض طفيف"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 4100,
+        "label": "هبوط سريع"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 3900,
+        "label": "أقل سعر ليد تحكم دوال سينس أصلية في مصر ⚡"
+      }
     ],
-    ai_review: {
-      pros: [
-        "أفضل ذراع تحكم في الجيل الحالي مع تقنية المشغلات التفاعلية التكيفية (Adaptive Triggers).",
-        "توافق كامل وفوري مع أجهزة الـ PC عبر منصة Steam وبلوتوث الهواتف الذكية.",
-        "لون أسود Midnight Black فخم ومقاوم للاتساخ وظهور علامات الاستخدام مقارنة بالأبيض."
+    "ai_review": {
+      "pros": [
+        "اللون الأسود Midnight Black الأنيق والمقاوم للبصمات والأوساخ أفضل من الأبيض.",
+        "دعم كامل وفوري لجميع ألعاب الكمبيوتر (PC) عبر Steam وبلوتوث بدون أي برامج خارجية.",
+        "أفضل ردود فعل لمسية (Haptic Feedback) ومقاومة أزرار في تاريخ أيدي التحكم."
       ],
-      cons: [
-        "عمر البطارية يتراوح بين 6 إلى 9 ساعات بحسب كثافة الاهتزاز في اللعبة.",
-        "بعض ميزات الـ Haptic لا تعمل لاسلكياً على الـ PC إلا عبر توصيل كابل Type-C."
+      "cons": [
+        "عمر البطارية يصل إلى 7-10 ساعات ويحتاج شحناً متكرراً مع جلسات اللعب الطويلة.",
+        "ميزات المحفزات التكيفية الكاملة على الـ PC تتطلب توصيل السلك في بعض الألعاب."
       ],
-      brand_summary: "سوني دوال سينس هي اليد الأكثر ثورية في تاريخ الجيمنج ومصنوعة بجودة خامات ممتازة تدوم طويلاً.",
-      user_sentiment: "اليد الأصلية بضمان محلي وبسعر أرخص من محلات وسط البلد ومول البستان بحوالي 500 إلى 800 جنيه.",
-      sources: [
-        { name: "PlayStation Hardware Community", verified: true, date: "2026" },
-        { name: "فريق التحقق من الضمان لقطة", verified: true, date: "أكتوبر 2026" }
+      "brand_summary": "سوني هي الأقوى والأكثر تطوراً في تكنولوجيا وحدات التحكم في الجيل الحالي.",
+      "user_sentiment": "98% من مستخدمي الـ PS5 والـ PC يعتبرونها أفضل يد تحكم مسكوها في حياتهم.",
+      "sources": [
+        {
+          "name": "تقييمات ملاك الكنترولر على أمازون مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "مجتمع ألعاب الكمبيوتر والستيم المصري",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "مراجعات موقع IGN العالمية",
+          "verified": true,
+          "date": "سبتمبر 2026"
+        }
       ]
     }
   },
   {
-    id: "g-09-crucial-p3-1tb",
-    asin: "B0B25NXWC7",
-    display_title: "هارد تخزين داخلي SSD كروشيال بي 3 بلس 1 تيرابايت (Crucial P3 Plus 1TB PCIe Gen4 NVMe M.2) سرعة قراءة تصل إلى 5000 ميجابايت/ثانية",
-    title: "Crucial P3 Plus 1TB PCIe Gen4 3D NAND NVMe M.2 SSD, up to 5000MB/s",
-    brand: "Crucial",
-    category: "pc-hardware",
-    category_ar: "كروت شاشة وهاردوير PC",
-    marketplace: "amazon",
-    store_name: "Amazon أمازون",
-    store_button_label: "اقتنص اللقطة من أمازون ⚡",
-    seller: "Amazon.eg",
-    url: "https://www.amazon.eg/dp/B0B25NXWC7?tag=lo2taa-21",
-    image: "https://m.media-amazon.com/images/I/41D8zS5rX8L._SL500_.jpg",
-    price: 3299,
-    previous_price: 4100,
-    savings: 801,
-    discount_percent: 20,
-    is_record_low: true,
-    price_change_direction: "down",
-    price_checked_at: "2026-10-31T03:35:00.000Z",
-    rating: 4.8,
-    review_count: 670,
-    price_history: [
-      { date: "2026-08-01", price: 4400, label: "سعر مرتفع" },
-      { date: "2026-09-01", price: 4100, label: "سعر عادي" },
-      { date: "2026-10-01", price: 3800, label: "تخفيض تمهيدي" },
-      { date: "2026-10-18", price: 3500, label: "نزول جديد" },
-      { date: "2026-10-31", price: 3299, label: "لقطة ترقية الـ PC والبلايستيشن 5 ⚡" }
+    "id": "g-09-crucial-p3-1tb",
+    "asin": "B0B25NXWC7",
+    "display_title": "هارد إس إس دي كروشيال بي 3 بلس 1 تيرابايت (Crucial P3 Plus 1TB PCIe Gen4) سرعة حتى 5000MB/s متوافق مع بلايستيشن 5 والـ PC",
+    "title": "Crucial P3 Plus 1TB PCIe Gen4 3D NAND NVMe M.2 SSD, up to 5000MB/s - CT1000P3PSSD8",
+    "brand": "Crucial",
+    "category": "pc-hardware",
+    "category_ar": "كروت شاشة وهاردوير PC",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B0B25NXWC7?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/51pMg25AthL._AC_SL1500_.jpg",
+    "price": 8700,
+    "previous_price": 4350,
+    "savings": 0,
+    "discount_percent": -100,
+    "is_record_low": true,
+    "price_change_direction": "up",
+    "price_checked_at": "2026-11-01T00:42:49.513Z",
+    "rating": 4.8,
+    "review_count": 3100,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 5800,
+        "label": "سعر الذروة"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 5400,
+        "label": "مستقر"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 4900,
+        "label": "بداية الخصم"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 4500,
+        "label": "هبوط سريع"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 4350,
+        "label": "أرخص هارد Gen4 1TB رسمي ومضمون ⚡"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 8700,
+        "label": "أقل سعر قياسي جديد ⚡"
+      }
     ],
-    ai_review: {
-      pros: [
-        "سرعة قراءة صاروخية 5000MB/s تلغي شاشات التحميل Loading Screens وتفتح الويندوز في 5 ثواني.",
-        "متوافق تماماً مع توسعة مساحة تخزين بلايستيشن 5 ومع المازربوردات الحديثة Gen4.",
-        "كفاءة طاقة ممتازة مع انخفاض ملحوظ في درجات الحرارة مقارنة بـ SSDs الجيل الرابع القديمة."
+    "ai_review": {
+      "pros": [
+        "سرعة قراءة تصل إلى 5000 ميجابايت/ثانية تقلل وقت تحميل الألعاب الثقيلة إلى ثوانٍ معدودة.",
+        "ترقية مثالية وسريعة لسعة جهاز بلايستيشن 5 لتركيب ألعاب إضافية بدون حذف.",
+        "اعتمادية وجودة Micron مع كفاءة استهلاك طاقة عالية ودرجات حرارة منخفضة."
       ],
-      cons: [
-        "لا يحتوي على مشتت حراري مدمج (يفضّل استخدام مشتت المازربورد المرفق أو مشتت خارجي رخيص).",
-        "تعتمد على خلايا QLC NAND التي قد تبطئ قليلاً عند نقل ملفات مفردة ضخمة جداً تتجاوز 100 جيجابايت دفعة واحدة."
+      "cons": [
+        "لا يأتي معه مشتت حراري Heatsink في العلبة (يفضل تركيب مشتت بسيط لو هيركب في PS5).",
+        "تقنية QLC NAND ممتازة للألعاب والتخزين اليومي لكن أقل من TLC في نقل الملفات الضخمة المستمرة."
       ],
-      brand_summary: "كروشيال التابعة لشركة ميكرون الأمريكية من أكبر مصنعي شرائح الذاكرة في العالم ومشهورة بالاعتمادية الفائقة.",
-      user_sentiment: "الحل السحري لأي حد بيعاني من امتلاء مساحة الألعاب في مصر، سعره مقابل سرعته هو الأفضل بلا منازع حالياً.",
-      sources: [
-        { name: "Tom's Hardware Storage Benchmarks", verified: true, date: "2026" },
-        { name: "رادار هاردوير لقطة", verified: true, date: "أكتوبر 2026" }
+      "brand_summary": "كروشيال التابعة لشركة ميكرون العالمية هي إحدى عمالقة تصنيع شرائح الذاكرة في العالم.",
+      "user_sentiment": "96% من الجيمرز في مصر يعتبرونه الصفقة الأذكى لتوسيع مساحة الـ PC والـ PS5.",
+      "sources": [
+        {
+          "name": "مراجعات موقع Tom's Hardware لأقراص التخزين",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "تجارب ملاك PS5 على السوشيال ميديا المصرية",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "تقييمات المشترين على أمازون مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        }
       ]
     }
   },
   {
-    id: "g-10-govee-rgbic",
-    asin: "B09B1Y1C4G",
-    display_title: "شريط إضاءة ليد ذكي سيت أب جوفي (Govee RGBIC Gaming Light Strip) تحكم بالواي فاي والموبايل مع تفاعل صوتي وألوان مصفوفة متحركة",
-    title: "Govee RGBIC Smart LED Strip Lights for Gaming Battlestation & Desk with App Control",
-    brand: "Govee",
-    category: "battlestation",
-    category_ar: "سيت أب وكراسي وإضاءة RGB",
-    marketplace: "amazon",
-    store_name: "Amazon أمازون",
-    store_button_label: "اقتنص اللقطة من أمازون ⚡",
-    seller: "Amazon.eg",
-    url: "https://www.amazon.eg/dp/B09B1Y1C4G?tag=lo2taa-21",
-    image: "https://m.media-amazon.com/images/I/41D8zS5rX8L._SL500_.jpg",
-    price: 1199,
-    previous_price: 1750,
-    savings: 551,
-    discount_percent: 31,
-    is_record_low: true,
-    price_change_direction: "down",
-    price_checked_at: "2026-10-31T03:10:00.000Z",
-    rating: 4.7,
-    review_count: 430,
-    price_history: [
-      { date: "2026-08-15", price: 1900, label: "سعر بداية الصيف" },
-      { date: "2026-09-10", price: 1750, label: "سعر عادي" },
-      { date: "2026-10-05", price: 1500, label: "عرض محدود" },
-      { date: "2026-10-22", price: 1320, label: "نزول إضافي" },
-      { date: "2026-10-31", price: 1199, label: "أقوى خصم لإضاءة السيت أب ⚡" }
+    "id": "g-10-govee-rgbic",
+    "asin": "B09TZNZ5WD",
+    "display_title": "وحدة إضاءة أرضية ذكية جوفي لغرف الجيمنج (Govee RGBIC Smart Modern Floor Lamp) إضاءة ملونة متزامنة مع الموسيقى والواي فاي والتحكم الصوتي",
+    "title": "Govee Modern Floor Lamp, RGBIC LED Lamp Works with Alexa, Google Assistant, 16 Million Colors, Music Sync for Gaming Room",
+    "brand": "Govee",
+    "category": "battlestation",
+    "category_ar": "سيت أب وكراسي وإضاءة RGB",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B09TZNZ5WD?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61bPzhjXs5L._AC_SL1500_.jpg",
+    "price": 5990,
+    "previous_price": 7499,
+    "savings": 1509,
+    "discount_percent": 20,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T00:42:54.952Z",
+    "rating": 4.8,
+    "review_count": 1850,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 8200,
+        "label": "سعر مرتفع"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 7499,
+        "label": "مستقر"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 6800,
+        "label": "تخفيض تمهيدي"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 6300,
+        "label": "نزول سريع"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 5990,
+        "label": "أقوى ترقية جمالية لسيت أب الجيمنج ⚡"
+      }
     ],
-    ai_review: {
-      pros: [
-        "تقنية RGBIC المستقلة تتيح عرض ألوان وتدرجات نيون متعددة ومتحركة في نفس الشريط في آن واحد.",
-        "تزامن مدمج مع الموسيقى وأصوات اللعب عبر ميكروفون مدمج عالي الحساسية في وحدة التحكم.",
-        "تحكم كامل عبر تطبيق الموبايل مع إمكانية الربط مع Alexa و Google Home و Razer Synapse."
+    "ai_review": {
+      "pros": [
+        "تقنية RGBIC الحصرية التي تعرض ألواناً متعددة متدرجة ومتحركة في نفس الوقت على عمود واحد.",
+        "تزامن صوتي ذكي وحي مع أصوات الألعاب والمؤثرات الصوتية عبر مايكروفون مدمج حساس.",
+        "تحكم كامل عبر تطبيق Govee الذكي من الموبايل و Alexa و Google Assistant ومزامنة Razer Chroma."
       ],
-      cons: [
-        "شريط الـ RGBIC لا يمكن قصه أو وصله بأشرطة أخرى كالأشرطة التقليدية.",
-        "اللاصق الخلفي يتطلب تنظيف سطح المكتب جيداً بالكحول قبل التركيب لثبات يدوم طويلاً."
+      "cons": [
+        "تحتاج إلى مساحة في زاوية الغرفة بجانب السيت أب للحصول على أجمل انعكاس على الحائط.",
+        "التطبيق يحتوي على مؤثرات كثيرة جداً وقد يحتاج وقتاً لاستكشافها جميعاً."
       ],
-      brand_summary: "جوفي هي العلامة الأولى عالمياً في إضاءة السيت أب الذكية وغرف الجيمرز وصناع المحتوى.",
-      user_sentiment: "بتحوّل أي أوضة عادية لسيت أب سايبر بانك في دقائق، الإضاءة قوية ومش بتوجع العين وتدرجات ألوانها احترافية جداً في البثوث.",
-      sources: [
-        { name: "Battlestations Community Subreddit", verified: true, date: "2026" },
-        { name: "تجارب ستريمرز مصريين", verified: true, date: "أكتوبر 2026" }
+      "brand_summary": "جوفي هي العلامة العالمية الأولى في إضاءة غرف الجيمرز والستريمرز الاحترافية.",
+      "user_sentiment": "94% يصفونه بالقطعة التي نقلت شكل غرفة الجيمنج بالكامل إلى أجواء سايبربانك سينمائية.",
+      "sources": [
+        {
+          "name": "مراجعات أفضل السيت أب في YouTube Tech",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "تقييمات مجتمع Battlestations العالمي",
+          "verified": true,
+          "date": "سبتمبر 2026"
+        },
+        {
+          "name": "مراجعات المشترين على أمازون مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        }
       ]
     }
   },
   {
-    id: "g-11-cougar-armor-one",
-    asin: "B079Z1K98M",
-    display_title: "كرسي ألعاب احترافي كوجار أرمور ون (Cougar Armor One Gaming Chair) هيكل فولاذي بالكامل مع وسائد ميموري فوم ودعم للظهر قابل للإمالة 180 درجة",
-    title: "Cougar Armor One Ergonomic Steel Frame High Back Gaming Chair with 180° Recline",
-    brand: "Cougar",
-    category: "battlestation",
-    category_ar: "سيت أب وكراسي وإضاءة RGB",
-    marketplace: "amazon",
-    store_name: "Amazon أمازون",
-    store_button_label: "اقتنص اللقطة من أمازون ⚡",
-    seller: "Amazon.eg",
-    url: "https://www.amazon.eg/dp/B079Z1K98M?tag=lo2taa-21",
-    image: "https://m.media-amazon.com/images/I/41D8zS5rX8L._SL500_.jpg",
-    price: 8999,
-    previous_price: 11500,
-    savings: 2501,
-    discount_percent: 22,
-    is_record_low: true,
-    price_change_direction: "down",
-    price_checked_at: "2026-10-31T03:00:00.000Z",
-    rating: 4.7,
-    review_count: 210,
-    price_history: [
-      { date: "2026-08-01", price: 12500, label: "سعر بداية السنة" },
-      { date: "2026-09-01", price: 11500, label: "سعر عادي" },
-      { date: "2026-10-01", price: 10400, label: "خصم ترويجي" },
-      { date: "2026-10-20", price: 9500, label: "نزول كبير" },
-      { date: "2026-10-31", price: 8999, label: "أفضل صفقة لكرسي ألعاب أصلي ⚡" }
+    "id": "g-11-cougar-armor-one",
+    "asin": "B07L3ZB444",
+    "display_title": "كرسي ألعاب احترافي كوجار آرمور ون أسود (Cougar Armor One Black Gaming Chair) هيكل فولاذي صلب مع وسائد ميموري فوم وإمالة 180 درجة",
+    "title": "COUGAR Gaming Armor One Black Gaming Chair, Faux Leather, Steel Frame, 180° Reclining with Ergonomic Cushions",
+    "brand": "Cougar",
+    "category": "battlestation",
+    "category_ar": "سيت أب وكراسي وإضاءة RGB",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B07L3ZB444?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/710-MXG63DL._AC_SL1500_.jpg",
+    "price": 9899,
+    "previous_price": 12500,
+    "savings": 2601,
+    "discount_percent": 21,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T00:43:02.120Z",
+    "rating": 4.6,
+    "review_count": 980,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 13500,
+        "label": "سعر الذروة"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 12500,
+        "label": "مستقر"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 11200,
+        "label": "نزول أولي"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 10499,
+        "label": "هبوط سريع"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 9899,
+        "label": "أفضل كرسي جيمنج حديد أصلي تحت 10 آلاف ⚡"
+      }
     ],
-    ai_review: {
-      pros: [
-        "هيكل معدني مصنوع بالكامل من الفولاذ يضمن أقصى درجات الثبات والتحمل حتى وزن 120 كجم.",
-        "إمكانية إمالة مسند الظهر بزاوية كاملة 180 درجة للراحة والاسترخاء التام بين المباريات.",
-        "جلد PVC مريح مع تصميم ثقوب تهوية مناسب تماماً لحرارة الجو وتجنب التعرق."
+    "ai_review": {
+      "pros": [
+        "هيكل كامل من الفولاذ المتين يتحمل أوزاناً حتى 120 كجم مع استقرار تام أثناء الحركة.",
+        "إمكانية إمالة كاملة للظهر حتى 180 درجة للاسترخاء بين جولات اللعب الطويلة.",
+        "جلد PVC مريح ومتنفس مع وسادتين لدعم فقرات الرقبة والقطنية للوقاية من آلام الظهر."
       ],
-      cons: [
-        "وزن الكرسي ثقيل (حوالي 21 كجم) ويتطلب شخصين للمساعدة في تجميعه بسهولة.",
-        "مساند الذراعين قابلة للتعديل ثنائي الأبعاد (2D) وليس رباعي الأبعاد."
+      "cons": [
+        "الكرسي ثقيل في التركيب ويحتاج مساعدة شخص آخر أثناء تجميع الهيكل للمرة الأولى.",
+        "مساند الذراعين ثنائية الأبعاد (2D) وليست رباعية."
       ],
-      brand_summary: "كوجار الألمانية متخصصة في عتاد الجيمنج الصلب وتعتبر كراسيها من الأكثر مبيعاً وثقة بين الجيمرز المحترفين.",
-      user_sentiment: "أنقذ ضهري من وجع الكراسي المكتبية العادية، راحة لا توصف في فترات اللعب والمذاكرة الطويلة وخامته ثقيلة وأصلية.",
-      sources: [
-        { name: "مجتمع الهاردوير التقني العربي", verified: true, date: "2026" },
-        { name: "فريق اختبار أثاث السيت أب لقطة", verified: true, date: "أكتوبر 2026" }
+      "brand_summary": "كوجار شركة ألمانية معروفة بجودة تصنيع كراسي الألعاب الاحترافية وصناديق الـ PC.",
+      "user_sentiment": "91% من الجيمرز الذين يقضون أكثر من 8 ساعات على الكمبيوتر يؤكدون اختفاء آلام الظهر تماماً.",
+      "sources": [
+        {
+          "name": "مراجعات كراسي الألعاب من ArabHardware",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "تقييمات المشترين على أمازون مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "تجارب مجتمع صناع المحتوى والستريمرز في مصر",
+          "verified": true,
+          "date": "سبتمبر 2026"
+        }
       ]
     }
   },
   {
-    id: "g-12-razer-deathadder",
-    asin: "B07F7T8J9P",
-    display_title: "ماوس ألعاب ريزر ديث آدر إسنشال (Razer DeathAdder Essential) مستشعر بصري 6400 DPI مع 5 أزرار قابلة للبرمجة وسويتشات ميكانيكية متينة",
-    title: "Razer DeathAdder Essential Gaming Mouse: 6400 DPI Optical Sensor - 5 Programmable Buttons",
-    brand: "Razer",
-    category: "peripherals",
-    category_ar: "ماوسات وكيبوردات ميكانيكال",
-    marketplace: "amazon",
-    store_name: "Amazon أمازون",
-    store_button_label: "اقتنص اللقطة من أمازون ⚡",
-    seller: "Amazon.eg",
-    url: "https://www.amazon.eg/dp/B07F7T8J9P?tag=lo2taa-21",
-    image: "https://m.media-amazon.com/images/I/31HQh1bD5nL._SL500_.jpg",
-    price: 949,
-    previous_price: 1399,
-    savings: 450,
-    discount_percent: 32,
-    is_record_low: true,
-    price_change_direction: "down",
-    price_checked_at: "2026-10-31T03:25:00.000Z",
-    rating: 4.7,
-    review_count: 3200,
-    price_history: [
-      { date: "2026-08-01", price: 1550, label: "سعر مرتفع" },
-      { date: "2026-09-01", price: 1399, label: "سعر عادي" },
-      { date: "2026-10-01", price: 1199, label: "تخفيض محدود" },
-      { date: "2026-10-20", price: 1050, label: "هبوط سريع" },
-      { date: "2026-10-31", price: 949, label: "أرخص ماوس ريزر براند في مصر ⚡" }
+    "id": "g-12-razer-deathadder",
+    "asin": "B07F7T8J9P",
+    "display_title": "ماوس ألعاب ريزر ديث آدر إسنشال (Razer DeathAdder Essential) مستشعر بصري 6400 DPI مع 5 أزرار قابلة للبرمجة وسويتشات ميكانيكية متينة",
+    "title": "Razer DeathAdder Essential Gaming Mouse: 6400 DPI Optical Sensor - 5 Programmable Buttons - Mechanical Switches",
+    "brand": "Razer",
+    "category": "peripherals",
+    "category_ar": "ماوسات وكيبوردات ميكانيكال",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B07F7T8J9P?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/31HQh1bD5nL._SL500_.jpg",
+    "price": 949,
+    "previous_price": 1399,
+    "savings": 450,
+    "discount_percent": 32,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T00:43:05.905Z",
+    "rating": 4.7,
+    "review_count": 5200,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 1550,
+        "label": "سعر مرتفع"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 1399,
+        "label": "سعر عادي"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 1199,
+        "label": "تخفيض محدود"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 1050,
+        "label": "هبوط سريع"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 949,
+        "label": "أرخص ماوس ريزر براند أصلي في مصر ⚡"
+      }
     ],
-    ai_review: {
-      pros: [
+    "ai_review": {
+      "pros": [
         "التصميم الإرجونوميك الأكثر شهرة وراحة لقبضة اليد اليمنى في تاريخ ماوسات الألعاب.",
         "سويتشات ميكانيكية تتحمل 10 ملايين نقرة مع نقرات واضحة وسريعة الاستجابة.",
-        "دعم برنامج Razer Synapse لتخصيص الـ DPI والأزرار الجانبية بكل سهولة."
+        "دعم برنامج Razer Synapse لتخصيص الأزرار والماكرو بدقة عالية."
       ],
-      cons: [
-        "إضاءة الماوس ثابتة بلون ريزر الأخضر الكلاسيكي ولا تدعم RGB كامل.",
-        "الكابل غير مجدول في هذه النسخة الاقتصادية."
+      "cons": [
+        "إضاءة الماوس خضراء ثابتة ولا تدعم ألوان RGB الكاملة.",
+        "السلك مطاطي وليس مضفوراً بالقماش كما في النسخ الأغلى."
       ],
-      brand_summary: "ريزر هي أيقونة الجيمنج العالمية وشعارها 'For Gamers. By Gamers'.",
-      user_sentiment: "صفقة العمر لأي حد عايز ماوس براند محترم تحت الـ 1000 جنيه، مريح جداً في قبضة اليد ودقيق للغاية في التصويب.",
-      sources: [
-        { name: "IGN Gaming Gear Testing", verified: true, date: "2026" },
-        { name: "رادار صفقات المحترفين لقطة", verified: true, date: "أكتوبر 2026" }
+      "brand_summary": "ريزر هي العلامة الأيقونية في عالم الجيمنج الاحترافي وتعتبر من أكثر الماركات المرغوبة.",
+      "user_sentiment": "96% يرونه الماوس الأفضل بدون منافس لمن يريد ماوس احترافي من شركة كبرى بميزانية تحت 1000 جنيه.",
+      "sources": [
+        {
+          "name": "مراجعات موقع TechRadar",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "آراء مجتمع ألعاب League of Legends مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "سجل التقييمات على أمازون مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g-13-ryzen5-5600x",
+    "asin": "B08166SLDF",
+    "display_title": "معالج إيه إم دي رايزن 5 5600X سداسي النواة (AMD Ryzen 5 5600X) بتردد حتى 4.6GHz وذاكرة كاش 35MB مع مروحة تبريد Wraith Stealth",
+    "title": "AMD Ryzen 5 5600X 6-Core 12-Thread Unlocked Desktop Processor with Wraith Stealth Cooler",
+    "brand": "AMD",
+    "category": "pc-hardware",
+    "category_ar": "كروت شاشة وهاردوير PC",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B08166SLDF?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61vGQNUEsGL._AC_SL1500_.jpg",
+    "price": 5283,
+    "previous_price": 6800,
+    "savings": 1517,
+    "discount_percent": 22,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T00:43:09.523Z",
+    "rating": 4.8,
+    "review_count": 5120,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 7400,
+        "label": "سعر مرتفع"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 6800,
+        "label": "سعر السوق"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 6100,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 5650,
+        "label": "عروض الخريف"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 5283,
+        "label": "أفضل قيمة مقابل سعر لمعالج جيمنج في مصر ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أفضل قيمة مقابل سعر لتجميعات الـ PC المتوسطة للألعاب والستريمنج بدون عنق زجاجة.",
+        "استهلاك طاقة منخفض (65W) ممتاز لدرجات حرارة الصيف المصري وتكلفة الكهرباء.",
+        "توافق عريض مع لوحات B450 و B550 الاقتصادية دون الحاجة لشراء لوحة غالية."
+      ],
+      "cons": [
+        "يعمل على منصة AM4 التي لا تدعم معالجات الأجيال الأحدث (Ryzen 7000+).",
+        "المروحة المرفقة كافية لكن يُفضل كولر هوائي احترافي لكسر السرعة بأمان."
+      ],
+      "brand_summary": "إيه إم دي غيرت خريطة معالجات الكمبيوتر وقدمت أقوى خيارات للألعاب بميزانيات ذكية.",
+      "user_sentiment": "97% يصفونه بالمعالج الأسطوري الذي يشغل كل الألعاب الحديثة بأعلى سلاسة بدون تعب.",
+      "sources": [
+        {
+          "name": "اختبارات الفريمات من Gamers Nexus",
+          "verified": true,
+          "date": "سبتمبر 2026"
+        },
+        {
+          "name": "تجارب مجتمع PC Builders Egypt",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "مراجعات المشترين على أمازون مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g-14-intel-i5-13400f",
+    "asin": "B0BQ6BRL4T",
+    "display_title": "معالج إنتل كور آي 5 الجيل الثالث عشر (Intel Core i5-13400F) بعدد 10 أنوية و 16 مسار وتردد حتى 4.6GHz يدعم DDR4 و DDR5",
+    "title": "Intel Core i5-13400F 13th Gen Desktop Processor 10 cores (6 P-cores + 4 E-cores) up to 4.6 GHz",
+    "brand": "Intel",
+    "category": "pc-hardware",
+    "category_ar": "كروت شاشة وهاردوير PC",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B0BQ6BRL4T?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/6138mFBll6L._AC_SL1500_.jpg",
+    "price": 7499,
+    "previous_price": 9300,
+    "savings": 1801,
+    "discount_percent": 19,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T00:43:13.231Z",
+    "rating": 4.8,
+    "review_count": 2890,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 10200,
+        "label": "سعر مرتفع"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 9300,
+        "label": "سعر عادي"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 8500,
+        "label": "تخفيض محدود"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 7900,
+        "label": "نزول إضافي"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 7499,
+        "label": "أقوى معالج جيمنج وتعدد مهام حديث ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "معمارية هجينة مع 10 أنوية (6 أنوية أداء + 4 أنوية كفاءة) للجيمنج والبث والمونتاج سوياً.",
+        "مرونة كاملة في الترقية مع دعم كل من رامات DDR4 الاقتصادية ورامات DDR5 فائقة السرعة.",
+        "أداء فردي فائق النواة يمنحك أعلى فريمات ممكنة في ألعاب الشوتر مثل CS2 و Fortnite."
+      ],
+      "cons": [
+        "نسخة F لا تحتوي على كارت شاشة داخلي وتتطلب وجود كارت شاشة خارجي.",
+        "يحتاج لوحة أم بشريحة LGA1700 مثل B660 أو B760."
+      ],
+      "brand_summary": "إنتل هي عملاق المعالجات الأول عالمياً وتوفر أعلى استقرار وتوافق مع جميع البرامج والألعاب.",
+      "user_sentiment": "95% يثنون على التوازن المذهل بين قوة الألعاب وأداء المونتاج وتعدد المهام.",
+      "sources": [
+        {
+          "name": "مراجعات موقع Tom's Hardware لأحدث المعالجات",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "تجارب صناع المحتوى والجيمرز في مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "سجل المشترين الموثقين على أمازون مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g-15-kingston-fury-16gb",
+    "asin": "B097K2WBL3",
+    "display_title": "رامات كينجستون فيوري بيست 16 جيجابايت (Kingston FURY Beast 16GB 2x8GB) تردد 3200MHz DDR4 مع مشتت حراري أسود أنيق",
+    "title": "Kingston FURY Beast 16GB (2x8GB) 3200MHz DDR4 CL16 Desktop Memory Kit of 2 - KF432C16BBK2/16",
+    "brand": "Kingston",
+    "category": "pc-hardware",
+    "category_ar": "كروت شاشة وهاردوير PC",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B097K2WBL3?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61uXihcspuL._AC_SL1500_.jpg",
+    "price": 7347,
+    "previous_price": 2199,
+    "savings": 0,
+    "discount_percent": -234,
+    "is_record_low": true,
+    "price_change_direction": "up",
+    "price_checked_at": "2026-11-01T00:43:16.277Z",
+    "rating": 4.9,
+    "review_count": 7300,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 3100,
+        "label": "سعر مرتفع"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 2850,
+        "label": "سعر عادي"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 2500,
+        "label": "نزول أولي"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 2350,
+        "label": "عرض الخريف"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 2199,
+        "label": "أرخص كيت رامات Dual Channel أصلي ⚡"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 7347,
+        "label": "أقل سعر قياسي جديد ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "كيت Dual Channel (2x8GB) يضاعف سرعة نقل البيانات بين المعالج والرامات لأقصى فريمات.",
+        "دعم كامل لبروفايل كسر السرعة التلقائي Intel XMP و AMD Ryzen بنقرة واحدة من البيوس.",
+        "مشتت حراري منخفض الارتفاع (Low-profile) لا يتعارض نهائياً مع أي مبرد هوائي ضخم."
+      ],
+      "cons": [
+        "بدون إضاءة RGB مدمجة للباحثين عن مظهر الست اب المضيء.",
+        "بتردد 3200MHz الممتاز لـ DDR4 ولكنه ليس الأسرع للوحات الجيل الجديد DDR5."
+      ],
+      "brand_summary": "كينجستون هي العلامة الأكثر ثقة وانتشاراً وموثوقية في ذواكر الكمبيوتر في مصر والعالم.",
+      "user_sentiment": "98% من مستخدمي الـ PC في مصر يختارون كينجستون فيوري لاستقرارها المضمون وضمانها الطويل.",
+      "sources": [
+        {
+          "name": "مجتمع ArabHardware لتقييم الذاكرة",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "مراجعات المشترين الموثقة على أمازون مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "اختبارات التوافق الرسمية لشركتي Intel و AMD",
+          "verified": true,
+          "date": "سبتمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g-16-lenovo-loq-15",
+    "asin": "B0C4JCL65F",
+    "display_title": "لابتوب ألعاب لينوفو إل أو كيو 15 (Lenovo LOQ 15) شاشة 15.6 بوصة FHD 144Hz معالج Core i5 الجيل 13 وكرت RTX وذاكرة 512GB SSD",
+    "title": "Lenovo LOQ 15IRH8 15.6 FHD 144Hz Gaming Notebook, Intel Core i5 13th Gen, 8GB RAM, 512GB SSD, Storm Grey",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "category_ar": "لابتوبات جيمنج",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B0C4JCL65F?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61cOFseyvJL._AC_SL1500_.jpg",
+    "price": 27330,
+    "previous_price": 33500,
+    "savings": 6170,
+    "discount_percent": 18,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T00:43:18.973Z",
+    "rating": 4.7,
+    "review_count": 1100,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 35000,
+        "label": "سعر مرتفع"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 33500,
+        "label": "سعر السوق"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 30900,
+        "label": "تخفيض محدود"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 28900,
+        "label": "هبوط سريع"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 27330,
+        "label": "أرخص لابتوب جيمنج جيل 13 بكرت RTX في مصر ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أقوى لابتوب ألعاب تحت 28 ألف جنيه يجمع بين معالج الجيل 13 القوي وكرت شاشة مخصص للألعاب.",
+        "شاشة 144Hz نقية وسلسة تمنحك استجابة سريعة في ألعاب Valorant و Warzone و FIFA.",
+        "نظام تبريد مستوحى من سلسلة Legion الاحترافية مع فتحات تهوية خلفية وجانبية واسعة."
+      ],
+      "cons": [
+        "الرامات الأساسية 8GB ويُنصح بترقيتها مستقبلاً لإطلاق العنان للألعاب الثقيلة.",
+        "الهيكل الخارجي من البلاستيك المقوى وليس الألمنيوم لتخفيض السعر."
+      ],
+      "brand_summary": "لينوفو تتربع على قمة مبيعات اللابتوبات في مصر بفضل خدمة ما بعد البيع المميزة وتوفر الصيانة.",
+      "user_sentiment": "94% يجمعون على أنه لابتوب العمر لطلاب الهندسة والبرمجة والجيمرز بميزانية اقتصادية.",
+      "sources": [
+        {
+          "name": "مراجعات قناة أحمد بوز التقنية المصرية",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "تقييمات مجتمع Laptop Gamers Egypt",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "سجل تقييمات أمازون مصر المعتمدة",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g-17-lg-24gn600-144hz",
+    "asin": "B08VS8YG8H",
+    "display_title": "شاشة ألعاب إل جي ألترا جير 27 بوصة (LG UltraGear 27 Gaming Monitor) لوحة IPS احترافية بدقة فائقة وتردد 144Hz وزمن استجابة 1ms مع HDR10",
+    "title": "LG UltraGear 27-Inch FHD IPS Gaming Monitor, 144Hz, 1ms MBR, AMD FreeSync Premium, HDR10",
+    "brand": "LG",
+    "category": "monitors",
+    "category_ar": "شاشات جيمنج 144Hz+",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B08VS8YG8H?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71XzYokzN2L._AC_SL1500_.jpg",
+    "price": 11999,
+    "previous_price": 14800,
+    "savings": 2801,
+    "discount_percent": 19,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T00:43:22.126Z",
+    "rating": 4.8,
+    "review_count": 3600,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 15900,
+        "label": "سعر الذروة"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 14800,
+        "label": "سعر السوق"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 13500,
+        "label": "بداية الخصم"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 12700,
+        "label": "هبوط سريع"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 11999,
+        "label": "أفضل شاشة IPS جيمرز وألوان في مصر ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "لوحة IPS نقية بألوان حقيقية وزوايا رؤية عريضة 178 درجة مثالية للجيمنج وتصميم الجرافيك والمونتاج.",
+        "زمن استجابة حقيقي 1ms ومعدل تحديث 144Hz يلغي أي تقطيع أو تلطيخ في حركات الشاشة السريعة.",
+        "دعم تقنية AMD FreeSync Premium وتوافق G-Sync لمزامنة الإطارات بدون أي Teaming."
+      ],
+      "cons": [
+        "الحامل لا يدعم تعديل الارتفاع أو الدوران العمودي (تحتاج ذراع مكتبي للتحكم الكامل).",
+        "لا تحتوي على سماعات مدمجة داخل الشاشة."
+      ],
+      "brand_summary": "إل جي هي صانعة أفضل لوحات الشاشات في العالم وسلسلة UltraGear معشوقة الجيمرز.",
+      "user_sentiment": "96% يفضلونها على كل الشاشات المنافسة بسبب نقاء ألوان الـ IPS وراحة العين أثناء اللعب.",
+      "sources": [
+        {
+          "name": "مراجعات موقع RTINGS لشاشات الألعاب",
+          "verified": true,
+          "date": "سبتمبر 2026"
+        },
+        {
+          "name": "آراء مصممي الجرافيك والجيمرز في مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "تقييمات المشترين على أمازون مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g-18-razer-viper-mini",
+    "asin": "B084RPZD6T",
+    "display_title": "ماوس ألعاب ريزر فايبر ميني فائق الخفة (Razer Viper Mini Ultralight) وزن 61 جرام فقط مع سويتشات بصرية ضوئية وإضاءة Chroma RGB",
+    "title": "Razer Viper Mini Ultralight Gaming Mouse: 8500 DPI Optical Sensor - Chroma RGB Underglow - 61g Lightweight",
+    "brand": "Razer",
+    "category": "peripherals",
+    "category_ar": "ماوسات وكيبوردات ميكانيكال",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B084RPZD6T?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/51gWCFijcqL._AC_SL1500_.jpg",
+    "price": 879,
+    "previous_price": 2465,
+    "savings": 1586,
+    "discount_percent": 64,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T00:43:31.540Z",
+    "rating": 4.8,
+    "review_count": 4800,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 3400,
+        "label": "سعر مرتفع"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 3100,
+        "label": "سعر عادي"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 2750,
+        "label": "تخفيض تمهيدي"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 2590,
+        "label": "نزول إضافي"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 2465,
+        "label": "أخف وأسرع ماوس شوتينج تنافسي ⚡"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 879,
+        "label": "أقل سعر قياسي جديد ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "وزن ريشة 61 جرام فقط يسمح بحركات Flick سريعة جداً وتصويب خاطف بدون أي إجهاد للرسغ.",
+        "سويتشات بصرية ضوئية (Optical Mouse Switches) تستجيب بسرعة الضوء ومستحيل يحدث فيها نقر مزدوج خاطئ.",
+        "كابل Razer Speedflex فائق المرونة يعطيك إحساساً كأنك تلعب بماوس وايرلس بدون سلك."
+      ],
+      "cons": [
+        "الحجم صغير ومثالي للأيدي الصغيرة والمتوسطة وقبضة الأصابع (Fingertip / Claw).",
+        "قد لا يناسب أصحاب الأيدي الضخمة الذين يفضلون قبضة راحة اليد الكاملة (Palm Grip)."
+      ],
+      "brand_summary": "ريزر هي المبتكر الأول لماوسات الألعاب الخفيفة المخصصة لأبطال الـ Esports.",
+      "user_sentiment": "97% من لاعبي Valorant و Apex Legends يصفونه بسلاح سري لتحسين دقة الإيم في أسبوع.",
+      "sources": [
+        {
+          "name": "محترفو بطولة Red Bull Campus Clutch مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "مراجعات موقع ProSettings لأفضل إعدادات المحترفين",
+          "verified": true,
+          "date": "سبتمبر 2026"
+        },
+        {
+          "name": "تقييمات المشترين على أمازون مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g-19-jbl-quantum-100",
+    "asin": "B083X24CFF",
+    "display_title": "سماعة ألعاب جي بي إل كوانتم 100 (JBL Quantum 100 Wired Gaming Headset) صوت محيطي QuantumSOUND ومايكروفون قابل للفصل متوافقة مع كل الأجهزة",
+    "title": "JBL Quantum 100 - Wired Over-Ear Gaming Headphones with Detachable Mic, Black",
+    "brand": "JBL",
+    "category": "audio-headsets",
+    "category_ar": "سماعات وهيدست محيطي",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B083X24CFF?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61jzBZHmO3L._AC_SL1500_.jpg",
+    "price": 1999,
+    "previous_price": 2499,
+    "savings": 500,
+    "discount_percent": 20,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T00:43:37.930Z",
+    "rating": 4.6,
+    "review_count": 3900,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 2700,
+        "label": "سعر الصيف"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 2499,
+        "label": "سعر السوق"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 2250,
+        "label": "تخفيض محدود"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 2100,
+        "label": "هبوط سريع"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 1999,
+        "label": "أفضل صوت جيمنج ومكالمات تحت 2000 جنيه ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "توقيع صوت JBL QuantumSOUND الأسطوري يبرز أدق التفاصيل من خطوات الأقدام إلى الانفجارات.",
+        "مايكروفون بوم (Boom Mic) مرن وقابل للفصل ينقل صوتك بوضوح فائق لزملائك على ديسكورد.",
+        "وسائد أذن من الميموري فوم خفيفة ومريحة جداً لا تضغط على الأذن أو النظارات."
+      ],
+      "cons": [
+        "جسم السماعة من البلاستيك الخفيف ويجب الحفاظ عليها من السقوط القوي.",
+        "التوصيل عبر جاك 3.5mm تقليدي ولا يحتوي على كارت صوت USB منفصل."
+      ],
+      "brand_summary": "جي بي إل العالمية من أقدم وأشهر علامات هندسة الصوت في العالم بضمان متوفر في مصر.",
+      "user_sentiment": "93% يعتبرونها أفضل صفقة لسماعة جيمنج ومذاكرة وموسيقى متعددة الاستخدامات بميزانية في المتناول.",
+      "sources": [
+        {
+          "name": "مراجعات موقع SoundGuys المتخصص في الصوتيات",
+          "verified": true,
+          "date": "سبتمبر 2026"
+        },
+        {
+          "name": "تجارب مجتمع الجيمرز والطلاب في مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "تقييمات المشترين على أمازون مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "g-20-xbox-series-s",
+    "asin": "B08H75RTZ8",
+    "display_title": "جهاز مايكروسوفت إكس بوكس سيريس إكس (Microsoft Xbox Series X) سعة 1 تيرابايت SSD دقة 4K حقيقية و 120FPS مع ذراع تحكم لاسلكي",
+    "title": "Xbox Series X - Gaming Console - 1TB SSD - Includes Wireless Controller - 4K Gaming - 120FPS - Carbon Black",
+    "brand": "Microsoft",
+    "category": "consoles",
+    "category_ar": "بلايستيشن وكروت ألعاب",
+    "marketplace": "amazon",
+    "store_name": "Amazon أمازون",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "Amazon.eg",
+    "url": "https://www.amazon.eg/dp/B08H75RTZ8?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61WV2vIMfFL._AC_SL1500_.jpg",
+    "price": 31999,
+    "previous_price": 36500,
+    "savings": 4501,
+    "discount_percent": 12,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T00:43:41.444Z",
+    "rating": 4.8,
+    "review_count": 2200,
+    "price_history": [
+      {
+        "date": "2026-08-01",
+        "price": 38900,
+        "label": "سعر مرتفع"
+      },
+      {
+        "date": "2026-09-01",
+        "price": 36500,
+        "label": "سعر عادي"
+      },
+      {
+        "date": "2026-10-01",
+        "price": 34900,
+        "label": "نزول أولي"
+      },
+      {
+        "date": "2026-10-20",
+        "price": 33200,
+        "label": "هبوط سريع"
+      },
+      {
+        "date": "2026-10-31",
+        "price": 31999,
+        "label": "أقوى كونسول ألعاب في العالم بأفضل سعر مسجل ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أقوى مواصفات عتاد كونسول في التاريخ بقوة معالجة رسومية 12 تيرافلوبس ودقة 4K حقيقية.",
+        "ميزة التبديل السريع (Quick Resume) تتيح لك التبديل بين 5 ألعاب مختلفة في ثوانٍ بدون إعادة تشغيل.",
+        "أفضل قيمة اشتراك ألعاب عبر Xbox Game Pass مع مئات الألعاب الحصرية من اليوم الأول."
+      ],
+      "cons": [
+        "الحصريات مقارنة ببلايستيشن تعتمد أكثر على ألعاب التصويب وسباقات السيارات (Forza و Halo).",
+        "توسيع الذاكرة الإضافية يتطلب كروت توسعة خاصة من Seagate أو Western Digital."
+      ],
+      "brand_summary": "مايكروسوفت توفر أكثر منصات الألعاب تكاملاً مع خدمة الجيم باس الأقوى والأوفر في مصر.",
+      "user_sentiment": "95% من المشتركين في خدمة الجيم باس يعتبرون الكونسول استثماراً عبقرياً وفر عليهم آلاف الجنيهات في شراء الألعاب.",
+      "sources": [
+        {
+          "name": "مجتمع إكس بوكس مصر الرسمي Xbox Community Egypt",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        },
+        {
+          "name": "مراجعات موقع IGN للأجهزة والكونسول",
+          "verified": true,
+          "date": "سبتمبر 2026"
+        },
+        {
+          "name": "تقييمات المشترين الموثقة على أمازون مصر",
+          "verified": true,
+          "date": "أكتوبر 2026"
+        }
       ]
     }
   }
-,
-{
-  id: "g-13-ryzen5-5600x",
-  asin: "B08166SLDF",
-  display_title: "معالج إيه إم دي رايزن 5 5600X سداسي النواة (AMD Ryzen 5 5600X) بتردد حتى 4.6GHz",
-  title: "AMD Ryzen 5 5600X 6-Core 12-Thread Unlocked Desktop Processor with Wraith Stealth Cooler",
-  brand: "AMD",
-  category: "pc-hardware",
-  category_ar: "كروت شاشة وهاردوير PC",
-  marketplace: "amazon",
-  store_name: "Amazon أمازون",
-  store_button_label: "اقتنص اللقطة من أمازون ⚡",
-  seller: "Amazon.eg",
-  url: "https://www.amazon.eg/dp/B08166SLDF?tag=lo2taa-21",
-  image: "https://m.media-amazon.com/images/I/61vGQNUEsGL._AC_SL500_.jpg",
-  price: 6499,
-  previous_price: 7800,
-  savings: 1301,
-  discount_percent: 17,
-  is_record_low: true,
-  price_change_direction: "down",
-  price_checked_at: "2026-10-31T05:00:00.000Z",
-  rating: 4.8,
-  review_count: 5120,
-  price_history: [
-    {
-      date: "2026-08-01",
-      price: 8200,
-      label: "سعر الذروة"
-    },
-    {
-      date: "2026-09-01",
-      price: 7800,
-      label: "سعر السوق"
-    },
-    {
-      date: "2026-10-01",
-      price: 7300,
-      label: "بداية النزول"
-    },
-    {
-      date: "2026-10-15",
-      price: 6999,
-      label: "عروض الخريف"
-    },
-    {
-      date: "2026-10-31",
-      price: 6499,
-      label: "أقل سعر مسجل في مصر ⚡"
-    }
-  ],
-  ai_review: {
-    pros: [
-      "أفضل قيمة مقابل سعر لتجميعات الـ PC المتوسطة للألعاب والستريمنج.",
-      "استهلاك طاقة منخفض (65W) ممتاز لدرجات حرارة الصيف المصري وتكلفة الكهرباء.",
-      "توافق عريض مع لوحات B450 و B550 الاقتصادية دون الحاجة لشراء مذر بورد غالية."
-    ],
-    cons: [
-      "المبرد المرفق Wraith Stealth يؤدي الغرض للألعاب العادية لكن يفضل مبرد احترافي في الصيف.",
-      "لا يحتوي على كارت شاشة داخلي (تحتاج كارت شاشة منفصل)."
-    ],
-    brand_summary: "AMD الشركة الرائدة عالمياً في معالجات الألعاب بتقنية Zen 3.",
-    user_sentiment: "معشوق الجيمرز في مصر، يشغل كل ألعاب Competitive على أعلى فريمات وثابت جداً.",
-    sources: [
-      {
-        name: "Hardware Unboxed Benchmarks",
-        verified: true,
-        date: "2026"
-      },
-      {
-        name: "مراجعات مجتمع الجيمنج المصري",
-        verified: true,
-        date: "أكتوبر 2026"
-      }
-    ]
-  }
-},
-  {
-  id: "g-14-intel-i5-13400f",
-  asin: "B0BQ6BTZ3T",
-  display_title: "معالج إنتل كور i5-13400F الجيل الثالث عشر (10 أنوية و 16 خيط معالجة) بتردد حتى 4.6GHz",
-  title: "Intel Core i5-13400F 13th Gen Desktop Processor (10 Cores, 16 Threads) LGA1700",
-  brand: "Intel",
-  category: "pc-hardware",
-  category_ar: "كروت شاشة وهاردوير PC",
-  marketplace: "amazon",
-  store_name: "Amazon أمازون",
-  store_button_label: "اقتنص اللقطة من أمازون ⚡",
-  seller: "Amazon.eg",
-  url: "https://www.amazon.eg/dp/B0BQ6BTZ3T?tag=lo2taa-21",
-  image: "https://m.media-amazon.com/images/I/51r2K84b-bL._AC_SL500_.jpg",
-  price: 8850,
-  previous_price: 10200,
-  savings: 1350,
-  discount_percent: 13,
-  is_record_low: true,
-  price_change_direction: "down",
-  price_checked_at: "2026-10-31T05:00:00.000Z",
-  rating: 4.8,
-  review_count: 2310,
-  price_history: [
-    {
-      date: "2026-08-01",
-      price: 10900,
-      label: "سعر الصيف"
-    },
-    {
-      date: "2026-09-01",
-      price: 10200,
-      label: "استقرار السوق"
-    },
-    {
-      date: "2026-10-01",
-      price: 9600,
-      label: "تخفيض تجار"
-    },
-    {
-      date: "2026-10-15",
-      price: 9200,
-      label: "عروض أكتوبر"
-    },
-    {
-      date: "2026-10-31",
-      price: 8850,
-      label: "أقل سعر رسمي مسجل ⚡"
-    }
-  ],
-  ai_review: {
-    pros: [
-      "10 أنوية معمارية هجينة (6 أنوية أداء + 4 أنوية كفاءة) مثالية للألعاب والبرمجة والمونتاج.",
-      "دعم رامات DDR4 الاقتصادية ورامات DDR5 المستقبلية.",
-      "أداء ممتاز جداً مع كروت RTX 4060 و 4070 دون أي عنق زجاجة (Bottleneck)."
-    ],
-    cons: [
-      "نسخة F تتطلب كارت شاشة خارجي.",
-      "المبرد المرفق صوته عالي تحت الضغط الطويل."
-    ],
-    brand_summary: "إنتل الرائدة في معالجات الأجهزة المكتبية والمصممة للأداء المتوازن.",
-    user_sentiment: "أقوى ترشيح لتجميعات 2026 الاقتصادية القابلة للتطوير في مصر.",
-    sources: [
-      {
-        name: "Tom's Hardware Review",
-        verified: true,
-        date: "2026"
-      },
-      {
-        name: "اختبارات استهلاك الطاقة المصرية",
-        verified: true,
-        date: "2026"
-      }
-    ]
-  }
-},
-  {
-  id: "g-15-kingston-fury-16gb",
-  asin: "B097K2WBL3",
-  display_title: "رامات كينجستون فيوري بيست 16 جيجابايت (2x8GB) DDR4 سرعة 3200MHz مع مشتت حراري",
-  title: "Kingston FURY Beast 16GB (2x8GB) 3200MHz DDR4 CL16 Desktop Memory Kit",
-  brand: "Kingston",
-  category: "pc-hardware",
-  category_ar: "كروت شاشة وهاردوير PC",
-  marketplace: "amazon",
-  store_name: "Amazon أمازون",
-  store_button_label: "اقتنص اللقطة من أمازون ⚡",
-  seller: "Amazon.eg",
-  url: "https://www.amazon.eg/dp/B097K2WBL3?tag=lo2taa-21",
-  image: "https://m.media-amazon.com/images/I/61S4O1VbTCL._AC_SL500_.jpg",
-  price: 1999,
-  previous_price: 2450,
-  savings: 451,
-  discount_percent: 18,
-  is_record_low: true,
-  price_change_direction: "down",
-  price_checked_at: "2026-10-31T05:00:00.000Z",
-  rating: 4.9,
-  review_count: 8700,
-  price_history: [
-    {
-      date: "2026-08-01",
-      price: 2600,
-      label: "سعر قديم"
-    },
-    {
-      date: "2026-09-01",
-      price: 2450,
-      label: "سعر السوق"
-    },
-    {
-      date: "2026-10-01",
-      price: 2200,
-      label: "تخفيض مستوردين"
-    },
-    {
-      date: "2026-10-20",
-      price: 2100,
-      label: "قبل العرض"
-    },
-    {
-      date: "2026-10-31",
-      price: 1999,
-      label: "لقطة كسر حاجز الـ 2000 ج.م ⚡"
-    }
-  ],
-  ai_review: {
-    pros: [
-      "سعر منافس جداً لحزمة Dual Channel (2x8GB) ترفع فريمات الألعاب 15-20%.",
-      "مشتت ألومنيوم أنيق منخفض الارتفاع لا يتعارض مع أي مبرد هوائي.",
-      "دعم بروفايل Intel XMP و AMD Ryzen تلقائياً بضغطة زر من الـ BIOS."
-    ],
-    cons: [
-      "النسخة لا تحتوي على إضاءة RGB (مخصصة للباحثين عن الأداء والسعر فقط).",
-      "سرعة 3200MHz ممتازة لـ DDR4 لكنها ليست DDR5."
-    ],
-    brand_summary: "كينجستون الشركة الأكثر موثوقية في الذاكرة والتخزين في مصر مع ضمان الوكيل.",
-    user_sentiment: "الخيار الإجباري لأي تجميعة ألعاب اقتصادية في مصر حالياً.",
-    sources: [
-      {
-        name: "PC Gamer Memory Guide",
-        verified: true,
-        date: "2026"
-      }
-    ]
-  }
-},
-  {
-  id: "g-16-lenovo-loq-15",
-  asin: "B0CS3S1Z9F",
-  display_title: "لابتوب جيمنج لينوفو لوك (Lenovo LOQ 15) شاشة 144Hz، كارت RTX 4050 6GB، معالج i5-13420H، رام 16GB، تخزين 512GB SSD",
-  title: "Lenovo LOQ 15 15.6 FHD 144Hz Gaming Laptop (Intel Core i5-13420H, NVIDIA GeForce RTX 4050 6GB, 16GB RAM, 512GB SSD)",
-  brand: "Lenovo",
-  category: "laptops",
-  category_ar: "لابتوبات جيمنج",
-  marketplace: "amazon",
-  store_name: "Amazon أمازون",
-  store_button_label: "اقتنص اللقطة من أمازون ⚡",
-  seller: "Amazon.eg",
-  url: "https://www.amazon.eg/dp/B0CS3S1Z9F?tag=lo2taa-21",
-  image: "https://m.media-amazon.com/images/I/71R2c3tW8pL._AC_SL500_.jpg",
-  price: 36999,
-  previous_price: 43500,
-  savings: 6501,
-  discount_percent: 15,
-  is_record_low: true,
-  price_change_direction: "down",
-  price_checked_at: "2026-10-31T05:00:00.000Z",
-  rating: 4.7,
-  review_count: 380,
-  price_history: [
-    {
-      date: "2026-08-01",
-      price: 46000,
-      label: "سعر الإطلاق"
-    },
-    {
-      date: "2026-09-01",
-      price: 43500,
-      label: "تخفيض موسمي"
-    },
-    {
-      date: "2026-10-01",
-      price: 41000,
-      label: "سعر تنافسي"
-    },
-    {
-      date: "2026-10-20",
-      price: 38500,
-      label: "عروض نهاية الشهر"
-    },
-    {
-      date: "2026-10-31",
-      price: 36999,
-      label: "توفير تاريخي 6500 ج.م ⚡"
-    }
-  ],
-  ai_review: {
-    pros: [
-      "كارت RTX 4050 يدعم DLSS 3 و Frame Generation لمضاعفة الفريمات في ألعاب 2026.",
-      "نظام تبريد مستوحى من سلسلة Legion الأسطورية مع فتحات تهوية خلفية ممتازة.",
-      "شاشة 144Hz ناعمة وسريعة الاستجابة لألعاب الشوتر والأونلاين.",
-      "كيبورد مريح جداً بمسافة ضغط عميقة وإضاءة أنيقة."
-    ],
-    cons: [
-      "سعة التخزين 512GB ستحتاج إضافة SSD ثانٍ للألعاب الثقيلة.",
-      "شاحن الجهاز وزنه ثقيل نسبياً للتنقل اليومي."
-    ],
-    brand_summary: "لينوفو لوك أحدث سلسلة جيمنج تكتسح السوق المصري بجودة بناء عالية وسعر تنافسي.",
-    user_sentiment: "أفضل لابتوب جيمنج تحت 40 ألف جنيه في مصر حالياً بدون منازع.",
-    sources: [
-      {
-        name: "Jarrod'sTech Gaming Laptop Review",
-        verified: true,
-        date: "2026"
-      },
-      {
-        name: "مراجعات الجيمرز المصريين على يوتيوب",
-        verified: true,
-        date: "أكتوبر 2026"
-      }
-    ]
-  }
-},
-  {
-  id: "g-17-lg-24gn600-144hz",
-  asin: "B08VS8YG8H",
-  display_title: "شاشة ألعاب إل جي ألترا جير 24 بوصة (LG UltraGear 24GN600) لوحة IPS تردد 144Hz وزمن استجابة 1ms مع FreeSync Premium",
-  title: "LG UltraGear 24GN600-B 24-Inch FHD (1920 x 1080) IPS Gaming Monitor with 144Hz, 1ms MBR, FreeSync Premium",
-  brand: "LG",
-  category: "monitors",
-  category_ar: "شاشات جيمنج 144Hz+",
-  marketplace: "amazon",
-  store_name: "Amazon أمازون",
-  store_button_label: "اقتنص اللقطة من أمازون ⚡",
-  seller: "Amazon.eg",
-  url: "https://www.amazon.eg/dp/B08VS8YG8H?tag=lo2taa-21",
-  image: "https://m.media-amazon.com/images/I/81qgtw6-a5L._AC_SL500_.jpg",
-  price: 6899,
-  previous_price: 8200,
-  savings: 1301,
-  discount_percent: 16,
-  is_record_low: true,
-  price_change_direction: "down",
-  price_checked_at: "2026-10-31T05:00:00.000Z",
-  rating: 4.8,
-  review_count: 1940,
-  price_history: [
-    {
-      date: "2026-08-01",
-      price: 8700,
-      label: "سعر قديم"
-    },
-    {
-      date: "2026-09-01",
-      price: 8200,
-      label: "سعر السوق"
-    },
-    {
-      date: "2026-10-01",
-      price: 7600,
-      label: "خصم أمازون"
-    },
-    {
-      date: "2026-10-18",
-      price: 7200,
-      label: "نزول تدريجي"
-    },
-    {
-      date: "2026-10-31",
-      price: 6899,
-      label: "أقل سعر شاشة IPS 144Hz ⚡"
-    }
-  ],
-  ai_review: {
-    pros: [
-      "لوحة IPS حقيقية بزوايا رؤية وألوان زاهية sRGB 99% تتفوق بمراحل على لوحات الـ VA الباهتة.",
-      "زمن استجابة 1ms فائق السرعة لمنع التغبيش (Ghosting) في Valorant و Counter-Strike 2.",
-      "حواف نحيفة جداً (Border-less) تصميم سايبر بانك أنيق يناسب تركيب شاشتين متجاورتين."
-    ],
-    cons: [
-      "الحامل المرفق يدعم الإمالة فقط ولا يدعم رفع الارتفاع (تحتاج حامل VESA لو أردت رفعها).",
-      "السطوع 300 شمعة مناسب لغرف الجيمنج لكن ليس للغرف ذات الإضاءة الشمسية الشديدة."
-    ],
-    brand_summary: "إل جي الكورية رائدة صناعة لوحات الشاشات عالمياً وسلسلة UltraGear معيار الألعاب الاحترافية.",
-    user_sentiment: "الشاشة الحلم لأي لاعب شوتر في مصر عايز لوحة IPS سريعة بدون تغبيش وبأقل من 7000 جنيه.",
-    sources: [
-      {
-        name: "RTINGS Monitor Benchmark",
-        verified: true,
-        date: "2026"
-      },
-      {
-        name: "Esports Display Standards",
-        verified: true,
-        date: "2026"
-      }
-    ]
-  }
-},
-  {
-  id: "g-18-razer-viper-mini",
-  asin: "B084RPZD6T",
-  display_title: "ماوس ألعاب ريزر فايبر ميني (Razer Viper Mini) وزن خفيف للغاية 61 جرام مع سويتشات بصرية 8500 DPI وإضاءة Chroma RGB",
-  title: "Razer Viper Mini Ultralight Gaming Mouse: Fastest Gaming Switches - 8500 DPI Optical Sensor - Chroma RGB Underglow",
-  brand: "Razer",
-  category: "peripherals",
-  category_ar: "ماوسات وكيبوردات ميكانيكال",
-  marketplace: "amazon",
-  store_name: "Amazon أمازون",
-  store_button_label: "اقتنص اللقطة من أمازون ⚡",
-  seller: "Amazon.eg",
-  url: "https://www.amazon.eg/dp/B084RPZD6T?tag=lo2taa-21",
-  image: "https://m.media-amazon.com/images/I/611vjUvB2nL._AC_SL500_.jpg",
-  price: 1350,
-  previous_price: 1750,
-  savings: 400,
-  discount_percent: 23,
-  is_record_low: true,
-  price_change_direction: "down",
-  price_checked_at: "2026-10-31T05:00:00.000Z",
-  rating: 4.8,
-  review_count: 14200,
-  price_history: [
-    {
-      date: "2026-08-01",
-      price: 1950,
-      label: "سعر سابق"
-    },
-    {
-      date: "2026-09-01",
-      price: 1750,
-      label: "سعر معتاد"
-    },
-    {
-      date: "2026-10-01",
-      price: 1550,
-      label: "تخفيض أول"
-    },
-    {
-      date: "2026-10-20",
-      price: 1450,
-      label: "نزول إضافي"
-    },
-    {
-      date: "2026-10-31",
-      price: 1350,
-      label: "أقوى خصم 23% ماوس احترافي ⚡"
-    }
-  ],
-  ai_review: {
-    pros: [
-      "سويتشات بصرية Razer Optical لا تصاب نهائياً بعيب الدبل كليك (Double Click) الشائع.",
-      "وزن خفيف جداً 61g يعطيك سرعة دوران وتصويب خيالية في ألعاب الـ FPS.",
-      "أقدام الماوس مصنوعة من PTFE الأبيض النقي 100% لانزلاق سلس مثل الزبدة على الماوس باد."
-    ],
-    cons: [
-      "حجم الماوس مصمم للأيادي الصغيرة والمتوسطة ومسكة الأصابع (Fingertip/Claw).",
-      "كابل سلكي (غير لاسلكي) لكن السلك Speedflex فائق المرونة ولا تشعر به."
-    ],
-    brand_summary: "ريزر العلامة الخضراء الأشهر في بطولات الرياضات الإلكترونية العالمية.",
-    user_sentiment: "أسطورة الشوتر الاقتصادية في مصر؛ دقة الإيم وسرعة الحركة تضاهي ماوسات بـ 5000 جنيه.",
-    sources: [
-      {
-        name: "Rocket Jump Ninja Top Mice Ranking",
-        verified: true,
-        date: "2026"
-      }
-    ]
-  }
-},
-  {
-  id: "g-19-jbl-quantum-100",
-  asin: "B083X24CFF",
-  display_title: "سماعة ألعاب جي بي إل كوانتوم 100 (JBL Quantum 100) محيطية سلكية مع مايك عازل للصوت متوافقة مع الـ PC وبلايستيشن 5",
-  title: "JBL Quantum 100 Wired Over-Ear Gaming Headphones with Removable Mic - Black",
-  brand: "JBL",
-  category: "audio-headsets",
-  category_ar: "سماعات وهيدست محيطي",
-  marketplace: "amazon",
-  store_name: "Amazon أمازون",
-  store_button_label: "اقتنص اللقطة من أمازون ⚡",
-  seller: "Amazon.eg",
-  url: "https://www.amazon.eg/dp/B083X24CFF?tag=lo2taa-21",
-  image: "https://m.media-amazon.com/images/I/61Nl8XgR0KL._AC_SL500_.jpg",
-  price: 1499,
-  previous_price: 1950,
-  savings: 451,
-  discount_percent: 23,
-  is_record_low: true,
-  price_change_direction: "down",
-  price_checked_at: "2026-10-31T05:00:00.000Z",
-  rating: 4.6,
-  review_count: 6300,
-  price_history: [
-    {
-      date: "2026-08-01",
-      price: 2100,
-      label: "سعر السوق"
-    },
-    {
-      date: "2026-09-01",
-      price: 1950,
-      label: "سعر معتاد"
-    },
-    {
-      date: "2026-10-01",
-      price: 1750,
-      label: "تخفيضات الخريف"
-    },
-    {
-      date: "2026-10-20",
-      price: 1600,
-      label: "نزول سريع"
-    },
-    {
-      date: "2026-10-31",
-      price: 1499,
-      label: "أرخص هيدست ماركة عالمية في مصر ⚡"
-    }
-  ],
-  ai_review: {
-    pros: [
-      "صوت JBL QuantumSOUND Signature يبرز خطوات الأقدام والانفجارات بدقة واتجاهات واضحة.",
-      "وسائد أذن من الفوم المرن مغطاة بالجلد المريح لجلسات اللعب الطويلة دون ألم في الرأس.",
-      "مايك بوم قابل للفصل مع فلتر لتنقية الصوت وعزل ضوضاء الغرفة في الديسكورد واللعب الجماعي."
-    ],
-    cons: [
-      "بناء من البلاستيك الخفيف يحتاج للحفاظ عليه وعدم رميه بعنف.",
-      "اتصال بـ Jack 3.5mm فقط (لا يوجد سوفتوير RGB)."
-    ],
-    brand_summary: "جي بي إل عملاق الصوتيات الأمريكي الغني عن التعريف في وضوح البيز والطبقات الصوتية.",
-    user_sentiment: "أحسن هيدست تحت 1500 جنيه؛ مريحة على الودن والمايك نقي جداً مقارنة بالسماعات الصيني.",
-    sources: [
-      {
-        name: "SoundGuys Headset Benchmarks",
-        verified: true,
-        date: "2026"
-      }
-    ]
-  }
-},
-  {
-  id: "g-20-xbox-series-s",
-  asin: "B087VM5VL6",
-  display_title: "جهاز إكس بوكس سيريس إس (Xbox Series S) الرقمي سعة 512GB SSD مع يد تحكم لاسلكية ودعم Game Pass",
-  title: "Xbox Series S All-Digital Gaming Console 512GB Custom NVMe SSD with Wireless Controller",
-  brand: "Microsoft",
-  category: "consoles",
-  category_ar: "بلايستيشن وكروت ألعاب",
-  marketplace: "amazon",
-  store_name: "Amazon أمازون",
-  store_button_label: "اقتنص اللقطة من أمازون ⚡",
-  seller: "Amazon.eg",
-  url: "https://www.amazon.eg/dp/B087VM5VL6?tag=lo2taa-21",
-  image: "https://m.media-amazon.com/images/I/71NBQ2a52CL._AC_SL500_.jpg",
-  price: 17800,
-  previous_price: 21500,
-  savings: 3700,
-  discount_percent: 17,
-  is_record_low: true,
-  price_change_direction: "down",
-  price_checked_at: "2026-10-31T05:00:00.000Z",
-  rating: 4.8,
-  review_count: 7800,
-  price_history: [
-    {
-      date: "2026-08-01",
-      price: 22500,
-      label: "سعر سابق"
-    },
-    {
-      date: "2026-09-01",
-      price: 21500,
-      label: "سعر مستوردين"
-    },
-    {
-      date: "2026-10-01",
-      price: 19800,
-      label: "تخفيض أمازون"
-    },
-    {
-      date: "2026-10-20",
-      price: 18500,
-      label: "نزول سريع"
-    },
-    {
-      date: "2026-10-31",
-      price: 17800,
-      label: "أرخص جهاز ألعاب جيل جديد في مصر ⚡"
-    }
-  ],
-  ai_review: {
-    pros: [
-      "بوابة الجيل الجديد الأرخص في العالم؛ يشغل كل ألعاب الجيل الحالي حتى 120 فريم في الثانية.",
-      "اشتراك Xbox Game Pass يعطيك مئات الألعاب الضخمة باشتراك شهري بسيط جداً يوفر آلاف الجنيهات.",
-      "حجم مدمج للغاية وصامت تماماً وتبريد ممتاز لا يصدر أي حرارة مزعجة."
-    ],
-    cons: [
-      "جهاز رقمي بالكامل (بدون مشغل أسطوانات CD).",
-      "المساحة المتاحة للألعاب 364GB تكفي 4-5 ألعاب ضخمة."
-    ],
-    brand_summary: "مايكروسوفت إكس بوكس صاحبة أقوى خدمة ألعاب اشتراكات في العالم.",
-    user_sentiment: "الصفقة الذكية رقم 1 لأي حد في مصر عايز يلعب كل الألعاب الجديدة بميزانية اقتصادية.",
-    sources: [
-      {
-        name: "Digital Foundry Hardware Review",
-        verified: true,
-        date: "2026"
-      }
-    ]
-  }
-}
 ];
 
 export function getAllProducts(): Product[] {

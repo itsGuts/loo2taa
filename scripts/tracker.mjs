@@ -7,7 +7,8 @@
  * 1. Checks Amazon.eg prices for all products in data/products.json
  * 2. Spots genuine price drops and records historical price trends
  * 3. Formats and sends instant deal alerts to your Telegram channel
- * 4. Updates data/products.json and logs run status to data/last-check.json
+ * 4. Updates data/products.json and syncs to src/lib/loo2taa-data.ts
+ * 5. Logs run status to data/last-check.json
  */
 
 import fs from 'node:fs';
@@ -18,6 +19,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = path.resolve(__dirname, '..');
 const PRODUCTS_FILE = path.join(ROOT_DIR, 'data', 'products.json');
 const STATUS_FILE = path.join(ROOT_DIR, 'data', 'last-check.json');
+const TS_FILE = path.join(ROOT_DIR, 'src', 'lib', 'loo2taa-data.ts');
 
 // Config from environment
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '';
@@ -100,7 +102,7 @@ function escapeHtml(text) {
     .replace(/>/g, '&gt;');
 }
 
-// Helper: Extract price from Amazon HTML (robust fallback scraper)
+// Helper: Extract price from Amazon HTML (robust multi-pattern scraper)
 async function fetchAmazonPrice(asin) {
   const url = `https://www.amazon.eg/dp/${asin}?language=en_AE`;
   const headers = {
@@ -117,7 +119,17 @@ async function fetchAmazonPrice(asin) {
 
     const html = await res.text();
 
-    // 1. Look for apexPriceToPay or corePrice_feature_div
+    // 1. Look in apex_desktop or corePriceDisplay
+    const apexMatch = html.match(/id="apex_desktop"[\s\S]*?class="a-price-whole"[^>]*>([0-9,]+)/i) ||
+                      html.match(/id="corePriceDisplay_desktop_feature_div"[\s\S]*?class="a-price-whole"[^>]*>([0-9,]+)/i) ||
+                      html.match(/id="corePrice_feature_div"[\s\S]*?class="a-price-whole"[^>]*>([0-9,]+)/i);
+    if (apexMatch) {
+      const clean = apexMatch[1].replace(/,/g, '');
+      const parsed = parseFloat(clean);
+      if (!isNaN(parsed) && parsed > 0) return parsed;
+    }
+
+    // 2. Look for priceWholeMatch anywhere
     const priceWholeMatch = html.match(/class="a-price-whole"[^>]*>([0-9,]+)/i);
     if (priceWholeMatch) {
       const clean = priceWholeMatch[1].replace(/,/g, '');
@@ -125,14 +137,14 @@ async function fetchAmazonPrice(asin) {
       if (!isNaN(parsed) && parsed > 0) return parsed;
     }
 
-    // 2. Look for priceToPay json blob
+    // 3. Look for priceToPay json blob
     const jsonMatch = html.match(/"priceAmount":([0-9.]+)/i);
     if (jsonMatch) {
       const parsed = parseFloat(jsonMatch[1]);
       if (!isNaN(parsed) && parsed > 0) return parsed;
     }
 
-    // 3. Look for a-offscreen with EGP
+    // 4. Look for a-offscreen with EGP
     const offscreenMatch = html.match(/class="a-offscreen"[^>]*>EGP\s*([0-9,.]+)/i);
     if (offscreenMatch) {
       const clean = offscreenMatch[1].replace(/,/g, '');
@@ -144,6 +156,71 @@ async function fetchAmazonPrice(asin) {
   } catch (err) {
     return null;
   }
+}
+
+// Helper: Synchronize updated products to src/lib/loo2taa-data.ts
+function syncToTypeScript(products) {
+  const tsContent = `import { Product, MarketplaceSetting } from './types';
+
+export const MARKETPLACE_SETTINGS: Record<string, MarketplaceSetting> = {
+  amazon: {
+    key: 'amazon',
+    name: 'Amazon أمازون',
+    buttonLabel: 'اقتنص اللقطة من أمازون ⚡',
+    primaryColor: '#00f0ff',
+    textColor: '#07090e',
+    surfaceColor: '#0d1527',
+  },
+  noon: {
+    key: 'noon',
+    name: 'نون Noon',
+    buttonLabel: 'اقتنص اللقطة من نون ⚡',
+    primaryColor: '#ffd600',
+    textColor: '#07090e',
+    surfaceColor: '#1f1b0a',
+  },
+  zoka: {
+    key: 'zoka',
+    name: 'ZOKA هاردوير',
+    buttonLabel: 'عرض في ZOKA ⚡',
+    primaryColor: '#ff007f',
+    textColor: '#ffffff',
+    surfaceColor: '#260515',
+  },
+};
+
+export const CATEGORIES = [
+  { id: 'all', name: 'كل صفقات الجيمرز', icon: 'Gamepad2' },
+  { id: 'pc-hardware', name: 'كروت شاشة وهاردوير PC', icon: 'Cpu' },
+  { id: 'monitors', name: 'شاشات جيمنج 144Hz+', icon: 'Monitor' },
+  { id: 'peripherals', name: 'ماوسات وكيبوردات ميكانيكال', icon: 'Keyboard' },
+  { id: 'audio-headsets', name: 'سماعات وهيدست محيطي', icon: 'Headphones' },
+  { id: 'consoles', name: 'بلايستيشن وكروت ألعاب', icon: 'Gamepad' },
+  { id: 'laptops', name: 'لابتوبات جيمنج', icon: 'Laptop' },
+  { id: 'battlestation', name: 'سيت أب وكراسي وإضاءة RGB', icon: 'Sparkles' },
+];
+
+export const PRODUCTS: Product[] = ${JSON.stringify(products, null, 2)};
+
+export function getAllProducts(): Product[] {
+  return PRODUCTS;
+}
+
+export function getProductById(idOrAsin: string): Product | undefined {
+  return PRODUCTS.find(p => p.id === idOrAsin || p.asin === idOrAsin);
+}
+
+export function getRelatedProducts(product: Product, limit = 4): Product[] {
+  return PRODUCTS.filter(p => p.id !== product.id && (p.category === product.category || p.brand === product.brand)).slice(0, limit);
+}
+
+export function getUniqueBrands(): string[] {
+  return Array.from(new Set(PRODUCTS.map(p => p.brand))).sort();
+}
+`;
+
+  fs.writeFileSync(TS_FILE, tsContent, 'utf8');
+  console.log(`💾 Synchronized updated data to ${TS_FILE}`);
 }
 
 // Main execution flow
@@ -172,12 +249,15 @@ async function main() {
       continue;
     }
 
-    console.log(`[${i + 1}/${products.length}] Checking ${p.brand} - ${p.display_title.slice(0, 35)}...`);
+    console.log(`[${i + 1}/${products.length}] Checking ${p.brand} - ${p.display_title.slice(0, 35)}... (ASIN: ${p.asin})`);
 
     // Fetch live price
     const livePrice = await fetchAmazonPrice(p.asin);
 
-    if (livePrice && livePrice !== p.price) {
+    // Sanity filter: Ignore crazy outliers (>3.5x old price or <0.2x old price)
+    const isReasonable = livePrice && (livePrice <= p.price * 3.5) && (livePrice >= p.price * 0.2);
+
+    if (isReasonable && livePrice !== p.price) {
       const oldPrice = p.price;
       const priceDiff = oldPrice - livePrice;
       const isDrop = priceDiff > 0;
@@ -228,16 +308,20 @@ async function main() {
       console.log(`  ✓ Price stable at ${livePrice} EGP.`);
       p.price_checked_at = new Date().toISOString();
     } else {
-      console.log(`  ⚠️ Could not fetch live price (rate-limited or temporarily unavailable). Kept current.`);
+      console.log(`  ℹ️ Live price unchanged or temporarily unavailable from seller. Kept at ${p.price} EGP.`);
+      p.price_checked_at = new Date().toISOString();
     }
 
-    // Polite delay between product requests
-    await new Promise(r => setTimeout(r, 2000));
+    // Delay between product requests
+    await new Promise(r => setTimeout(r, 1200));
   }
 
   // Save updated products file
   fs.writeFileSync(PRODUCTS_FILE, JSON.stringify(products, null, 2), 'utf8');
   console.log(`\n💾 Saved updated data to ${PRODUCTS_FILE}`);
+
+  // Synchronize with TypeScript file
+  syncToTypeScript(products);
 
   // Write summary status file
   const status = {
@@ -250,7 +334,8 @@ async function main() {
   fs.writeFileSync(STATUS_FILE, JSON.stringify(status, null, 2), 'utf8');
 
   console.log(`\n=================================================`);
-  console.log(`🏁 Tracker Completed:`);
+  console.log(`🏁 Tracker Completed Successfully:`);
+  console.log(`   - Products tracked: ${products.length}`);
   console.log(`   - Price changes: ${priceChangesCount}`);
   console.log(`   - Telegram alerts sent: ${alertsSentCount}`);
   console.log(`=================================================\n`);

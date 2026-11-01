@@ -248,7 +248,7 @@ export default function HomePage() {
         </div>
 
         <a
-          href="https://t.me/loo2taa"
+          href="https://t.me/lo2taa"
           target="_blank"
           rel="noopener noreferrer"
           className="btn-cyber-primary px-5 py-2.5 rounded-xl text-xs flex items-center gap-2 shrink-0"

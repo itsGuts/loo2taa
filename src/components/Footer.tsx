@@ -26,7 +26,7 @@ export default function Footer() {
             </p>
             <div className="pt-1">
               <a
-                href="https://t.me/loo2taa"
+                href="https://t.me/lo2taa"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#0b101c] border border-white/10 text-xs font-bold text-[#00f0ff] hover:border-[#00f0ff]/40 transition-colors"

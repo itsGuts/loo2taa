@@ -40,10 +40,10 @@ jobs:
         run: |
           git config --global user.name "LO2TAA Deals Bot"
           git config --global user.email "bot@lo2taa.local"
-          git add data/products.json data/last-check.json
+          git add data/products.json data/last-check.json src/lib/loo2taa-data.ts
           if git diff --staged --quiet; then
             echo "No price changes detected. Everything up to date."
           else
-            git commit -m "chore(tracker): auto-update live deals and price history [skip ci]"
+            git commit -m "chore(tracker): auto-update live deals and price history"
             git push origin main
           fi
