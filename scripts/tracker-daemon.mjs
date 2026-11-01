@@ -13,7 +13,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const TRACKER_SCRIPT = path.join(__dirname, 'tracker.mjs');
-const INTERVAL_MINUTES = 10;
+const INTERVAL_MINUTES = 5;
 const INTERVAL_MS = INTERVAL_MINUTES * 60 * 1000;
 
 console.log(`\n=================================================`);
@@ -32,7 +32,7 @@ function runTracker() {
 
   isRunning = true;
   const now = new Date().toLocaleTimeString('ar-EG');
-  console.log(`\n[${now}] 🔄 Starting 10-minute deals scan...`);
+  console.log(`\n[${now}] 🔄 Starting 5-minute deals scan...`);
 
   const child = spawn(process.execPath, [TRACKER_SCRIPT], { stdio: 'inherit' });
 

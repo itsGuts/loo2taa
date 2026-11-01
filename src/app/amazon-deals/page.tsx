@@ -15,7 +15,7 @@ export default function AmazonDealsPage() {
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
   const amazonProducts = useMemo(() => {
-    let list = PRODUCTS.filter((p) => p.marketplace === "amazon");
+    let list = PRODUCTS.filter((p) => p.marketplace === "amazon" && p.in_stock !== false && p.is_deal_active !== false);
 
     if (filters.query) {
       const q = filters.query.toLowerCase();

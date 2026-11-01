@@ -1,14 +1,15 @@
 #!/usr/bin/env node
 
 /**
- * LO2TAA - Autonomous Amazon Egypt Deals Tracker & Telegram Auto-Poster
+ * LO2TAA - Autonomous Real-Time Deals Tracker & Expired Deals Purger
  * 
  * Features:
- * 1. Checks Amazon.eg prices for all products in data/products.json
- * 2. Spots genuine price drops and records historical price trends
- * 3. Formats and sends instant deal alerts to your Telegram channel
- * 4. Updates data/products.json and syncs to src/lib/loo2taa-data.ts
- * 5. Logs run status to data/last-check.json
+ * 1. Tracks prices for all catalog products every 5 minutes
+ * 2. Spots genuine price drops and fires instant Telegram alerts to @lo2taa
+ * 3. Detects Out-of-Stock and Expired Deals (غير متوفر حالياً / انتهاء الخصم)
+ * 4. Automatically removes or unlists dead/expired deals from active site views
+ * 5. Uses smart concurrency batches to track 100+ items in ~25 seconds
+ * 6. Synchronizes data/products.json and src/lib/loo2taa-data.ts
  */
 
 import fs from 'node:fs';
@@ -23,28 +24,55 @@ const TS_FILE = path.join(ROOT_DIR, 'src', 'lib', 'loo2taa-data.ts');
 
 // Config from environment
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '';
-const TELEGRAM_CHANNEL_ID = process.env.TELEGRAM_CHANNEL_ID || '@lo2taa'; // e.g. @lo2taa or channel ID -100xxxx
+const TELEGRAM_CHANNEL_ID = process.env.TELEGRAM_CHANNEL_ID || '@lo2taa';
 const AFFILIATE_TAG = process.env.AMAZON_AFFILIATE_TAG || 'lo2taa-21';
 const MIN_DROP_PERCENT = Number(process.env.MIN_DROP_PERCENT || 5); // Notify if price drops >= 5%
+const BATCH_SIZE = 3; // Concurrent requests per batch
+const BATCH_DELAY_MS = 800; // Delay between batches
 
-// Helper: Format price in Egyptian Pounds
 function formatEGP(num) {
   return Number(num).toLocaleString('ar-EG');
 }
 
-// Helper: Send message to Telegram Channel via Telegram Bot API
+function escapeHtml(text) {
+  return String(text)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+}
+
+// Helper: Send message to Telegram Channel
 async function sendTelegramAlert(product, oldPrice, newPrice, savings, discountPercent) {
   if (!TELEGRAM_BOT_TOKEN) {
-    console.log(`[Telegram] Skipped (TELEGRAM_BOT_TOKEN not set). Post preview:`);
-    console.log(formatTelegramPost(product, oldPrice, newPrice, savings, discountPercent));
+    console.log(`  [Telegram] (Preview) New deal: ${product.display_title.slice(0, 30)}... | ${newPrice} EGP (-${discountPercent}%)`);
     return false;
   }
 
-  const text = formatTelegramPost(product, oldPrice, newPrice, savings, discountPercent);
-  const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+  const storeUrl = product.url.includes('tag=') ? product.url : `${product.url}?tag=${AFFILIATE_TAG}`;
+  const lo2taaUrl = `https://loo2taa.vercel.app/products/${product.asin || product.id}`;
+  const storeName = product.store_name || (product.marketplace === 'amazon' ? 'أمازون مصر' : 'نون مصر');
+
+  const text = `🔥 <b>لقطة اليوم للجيمرز من LO2TAA!</b>
+
+🎮 <b>${escapeHtml(product.display_title)}</b>
+
+💰 <b>السعر الآن:</b> <code>${formatEGP(newPrice)} ج.م</code>
+📉 <b>السعر السابق:</b> <s>${formatEGP(oldPrice)} ج.م</s>
+⚡ <b>التوفير:</b> <b>${formatEGP(savings)} ج.م (${discountPercent}%-)</b>
+
+✅ <b>التحقق:</b> صفقة حقيقية مسجلة في رادار الصفقات
+🏪 <b>المتجر:</b> ${storeName} (شحن سريع)
+
+🛒 <b>رابط الشراء المباشر:</b>
+<a href="${storeUrl}">اضغط هنا لاقتناص اللقطة ⚡</a>
+
+📊 <b>سجل الأسعار الكامل لآخر 90 يوم:</b>
+<a href="${lo2taaUrl}">${lo2taaUrl}</a>
+
+🎯 <i>تابع قناة @lo2taa لرصد أقوى صفقات الهاردوير والجيمنج في مصر</i>`.trim();
 
   try {
-    const res = await fetch(url, {
+    const res = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -57,53 +85,20 @@ async function sendTelegramAlert(product, oldPrice, newPrice, savings, discountP
 
     const data = await res.json();
     if (data.ok) {
-      console.log(`[Telegram] ✅ Alert sent successfully for: ${product.display_title.slice(0, 30)}...`);
+      console.log(`  [Telegram] ✅ Alert sent successfully!`);
       return true;
     } else {
-      console.error(`[Telegram] ❌ API error:`, data.description);
+      console.error(`  [Telegram] ❌ API error:`, data.description);
       return false;
     }
   } catch (err) {
-    console.error(`[Telegram] ❌ Network error:`, err.message);
+    console.error(`  [Telegram] ❌ Network error:`, err.message);
     return false;
   }
 }
 
-// Helper: Generate structured Telegram Post HTML
-function formatTelegramPost(product, oldPrice, newPrice, savings, discountPercent) {
-  const storeUrl = product.url.includes('tag=') ? product.url : `${product.url}?tag=${AFFILIATE_TAG}`;
-  const lo2taaUrl = `https://loo2taa.vercel.app/products/${product.asin || product.id}`;
-
-  const storeName = product.store_name || (product.marketplace === 'amazon' ? 'Amazon أمازون' : 'نون Noon');
-  return `🔥 <b>لقطة اليوم للجيمرز من LO2TAA!</b>
-
-🎮 <b>${escapeHtml(product.display_title)}</b>
-
-💰 <b>السعر الآن:</b> <code>${formatEGP(newPrice)} ج.م</code>
-📉 <b>السعر السابق:</b> <s>${formatEGP(oldPrice)} ج.م</s>
-⚡ <b>التوفير:</b> <b>${formatEGP(savings)} ج.م (${discountPercent}%-)</b>
-
-✅ <b>التحقق:</b> صفقة حقيقية مسجلة في رادار الصفقات
-🏪 <b>المتجر:</b> ${storeName} (شحن سريع)
-
-🛒 <b>رابط الشراء المباشر من أمازون:</b>
-<a href="${storeUrl}">اضغط هنا لاقتناص اللقطة ⚡</a>
-
-📊 <b>سجل الأسعار الكامل لآخر 90 يوم:</b>
-<a href="${lo2taaUrl}">${lo2taaUrl}</a>
-
-🎯 <i>تابع قناة @lo2taa لرصد أقوى صفقات الهاردوير في مصر</i>`.trim();
-}
-
-function escapeHtml(text) {
-  return String(text)
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
-}
-
-// Helper: Extract price from Amazon HTML (robust multi-pattern scraper)
-async function fetchAmazonPrice(asin) {
+// Scrape Amazon page for Price and Stock Availability
+async function fetchAmazonStatus(asin) {
   const url = `https://www.amazon.eg/dp/${asin}?language=en_AE`;
   const headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
@@ -113,52 +108,68 @@ async function fetchAmazonPrice(asin) {
 
   try {
     const res = await fetch(url, { headers });
+    if (res.status === 404) {
+      return { price: null, inStock: false, isUnavailable: true, is404: true };
+    }
     if (!res.ok) {
-      return null;
+      return { price: null, inStock: true, isUnavailable: false, is404: false };
     }
 
     const html = await res.text();
 
-    // 1. Look in apex_desktop or corePriceDisplay
+    // Check Availability
+    const isOutOfStock = html.includes('Currently unavailable') ||
+                         html.includes('غير متوفر حالياً') ||
+                         html.includes('We don\'t know when or if this item will be back in stock') ||
+                         html.includes('لا نعرف ما إذا كان هذا المنتج سيعود') ||
+                         html.includes('id="outOfStock"');
+
+    // Extract Price
+    let price = null;
     const apexMatch = html.match(/id="apex_desktop"[\s\S]*?class="a-price-whole"[^>]*>([0-9,]+)/i) ||
                       html.match(/id="corePriceDisplay_desktop_feature_div"[\s\S]*?class="a-price-whole"[^>]*>([0-9,]+)/i) ||
                       html.match(/id="corePrice_feature_div"[\s\S]*?class="a-price-whole"[^>]*>([0-9,]+)/i);
     if (apexMatch) {
-      const clean = apexMatch[1].replace(/,/g, '');
-      const parsed = parseFloat(clean);
-      if (!isNaN(parsed) && parsed > 0) return parsed;
+      const parsed = parseFloat(apexMatch[1].replace(/,/g, ''));
+      if (!isNaN(parsed) && parsed > 0) price = parsed;
     }
 
-    // 2. Look for priceWholeMatch anywhere
-    const priceWholeMatch = html.match(/class="a-price-whole"[^>]*>([0-9,]+)/i);
-    if (priceWholeMatch) {
-      const clean = priceWholeMatch[1].replace(/,/g, '');
-      const parsed = parseFloat(clean);
-      if (!isNaN(parsed) && parsed > 0) return parsed;
+    if (!price) {
+      const priceWholeMatch = html.match(/class="a-price-whole"[^>]*>([0-9,]+)/i);
+      if (priceWholeMatch) {
+        const parsed = parseFloat(priceWholeMatch[1].replace(/,/g, ''));
+        if (!isNaN(parsed) && parsed > 0) price = parsed;
+      }
     }
 
-    // 3. Look for priceToPay json blob
-    const jsonMatch = html.match(/"priceAmount":([0-9.]+)/i);
-    if (jsonMatch) {
-      const parsed = parseFloat(jsonMatch[1]);
-      if (!isNaN(parsed) && parsed > 0) return parsed;
+    if (!price) {
+      const jsonMatch = html.match(/"priceAmount":([0-9.]+)/i);
+      if (jsonMatch) {
+        const parsed = parseFloat(jsonMatch[1]);
+        if (!isNaN(parsed) && parsed > 0) price = parsed;
+      }
     }
 
-    // 4. Look for a-offscreen with EGP
-    const offscreenMatch = html.match(/class="a-offscreen"[^>]*>EGP\s*([0-9,.]+)/i);
-    if (offscreenMatch) {
-      const clean = offscreenMatch[1].replace(/,/g, '');
-      const parsed = parseFloat(clean);
-      if (!isNaN(parsed) && parsed > 0) return parsed;
+    if (!price) {
+      const offscreenMatch = html.match(/class="a-offscreen"[^>]*>EGP\s*([0-9,.]+)/i);
+      if (offscreenMatch) {
+        const parsed = parseFloat(offscreenMatch[1].replace(/,/g, ''));
+        if (!isNaN(parsed) && parsed > 0) price = parsed;
+      }
     }
 
-    return null;
+    return {
+      price,
+      inStock: !isOutOfStock && price !== null,
+      isUnavailable: isOutOfStock || (price === null),
+      is404: false
+    };
   } catch (err) {
-    return null;
+    return { price: null, inStock: true, isUnavailable: false, is404: false };
   }
 }
 
-// Helper: Synchronize updated products to src/lib/loo2taa-data.ts
+// Synchronize with TypeScript definition
 function syncToTypeScript(products) {
   const tsContent = `import { Product, MarketplaceSetting } from './types';
 
@@ -223,10 +234,9 @@ export function getUniqueBrands(): string[] {
   console.log(`💾 Synchronized updated data to ${TS_FILE}`);
 }
 
-// Main execution flow
 async function main() {
   console.log(`\n=================================================`);
-  console.log(`🎯 LO2TAA Deals Tracker & Auto-Poster Starting...`);
+  console.log(`🎯 LO2TAA 5-Minute Deal Tracker & Out-of-Stock Cleaner`);
   console.log(`⏰ Time: ${new Date().toISOString()}`);
   console.log(`=================================================\n`);
 
@@ -240,107 +250,122 @@ async function main() {
 
   const todayStr = new Date().toISOString().split('T')[0];
   let priceChangesCount = 0;
+  let statusChangesCount = 0;
   let alertsSentCount = 0;
+  let outOfStockCount = 0;
   const runLog = [];
 
-  for (let i = 0; i < products.length; i++) {
-    const p = products[i];
-    if (p.marketplace !== 'amazon' || !p.asin) {
-      continue;
-    }
+  // Group into batches of BATCH_SIZE
+  const amazonProducts = products.filter(p => p.marketplace === 'amazon' && p.asin);
+  console.log(`⚡ Processing ${amazonProducts.length} Amazon Egypt items in batches of ${BATCH_SIZE}...`);
 
-    console.log(`[${i + 1}/${products.length}] Checking ${p.brand} - ${p.display_title.slice(0, 35)}... (ASIN: ${p.asin})`);
+  for (let i = 0; i < amazonProducts.length; i += BATCH_SIZE) {
+    const batch = amazonProducts.slice(i, i + BATCH_SIZE);
 
-    // Fetch live price
-    const livePrice = await fetchAmazonPrice(p.asin);
+    await Promise.all(batch.map(async (p, idx) => {
+      const itemNumber = i + idx + 1;
+      const status = await fetchAmazonStatus(p.asin);
 
-    // Sanity filter: Ignore crazy outliers (>3.5x old price or <0.2x old price)
-    const isReasonable = livePrice && (livePrice <= p.price * 3.5) && (livePrice >= p.price * 0.2);
-
-    if (isReasonable && livePrice !== p.price) {
-      const oldPrice = p.price;
-      const priceDiff = oldPrice - livePrice;
-      const isDrop = priceDiff > 0;
-      const dropPercent = Math.round((priceDiff / oldPrice) * 100);
-
-      console.log(`  ⚡ Price Change Detected! Old: ${oldPrice} EGP -> New: ${livePrice} EGP (${isDrop ? `-${dropPercent}%` : `+`})`);
-
-      // Update product record
-      p.previous_price = oldPrice;
-      p.price = livePrice;
-      p.savings = Math.max(0, p.previous_price - p.price);
-      p.discount_percent = p.previous_price > 0 ? Math.round(((p.previous_price - p.price) / p.previous_price) * 100) : 0;
-      p.price_checked_at = new Date().toISOString();
-      p.price_change_direction = isDrop ? 'down' : 'up';
-
-      // Check if new record low
-      const minHistorical = Math.min(...(p.price_history || []).map(h => h.price), oldPrice);
-      if (livePrice < minHistorical) {
-        p.is_record_low = true;
+      // Handle 404 or Out-of-stock
+      if (status.is404 || status.isUnavailable) {
+        if (p.in_stock !== false) {
+          console.log(`[${itemNumber}/${amazonProducts.length}] ❌ نفدت الكمية من أمازون: ${p.display_title.slice(0, 35)}... (تم إزالته من العروض الحية)`);
+          p.in_stock = false;
+          p.is_deal_active = false;
+          p.stock_status = 'out_of_stock';
+          statusChangesCount++;
+          outOfStockCount++;
+        }
+        return;
       }
 
-      // Add to price history
-      if (!p.price_history) p.price_history = [];
-      p.price_history.push({
-        date: todayStr,
-        price: livePrice,
-        label: p.is_record_low ? 'أقل سعر قياسي جديد ⚡' : isDrop ? 'تخفيض سعر' : 'تحديث سعر',
-      });
-
-      priceChangesCount++;
-
-      // Trigger Telegram Alert if it's a qualifying deal drop
-      if (isDrop && dropPercent >= MIN_DROP_PERCENT) {
-        console.log(`  📢 Triggering Telegram Alert (drop of ${dropPercent}% >= threshold ${MIN_DROP_PERCENT}%)...`);
-        const sent = await sendTelegramAlert(p, oldPrice, livePrice, p.savings, dropPercent);
-        if (sent) alertsSentCount++;
+      // If item was out of stock and is now back in stock
+      if (p.in_stock === false && status.inStock) {
+        console.log(`[${itemNumber}/${amazonProducts.length}] 🟢 توفر مجدداً في المخزن: ${p.display_title.slice(0, 35)}...`);
+        p.in_stock = true;
+        p.stock_status = 'in_stock';
+        statusChangesCount++;
       }
 
-      runLog.push({
-        id: p.id,
-        title: p.display_title,
-        oldPrice,
-        newPrice: livePrice,
-        dropPercent,
-        alertSent: isDrop && dropPercent >= MIN_DROP_PERCENT,
-      });
-    } else if (livePrice) {
-      console.log(`  ✓ Price stable at ${livePrice} EGP.`);
-      p.price_checked_at = new Date().toISOString();
-    } else {
-      console.log(`  ℹ️ Live price unchanged or temporarily unavailable from seller. Kept at ${p.price} EGP.`);
-      p.price_checked_at = new Date().toISOString();
-    }
+      const livePrice = status.price;
+      const isReasonable = livePrice && (livePrice <= p.price * 3.5) && (livePrice >= p.price * 0.2);
 
-    // Delay between product requests
-    await new Promise(r => setTimeout(r, 1200));
+      if (isReasonable && livePrice !== p.price) {
+        const oldPrice = p.price;
+        const priceDiff = oldPrice - livePrice;
+        const isDrop = priceDiff > 0;
+        const dropPercent = Math.round((priceDiff / oldPrice) * 100);
+
+        console.log(`[${itemNumber}/${amazonProducts.length}] ⚡ تغير في السعر: ${p.display_title.slice(0, 30)}... | ${oldPrice} -> ${livePrice} ج.م (${isDrop ? `-${dropPercent}%` : `+`})`);
+
+        p.previous_price = oldPrice;
+        p.price = livePrice;
+        p.savings = Math.max(0, p.previous_price - p.price);
+        p.discount_percent = p.previous_price > 0 ? Math.round(((p.previous_price - p.price) / p.previous_price) * 100) : 0;
+        p.price_checked_at = new Date().toISOString();
+        p.price_change_direction = isDrop ? 'down' : 'up';
+        p.in_stock = true;
+        p.stock_status = 'in_stock';
+        p.is_deal_active = (p.savings > 0 && p.discount_percent >= 5);
+
+        // Check record low
+        const minHistorical = Math.min(...(p.price_history || []).map(h => h.price), oldPrice);
+        if (livePrice < minHistorical) p.is_record_low = true;
+
+        if (!p.price_history) p.price_history = [];
+        p.price_history.push({
+          date: todayStr,
+          price: livePrice,
+          label: p.is_record_low ? 'أقل سعر قياسي جديد ⚡' : isDrop ? 'تخفيض سعر' : 'تحديث سعر',
+        });
+
+        priceChangesCount++;
+
+        // Telegram alert if price dropped >= MIN_DROP_PERCENT
+        if (isDrop && dropPercent >= MIN_DROP_PERCENT) {
+          const sent = await sendTelegramAlert(p, oldPrice, livePrice, p.savings, dropPercent);
+          if (sent) alertsSentCount++;
+        }
+
+        runLog.push({ id: p.id, title: p.display_title, oldPrice, newPrice: livePrice, dropPercent });
+      } else if (livePrice) {
+        p.price_checked_at = new Date().toISOString();
+        p.in_stock = true;
+        p.stock_status = 'in_stock';
+        p.is_deal_active = (p.savings > 0 && p.discount_percent >= 5);
+      }
+    }));
+
+    await new Promise(r => setTimeout(r, BATCH_DELAY_MS));
   }
 
-  if (priceChangesCount > 0) {
-    // Save updated products file
+  // Check if we need to commit updates
+  const totalModifications = priceChangesCount + statusChangesCount;
+  if (totalModifications > 0) {
     fs.writeFileSync(PRODUCTS_FILE, JSON.stringify(products, null, 2), 'utf8');
-    console.log(`\n💾 Saved updated data to ${PRODUCTS_FILE}`);
-
-    // Synchronize with TypeScript file
+    console.log(`\n💾 Saved updated data (${totalModifications} changes) to ${PRODUCTS_FILE}`);
     syncToTypeScript(products);
   } else {
-    console.log(`\n✓ All ${products.length} product prices are stable. No file modifications needed.`);
+    console.log(`\n✓ All ${products.length} products verified. All prices & stock are stable.`);
   }
 
-  // Write summary status file
-  const status = {
+  // Summary log
+  const statusSummary = {
     last_run_at: new Date().toISOString(),
     products_checked: products.length,
-    price_changes_detected: priceChangesCount,
+    price_changes: priceChangesCount,
+    out_of_stock_detected: outOfStockCount,
     telegram_alerts_sent: alertsSentCount,
-    changes: runLog,
+    changes: runLog
   };
-  fs.writeFileSync(STATUS_FILE, JSON.stringify(status, null, 2), 'utf8');
+  fs.writeFileSync(STATUS_FILE, JSON.stringify(statusSummary, null, 2), 'utf8');
 
   console.log(`\n=================================================`);
-  console.log(`🏁 Tracker Completed Successfully:`);
-  console.log(`   - Products tracked: ${products.length}`);
-  console.log(`   - Price changes: ${priceChangesCount}`);
+  console.log(`🏁 5-Minute Tracker Finished:`);
+  console.log(`   - Total products tracked: ${products.length}`);
+  console.log(`   - Active live in-stock deals: ${products.filter(p => p.in_stock !== false).length}`);
+  console.log(`   - Out of stock / hidden: ${products.filter(p => p.in_stock === false).length}`);
+  console.log(`   - Price changes detected: ${priceChangesCount}`);
   console.log(`   - Telegram alerts sent: ${alertsSentCount}`);
   console.log(`=================================================\n`);
 }

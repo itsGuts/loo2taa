@@ -2,8 +2,8 @@ name: LO2TAA Deals Tracker & Auto-Poster
 
 on:
   schedule:
-    # Runs every 10 minutes automatically (24/7 autonomous deal radar)
-    - cron: '*/10 * * * *'
+    # Runs every 5 minutes automatically (24/7 autonomous deal radar & out-of-stock cleanup)
+    - cron: '*/5 * * * *'
   workflow_dispatch:
     # Allows manual trigger anytime from GitHub Actions tab
 

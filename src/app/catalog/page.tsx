@@ -28,7 +28,7 @@ function CatalogInner() {
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
   const filteredProducts = useMemo(() => {
-    let list = [...PRODUCTS];
+    let list = PRODUCTS.filter((p) => p.in_stock !== false && p.is_deal_active !== false);
 
     if (filters.query) {
       const q = filters.query.toLowerCase();

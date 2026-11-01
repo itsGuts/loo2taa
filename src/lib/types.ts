@@ -43,6 +43,9 @@ export interface Product {
   price_checked_at: string;
   rating: number;
   review_count: number;
+  in_stock?: boolean;
+  is_deal_active?: boolean;
+  stock_status?: 'in_stock' | 'out_of_stock' | 'deal_expired';
   price_history: PricePoint[];
   ai_review: AiReview;
 }

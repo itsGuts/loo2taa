@@ -24,7 +24,7 @@ export default function HomePage() {
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
   const filteredProducts = useMemo(() => {
-    let list = [...PRODUCTS];
+    let list = PRODUCTS.filter((p) => p.in_stock !== false && p.is_deal_active !== false);
 
     if (filters.query) {
       const q = filters.query.toLowerCase();
@@ -80,9 +80,9 @@ export default function HomePage() {
   }, [filters]);
 
   // Dynamic hero metrics
-  const totalDeals = PRODUCTS.filter(p => p.discount_percent > 0).length;
-  const maxSavings = Math.max(...PRODUCTS.map(p => p.savings));
-  const recordLowCount = PRODUCTS.filter(p => p.is_record_low).length;
+  const totalDeals = PRODUCTS.filter(p => p.discount_percent > 0 && p.in_stock !== false).length;
+  const maxSavings = Math.max(...PRODUCTS.filter(p => p.in_stock !== false).map(p => p.savings), 0);
+  const recordLowCount = PRODUCTS.filter(p => p.is_record_low && p.in_stock !== false).length;
 
   return (
     <div className="space-y-8">
