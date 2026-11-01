@@ -116,9 +116,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01",
     "rating": 4.8,
     "review_count": 2200,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -185,9 +185,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:04.050Z",
     "rating": 4.9,
     "review_count": 850,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -254,9 +254,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 1100,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -320,7 +320,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 8,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T07:42:05.189Z",
+    "price_checked_at": "2026-11-01T08:29:02.749Z",
     "rating": 4.9,
     "review_count": 4800,
     "in_stock": true,
@@ -392,9 +392,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:05.194Z",
     "rating": 4.9,
     "review_count": 720,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -673,9 +673,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:08.078Z",
     "rating": 4.9,
     "review_count": 5100,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -877,7 +877,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T07:42:09.680Z",
+    "price_checked_at": "2026-11-01T08:29:07.596Z",
     "rating": 4.9,
     "review_count": 670,
     "in_stock": true,
@@ -949,9 +949,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01",
     "rating": 4.8,
     "review_count": 940,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -1087,9 +1087,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01",
     "rating": 4.7,
     "review_count": 1120,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -1294,9 +1294,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 1200,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -1432,9 +1432,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 1850,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -1570,9 +1570,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:12.635Z",
     "rating": 4.9,
     "review_count": 980,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -1649,9 +1649,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:12.708Z",
     "rating": 4.9,
     "review_count": 1450,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -1723,9 +1723,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:14.108Z",
     "rating": 4.8,
     "review_count": 2100,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -1794,7 +1794,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T07:42:14.480Z",
+    "price_checked_at": "2026-11-01T08:29:13.173Z",
     "rating": 4.7,
     "review_count": 340,
     "in_stock": true,
@@ -1866,9 +1866,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:14.105Z",
     "rating": 4.9,
     "review_count": 1450,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -1932,12 +1932,12 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T05:58:33.097Z",
+    "price_checked_at": "2026-11-01T08:29:14.891Z",
     "rating": 4.8,
     "review_count": 2800,
-    "in_stock": false,
-    "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -2004,9 +2004,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01",
     "rating": 4.7,
     "review_count": 1400,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -2073,9 +2073,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:15.614Z",
     "rating": 4.9,
     "review_count": 920,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -2147,9 +2147,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 1450,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -2285,9 +2285,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:16.803Z",
     "rating": 4.6,
     "review_count": 172,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -2354,9 +2354,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:18.009Z",
     "rating": 4.6,
     "review_count": 174,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -2423,9 +2423,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:17.914Z",
     "rating": 4.4,
     "review_count": 183,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -2483,17 +2483,17 @@ export const PRODUCTS: Product[] = [
     "seller": "أمازون مصر (Amazon.eg)",
     "url": "https://www.amazon.eg/dp/B0HMS97S58?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/41aycIOE4yL._AC_SY355_.jpg",
-    "price": 1999,
-    "previous_price": 2100,
-    "savings": 101,
-    "discount_percent": 5,
+    "price": 2100,
+    "previous_price": 1999,
+    "savings": 0,
+    "discount_percent": -5,
     "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T07:42:17.972Z",
+    "price_change_direction": "up",
+    "price_checked_at": "2026-11-01T08:29:18.161Z",
     "rating": 4.6,
     "review_count": 249,
     "in_stock": true,
-    "is_deal_active": true,
+    "is_deal_active": false,
     "stock_status": "in_stock",
     "price_history": [
       {
@@ -2519,6 +2519,11 @@ export const PRODUCTS: Product[] = [
       {
         "date": "2026-11-01",
         "price": 1999,
+        "label": "أقل سعر قياسي جديد ⚡"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 2100,
         "label": "أقل سعر قياسي جديد ⚡"
       }
     ],
@@ -2632,12 +2637,12 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 17,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T04:23:46.226Z",
+    "price_checked_at": "2026-11-01T08:29:19.771Z",
     "rating": 3.1,
     "review_count": 477,
-    "in_stock": false,
-    "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -2704,9 +2709,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:19.079Z",
     "rating": 4.5,
     "review_count": 402,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -2773,9 +2778,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:20.176Z",
     "rating": 4.7,
     "review_count": 173,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -2916,9 +2921,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:20.280Z",
     "rating": 4.4,
     "review_count": 264,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -2990,9 +2995,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:21.392Z",
     "rating": 4.4,
     "review_count": 460,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -3056,7 +3061,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 15,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T07:42:21.378Z",
+    "price_checked_at": "2026-11-01T08:29:22.330Z",
     "rating": 4.4,
     "review_count": 335,
     "in_stock": true,
@@ -3119,17 +3124,17 @@ export const PRODUCTS: Product[] = [
     "seller": "أمازون مصر (Amazon.eg)",
     "url": "https://www.amazon.eg/dp/B0G2MJWY6W?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/516AlUmgxYL._AC_SY355_.jpg",
-    "price": 441,
-    "previous_price": 956,
-    "savings": 515,
-    "discount_percent": 54,
+    "price": 956,
+    "previous_price": 441,
+    "savings": 0,
+    "discount_percent": -117,
     "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T07:42:21.332Z",
+    "price_change_direction": "up",
+    "price_checked_at": "2026-11-01T08:29:22.282Z",
     "rating": 5,
     "review_count": 198,
     "in_stock": true,
-    "is_deal_active": true,
+    "is_deal_active": false,
     "stock_status": "in_stock",
     "price_history": [
       {
@@ -3155,6 +3160,11 @@ export const PRODUCTS: Product[] = [
       {
         "date": "2026-11-01",
         "price": 441,
+        "label": "أقل سعر قياسي جديد ⚡"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 956,
         "label": "أقل سعر قياسي جديد ⚡"
       }
     ],
@@ -3202,9 +3212,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:22.461Z",
     "rating": 2,
     "review_count": 168,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -3276,9 +3286,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:22.514Z",
     "rating": 4,
     "review_count": 107,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -3350,9 +3360,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:22.396Z",
     "rating": 4.2,
     "review_count": 451,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -3424,9 +3434,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:23.446Z",
     "rating": 4.5,
     "review_count": 114,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -3489,13 +3499,13 @@ export const PRODUCTS: Product[] = [
     "seller": "أمازون مصر (Amazon.eg)",
     "url": "https://www.amazon.eg/dp/B07DS5J1ST?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/61xkRgcVbaL._AC_SL1500_.jpg",
-    "price": 1450,
-    "previous_price": 1510,
-    "savings": 60,
-    "discount_percent": 4,
+    "price": 1510,
+    "previous_price": 1450,
+    "savings": 0,
+    "discount_percent": -4,
     "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T07:42:23.455Z",
+    "price_change_direction": "up",
+    "price_checked_at": "2026-11-01T08:29:24.809Z",
     "rating": 4.3,
     "review_count": 419,
     "in_stock": true,
@@ -3525,6 +3535,11 @@ export const PRODUCTS: Product[] = [
       {
         "date": "2026-11-01",
         "price": 1450,
+        "label": "أقل سعر قياسي جديد ⚡"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 1510,
         "label": "أقل سعر قياسي جديد ⚡"
       }
     ],
@@ -3572,9 +3587,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:23.522Z",
     "rating": 4.7,
     "review_count": 258,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -3641,9 +3656,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01",
     "rating": 5,
     "review_count": 306,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -3710,9 +3725,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:24.528Z",
     "rating": 4.7,
     "review_count": 305,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -3779,9 +3794,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:24.595Z",
     "rating": 5,
     "review_count": 434,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -3853,9 +3868,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:25.602Z",
     "rating": 4.5,
     "review_count": 349,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -4060,9 +4075,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:27.327Z",
     "rating": 4,
     "review_count": 307,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -4134,9 +4149,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01",
     "rating": 4.7,
     "review_count": 194,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -4272,9 +4287,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:28.505Z",
     "rating": 4.4,
     "review_count": 93,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -4346,9 +4361,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:28.437Z",
     "rating": 3.3,
     "review_count": 215,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -4415,9 +4430,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:28.457Z",
     "rating": 4.6,
     "review_count": 227,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -4553,9 +4568,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:29.618Z",
     "rating": 3.9,
     "review_count": 255,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -4627,9 +4642,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:29.614Z",
     "rating": 3.6,
     "review_count": 261,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -4696,9 +4711,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:31.108Z",
     "rating": 4.6,
     "review_count": 132,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -4770,9 +4785,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:31.040Z",
     "rating": 4.3,
     "review_count": 97,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -4830,17 +4845,17 @@ export const PRODUCTS: Product[] = [
     "seller": "أمازون مصر (Amazon.eg)",
     "url": "https://www.amazon.eg/dp/B0714DN1QH?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/61V6vX+6OjL._AC_SL1500_.jpg",
-    "price": 2594,
-    "previous_price": 2847,
-    "savings": 253,
-    "discount_percent": 9,
+    "price": 2847,
+    "previous_price": 2594,
+    "savings": 0,
+    "discount_percent": -10,
     "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T07:42:30.990Z",
+    "price_change_direction": "up",
+    "price_checked_at": "2026-11-01T08:29:34.355Z",
     "rating": 4.5,
     "review_count": 252,
     "in_stock": true,
-    "is_deal_active": true,
+    "is_deal_active": false,
     "stock_status": "in_stock",
     "price_history": [
       {
@@ -4866,6 +4881,11 @@ export const PRODUCTS: Product[] = [
       {
         "date": "2026-11-01",
         "price": 2594,
+        "label": "أقل سعر قياسي جديد ⚡"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 2847,
         "label": "أقل سعر قياسي جديد ⚡"
       }
     ],
@@ -4913,9 +4933,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:32.289Z",
     "rating": 3.4,
     "review_count": 102,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -5185,17 +5205,17 @@ export const PRODUCTS: Product[] = [
     "seller": "أمازون مصر (Amazon.eg)",
     "url": "https://www.amazon.eg/dp/B0G6D4ZV3W?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/81aYdiMiriL._AC_SL1500_.jpg",
-    "price": 11425,
-    "previous_price": 10200,
-    "savings": 0,
-    "discount_percent": -12,
+    "price": 10200,
+    "previous_price": 11425,
+    "savings": 1225,
+    "discount_percent": 11,
     "is_record_low": true,
-    "price_change_direction": "up",
-    "price_checked_at": "2026-11-01T07:42:33.387Z",
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T08:29:36.826Z",
     "rating": 3,
     "review_count": 288,
     "in_stock": true,
-    "is_deal_active": false,
+    "is_deal_active": true,
     "stock_status": "in_stock",
     "price_history": [
       {
@@ -5221,6 +5241,11 @@ export const PRODUCTS: Product[] = [
       {
         "date": "2026-11-01",
         "price": 11425,
+        "label": "أقل سعر قياسي جديد ⚡"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 10200,
         "label": "أقل سعر قياسي جديد ⚡"
       }
     ],
@@ -5268,9 +5293,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:33.381Z",
     "rating": 4.7,
     "review_count": 477,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -5406,9 +5431,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:34.875Z",
     "rating": 5,
     "review_count": 335,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -5549,9 +5574,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:36.163Z",
     "rating": 3.8,
     "review_count": 360,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -5692,9 +5717,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:36.144Z",
     "rating": 4.7,
     "review_count": 162,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -5766,9 +5791,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:37.195Z",
     "rating": 4.5,
     "review_count": 271,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -5904,9 +5929,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:37.252Z",
     "rating": 4.7,
     "review_count": 116,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6042,9 +6067,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:38.319Z",
     "rating": 4.7,
     "review_count": 261,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6116,9 +6141,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:38.184Z",
     "rating": 4.4,
     "review_count": 212,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6190,9 +6215,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:39.273Z",
     "rating": 5,
     "review_count": 146,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6261,7 +6286,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 21,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T07:42:39.420Z",
+    "price_checked_at": "2026-11-01T08:29:42.982Z",
     "rating": 4.6,
     "review_count": 339,
     "in_stock": true,
@@ -6333,9 +6358,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:39.440Z",
     "rating": 4.6,
     "review_count": 129,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6407,9 +6432,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:40.569Z",
     "rating": 4.6,
     "review_count": 180,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6476,9 +6501,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:40.566Z",
     "rating": 4.5,
     "review_count": 295,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6550,9 +6575,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:40.442Z",
     "rating": 4.5,
     "review_count": 373,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6619,9 +6644,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:41.662Z",
     "rating": 4.7,
     "review_count": 335,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6693,9 +6718,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T06:49:51.642Z",
     "rating": 3.9,
     "review_count": 281,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6900,9 +6925,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:42.665Z",
     "rating": 3.6,
     "review_count": 371,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6974,9 +6999,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T05:59:05.748Z",
     "rating": 4.6,
     "review_count": 213,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -7112,9 +7137,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:43.823Z",
     "rating": 4.7,
     "review_count": 181,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -7178,7 +7203,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 21,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T07:42:43.791Z",
+    "price_checked_at": "2026-11-01T08:29:47.360Z",
     "rating": 4.6,
     "review_count": 203,
     "in_stock": true,
@@ -7319,9 +7344,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:44.900Z",
     "rating": 4.6,
     "review_count": 375,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -7393,9 +7418,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:44.883Z",
     "rating": 4.7,
     "review_count": 200,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -7467,9 +7492,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:45.842Z",
     "rating": 4.7,
     "review_count": 370,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -7541,9 +7566,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:46.406Z",
     "rating": 4.7,
     "review_count": 152,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -7615,9 +7640,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:46.039Z",
     "rating": 4.6,
     "review_count": 193,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -7827,9 +7852,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:47.508Z",
     "rating": 4.6,
     "review_count": 241,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -7901,9 +7926,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:48.920Z",
     "rating": 4.4,
     "review_count": 293,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -7970,9 +7995,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:48.929Z",
     "rating": 4.6,
     "review_count": 345,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -8039,9 +8064,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:48.952Z",
     "rating": 4.7,
     "review_count": 358,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -8108,9 +8133,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:50.072Z",
     "rating": 4.6,
     "review_count": 155,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -8177,9 +8202,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:50.111Z",
     "rating": 4.5,
     "review_count": 371,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -8246,9 +8271,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:50.067Z",
     "rating": 5,
     "review_count": 255,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -8315,9 +8340,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:51.225Z",
     "rating": 4.4,
     "review_count": 391,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -8389,9 +8414,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:51.222Z",
     "rating": 4.6,
     "review_count": 182,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -8463,9 +8488,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:51.142Z",
     "rating": 4.3,
     "review_count": 315,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -8537,9 +8562,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T07:42:52.366Z",
     "rating": 4.3,
     "review_count": 304,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
