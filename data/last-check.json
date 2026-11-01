@@ -1,7 +1,24 @@
 {
-  "last_run_at": "2026-10-31T18:25:42.993Z",
+  "last_run_at": "2026-11-01T00:27:08.601Z",
   "products_checked": 20,
-  "price_changes_detected": 0,
+  "price_changes_detected": 2,
   "telegram_alerts_sent": 0,
-  "changes": []
+  "changes": [
+    {
+      "id": "g-08-dualsense-black",
+      "title": "يد تحكم لاسلكية سوني دوال سينس بلايستيشن 5 أصلية إصدار منتصف الليل الأسود (DualSense Midnight Black) تدعم الكمبيوتر والهواتف",
+      "oldPrice": 3399,
+      "newPrice": 3900,
+      "dropPercent": -15,
+      "alertSent": false
+    },
+    {
+      "id": "g-18-razer-viper-mini",
+      "title": "ماوس ألعاب ريزر فايبر ميني (Razer Viper Mini) وزن خفيف للغاية 61 جرام مع سويتشات بصرية 8500 DPI وإضاءة Chroma RGB",
+      "oldPrice": 2599,
+      "newPrice": 2465,
+      "dropPercent": 5,
+      "alertSent": true
+    }
+  ]
 }

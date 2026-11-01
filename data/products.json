@@ -112,7 +112,7 @@
     "previous_price": 3199,
     "savings": 0,
     "discount_percent": -50,
-    "price_checked_at": "2026-10-31T12:26:07.187Z",
+    "price_checked_at": "2026-11-01T00:26:30.253Z",
     "rating": 4.8,
     "review_count": 2400,
     "price_history": [
@@ -344,11 +344,11 @@
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B094WL86N5?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/41D8zS5rX8L._SL500_.jpg",
-    "price": 3399,
-    "previous_price": 4200,
-    "savings": 801,
-    "discount_percent": 19,
-    "price_checked_at": "2026-10-31T03:20:00.000Z",
+    "price": 3900,
+    "previous_price": 3399,
+    "savings": 0,
+    "discount_percent": -15,
+    "price_checked_at": "2026-11-01T00:26:39.278Z",
     "rating": 4.9,
     "review_count": 850,
     "price_history": [
@@ -376,8 +376,14 @@
         "date": "2026-10-31",
         "price": 3399,
         "label": "أفضل سعر للنسخة السوداء ⚡"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 3900,
+        "label": "تحديث سعر"
       }
-    ]
+    ],
+    "price_change_direction": "up"
   },
   {
     "id": "g-09-crucial-p3-1tb",
@@ -538,7 +544,7 @@
     "previous_price": 949,
     "savings": 0,
     "discount_percent": -253,
-    "price_checked_at": "2026-10-31T06:29:59.037Z",
+    "price_checked_at": "2026-11-01T00:26:48.657Z",
     "rating": 4.7,
     "review_count": 3200,
     "price_history": [
@@ -965,13 +971,13 @@
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B084RPZD6T?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/611vjUvB2nL._AC_SL500_.jpg",
-    "price": 2599,
-    "previous_price": 1350,
-    "savings": 0,
-    "discount_percent": -93,
+    "price": 2465,
+    "previous_price": 2599,
+    "savings": 134,
+    "discount_percent": 5,
     "is_record_low": true,
-    "price_change_direction": "up",
-    "price_checked_at": "2026-10-31T12:26:39.443Z",
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01T00:27:02.373Z",
     "rating": 4.8,
     "review_count": 14200,
     "price_history": [
@@ -1003,6 +1009,11 @@
       {
         "date": "2026-10-31",
         "price": 2599,
+        "label": "أقل سعر قياسي جديد ⚡"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 2465,
         "label": "أقل سعر قياسي جديد ⚡"
       }
     ],
