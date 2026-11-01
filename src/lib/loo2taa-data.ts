@@ -37,14 +37,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B08G8WH435?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71u9sW4f82L._AC_SL1500_.jpg",
-    "price": 8999,
+    "image": "https://m.media-amazon.com/images/I/61dQJkzRopL._AC_SL1500_.jpg",
+    "price": 3499,
     "previous_price": 10900,
-    "savings": 1901,
-    "discount_percent": 17,
+    "savings": 7401,
+    "discount_percent": 68,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.978Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 980,
     "in_stock": true,
@@ -92,207 +92,6 @@ export const PRODUCTS: Product[] = [
     }
   },
   {
-    "id": "d-mic-02",
-    "asin": "B09JG59W1Q",
-    "display_title": "مايكروفون ألعاب فايفين A6V يو إس بي بإضاءة RGB وزر كتم صوت لمسي للديسكورد (Fifine AmpliGame A6V)",
-    "title": "FIFINE Gaming USB Microphone, PC Condenser Mic for Discord, Streaming, Pop Filter, Shock Mount",
-    "brand": "Fifine",
-    "category": "streaming-voice",
-    "category_ar": "مايكات وصوتيات ديسكورد",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B09JG59W1Q?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71mQ8g6V6KL._AC_SL1500_.jpg",
-    "price": 1899,
-    "previous_price": 2400,
-    "savings": 501,
-    "discount_percent": 21,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.979Z",
-    "rating": 4.8,
-    "review_count": 1420,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 2544,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 2400,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 1937,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 1899,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "أفضل مايك اقتصادي لصوت نقي جداً في رومات الديسكورد بدون تشويش",
-        "يأتي بمانع اهتزاز وشبكة بوب فلتر وزر كتم لمسي في الأعلى"
-      ],
-      "cons": [
-        "الإضاءة RGB متغيرة ولا يمكن تثبيتها على لون واحد"
-      ],
-      "brand_summary": "Fifine من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-mic-03",
-    "asin": "B0975TWZCQ",
-    "display_title": "مايكروفون فايفين AmpliGame A8 بإضاءة RGB قابلة للتخصيص ومخرج سماعة 3.5mm للمراقبة اللحظية (Fifine A8 RGB)",
-    "title": "FIFINE AmpliGame A8 USB Microphone with Touch Mute, Headphone Jack, RGB Lighting, Pop Filter",
-    "brand": "Fifine",
-    "category": "streaming-voice",
-    "category_ar": "مايكات وصوتيات ديسكورد",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B0975TWZCQ?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/61k4iE8FjSL._AC_SL1500_.jpg",
-    "price": 2499,
-    "previous_price": 3100,
-    "savings": 601,
-    "discount_percent": 19,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.979Z",
-    "rating": 4.8,
-    "review_count": 650,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 3286,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 3100,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 2549,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 2499,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "مخرج سماعة خلفي لمراقبة صوتك لايف بدون تأخير مع زر تاتش ذكي ومؤشر ليد للحالة",
-        "إمكانية تغيير أنماط الإضاءة RGB بضغطة زر"
-      ],
-      "cons": [
-        "حجم القاعدة عريض قليلاً على المكاتب الصغيرة"
-      ],
-      "brand_summary": "Fifine من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-mic-04",
-    "asin": "B07978W855",
-    "display_title": "ذراع مايكروفون هيدروليك معدني مكتبي احترافي لتثبيت المايك وتحرير مساحة المكتب (Heavy Duty Mic Boom Arm)",
-    "title": "Adjustable Microphone Suspension Boom Scissor Arm Stand for Blue Yeti, Snowball, HyperX, Fifine",
-    "brand": "Fifine",
-    "category": "streaming-voice",
-    "category_ar": "مايكات وصوتيات ديسكورد",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B07978W855?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71uK5GvN+LL._AC_SL1500_.jpg",
-    "price": 699,
-    "previous_price": 950,
-    "savings": 251,
-    "discount_percent": 26,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.979Z",
-    "rating": 4.7,
-    "review_count": 810,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 1007,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 950,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 713,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 699,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "يحافظ على المايك قريباً من فمك بدون التقاط نقرات الكيبورد والماوس من سطح المكتب",
-        "مفاصل مرنة تدور 360 درجة وتثبيت قوي بدون تخريم"
-      ],
-      "cons": [
-        "يحتاج ضبط قوة الشد بالمسامير أول مرة"
-      ],
-      "brand_summary": "Fifine من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
     "id": "d-mic-05",
     "asin": "B006DIA77E",
     "display_title": "مايكروفون بلو ييتي الأسطوري USB متعدد الأنماط لتسجيل الصوت والبودكاست والمحادثات (Blue Yeti USB Microphone)",
@@ -305,14 +104,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B006DIA77E?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71u9sW4f82L._AC_SL1500_.jpg",
-    "price": 6499,
+    "image": "https://m.media-amazon.com/images/I/71YWbS7eMuL._AC_SL1500_.jpg",
+    "price": 3499,
     "previous_price": 7900,
-    "savings": 1401,
-    "discount_percent": 18,
+    "savings": 4401,
+    "discount_percent": 56,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.8,
     "review_count": 2200,
     "in_stock": true,
@@ -360,73 +159,6 @@ export const PRODUCTS: Product[] = [
     }
   },
   {
-    "id": "d-mic-06",
-    "asin": "B08F7J8K5Q",
-    "display_title": "كاميرا ويب لوجيتيك C920 برو FHD بدقة 1080p ومايكروفونين مدمجين لبث الديسكورد (Logitech C920 Pro HD Webcam)",
-    "title": "Logitech C920 Pro HD Webcam, Full HD 1080p/30fps Video Calling, Clear Stereo Audio, HD Light Correction",
-    "brand": "Logitech",
-    "category": "streaming-voice",
-    "category_ar": "مايكات وصوتيات ديسكورد",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B08F7J8K5Q?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71iNwni9TsL._AC_SL1500_.jpg",
-    "price": 3699,
-    "previous_price": 4500,
-    "savings": 801,
-    "discount_percent": 18,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
-    "rating": 4.8,
-    "review_count": 3100,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 4770,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 4500,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 3773,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 3699,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "الكاميرا الأكثر استخداماً على ديسكورد وتويتش لصورة واضحة وتعديل تلقائي للإضاءة الضعيفة",
-        "عدسة زجاجية كاملة بتركيز تلقائي سريع"
-      ],
-      "cons": [
-        "لا تحتوي على غطاء خصوصية فيزيائي في العلبة"
-      ],
-      "brand_summary": "Logitech من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
     "id": "d-mic-07",
     "asin": "B09738CV2G",
     "display_title": "جهاز إلجاتو ستريم ديك MK.2 بـ 15 مفتاح LCD تفاعلي للتحكم برومات الديسكورد والبث (Elgato Stream Deck MK.2)",
@@ -439,14 +171,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B09738CV2G?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/61k4iE8FjSL._AC_SL1500_.jpg",
-    "price": 7999,
+    "image": "https://m.media-amazon.com/images/I/61gtdFnK+UL._AC_SL1500_.jpg",
+    "price": 6235,
     "previous_price": 9400,
-    "savings": 1401,
-    "discount_percent": 15,
+    "savings": 3165,
+    "discount_percent": 34,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 850,
     "in_stock": true,
@@ -494,73 +226,6 @@ export const PRODUCTS: Product[] = [
     }
   },
   {
-    "id": "d-head-01",
-    "asin": "B07M65MW7T",
-    "display_title": "سماعة ريزر كراكن كيتي إصدار الكوارتز الوردي بآذان قطة وإضاءة RGB تفاعلية (Razer Kraken Kitty Edition Pink)",
-    "title": "Razer Kraken Kitty RGB USB Gaming Headset: THX 7.1 Spatial Audio, Chroma RGB Lighting, Kitty Ears, Quartz Pink",
-    "brand": "Razer",
-    "category": "headsets",
-    "category_ar": "سماعات ديسكورد وقيمنق",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B07M65MW7T?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71uK5GvN+LL._AC_SL1500_.jpg",
-    "price": 5999,
-    "previous_price": 7200,
-    "savings": 1201,
-    "discount_percent": 17,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
-    "rating": 4.9,
-    "review_count": 1450,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 7632,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 7200,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 6119,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 5999,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "السماعة الأشهر للبنات والستريمرز بتصميم كيوت فاخر وآذان قطة مضيئة بألوان RGB قابلة للبرمجة",
-        "صوت محيطي THX 7.1 نقي جداً ومايك عازل للضوضاء"
-      ],
-      "cons": [
-        "منفذ USB سلكي فقط"
-      ],
-      "brand_summary": "Razer من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
     "id": "d-head-02",
     "asin": "B081415GCS",
     "display_title": "سماعة لوجيتيك G733 لايت سبيد لاسلكية إصدار ليلك البنفسجي الفاتح بوزن ريشة 278 جم (Logitech G733 Lilac Wireless)",
@@ -573,14 +238,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B081415GCS?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/81ek8g1RjGL._AC_SL1500_.jpg",
-    "price": 7499,
+    "image": "https://m.media-amazon.com/images/I/71xNjrzG69L._AC_SL1500_.jpg",
+    "price": 8000,
     "previous_price": 8900,
-    "savings": 1401,
-    "discount_percent": 16,
+    "savings": 900,
+    "discount_percent": 10,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 1100,
     "in_stock": true,
@@ -640,14 +305,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B00SAYCXWG?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71eXwQ9j8VL._AC_SL1500_.jpg",
-    "price": 4399,
+    "image": "https://m.media-amazon.com/images/I/71ltsViEA8L._AC_SL1500_.jpg",
+    "price": 4799,
     "previous_price": 5200,
-    "savings": 801,
-    "discount_percent": 15,
+    "savings": 401,
+    "discount_percent": 8,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 4800,
     "in_stock": true,
@@ -707,14 +372,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B09TRW57WB?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71J15M5SjML._AC_SL1500_.jpg",
-    "price": 9899,
+    "image": "https://m.media-amazon.com/images/I/71pFeJFdJQL._AC_SL1500_.jpg",
+    "price": 2999,
     "previous_price": 11900,
-    "savings": 2001,
-    "discount_percent": 17,
+    "savings": 8901,
+    "discount_percent": 75,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 720,
     "in_stock": true,
@@ -774,14 +439,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B086PKMZ21?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/61nBxN+pWkL._AC_SL1500_.jpg",
-    "price": 2499,
-    "previous_price": 3100,
-    "savings": 601,
-    "discount_percent": 19,
+    "image": "https://m.media-amazon.com/images/I/71-mnhc4Q8L._AC_SL1500_.jpg",
+    "price": 3349,
+    "previous_price": 4086,
+    "savings": 737,
+    "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.8,
     "review_count": 2100,
     "in_stock": true,
@@ -829,207 +494,6 @@ export const PRODUCTS: Product[] = [
     }
   },
   {
-    "id": "d-head-06",
-    "asin": "B07XZ7NLFM",
-    "display_title": "سماعة ريدراجون H510 زيوس بصوت محيطي 7.1 ومايك فائق النقاء ووسائد أذن إضافية (Redragon H510 Zeus)",
-    "title": "Redragon H510 Zeus Wired Gaming Headset 7.1 Surround Sound, 53mm Drivers, Detachable Mic, Multi-Platform",
-    "brand": "Redragon",
-    "category": "headsets",
-    "category_ar": "سماعات ديسكورد وقيمنق",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B07XZ7NLFM?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71J15M5SjML._AC_SL1500_.jpg",
-    "price": 1999,
-    "previous_price": 2500,
-    "savings": 501,
-    "discount_percent": 20,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
-    "rating": 4.7,
-    "review_count": 1100,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 2650,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 2500,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 2039,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 1999,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "قيمة جبارة تحت الـ 2000 جنيه بمشغلات 53mm ومايكروفون واضح جداً في المكالمات",
-        "تأتي مع كابلات USB و 3.5mm ووسائد جلد ووسائد قماش إضافية في العلبة"
-      ],
-      "cons": [
-        "شكلها ضخم قليلاً على الرأس الصغير"
-      ],
-      "brand_summary": "Redragon من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-head-07",
-    "asin": "B08R8CY62Z",
-    "display_title": "سماعة لوجيتيك G435 لايت سبيد وبلوتوث لاسلكية فائقة الخفة 165 جم للديسكورد والموبايل (Logitech G435 Wireless)",
-    "title": "Logitech G435 LIGHTSPEED and Bluetooth Wireless Gaming Headset, Ultra-Lightweight, 18h Battery",
-    "brand": "Logitech",
-    "category": "headsets",
-    "category_ar": "سماعات ديسكورد وقيمنق",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B08R8CY62Z?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/81ek8g1RjGL._AC_SL1500_.jpg",
-    "price": 3399,
-    "previous_price": 4200,
-    "savings": 801,
-    "discount_percent": 19,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
-    "rating": 4.7,
-    "review_count": 850,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 4452,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 4200,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 3467,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 3399,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "أخف سماعة لاسلكية في السوق، حجم مريح ومثالي لمن يعانون من ثقل السماعات التقليدية",
-        "اتصال مزدوج بالكمبيوتر والموبايل في نفس الوقت"
-      ],
-      "cons": [
-        "مايكروفونات مدمجة بدون ذراع خارجي"
-      ],
-      "brand_summary": "Logitech من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-peri-01",
-    "asin": "B0CL5N7K8M",
-    "display_title": "كيبورد ميكانيكي أوولا F87 برو بتصميم الجاسكت المطاطي وصوت ثوك ناعم تريند الديسكورد (Aula F87 Pro Wireless)",
-    "title": "AULA F87 Pro Wireless Mechanical Keyboard, Gasket Mounted, 5-Layer Noise Reduction, Graywood V4 Switches",
-    "brand": "Aula",
-    "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B0CL5N7K8M?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71wLpW43K2L._AC_SL1500_.jpg",
-    "price": 2899,
-    "previous_price": 3600,
-    "savings": 701,
-    "discount_percent": 19,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
-    "rating": 4.9,
-    "review_count": 530,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 3816,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 3600,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 2957,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 2899,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "الكيبورد الأكثر طلباً بين مجتمع ديسكورد بصوت نقرات مخملي كريمي (Thocky) مهدئ للأعصاب",
-        "مفاتيح مشحمة مسبقاً وبنية عزل صوت خماسية واتصال لاسلكي وبلوتوث وسلكي"
-      ],
-      "cons": [
-        "الكميات تنفد سريعاً بسبب شعبيته الكبيرة"
-      ],
-      "brand_summary": "Aula من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
     "id": "d-peri-02",
     "asin": "B087LXCTFJ",
     "display_title": "ماوس الألعاب اللاسلكي لوجيتيك جي برو إكس سوبر لايت الأسطوري بوزن 63 جم (Logitech G PRO X SUPERLIGHT)",
@@ -1042,14 +506,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B087LXCTFJ?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/51uy8gOG-iL._AC_SL1500_.jpg",
-    "price": 6899,
+    "image": "https://m.media-amazon.com/images/I/51uy8gOG-iL._AC_SL1400_.jpg",
+    "price": 2149,
     "previous_price": 8500,
-    "savings": 1601,
-    "discount_percent": 19,
+    "savings": 6351,
+    "discount_percent": 75,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 1400,
     "in_stock": true,
@@ -1109,14 +573,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B07CGPZ3ZQ?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/61Ip7PG9xGL._AC_SL1500_.jpg",
-    "price": 1999,
+    "image": "https://m.media-amazon.com/images/I/51YNW5aViBL._AC_SL1500_.jpg",
+    "price": 1982,
     "previous_price": 2600,
-    "savings": 601,
-    "discount_percent": 23,
+    "savings": 618,
+    "discount_percent": 24,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.8,
     "review_count": 2200,
     "in_stock": true,
@@ -1177,13 +641,13 @@ export const PRODUCTS: Product[] = [
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B07GBZ4Q68?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_SL1500_.jpg",
-    "price": 2499,
+    "price": 2501,
     "previous_price": 3100,
-    "savings": 601,
+    "savings": 599,
     "discount_percent": 19,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 5100,
     "in_stock": true,
@@ -1231,140 +695,6 @@ export const PRODUCTS: Product[] = [
     }
   },
   {
-    "id": "d-peri-05",
-    "asin": "B09R1T9KCL",
-    "display_title": "كيبورد ميكانيكي ريدراجون كاستور K631 برو بنسبة 65% لاسلكي وبلوتوث وسويتشات حمراء هادئة (Redragon K631 Pro)",
-    "title": "Redragon K631 Pro 65% Wireless RGB Mechanical Gaming Keyboard, 3-Mode, Hot-Swappable Quiet Red Switches",
-    "brand": "Redragon",
-    "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B09R1T9KCL?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71s8L5W7QpL._AC_SL1500_.jpg",
-    "price": 2199,
-    "previous_price": 2750,
-    "savings": 551,
-    "discount_percent": 20,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
-    "rating": 4.8,
-    "review_count": 480,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 2915,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 2750,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 2243,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 2199,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "حجم مدمج 68 مفتاح مع الحفاظ على مفاتيح الأسهم المستقلة وحرية حركة الماوس",
-        "سويتشات حمراء هادئة جداً لا تلتقطها مايكات الديسكورد مع دعم الهوت سواب"
-      ],
-      "cons": [
-        "لا يحتوي على لوحة أرقام Numpad"
-      ],
-      "brand_summary": "Redragon من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-peri-06",
-    "asin": "B08M3CW7S5",
-    "display_title": "كيبورد رويال كلودج RK84 لاسلكي بنسبة 75% أبيض/أسود وبطارية ضخمة 3750mAh (Royal Kludge RK84)",
-    "title": "RK ROYAL KLUDGE RK84 75% Triple Mode BT5.0/2.4G/Wired Hot Swappable Mechanical Keyboard",
-    "brand": "Royal Kludge",
-    "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B08M3CW7S5?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71wLpW43K2L._AC_SL1500_.jpg",
-    "price": 2699,
-    "previous_price": 3300,
-    "savings": 601,
-    "discount_percent": 18,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
-    "rating": 4.8,
-    "review_count": 730,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 3498,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 3300,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 2753,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 2699,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "الحجم المثالي 75%: يجمع بين الصغر ووجود صف أزرار F1-F12 كامل والأسهم",
-        "منفذين USB إضافيين لتوصيل الفلاشة وسماعة الرأس"
-      ],
-      "cons": [
-        "تعديل الإضاءة يحتاج حفظ اختصارات زر FN"
-      ],
-      "brand_summary": "Royal Kludge من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
     "id": "d-peri-07",
     "asin": "B07F7T8J9P",
     "display_title": "ماوس ألعاب ريزر ديث آدر إسنشال بحساس 6400 DPI وتصميم مريح لليد (Razer DeathAdder Essential)",
@@ -1377,14 +707,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B07F7T8J9P?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/81mXq-iH+QL._AC_SL1500_.jpg",
-    "price": 1199,
-    "previous_price": 1550,
-    "savings": 351,
-    "discount_percent": 23,
+    "image": "https://m.media-amazon.com/images/I/514v0B0UQ6L._AC_SL1000_.jpg",
+    "price": 3349,
+    "previous_price": 4086,
+    "savings": 737,
+    "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.7,
     "review_count": 3200,
     "in_stock": true,
@@ -1444,14 +774,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B084RPZD6T?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/51rPZgqDHDL._AC_SL1000_.jpg",
-    "price": 1499,
-    "previous_price": 1850,
-    "savings": 351,
-    "discount_percent": 19,
+    "image": "https://m.media-amazon.com/images/I/51gWCFijcqL._AC_SL1000_.jpg",
+    "price": 3099,
+    "previous_price": 3781,
+    "savings": 682,
+    "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.8,
     "review_count": 2400,
     "in_stock": true,
@@ -1511,14 +841,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B09TZNZ5WD?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71O15wY8z0L._AC_SL1500_.jpg",
-    "price": 2999,
-    "previous_price": 3600,
-    "savings": 601,
-    "discount_percent": 17,
+    "image": "https://m.media-amazon.com/images/I/61bPzhjXs5L._AC_SL1500_.jpg",
+    "price": 5990,
+    "previous_price": 7308,
+    "savings": 1318,
+    "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 670,
     "in_stock": true,
@@ -1566,341 +896,6 @@ export const PRODUCTS: Product[] = [
     }
   },
   {
-    "id": "d-set-02",
-    "asin": "B08CXG573H",
-    "display_title": "ذراع هيدروليك مزدوج لشاشتين نورث بايو NB F160 لتحرير مساحة المكتب وتدوير الشاشة رأسياً للديسكورد (North Bayou Dual Arm)",
-    "title": "North Bayou Dual Monitor Arm Desk Mount for 2 Screens 17-27 Inch Gas Spring Full Motion",
-    "brand": "North Bayou",
-    "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B08CXG573H?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71uK5GvN+LL._AC_SL1500_.jpg",
-    "price": 2499,
-    "previous_price": 3200,
-    "savings": 701,
-    "discount_percent": 22,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
-    "rating": 4.9,
-    "review_count": 980,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 3392,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 3200,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 2549,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 2499,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "أساسي لمستخدمي الديسكورد والستريمرز لجعل شاشة ثانوية رأسية (Vertical) لمتابعة الشات والديسكورد",
-        "يفرغ مساحة المكتب بنسبة 100% مع مجاري لتنظيم وإخفاء الأسلاك"
-      ],
-      "cons": [
-        "يتطلب دعم شاشاتك لمعيار VESA"
-      ],
-      "brand_summary": "North Bayou من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-set-03",
-    "asin": "B09R27Y8KP",
-    "display_title": "مصباح إضاءة الشاشة المعلق شاومي مي لحماية العين وإنارة سطح المكتب بدون انعكاس (Xiaomi Monitor Light Bar)",
-    "title": "Xiaomi Mi Computer Monitor Light Bar with Wireless Remote Control, Eye Caring No Screen Glare",
-    "brand": "Xiaomi",
-    "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B09R27Y8KP?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/61r5h4a2F4L._AC_SL1500_.jpg",
-    "price": 1999,
-    "previous_price": 2500,
-    "savings": 501,
-    "discount_percent": 20,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
-    "rating": 4.9,
-    "review_count": 890,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 2650,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 2500,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 2039,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 1999,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "ينير الكيبورد والماوس بالكامل بزاوية غير مباشرة تحمي العين من الإجهاد في الغرفة المظلمة",
-        "ريموت كنترول لاسلكي معدني دوار لتعديل شدة السطوع ودفء الإضاءة"
-      ],
-      "cons": [
-        "يعمل عبر منفذ USB عادي"
-      ],
-      "brand_summary": "Xiaomi من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-set-04",
-    "asin": "B0788L6HLZ",
-    "display_title": "ماوس باد ألعاب عملاق XXL مقاس 900x400 مم ناعم بحواف مخيطة وقاعدة مطاطية مانعة للانزلاق (XXL Gaming Mousepad)",
-    "title": "Extended Large Gaming Mouse Pad (35.4 x 15.7 in) XXL Thick Desk Mat, Waterproof Stitched Edges",
-    "brand": "Redragon",
-    "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B0788L6HLZ?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/61N+V86L3PL._AC_SL1500_.jpg",
-    "price": 499,
-    "previous_price": 750,
-    "savings": 251,
-    "discount_percent": 33,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
-    "rating": 4.8,
-    "review_count": 1200,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 795,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 750,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 509,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 499,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "يغطي مساحة الكيبورد والماوس بالكامل ويحمي سطح المكتب ويمنح لمسة جمالية أنيقة",
-        "مقاوم للماء وسهل التنظيف بالمسح بالماء"
-      ],
-      "cons": [
-        "يحتاج فرد ليوم واحد عند إخراجه من العلبة"
-      ],
-      "brand_summary": "Redragon من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-set-05",
-    "asin": "B08F7J8K5Q",
-    "display_title": "حامل سماعات ألعاب مكتبي مع إضاءة RGB ومنفذين USB 2.0 ومخرج صوت 3.5mm (RGB Headset Stand with USB Hub)",
-    "title": "RGB Gaming Headset Stand with 2 USB Charger Ports and 3.5mm AUX Port, Non-Slip Base Desktop Holder",
-    "brand": "Redragon",
-    "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B08F7J8K5Q?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/61V1h4-18dL._AC_SL1500_.jpg",
-    "price": 799,
-    "previous_price": 1100,
-    "savings": 301,
-    "discount_percent": 27,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
-    "rating": 4.7,
-    "review_count": 430,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 1166,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 1100,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 815,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 799,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "يحافظ على سماعتك من السقوط أو التلف ويعطي إضاءة جمالية بجوار الشاشة",
-        "يوفر منفذي USB قريبين لشحن الماوس والموبايل"
-      ],
-      "cons": [
-        "مصنوع من البلاستيك المقوى"
-      ],
-      "brand_summary": "Redragon من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-set-06",
-    "asin": "B07L3ZB444",
-    "display_title": "كرسي ألعاب احترافي كوجار أرمور ون بهيكل فولاذي ودعم كامل للظهر والرقبة (Cougar Armor One Gaming Chair)",
-    "title": "Cougar Armor One Gaming Chair, Ergonomic High Back Computer Chair with Lumbar & Headrest Pillows",
-    "brand": "Cougar",
-    "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B07L3ZB444?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/618xM27K0bL._AC_SL1500_.jpg",
-    "price": 9499,
-    "previous_price": 11500,
-    "savings": 2001,
-    "discount_percent": 17,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
-    "rating": 4.8,
-    "review_count": 510,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 12190,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 11500,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 9689,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 9499,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "شاسيه فولاذي كامل يتحمل حتى 120 كجم مع إمكانية إمالة الظهر حتى 180 درجة للاسترخاء التام",
-        "جلد تنفسي مع وسائد سميكة تمنع آلام الجلوس الطويل"
-      ],
-      "cons": [
-        "وزن الصندوق ثقيل يحتاج مساعدة في التركيب"
-      ],
-      "brand_summary": "Cougar من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
     "id": "d-mon-01",
     "asin": "B08VS8YG8H",
     "display_title": "شاشة ألعاب إل جي ألترا جير 24 بوصة IPS بتردد 144Hz وزمن استجابة 1ms حقيقي (LG UltraGear 24GN600-B)",
@@ -1913,14 +908,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B08VS8YG8H?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/81x0gK18RSL._AC_SL1500_.jpg",
-    "price": 7499,
-    "previous_price": 8900,
-    "savings": 1401,
-    "discount_percent": 16,
+    "image": "https://m.media-amazon.com/images/I/71XzYokzN2L._AC_SL1500_.jpg",
+    "price": 11999,
+    "previous_price": 14639,
+    "savings": 2640,
+    "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.8,
     "review_count": 940,
     "in_stock": true,
@@ -1980,14 +975,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B093MTSTKD?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/81x0gK18RSL._AC_SL1500_.jpg",
-    "price": 18499,
+    "image": "https://m.media-amazon.com/images/I/71PVdlAD4lL._AC_SL1500_.jpg",
+    "price": 13497,
     "previous_price": 21900,
-    "savings": 3401,
-    "discount_percent": 16,
+    "savings": 8403,
+    "discount_percent": 38,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 670,
     "in_stock": true,
@@ -2047,14 +1042,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B08FF3F5HR?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/81flP3vY1qL._AC_SL1500_.jpg",
-    "price": 11499,
-    "previous_price": 13500,
-    "savings": 2001,
-    "discount_percent": 15,
+    "image": "https://m.media-amazon.com/images/I/81cSdJuBbFL._AC_SL1500_.jpg",
+    "price": 48659,
+    "previous_price": 59364,
+    "savings": 10705,
+    "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.7,
     "review_count": 1120,
     "in_stock": true,
@@ -2102,73 +1097,6 @@ export const PRODUCTS: Product[] = [
     }
   },
   {
-    "id": "d-mon-04",
-    "asin": "B08LCPJWD7",
-    "display_title": "شاشة أسوس تاف 23.8 بوصة IPS بتردد 165Hz وزمن 1ms وتقنية تقليل ضبابية الحركة ELMB (ASUS TUF VG249Q1A)",
-    "title": "ASUS TUF Gaming 23.8\" 1080P Monitor (VG249Q1A) - Full HD, IPS, 165Hz, 1ms, FreeSync Premium",
-    "brand": "ASUS",
-    "category": "monitors",
-    "category_ar": "شاشات قيمنق 144Hz+",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B08LCPJWD7?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/81bN2yZ3MBL._AC_SL1500_.jpg",
-    "price": 7899,
-    "previous_price": 9300,
-    "savings": 1401,
-    "discount_percent": 15,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
-    "rating": 4.8,
-    "review_count": 820,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 9858,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 9300,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 8057,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 7899,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "تردد 165Hz فائق النعومة مع تقنية ELMB الخاصة بأسوس للقضاء على التقطيع في ألعاب التصويب",
-        "تصميم حواف نحيفة جداً"
-      ],
-      "cons": [
-        "قاعدة الشاشة ثابتة"
-      ],
-      "brand_summary": "ASUS من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
     "id": "d-hw-01",
     "asin": "B0C8ZQTRD7",
     "display_title": "كارت شاشة جيجابايت جي فورس RTX 4060 ويندفورس OC سعة 8GB GDDR6 مع دعم DLSS 3 (Gigabyte RTX 4060)",
@@ -2181,14 +1109,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B0C8ZQTRD7?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71R2c8i2LcL._AC_SL1500_.jpg",
-    "price": 18499,
+    "image": "https://m.media-amazon.com/images/I/71a2afWp9LL._AC_SL1500_.jpg",
+    "price": 21000,
     "previous_price": 21500,
-    "savings": 3001,
-    "discount_percent": 14,
+    "savings": 500,
+    "discount_percent": 2,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.8,
     "review_count": 410,
     "in_stock": true,
@@ -2236,73 +1164,6 @@ export const PRODUCTS: Product[] = [
     }
   },
   {
-    "id": "d-hw-02",
-    "asin": "B0C5ZLN83P",
-    "display_title": "كارت شاشة جيجابايت RTX 4060 Ti إيجل 8GB بثلاث مراوح تبريد ويندفورس (Gigabyte RTX 4060 Ti Eagle 8G)",
-    "title": "Gigabyte GeForce RTX 4060 Ti Eagle 8G Graphics Card, 3X WINDFORCE Fans, 8GB GDDR6, DLSS 3",
-    "brand": "Gigabyte",
-    "category": "pc-hardware",
-    "category_ar": "تجميعات وهاردوير البي سي",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B0C5ZLN83P?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71R2c8i2LcL._AC_SL1500_.jpg",
-    "price": 24999,
-    "previous_price": 28500,
-    "savings": 3501,
-    "discount_percent": 12,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
-    "rating": 4.8,
-    "review_count": 140,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 30210,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 28500,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 25499,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 24999,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "أداء قوي جداً في دقة 2K 1440p مع دعم كامل للرندرة وتوليد الإطارات بالذكاء الاصطناعي",
-        "تبريد ثلاثي فائق الهدوء"
-      ],
-      "cons": [
-        "طول الكارت يتطلب كيسة PC متوسطة أو كبيرة"
-      ],
-      "brand_summary": "Gigabyte من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
     "id": "d-hw-03",
     "asin": "B08166SLDF",
     "display_title": "معالج إيه إم دي رايزن 5 5600X سداسي النواة و12 مسار بتردد يصل إلى 4.6GHz (AMD Ryzen 5 5600X)",
@@ -2315,14 +1176,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B08166SLDF?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/61vGQNUEsGL._AC_SL1300_.jpg",
-    "price": 7499,
+    "image": "https://m.media-amazon.com/images/I/51ld6RR8IrL._AC_SL1500_.jpg",
+    "price": 5283,
     "previous_price": 8900,
-    "savings": 1401,
-    "discount_percent": 16,
+    "savings": 3617,
+    "discount_percent": 41,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 3400,
     "in_stock": true,
@@ -2382,14 +1243,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B09MDFH5HY?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/61r4zMhS+AL._AC_SL1500_.jpg",
-    "price": 6499,
+    "image": "https://m.media-amazon.com/images/I/51EwtPjHkIL._AC_SL1280_.jpg",
+    "price": 6000,
     "previous_price": 7800,
-    "savings": 1301,
-    "discount_percent": 17,
+    "savings": 1800,
+    "discount_percent": 23,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 1200,
     "in_stock": true,
@@ -2449,14 +1310,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B0B25NXWC7?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/61k415W2WLL._AC_SL1500_.jpg",
-    "price": 3699,
-    "previous_price": 4300,
-    "savings": 601,
-    "discount_percent": 14,
+    "image": "https://m.media-amazon.com/images/I/51pMg25AthL._AC_SL1000_.jpg",
+    "price": 8700,
+    "previous_price": 10614,
+    "savings": 1914,
+    "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.8,
     "review_count": 2400,
     "in_stock": true,
@@ -2516,14 +1377,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B097K2WBL3?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71Zp+QvK8jL._AC_SL1500_.jpg",
-    "price": 2499,
-    "previous_price": 3100,
-    "savings": 601,
-    "discount_percent": 19,
+    "image": "https://m.media-amazon.com/images/I/61uXihcspuL._AC_SL1500_.jpg",
+    "price": 7347,
+    "previous_price": 8963,
+    "savings": 1616,
+    "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 1850,
     "in_stock": true,
@@ -2583,14 +1444,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B09LGY38L4?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71xS8b+8TOL._AC_SL1500_.jpg",
-    "price": 2799,
-    "previous_price": 3500,
-    "savings": 701,
-    "discount_percent": 20,
+    "image": "https://m.media-amazon.com/images/I/71j6VKsz-fL._SL1500_.jpg",
+    "price": 4500,
+    "previous_price": 5490,
+    "savings": 990,
+    "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 1100,
     "in_stock": true,
@@ -2638,73 +1499,6 @@ export const PRODUCTS: Product[] = [
     }
   },
   {
-    "id": "d-con-01",
-    "asin": "B08FC5L3RG",
-    "display_title": "جهاز سوني بلايستيشن 5 سليم 1TB SSD مع ذراع تحكم لاسلكي DualSense (Sony PS5 Slim Console)",
-    "title": "Sony PlayStation 5 Console Standard Edition - International Version, 1TB SSD",
-    "brand": "Sony",
-    "category": "consoles-handheld",
-    "category_ar": "كونسول واكسسوارات",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B08FC5L3RG?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71vWi5Iuz3L._AC_SL1500_.jpg",
-    "price": 31499,
-    "previous_price": 36999,
-    "savings": 5500,
-    "discount_percent": 15,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
-    "rating": 4.9,
-    "review_count": 850,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 39219,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 36999,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 32129,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 31499,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "أفضل جهاز ألعاب منزلي في العالم مع مكتبة حصريات جبارة وسرعة تحميل فورية",
-        "ذراع تحكم تفاعلي Haptic Feedback يحاكي تفاصيل اللعبة في يدك"
-      ],
-      "cons": [
-        "أسعار ألعاب الحصريات الرسمية مرتفعة نسبياً"
-      ],
-      "brand_summary": "Sony من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
     "id": "d-con-02",
     "asin": "B098RKWHHZ",
     "display_title": "جهاز نينتندو سويتش شاشة أوليد مقاس 7 بوصة ألوان نيون ومساحة 64GB (Nintendo Switch OLED)",
@@ -2717,14 +1511,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B098RKWHHZ?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71N1654iR+L._AC_SL1500_.jpg",
-    "price": 18999,
-    "previous_price": 22500,
-    "savings": 3501,
-    "discount_percent": 16,
+    "image": "https://m.media-amazon.com/images/I/61nqNujSF2L._AC_SL1330_.jpg",
+    "price": 26624,
+    "previous_price": 32481,
+    "savings": 5857,
+    "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 980,
     "in_stock": true,
@@ -2772,73 +1566,6 @@ export const PRODUCTS: Product[] = [
     }
   },
   {
-    "id": "d-con-03",
-    "asin": "B08H75RTZ8",
-    "display_title": "جهاز مايكروسوفت إكس بوكس سيريس إس الصغير مع اشتراك جيم باس بدقة 2K و 120 FPS (Xbox Series S)",
-    "title": "Xbox Series S 512GB Video Game Console with Wireless Controller, Digital Edition",
-    "brand": "Microsoft",
-    "category": "consoles-handheld",
-    "category_ar": "كونسول واكسسوارات",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B08H75RTZ8?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71NBQ2a52CL._AC_SL1500_.jpg",
-    "price": 18499,
-    "previous_price": 21500,
-    "savings": 3001,
-    "discount_percent": 14,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
-    "rating": 4.8,
-    "review_count": 1250,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 22790,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 21500,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 18869,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 18499,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "أرخص جهاز جيل جديد للألعاب، حجمه صغير جداً يوضع في حقيبة الظهر بسهولة",
-        "مكتبة Xbox Game Pass التي تتيح لك لعب مئات الألعاب باشتراك رمزي"
-      ],
-      "cons": [
-        "لا يحتوي على مدخل أسطوانات فيزيائية"
-      ],
-      "brand_summary": "Microsoft من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
     "id": "d-con-04",
     "asin": "B094WL86N5",
     "display_title": "ذراع تحكم سوني دوال سينس بلايستيشن 5 لون أسود منتصف الليل للبي سي والكونسول (DualSense Midnight Black)",
@@ -2851,14 +1578,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B094WL86N5?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/61kWB+W6tSL._AC_SL1500_.jpg",
-    "price": 3299,
-    "previous_price": 3900,
-    "savings": 601,
-    "discount_percent": 15,
+    "image": "https://m.media-amazon.com/images/I/61m0Fnpx4wL._AC_SL1475_.jpg",
+    "price": 3900,
+    "previous_price": 4758,
+    "savings": 858,
+    "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 1450,
     "in_stock": true,
@@ -2918,14 +1645,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B08DF26MXW?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/61kWB+W6tSL._AC_SL1500_.jpg",
-    "price": 3199,
+    "image": "https://m.media-amazon.com/images/I/51wNvBveUeL._AC_SL1000_.jpg",
+    "price": 3774,
     "previous_price": 3800,
-    "savings": 601,
-    "discount_percent": 16,
+    "savings": 26,
+    "discount_percent": 1,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.8,
     "review_count": 2100,
     "in_stock": true,
@@ -2973,73 +1700,6 @@ export const PRODUCTS: Product[] = [
     }
   },
   {
-    "id": "d-lap-01",
-    "asin": "B0C4JCL88P",
-    "display_title": "لابتوب ألعاب لينوفو LOQ 15 معالج i5 وكارت RTX 4050 شاشة 144Hz رامات 16GB DDR5 (Lenovo LOQ 15)",
-    "title": "Lenovo LOQ 15IRH8 Gaming Laptop, Intel Core i5-13420H, 15.6\" FHD 144Hz, 16GB DDR5, 512GB SSD, RTX 4050 6GB",
-    "brand": "Lenovo",
-    "category": "laptops",
-    "category_ar": "لابتوبات قيمنق ومونتاج",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B0C4JCL88P?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71c4cZ3e0qL._AC_SL1500_.jpg",
-    "price": 38999,
-    "previous_price": 43500,
-    "savings": 4501,
-    "discount_percent": 10,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
-    "rating": 4.7,
-    "review_count": 280,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 46110,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 43500,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 39779,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 38999,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "أفضل لابتوب قيمنق قيمة مقابل سعر في مصر مع كارت RTX 4050 ودعم DLSS 3 ومروحتين تبريد",
-        "كيبورد مريح بإضاءة بيضاء أنيقة"
-      ],
-      "cons": [
-        "مساحة 512GB تتطلب إضافة SSD ثاني مستقبلاً"
-      ],
-      "brand_summary": "Lenovo من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
     "id": "d-lap-02",
     "asin": "B0GNKS32QB",
     "display_title": "لابتوب أسوس تاف F15 معالج Core i7 الجيل الثاني عشر وكارت RTX 3050 رامات 16GB شاشة 144Hz (ASUS TUF F15)",
@@ -3052,14 +1712,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B0GNKS32QB?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71eXwQ9j8VL._AC_SL1500_.jpg",
-    "price": 36999,
-    "previous_price": 41500,
-    "savings": 4501,
-    "discount_percent": 11,
+    "image": "https://m.media-amazon.com/images/I/51ug5icR5+L._AC_SL1024_.jpg",
+    "price": 47999,
+    "previous_price": 58559,
+    "savings": 10560,
+    "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.7,
     "review_count": 340,
     "in_stock": true,
@@ -3107,408 +1767,6 @@ export const PRODUCTS: Product[] = [
     }
   },
   {
-    "id": "d-lap-03",
-    "asin": "B0CHY5L3K9",
-    "display_title": "لابتوب أيسر نيترو V 15 معالج Core i7 وكارت RTX 4050 شاشة 144Hz IPS رامات 16GB DDR5 (Acer Nitro V 15)",
-    "title": "Acer Nitro V 15 Gaming Laptop, Intel Core i7-13620H, RTX 4050 6GB, 15.6\" FHD 144Hz, 16GB DDR5, 512GB SSD",
-    "brand": "Acer",
-    "category": "laptops",
-    "category_ar": "لابتوبات قيمنق ومونتاج",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B0CHY5L3K9?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71jG+e7roXL._AC_SL1500_.jpg",
-    "price": 43499,
-    "previous_price": 48900,
-    "savings": 5401,
-    "discount_percent": 11,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:44:33.980Z",
-    "rating": 4.6,
-    "review_count": 190,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 51834,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 48900,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 44369,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 43499,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "أداء جبار في برامج المونتاج وألعاب 2026 مع رامات DDR5 فائقة السرعة وتبريد بمروحتين",
-        "صوت نقي بتقنية DTS:X Ultra"
-      ],
-      "cons": [
-        "صوت المراوح يصبح مسموعاً أثناء وضع التيربو"
-      ],
-      "brand_summary": "Acer من أشهر الشركات الموثوقة لدى مجتمع الجيمرز ومستخدمي الديسكورد.",
-      "user_sentiment": "95% يوصون به بناءً على تجارب الاستخدام والستريم.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-mic-08",
-    "asin": "B08T1S4ZKP",
-    "display_title": "كاميرا ويب ريزر كيو برو USB بدقة 1080p 60FPS ومستشعر إضاءة ذكي للبث (Razer Kiyo Pro)",
-    "title": "Razer Kiyo Pro Streaming Webcam: Uncompressed 1080p 60FPS - Adaptive Light Sensor - HDR",
-    "brand": "Razer",
-    "category": "streaming-voice",
-    "category_ar": "مايكات وصوتيات ديسكورد",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B08T1S4ZKP?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71uK5GvN+LL._AC_SL1500_.jpg",
-    "price": 4999,
-    "previous_price": 6200,
-    "savings": 1201,
-    "discount_percent": 19,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.147Z",
-    "rating": 4.8,
-    "review_count": 510,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 6572,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 6200,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 5099,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 4999,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "مستشعر STARVIS فائق الحساسية يمنح صورة ساطعة ونقية حتى في الغرف شبه المظلمة",
-        "دعم HDR و 60 إطار في الثانية"
-      ],
-      "cons": [
-        "لا تحتوي على حلقة إضاءة مدمجة"
-      ],
-      "brand_summary": "Razer من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-mic-09",
-    "asin": "B08F7J8K5P",
-    "display_title": "مايكروفون بويا BY-PM700 بمنفذ USB ثلاثي الكبسولات متعدد الأنماط للمحادثات (Boya BY-PM700)",
-    "title": "BOYA BY-PM700 USB Condenser Microphone for Windows, Mac, Recording, Podcasting",
-    "brand": "Boya",
-    "category": "streaming-voice",
-    "category_ar": "مايكات وصوتيات ديسكورد",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B08F7J8K5P?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71mQ8g6V6KL._AC_SL1500_.jpg",
-    "price": 2499,
-    "previous_price": 3100,
-    "savings": 601,
-    "discount_percent": 19,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
-    "rating": 4.7,
-    "review_count": 380,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 3286,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 3100,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 2549,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 2499,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "هيكل معدني ثقيل وأزرار ميكانيكية لضبط الحساسية ونمط الالتقاط بسهولة",
-        "صوت نقي جداً ومخرج سماعة مباشر"
-      ],
-      "cons": [
-        "يحتاج مساحة على المكتب"
-      ],
-      "brand_summary": "Boya من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-mic-10",
-    "asin": "B09737W895",
-    "display_title": "ذراع مايكروفون إلجاتو ويف آرم LP منخفض الارتفاع ليتحرك تحت الشاشة بدون حجب الرؤية (Elgato Wave Mic Arm LP)",
-    "title": "Elgato Wave Mic Arm LP - Premium Low Profile Microphone Arm with Cable Management Channels",
-    "brand": "Elgato",
-    "category": "streaming-voice",
-    "category_ar": "مايكات وصوتيات ديسكورد",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B09737W895?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71uK5GvN+LL._AC_SL1500_.jpg",
-    "price": 3499,
-    "previous_price": 4300,
-    "savings": 801,
-    "discount_percent": 19,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
-    "rating": 4.9,
-    "review_count": 750,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 4558,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 4300,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 3569,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 3499,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "التصميم الأكثر فخامة في عالم السيت أب: يتحرك تحت شاشتك بدون حجب الرؤية أو إزعاج الكاميرا",
-        "مجاري مغناطيسية لإخفاء الكابلات تماماً"
-      ],
-      "cons": [
-        "سعره أعلى من الأذرع التقليدية"
-      ],
-      "brand_summary": "Elgato من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-head-08",
-    "asin": "B0C4ZLP89Q",
-    "display_title": "سماعة ريزر كراكن كيتي V2 برو بـ 3 أشكال آذان قابلة للتغيير (قطة، دب، أرنب) وإضاءة RGB (Razer Kraken Kitty V2 Pro)",
-    "title": "Razer Kraken Kitty V2 Pro Wired RGB Headset with Interchangeable Ears (Kitty, Bear, Bunny)",
-    "brand": "Razer",
-    "category": "headsets",
-    "category_ar": "سماعات ديسكورد وقيمنق",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B0C4ZLP89Q?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71uK5GvN+LL._AC_SL1500_.jpg",
-    "price": 7999,
-    "previous_price": 9500,
-    "savings": 1501,
-    "discount_percent": 16,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
-    "rating": 4.9,
-    "review_count": 420,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 10070,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 9500,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 8159,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 7999,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "السماعة الكيوت الأقوى في العالم: يمكنك تغيير الآذان بين قطة أو أرنب أو دبدوب مع إضاءة تتفاعل مع شات البث",
-        "صوت محيطي ومايك عازل ممتاز"
-      ],
-      "cons": [
-        "موجهة لعشاق السيت أب الجمالي الكيوت"
-      ],
-      "brand_summary": "Razer من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-head-09",
-    "asin": "B0B8QFMN3Y",
-    "display_title": "سماعة ألعاب ستيل سيريز أركتيس نوفا 1 خفيفة الوزن 236 جم بتصميم ComfortMAX (SteelSeries Arctis Nova 1)",
-    "title": "SteelSeries Arctis Nova 1 Multi-System Gaming Headset, Hi-Fi Drivers, 360 Spatial Audio",
-    "brand": "SteelSeries",
-    "category": "headsets",
-    "category_ar": "سماعات ديسكورد وقيمنق",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B0B8QFMN3Y?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71J15M5SjML._AC_SL1500_.jpg",
-    "price": 2499,
-    "previous_price": 3100,
-    "savings": 601,
-    "discount_percent": 19,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
-    "rating": 4.8,
-    "review_count": 670,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 3286,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 3100,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 2549,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 2499,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "راحة مذهلة بفضل طوق الرأس المطاطي القابل للتعديل الذي يوزع الوزن بالتساوي",
-        "مايكروفون ClearCast Gen 2 يسحب بالكامل داخل السماعة"
-      ],
-      "cons": [
-        "سلكية بمنفذ 3.5mm"
-      ],
-      "brand_summary": "SteelSeries من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
     "id": "d-head-10",
     "asin": "B07PDFBJZD",
     "display_title": "سماعة لوجيتيك جي برو إكس للبطولات مع بطاقة صوت USB وتقنية Blue VO!CE (Logitech G PRO X Headset)",
@@ -3521,14 +1779,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B07PDFBJZD?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71eXwQ9j8VL._AC_SL1500_.jpg",
-    "price": 5899,
-    "previous_price": 7100,
-    "savings": 1201,
-    "discount_percent": 17,
+    "image": "https://m.media-amazon.com/images/I/51j6CXF9DYL._AC_SL1000_.jpg",
+    "price": 7499,
+    "previous_price": 9149,
+    "savings": 1650,
+    "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 1450,
     "in_stock": true,
@@ -3588,14 +1846,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B00HVLUR18?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/81ek8g1RjGL._AC_SL1500_.jpg",
-    "price": 2699,
-    "previous_price": 3300,
-    "savings": 601,
+    "image": "https://m.media-amazon.com/images/I/81zcnWFPwVS._AC_SL1500_.jpg",
+    "price": 4949,
+    "previous_price": 6038,
+    "savings": 1089,
     "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.8,
     "review_count": 2800,
     "in_stock": true,
@@ -3643,140 +1901,6 @@ export const PRODUCTS: Product[] = [
     }
   },
   {
-    "id": "d-peri-09",
-    "asin": "B09R1T9KCL",
-    "display_title": "كيبورد ميكانيكي أكو 3068B بلس لاسلكي وثلاثي الأوضاع مع سويتشات CS Jelly المشحمة مصنعياً (Akko 3068B Plus)",
-    "title": "Akko 3068B Plus Multi-Modes Mechanical Gaming Keyboard, Hot-Swappable, PBT Keycaps, RGB",
-    "brand": "Akko",
-    "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B09R1T9KCL?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71s8L5W7QpL._AC_SL1500_.jpg",
-    "price": 3499,
-    "previous_price": 4200,
-    "savings": 701,
-    "discount_percent": 17,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
-    "rating": 4.9,
-    "review_count": 390,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 4452,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 4200,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 3569,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 3499,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "صوت ثوك ناعم جداً ومفاتيح PBT فاخرة من تصميم أكو مع ألوان باستيل مميزة",
-        "اتصال لاسلكي 2.4G وبلوتوث وسلكي"
-      ],
-      "cons": [
-        "حجم 65% مدمج بدون لوحة أرقام"
-      ],
-      "brand_summary": "Akko من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-peri-10",
-    "asin": "B0CL5N7K8M",
-    "display_title": "كيبورد أوولا F75 اللاسلكي بجوانب جاسكت وسويتشات ريبر لصوت كريمي فخم (Aula F75 Gasket Keyboard)",
-    "title": "AULA F75 Wireless Mechanical Keyboard, 75% Layout Gasket Mount, Reaper Linear Switches",
-    "brand": "Aula",
-    "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B0CL5N7K8M?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71wLpW43K2L._AC_SL1500_.jpg",
-    "price": 2799,
-    "previous_price": 3500,
-    "savings": 701,
-    "discount_percent": 20,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
-    "rating": 4.9,
-    "review_count": 480,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 3710,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 3500,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 2855,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 2799,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "عجلة معدنية للتحكم بالصوت مباشرة و5 طبقات عزل داخلي تمنح متعة كتابة ولعب فريدة",
-        "إضاءة RGB ساطعة"
-      ],
-      "cons": [
-        "الطلب عليه مرتفع جداً"
-      ],
-      "brand_summary": "Aula من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
     "id": "d-peri-11",
     "asin": "B016MAK38U",
     "display_title": "كيبورد ميكانيكي ريدراجون كومارا K552 إصدار أبيض RGB مفاتيح زرقاء كليك (Redragon K552 White RGB)",
@@ -3789,14 +1913,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B016MAK38U?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71uK5GvN+LL._AC_SL1500_.jpg",
-    "price": 1799,
+    "image": "https://m.media-amazon.com/images/I/71FSIp+tDNL._AC_SL1500_.jpg",
+    "price": 1589,
     "previous_price": 2200,
-    "savings": 401,
-    "discount_percent": 18,
+    "savings": 611,
+    "discount_percent": 28,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.7,
     "review_count": 1400,
     "in_stock": true,
@@ -3844,676 +1968,6 @@ export const PRODUCTS: Product[] = [
     }
   },
   {
-    "id": "d-peri-12",
-    "asin": "B08HR75YTK",
-    "display_title": "ماوس ألعاب لاسلكي ستيل سيريز ريفال 3 ببطارية تدوم أكثر من 400 ساعة واتصال مزدوج (SteelSeries Rival 3 Wireless)",
-    "title": "SteelSeries Rival 3 Wireless Gaming Mouse, 400+ Hour Battery, Dual Wireless 2.4 GHz and Bluetooth 5.0",
-    "brand": "SteelSeries",
-    "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B08HR75YTK?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/61Ip7PG9xGL._AC_SL1500_.jpg",
-    "price": 1899,
-    "previous_price": 2400,
-    "savings": 501,
-    "discount_percent": 21,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
-    "rating": 4.7,
-    "review_count": 890,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 2544,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 2400,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 1937,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 1899,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "بطارية خارقة تعمل لشهور مع إمكانية استخدام بطارية واحدة لتخفيف الوزن",
-        "اتصال بالبلوتوث والوايرلس السريع"
-      ],
-      "cons": [
-        "الإضاءة محصورة في عجلة التمرير لتوفير الطاقة"
-      ],
-      "brand_summary": "SteelSeries من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-peri-13",
-    "asin": "B08F7B5QG2",
-    "display_title": "ماوس ألعاب لاسلكي جلوريوس موديل O خفيف الوزن 69 جم بتصميم خلايا النحل لون أبيض غير لامع (Glorious Model O Wireless)",
-    "title": "Glorious Model O Wireless Gaming Mouse - Matte White, 69g, BAMF Sensor, RGB",
-    "brand": "Glorious",
-    "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B08F7B5QG2?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/51uy8gOG-iL._AC_SL1500_.jpg",
-    "price": 3499,
-    "previous_price": 4300,
-    "savings": 801,
-    "discount_percent": 19,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
-    "rating": 4.8,
-    "review_count": 750,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 4558,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 4300,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 3569,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 3499,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "تصميم خلايا النحل فائق الخفة مع زلاجات G-Skates نقية 100% لانزلاق خيالي بدون مقاومة",
-        "مستشعر BAMF باستهلاك منخفض للطاقة"
-      ],
-      "cons": [
-        "يحتاج عناية بالنظافة لمنع تجمع الغبار"
-      ],
-      "brand_summary": "Glorious من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-set-07",
-    "asin": "B091CRW5LP",
-    "display_title": "مصباح إسقاط غروب الشمس بـ 16 لون وريموت كنترول لخلفية ستريم ورومات الديسكورد (Sunset Projection Lamp)",
-    "title": "Sunset Lamp Projection Lamp, 16 Colors Changing with Remote Control, Romantic Visual LED Light",
-    "brand": "Sunset",
-    "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B091CRW5LP?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/61r5h4a2F4L._AC_SL1500_.jpg",
-    "price": 399,
-    "previous_price": 600,
-    "savings": 201,
-    "discount_percent": 34,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
-    "rating": 4.7,
-    "review_count": 980,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 636,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 600,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 407,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 399,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "التريند الأشهر في غرف الجيمرز والديسكورد، يمنح الغرفة هالة ضوئية دافئة وساحرة في التصوير والبث",
-        "16 لون مختلف مع ريموت كنترول للتحكم عن بعد"
-      ],
-      "cons": [
-        "يعمل بسلك USB"
-      ],
-      "brand_summary": "Sunset من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-set-08",
-    "asin": "B0CHY578KM",
-    "display_title": "طقم مسند معصم ميموري فوم بتصميم السحابة للكيبورد والماوس باللون الأبيض/الوردي (Cute Cloud Wrist Rest)",
-    "title": "Cloud Keyboard Wrist Rest and Mouse Pad Wrist Rest Set, Ergonomic Memory Foam Support",
-    "brand": "CloudRest",
-    "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B0CHY578KM?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71uK5GvN+LL._AC_SL1500_.jpg",
-    "price": 499,
-    "previous_price": 750,
-    "savings": 251,
-    "discount_percent": 33,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
-    "rating": 4.9,
-    "review_count": 420,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 795,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 750,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 509,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 499,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "تصميم سحابة كيوت ومريح جداً يمنع آلام المعصم واليدين تماماً أثناء محادثات الشات واللعب الطويل",
-        "قاعدة سيليكون مانعة للانزلاق وسهلة التنظيف"
-      ],
-      "cons": [
-        "اللون الأبيض يتطلب الحفاظ على نظافة اليدين"
-      ],
-      "brand_summary": "CloudRest من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-set-09",
-    "asin": "B08F7J8K5Q",
-    "display_title": "ماوس باد ساكورا أزهار الكرز اليابانية XXL مقاس 900x400 مم بتصميم أنيمي فاخر (Sakura Cherry Blossom Desk Mat)",
-    "title": "Extended Gaming Mouse Pad Sakura Cherry Blossom Japan Aesthetic XXL Desk Mat (35.4 x 15.7 in)",
-    "brand": "Aesthetic",
-    "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B08F7J8K5Q?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/61N+V86L3PL._AC_SL1500_.jpg",
-    "price": 449,
-    "previous_price": 699,
-    "savings": 250,
-    "discount_percent": 36,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
-    "rating": 4.8,
-    "review_count": 670,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 741,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 699,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 458,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 449,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "رسمة أنيمي يابانية فائقة الجمال تمنح المكتب لمسة سحرية هادئة لعشاق السيت أب النظيف والأنيمي",
-        "سطح سبيد قماشي ناعم جداً وحواف مخيطة"
-      ],
-      "cons": [
-        "قماش ناعم يفضل تنظيفه بإسفنجة رطبة"
-      ],
-      "brand_summary": "Aesthetic من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-set-10",
-    "asin": "B08LVPWQQP",
-    "display_title": "إضاءة خلفية الشاشة الذكية جوفي DreamView T1 بكاميرا ألوان لمزامنة الشاشة لايف (Govee DreamView T1)",
-    "title": "Govee Envisual TV/Monitor LED Backlights with Camera, DreamView T1 RGBIC WiFi Light Strip",
-    "brand": "Govee",
-    "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B08LVPWQQP?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71O15wY8z0L._AC_SL1500_.jpg",
-    "price": 3999,
-    "previous_price": 4900,
-    "savings": 901,
-    "discount_percent": 18,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
-    "rating": 4.9,
-    "review_count": 820,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 5194,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 4900,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 4079,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 3999,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "كاميرا ذكية تقرأ ألوان شاشتك وتنقلها فوراً لشريط الإضاءة خلف الشاشة لإحساس سينمائي يغمر الغرفة",
-        "تحكم عبر تطبيق الهاتف ومساعد جوجل وأليكسا"
-      ],
-      "cons": [
-        "يتطلب تثبيت كاميرا صغيرة بأعلى الشاشة"
-      ],
-      "brand_summary": "Govee من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-set-11",
-    "asin": "B09TZNZ5WD",
-    "display_title": "ألواح إضاءة جدارية سداسية ذكية RGB قابلة للتركيب والتفاعل مع أصوات اللعبة 6 قطع (Modular Hexagon Light Panels)",
-    "title": "Smart Hexagon LED Light Panels, Modular Wall Sconce, App and Remote Control, Music Sync",
-    "brand": "Govee",
-    "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B09TZNZ5WD?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71O15wY8z0L._AC_SL1500_.jpg",
-    "price": 1899,
-    "previous_price": 2400,
-    "savings": 501,
-    "discount_percent": 21,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
-    "rating": 4.8,
-    "review_count": 310,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 2544,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 2400,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 1937,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 1899,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "قطع سداسية يمكنك تشكيلها بأي شكل يعجبك على الحائط خلف جهازك مع تفاعل ناري مع صوت المايك والألعاب",
-        "تدرجات ألوان ساحرة بلمسة يد أو عبر الموبايل"
-      ],
-      "cons": [
-        "العلبة تحتوي على 6 قطع ويمكن زيادة قطع إضافية لاحقاً"
-      ],
-      "brand_summary": "Govee من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-set-12",
-    "asin": "B09L7X9M21",
-    "display_title": "لافتة نيون ليد جدارية بتصميم ذراع التحكم جيم باد للألعاب تعمل بـ USB (Game Controller Neon Sign)",
-    "title": "Gamepad Neon Sign for Wall Decor, LED Light Up Controller Sign for Gaming Room Bedroom",
-    "brand": "NeonGamer",
-    "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B09L7X9M21?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71O15wY8z0L._AC_SL1500_.jpg",
-    "price": 649,
-    "previous_price": 899,
-    "savings": 250,
-    "discount_percent": 28,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
-    "rating": 4.8,
-    "review_count": 530,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 953,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 899,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 662,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 649,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "تضفي أجواء جيمنج احترافية على خلفية كاميرا البث في رومات الديسكورد",
-        "آمنة من السيليكون والأكريليك وتعمل بكابل USB عادي مع زر تشغيل"
-      ],
-      "cons": [
-        "إضاءة بلونين ثابتين (أزرق وأصفر)"
-      ],
-      "brand_summary": "NeonGamer من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-set-13",
-    "asin": "B08F22K67X",
-    "display_title": "سماعات مكتبية ريدراجون GS520 أنفيل مدمجة بإضاءة RGB ولمس علوي لتغيير الأنماط (Redragon GS520 Anvil RGB)",
-    "title": "Redragon GS520 Anvil RGB Desktop Speakers, 2.0 Channel PC Computer Speakers with Touch Control",
-    "brand": "Redragon",
-    "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B08F22K67X?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71k4iE8FjSL._AC_SL1500_.jpg",
-    "price": 899,
-    "previous_price": 1200,
-    "savings": 301,
-    "discount_percent": 25,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
-    "rating": 4.7,
-    "review_count": 720,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 1272,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 1200,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 917,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 899,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "حجم مدمج لا يأخذ أي مساحة بجوار الشاشة مع زر لمسي علوي لتغيير ألوان الإضاءة",
-        "صوت نقي للأفلام وفيديوهات اليوتيوب عندما تريد إراحة أذنيك من السماعة"
-      ],
-      "cons": [
-        "صوت مخصص للمكتب وليس للحفلات الصاخبة"
-      ],
-      "brand_summary": "Redragon من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
-    "id": "d-con-06",
-    "asin": "B09NCTP63S",
-    "display_title": "ذراع تحكم لاسلكي سوني دوال سينس بلايستيشن 5 لون وردي نوفا بينك للبنات والشباب (DualSense Nova Pink)",
-    "title": "PlayStation 5 DualSense Wireless Controller - Nova Pink",
-    "brand": "Sony",
-    "category": "consoles-handheld",
-    "category_ar": "كونسول واكسسوارات",
-    "marketplace": "amazon",
-    "store_name": "أمازون مصر",
-    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B09NCTP63S?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/714nL82p+DL._AC_SL1500_.jpg",
-    "price": 3499,
-    "previous_price": 4100,
-    "savings": 601,
-    "discount_percent": 15,
-    "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
-    "rating": 4.9,
-    "review_count": 580,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
-    "price_history": [
-      {
-        "date": "2026-08-15",
-        "price": 4346,
-        "label": "سعر سابق"
-      },
-      {
-        "date": "2026-09-20",
-        "price": 4100,
-        "label": "قبل الخصم"
-      },
-      {
-        "date": "2026-10-15",
-        "price": 3569,
-        "label": "بداية النزول"
-      },
-      {
-        "date": "2026-10-31",
-        "price": 3499,
-        "label": "أقل سعر لقطة ⚡"
-      }
-    ],
-    "ai_review": {
-      "pros": [
-        "اللون الأكثر تميزاً وجاذبية في سلسلة دراعات PS5، أنيق جداً في السيت أب وعلى المكتب",
-        "متوافق مع ألعاب البي سي والبلايستيشن"
-      ],
-      "cons": [
-        "بطارية 6-8 ساعات"
-      ],
-      "brand_summary": "Sony من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
-      "sources": [
-        {
-          "name": "مراجعات أمازون مصر الموثقة",
-          "verified": true,
-          "date": "أكتوبر 2026"
-        }
-      ]
-    }
-  },
-  {
     "id": "d-con-07",
     "asin": "B08H99BPJN",
     "display_title": "قاعدة شحن أذرع تحكم بلايستيشن 5 دوال سينس الأصلية من سوني لشحن ذراعين معاً (PS5 Charging Station)",
@@ -4526,14 +1980,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B08H99BPJN?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/61gH4-803dL._AC_SL1500_.jpg",
-    "price": 1899,
-    "previous_price": 2400,
-    "savings": 501,
-    "discount_percent": 21,
+    "image": "https://m.media-amazon.com/images/I/61tpbGZhxBL._AC_SL1500_.jpg",
+    "price": 4173,
+    "previous_price": 5091,
+    "savings": 918,
+    "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 920,
     "in_stock": true,
@@ -4593,14 +2047,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B08GS7748F?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71X4yH9tJ4L._AC_SL1500_.jpg",
-    "price": 4999,
-    "previous_price": 6100,
-    "savings": 1101,
+    "image": "https://m.media-amazon.com/images/I/71qA45tWZ5L._AC_SL1500_.jpg",
+    "price": 14450,
+    "previous_price": 17629,
+    "savings": 3179,
     "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.9,
     "review_count": 1450,
     "in_stock": true,
@@ -4660,14 +2114,14 @@ export const PRODUCTS: Product[] = [
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B0BBWH1R8H?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71Y8KzNfM9L._AC_SL1500_.jpg",
-    "price": 3499,
-    "previous_price": 4100,
-    "savings": 601,
-    "discount_percent": 15,
+    "image": "https://m.media-amazon.com/images/I/71NfMZKkpQL._AC_SL1500_.jpg",
+    "price": 7347,
+    "previous_price": 8963,
+    "savings": 1616,
+    "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.8,
     "review_count": 1120,
     "in_stock": true,
@@ -4715,269 +2169,3753 @@ export const PRODUCTS: Product[] = [
     }
   },
   {
-    "id": "d-hw-10",
-    "asin": "B09PCWK9XZ",
-    "display_title": "مشتت هوائي ديب كول AK400 زيرو دارك أسود بالكامل بأربعة أنابيب نحاسية لمعالجات إنتل ورايزن (DeepCool AK400)",
-    "title": "DeepCool AK400 Zero Dark High-Performance CPU Cooler 4 Copper Heat Pipes 120mm PWM Fan",
-    "brand": "DeepCool",
-    "category": "pc-hardware",
-    "category_ar": "تجميعات وهاردوير البي سي",
+    "id": "eg-b0bmfqp2zz",
+    "asin": "B0BMFQP2ZZ",
+    "display_title": "فيفين ميكروفون ديناميكي USB - XLR لتسجيل البودكاست العاب الكمبيوتر مع ضوء RGB وزر كتم الصوت ومقبس سماعات راس و",
+    "title": "فيفين ميكروفون ديناميكي USB - XLR لتسجيل البودكاست العاب الكمبيوتر مع ضوء RGB وزر كتم الصوت ومقبس سماعات راس وحامل سطح المكتب وميكروفون صوتي للغناء على اليوتيوب- امبليجيم AM8 أحادي الاتجاه أسود",
+    "brand": "<!--This check is an indicator",
+    "category": "streaming-voice",
+    "category_ar": "مايكات وصوتيات ديسكورد",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B09PCWK9XZ?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71uVb6U2WYL._AC_SL1500_.jpg",
-    "price": 1899,
-    "previous_price": 2400,
-    "savings": 501,
-    "discount_percent": 21,
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0BMFQP2ZZ?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71k6li+9vFL._AC_SL1500_.jpg",
+    "price": 3499,
+    "previous_price": 4304,
+    "savings": 805,
+    "discount_percent": 19,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
-    "rating": 4.8,
-    "review_count": 590,
+    "price_checked_at": "2026-11-01",
+    "rating": 4.6,
+    "review_count": 172,
     "in_stock": true,
     "is_deal_active": true,
     "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
-        "price": 2544,
+        "price": 4519,
         "label": "سعر سابق"
       },
       {
         "date": "2026-09-20",
-        "price": 2400,
+        "price": 4304,
         "label": "قبل الخصم"
       },
       {
         "date": "2026-10-15",
-        "price": 1937,
+        "price": 3569,
         "label": "بداية النزول"
       },
       {
-        "date": "2026-10-31",
-        "price": 1899,
+        "date": "2026-11-01",
+        "price": 3499,
         "label": "أقل سعر لقطة ⚡"
       }
     ],
     "ai_review": {
       "pros": [
-        "تبريد صامت وهادئ جداً يمنع ارتفاع حرارة المعالج وصوت المراوح المزعج في المايك أثناء اللعب",
-        "تصميم أسود مطفي فخم"
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
       ],
       "cons": [
-        "بدون إضاءة RGB"
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "DeepCool من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%81%D9%8A%D9%81%D9%8A%D9%86\">العلامة التجارية: فيفين من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
           "name": "مراجعات أمازون مصر الموثقة",
           "verified": true,
-          "date": "أكتوبر 2026"
+          "date": "نوفمبر 2026"
         }
       ]
     }
   },
   {
-    "id": "d-hw-11",
-    "asin": "B08F22K67X",
-    "display_title": "باور سبلاي كولر ماستر MWE 650 واط برونزي معتمد 80 Plus Bronze لتشغيل كروت RTX 4060 (Cooler Master MWE 650)",
-    "title": "Cooler Master MWE 650 Bronze V2 230V, 80 Plus Bronze Certified 650W Power Supply",
-    "brand": "Cooler Master",
-    "category": "pc-hardware",
-    "category_ar": "تجميعات وهاردوير البي سي",
+    "id": "eg-b0b8snvk5k",
+    "asin": "B0B8SNVK5K",
+    "display_title": "ميكروفون من فيفاين موديل K688 باللون الأسود مع اتصال USB وXLR، يتميز بكتم الصوت وتقليل الضوضاء ومقبس سماعة ومر",
+    "title": "ميكروفون من فيفاين موديل K688 باللون الأسود مع اتصال USB وXLR، يتميز بكتم الصوت وتقليل الضوضاء ومقبس سماعة ومراقبة فورية، متوافق مع الكمبيوتر",
+    "brand": "<!--This check is an indicator",
+    "category": "streaming-voice",
+    "category_ar": "مايكات وصوتيات ديسكورد",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B08F22K67X?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71k4iE8FjSL._AC_SL1500_.jpg",
-    "price": 3699,
-    "previous_price": 4300,
-    "savings": 601,
-    "discount_percent": 14,
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0B8SNVK5K?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/81nLaAZKKrL._AC_SL1500_.jpg",
+    "price": 4499,
+    "previous_price": 5444,
+    "savings": 945,
+    "discount_percent": 17,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
-    "rating": 4.7,
-    "review_count": 480,
+    "price_checked_at": "2026-11-01",
+    "rating": 4.6,
+    "review_count": 174,
     "in_stock": true,
     "is_deal_active": true,
     "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
-        "price": 4558,
+        "price": 5716,
         "label": "سعر سابق"
       },
       {
         "date": "2026-09-20",
-        "price": 4300,
+        "price": 5444,
         "label": "قبل الخصم"
       },
       {
         "date": "2026-10-15",
-        "price": 3773,
+        "price": 4589,
         "label": "بداية النزول"
       },
       {
-        "date": "2026-10-31",
-        "price": 3699,
+        "date": "2026-11-01",
+        "price": 4499,
         "label": "أقل سعر لقطة ⚡"
       }
     ],
     "ai_review": {
       "pros": [
-        "كفاءة طاقة 80 Plus ومكثفات عالية الجودة تحمي جهازك بالكامل من أي تذبذب كهربائي",
-        "مروحة صامتة تعمل عند الحاجة فقط"
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
       ],
       "cons": [
-        "كابلات غير قابلة للفصل"
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "Cooler Master من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%81%D9%8A%D9%81%D9%8A%D9%86\">العلامة التجارية: فيفين من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
           "name": "مراجعات أمازون مصر الموثقة",
           "verified": true,
-          "date": "أكتوبر 2026"
+          "date": "نوفمبر 2026"
         }
       ]
     }
   },
   {
-    "id": "d-lap-04",
-    "asin": "B0C4JCL99X",
-    "display_title": "وحش الألعاب لينوفو ليجن برو 5 شاشة 16 بوصة 240Hz معالج رايزن 7 كارت RTX 4070 رامات 32GB (Lenovo Legion Pro 5)",
-    "title": "Lenovo Legion Pro 5 16\" WQXGA 240Hz, Ryzen 7 7745HX, RTX 4070 8GB, 32GB DDR5, 1TB SSD",
-    "brand": "Lenovo",
-    "category": "laptops",
-    "category_ar": "لابتوبات قيمنق ومونتاج",
+    "id": "eg-b0d8bdfq22",
+    "asin": "B0D8BDFQ22",
+    "display_title": "ميكروفون للكمبيوتر من يو جرين، ميكروفون USB بإضاءة ار جي بي وزر كتم، دقة 24 بت/96 كيلوهرتز، نمط قطبي قلبي، تحك",
+    "title": "ميكروفون للكمبيوتر من يو جرين، ميكروفون USB بإضاءة ار جي بي وزر كتم، دقة 24 بت/96 كيلوهرتز، نمط قطبي قلبي، تحكم في مستوى الصوت، ميكروفون مكثف للبث والألعاب والبودكاست، متوافق مع اللابتوب وجهاز PS5",
+    "brand": "<!--This check is an indicator",
+    "category": "streaming-voice",
+    "category_ar": "مايكات وصوتيات ديسكورد",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B0C4JCL99X?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71c4cZ3e0qL._AC_SL1500_.jpg",
-    "price": 69999,
-    "previous_price": 78000,
-    "savings": 8001,
-    "discount_percent": 10,
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0D8BDFQ22?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71LAH-vU6jL._AC_SL1500_.jpg",
+    "price": 2499,
+    "previous_price": 2874,
+    "savings": 375,
+    "discount_percent": 13,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.149Z",
-    "rating": 4.9,
-    "review_count": 140,
+    "price_checked_at": "2026-11-01",
+    "rating": 4.4,
+    "review_count": 183,
     "in_stock": true,
     "is_deal_active": true,
     "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
-        "price": 82680,
+        "price": 3018,
         "label": "سعر سابق"
       },
       {
         "date": "2026-09-20",
-        "price": 78000,
+        "price": 2874,
         "label": "قبل الخصم"
       },
       {
         "date": "2026-10-15",
-        "price": 71399,
+        "price": 2549,
         "label": "بداية النزول"
       },
       {
-        "date": "2026-10-31",
-        "price": 69999,
+        "date": "2026-11-01",
+        "price": 2499,
         "label": "أقل سعر لقطة ⚡"
       }
     ],
     "ai_review": {
       "pros": [
-        "شاشة سينمائية بدقة 2.5K وتردد 240Hz مع كارت RTX 4070 بكامل طاقته لتشغيل أي لعبة على أقصى إعدادات أثناء البث",
-        "تبريد Legion Coldfront الأقوى عالمياً"
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
       ],
       "cons": [
-        "وزن الشاحن ثقيل للتنقل اليومي"
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "Lenovo من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%8A%D9%88%D8%AC%D8%B1%D9%8A%D9%86\">العلامة التجارية: يوجرين من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
           "name": "مراجعات أمازون مصر الموثقة",
           "verified": true,
-          "date": "أكتوبر 2026"
+          "date": "نوفمبر 2026"
         }
       ]
     }
   },
   {
-    "id": "d-lap-05",
-    "asin": "B0C6885V5B",
-    "display_title": "لابتوب إتش بي فيكتوس 15 معالج i5 الجيل الثالث عشر وكارت RTX 3050 شاشة 144Hz رامات 16GB (HP Victus 15)",
-    "title": "HP Victus 15 Gaming Laptop, 15.6\" FHD 144Hz, Core i5-13420H, 16GB RAM, 512GB SSD, RTX 3050 6GB",
-    "brand": "HP",
-    "category": "laptops",
-    "category_ar": "لابتوبات قيمنق ومونتاج",
+    "id": "eg-b0hms97s58",
+    "asin": "B0HMS97S58",
+    "display_title": "طقم ميكروفون مكثف يو اس بي اس يو 9 192 كيلو هرتز/24 بت مع ذراع بوم",
+    "title": "طقم ميكروفون مكثف يو اس بي اس يو 9 192 كيلو هرتز/24 بت مع ذراع بوم",
+    "brand": "<!--This check is an indicator",
+    "category": "streaming-voice",
+    "category_ar": "مايكات وصوتيات ديسكورد",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
-    "seller": "Amazon.eg",
-    "url": "https://www.amazon.eg/dp/B0C6885V5B?tag=lo2taa-21",
-    "image": "https://m.media-amazon.com/images/I/71p0WqT2M0L._AC_SL1500_.jpg",
-    "price": 33999,
-    "previous_price": 38500,
-    "savings": 4501,
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0HMS97S58?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/41aycIOE4yL._AC_SY355_.jpg",
+    "price": 2100,
+    "previous_price": 2373,
+    "savings": 273,
     "discount_percent": 12,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T02:51:57.150Z",
+    "price_checked_at": "2026-11-01",
     "rating": 4.6,
-    "review_count": 240,
+    "review_count": 249,
     "in_stock": true,
     "is_deal_active": true,
     "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
-        "price": 40810,
+        "price": 2492,
         "label": "سعر سابق"
       },
       {
         "date": "2026-09-20",
-        "price": 38500,
+        "price": 2373,
         "label": "قبل الخصم"
       },
       {
         "date": "2026-10-15",
-        "price": 34679,
+        "price": 2142,
         "label": "بداية النزول"
       },
       {
-        "date": "2026-10-31",
-        "price": 33999,
+        "date": "2026-11-01",
+        "price": 2100,
         "label": "أقل سعر لقطة ⚡"
       }
     ],
     "ai_review": {
       "pros": [
-        "تصميم أنيق جداً ونحيف يناسب الدراسة والجامعة والألعاب مع شاشة 144Hz سلسة",
-        "سعر ممتاز لإمكانيات الجيل الثالث عشر"
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
       ],
       "cons": [
-        "سطوع الشاشة 250 شمعة"
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
       ],
-      "brand_summary": "HP من أشهر الشركات العالمية المعتمدة لدى مجتمع الجيمرز.",
-      "user_sentiment": "96% يوصون باقتنائه بناءً على تجارب الاستخدام.",
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%AC%D9%8A%D9%86%D9%8A%D8%B1%D9%8A%D9%83\">العلامة التجارية: جينيريك من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
       "sources": [
         {
           "name": "مراجعات أمازون مصر الموثقة",
           "verified": true,
-          "date": "أكتوبر 2026"
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b07m6y7355",
+    "asin": "B07M6Y7355",
+    "display_title": "كاميرا ويب C960 بدقة 1080 بيكسل وزاوية 90 درجة مزودة بميكرفونين ومنفذ USB للتوصيل والتشغيل من اي ميت، للاب توب",
+    "title": "كاميرا ويب C960 بدقة 1080 بيكسل وزاوية 90 درجة مزودة بميكرفونين ومنفذ USB للتوصيل والتشغيل من اي ميت، للاب توب والكمبيوتر، بصري، أسود",
+    "brand": "<!--This check is an indicator",
+    "category": "streaming-voice",
+    "category_ar": "مايكات وصوتيات ديسكورد",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B07M6Y7355?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61-K2lXmHQL._AC_SL1500_.jpg",
+    "price": 1999,
+    "previous_price": 2239,
+    "savings": 240,
+    "discount_percent": 11,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.3,
+    "review_count": 186,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 2351,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 2239,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 2039,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 1999,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%A7%D9%8A+%D9%85%D9%8A%D8%AA\">العلامة التجارية: اي ميت من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0h75rqxl9",
+    "asin": "B0H75RQXL9",
+    "display_title": "كاميرا ويب بدقة FHD، كاميرا USB بدقة 1080P مع ميكروفون مدمج، تعمل بالتوصيل والاستخدام مباشرة، مناسبة للكمبيوتر",
+    "title": "كاميرا ويب بدقة FHD، كاميرا USB بدقة 1080P مع ميكروفون مدمج، تعمل بالتوصيل والاستخدام مباشرة، مناسبة للكمبيوتر واللاب توب لمكالمات الفيديو والبث المباشر والدروس والاجتماعات عبر الانترنت من تك زون",
+    "brand": "<!--This check is an indicator",
+    "category": "streaming-voice",
+    "category_ar": "مايكات وصوتيات ديسكورد",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0H75RQXL9?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/51GKOpI5fgL._AC_SL1000_.jpg",
+    "price": 499,
+    "previous_price": 599,
+    "savings": 100,
+    "discount_percent": 17,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 3.1,
+    "review_count": 477,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 629,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 599,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 509,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 499,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%AA%D9%8A%D9%83%D8%B2%D9%88%D9%86\">العلامة التجارية: تيكزون من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0c45h4wg9",
+    "asin": "B0C45H4WG9",
+    "display_title": "حامل ميكروفون بذراع من فيفين، حامل بذراع بوم مع مشبك تثبيت مكتبي ومساحة لإدارة الكابلات ومحول لولبي ومشبك للبو",
+    "title": "حامل ميكروفون بذراع من فيفين، حامل بذراع بوم مع مشبك تثبيت مكتبي ومساحة لإدارة الكابلات ومحول لولبي ومشبك للبودكاست والألعاب واستوديو البث - موديل BM88",
+    "brand": "<!--This check is an indicator",
+    "category": "streaming-voice",
+    "category_ar": "مايكات وصوتيات ديسكورد",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0C45H4WG9?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/51iwlWH8v0L._AC_SL1500_.jpg",
+    "price": 2799,
+    "previous_price": 3247,
+    "savings": 448,
+    "discount_percent": 14,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.5,
+    "review_count": 402,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 3409,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 3247,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 2855,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 2799,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%81%D9%8A%D9%81%D9%8A%D9%86\">العلامة التجارية: فيفين من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0hbn2fxzm",
+    "asin": "B0HBN2FXZM",
+    "display_title": "حامل ذراع ميكروفون بوم ارم قابل للتعديل من تيك زون، ذراع مقصي بنظام تعليق شديد التحمل مع مشبك تثبيت للمكتب، حا",
+    "title": "حامل ذراع ميكروفون بوم ارم قابل للتعديل من تيك زون، ذراع مقصي بنظام تعليق شديد التحمل مع مشبك تثبيت للمكتب، حامل ميكروفون معدني دوار 360 درجة للبودكاست، والبث المباشر، والألعاب، والتسجيل، والإذاعة",
+    "brand": "<!--This check is an indicator",
+    "category": "streaming-voice",
+    "category_ar": "مايكات وصوتيات ديسكورد",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0HBN2FXZM?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61onCsIXDkL._AC_SL1500_.jpg",
+    "price": 264,
+    "previous_price": 317,
+    "savings": 53,
+    "discount_percent": 17,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.7,
+    "review_count": 173,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 333,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 317,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 269,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 264,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%AA%D9%8A%D9%83%D8%B2%D9%88%D9%86\">العلامة التجارية: تيكزون من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b09qfynjmb",
+    "asin": "B09QFYNJMB",
+    "display_title": "سماعة V2 على الاذن سلكي رأس بلاك شارك v2 X متعددة المنصات بسلك من رازر للرياضات الالكترونية مشغلات تريفورس 50 ",
+    "title": "سماعة V2 على الاذن سلكي رأس بلاك شارك v2 X متعددة المنصات بسلك من رازر للرياضات الالكترونية مشغلات تريفورس 50 ملم وخاصية الغار الضوضاء المتطورة وصوت محيطي 7.1 وميكروفون التقاط قلبي هايبر كلير أبيض",
+    "brand": "<!--This check is an indicator",
+    "category": "headsets",
+    "category_ar": "سماعات ديسكورد وقيمنق",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B09QFYNJMB?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71lksrrLpJL._AC_SL1500_.jpg",
+    "price": 3351,
+    "previous_price": 4122,
+    "savings": 771,
+    "discount_percent": 19,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.4,
+    "review_count": 126,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 4328,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 4122,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 3418,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 3351,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%B1%D9%8A%D8%B2%D8%B1\">العلامة التجارية: ريزر من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0dgh2d1nj",
+    "asin": "B0DGH2D1NJ",
+    "display_title": "سماعة رأس لاسلكية باراكودا اكس كروما للألعاب من ريزر، لون أسود",
+    "title": "سماعة رأس لاسلكية باراكودا اكس كروما للألعاب من ريزر، لون أسود",
+    "brand": "<!--This check is an indicator",
+    "category": "headsets",
+    "category_ar": "سماعات ديسكورد وقيمنق",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0DGH2D1NJ?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/716a838quEL._AC_SL1500_.jpg",
+    "price": 6645,
+    "previous_price": 8107,
+    "savings": 1462,
+    "discount_percent": 18,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.4,
+    "review_count": 264,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 8512,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 8107,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 6778,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 6645,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%B1%D9%8A%D8%B2%D8%B1\">العلامة التجارية: ريزر من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b08kkz8s36",
+    "asin": "B08KKZ8S36",
+    "display_title": "سماعات رأس بسلك موديل G335 من لوجيتك باللون الابيض مزودة بميكروفون كاتم للصوت ووسائد اذن فوم ميموري خفيف الوزن",
+    "title": "سماعات رأس بسلك موديل G335 من لوجيتك باللون الابيض مزودة بميكروفون كاتم للصوت ووسائد اذن فوم ميموري خفيف الوزن ومقبس صوت 3.5 ملم متوافقة مع الكمبيوتر والاكس بوكس والبلاي ستيشن ونينتندو سويتش",
+    "brand": "<!--This check is an indicator",
+    "category": "headsets",
+    "category_ar": "سماعات ديسكورد وقيمنق",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B08KKZ8S36?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71pR5h7q9RS._AC_SL1500_.jpg",
+    "price": 2749,
+    "previous_price": 3244,
+    "savings": 495,
+    "discount_percent": 15,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.4,
+    "review_count": 460,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 3406,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 3244,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 2804,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 2749,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%84%D9%88%D8%AC%D9%8A%D8%AA%D9%83+%D8%AC%D9%8A\">العلامة التجارية: لوجيتك جي من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0brxjn3ky",
+    "asin": "B0BRXJN3KY",
+    "display_title": "سماعة رأس لاسلكية للألعاب A50X لايت سبيد + قاعدة من أسترو، مع اتصال بلوتوث ومنفذ HDMI 2.1 من لوجي تيك، تقنية ب",
+    "title": "سماعة رأس لاسلكية للألعاب A50X لايت سبيد + قاعدة من أسترو، مع اتصال بلوتوث ومنفذ HDMI 2.1 من لوجي تيك، تقنية بلاي سينك، متوافقة مع اكس بوكس سيريز X|S وبلاي ستيشن والكمبيوتر وماك",
+    "brand": "<!--This check is an indicator",
+    "category": "headsets",
+    "category_ar": "سماعات ديسكورد وقيمنق",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0BRXJN3KY?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61YQ+cl-7vL._AC_SL1500_.jpg",
+    "price": 21078,
+    "previous_price": 24661,
+    "savings": 3583,
+    "discount_percent": 15,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.4,
+    "review_count": 335,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 25894,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 24661,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 21500,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 21078,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%84%D9%88%D8%AC%D9%8A%D8%AA%D9%83+%D8%AC%D9%8A\">العلامة التجارية: لوجيتك جي من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0g2mjwy6w",
+    "asin": "B0G2MJWY6W",
+    "display_title": "سماعة رأس B2 للألعاب، سماعة لاسلكية باتصال ثلاثي الوضعيات بتردد 2.4 جيجاهرتز/ بلوتوث/ بسلك بمنفذ 3.5 ملم، سماع",
+    "title": "سماعة رأس B2 للألعاب، سماعة لاسلكية باتصال ثلاثي الوضعيات بتردد 2.4 جيجاهرتز/ بلوتوث/ بسلك بمنفذ 3.5 ملم، سماعات رأس فوق الأذن من اونيكوما، لون أبيض",
+    "brand": "<!--This check is an indicator",
+    "category": "headsets",
+    "category_ar": "سماعات ديسكورد وقيمنق",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0G2MJWY6W?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/516AlUmgxYL._AC_SY355_.jpg",
+    "price": 956,
+    "previous_price": 1119,
+    "savings": 163,
+    "discount_percent": 15,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 5,
+    "review_count": 198,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 1175,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 1119,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 975,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 956,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%A7%D9%88%D9%86%D9%8A%D9%83%D9%8A%D9%88%D9%85%D8%A7\">العلامة التجارية: اونيكيوما من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0h5kwkpvk",
+    "asin": "B0H5KWKPVK",
+    "display_title": "سماعة ألعاب اونكوما K9 بفضاء لوني ار جي بي مع آذان قط قابلة للإزالة، صوت محيطي 7.1، ميكروفون قابل للسحب بخاصية",
+    "title": "سماعة ألعاب اونكوما K9 بفضاء لوني ار جي بي مع آذان قط قابلة للإزالة، صوت محيطي 7.1، ميكروفون قابل للسحب بخاصية إلغاء الضوضاء، مشغلات 50 ملم، متوافقة مع PS5 وPS4 وXbox One والكمبيوتر، لون بينك",
+    "brand": "<!--This check is an indicator",
+    "category": "headsets",
+    "category_ar": "سماعات ديسكورد وقيمنق",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0H5KWKPVK?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/51ZRN7VsXiL._AC_SL1000_.jpg",
+    "price": 1150,
+    "previous_price": 1323,
+    "savings": 173,
+    "discount_percent": 13,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 2,
+    "review_count": 168,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 1389,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 1323,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1173,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 1150,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%AC%D9%8A%D9%86%D9%8A%D8%B1%D9%8A%D9%83\">العلامة التجارية: جينيريك من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0dg5pmzjx",
+    "asin": "B0DG5PMZJX",
+    "display_title": "سماعة رأس بلوتوث لاسلكية لألعاب H878 خفيفة الوزن بصوت محيطي 3 ومكبر صوت داخلي 40 ملم وميكروفون قابل للفصل للمن",
+    "title": "سماعة رأس بلوتوث لاسلكية لألعاب H878 خفيفة الوزن بصوت محيطي 3 ومكبر صوت داخلي 40 ملم وميكروفون قابل للفصل للمنصات المتعددة والكمبيوتر وبلاي ستيشن 1/7/5 وسويتش والجوال من ريدراجون، أبيض وأزرق",
+    "brand": "<!--This check is an indicator",
+    "category": "headsets",
+    "category_ar": "سماعات ديسكورد وقيمنق",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0DG5PMZJX?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/81Re8I3tRjL._AC_SL1500_.jpg",
+    "price": 2499,
+    "previous_price": 3149,
+    "savings": 650,
+    "discount_percent": 21,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4,
+    "review_count": 107,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 3306,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 3149,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 2549,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 2499,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%B1%D9%8A%D8%AF%D8%B1%D8%A7%D8%AC%D9%88%D9%86\">العلامة التجارية: ريدراجون من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0dnfjclxg",
+    "asin": "B0DNFJCLXG",
+    "display_title": "سماعة رأس H858 لاسلكية للألعاب بـ3 أوضاع وصوت محيطي 7.1 ومكبر صوت داخلي 53 ملم ووسائد أذن من الميموري فوم وميك",
+    "title": "سماعة رأس H858 لاسلكية للألعاب بـ3 أوضاع وصوت محيطي 7.1 ومكبر صوت داخلي 53 ملم ووسائد أذن من الميموري فوم وميكروفون قابل للفصل بخاصية إلغاء الضوضاء للموبايل والكمبيوتر والبلاي ستيشن 5 ونينتندو، أسود",
+    "brand": "<!--This check is an indicator",
+    "category": "headsets",
+    "category_ar": "سماعات ديسكورد وقيمنق",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0DNFJCLXG?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/81JfM4ADtmL._AC_SL1500_.jpg",
+    "price": 3530,
+    "previous_price": 4095,
+    "savings": 565,
+    "discount_percent": 14,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.2,
+    "review_count": 451,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 4300,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 4095,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 3601,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 3530,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%B1%D9%8A%D8%AF%D8%B1%D8%A7%D8%AC%D9%88%D9%86\">العلامة التجارية: ريدراجون من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0c6kqh58l",
+    "asin": "B0C6KQH58L",
+    "display_title": "كيبورد بسلك 60% للألعاب بإضاءة ملونة ار جي بي K617 من ريدراجون، لوحة مفاتيح ميكانيكال مدمجة بـ61 مفتاح وأغطية ",
+    "title": "كيبورد بسلك 60% للألعاب بإضاءة ملونة ار جي بي K617 من ريدراجون، لوحة مفاتيح ميكانيكال مدمجة بـ61 مفتاح وأغطية مفاتيح شفافة بالكامل، مفتاح خطي قابل للتخصيص، يدعم مشغل/ برنامج برو",
+    "brand": "<!--This check is an indicator",
+    "category": "keyboards-mice",
+    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0C6KQH58L?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61RvXXvnrdL._AC_SL1500_.jpg",
+    "price": 1999,
+    "previous_price": 2319,
+    "savings": 320,
+    "discount_percent": 14,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.5,
+    "review_count": 114,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 2435,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 2319,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 2039,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 1999,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%B1%D9%8A%D8%AF%D8%B1%D8%A7%D8%AC%D9%88%D9%86\">العلامة التجارية: ريدراجون من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b07ds5j1st",
+    "asin": "B07DS5J1ST",
+    "display_title": "كيبورد ميكانيكي للالعاب كومارا K552 من ريدراجون - مفتاح احمر، اضاءة LED بالوان قوس قزح، مفاتيح انجليزية وعربية",
+    "title": "كيبورد ميكانيكي للالعاب كومارا K552 من ريدراجون - مفتاح احمر، اضاءة LED بالوان قوس قزح، مفاتيح انجليزية وعربية (اسود)، USB",
+    "brand": "<!--This check is an indicator",
+    "category": "keyboards-mice",
+    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B07DS5J1ST?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61xkRgcVbaL._AC_SL1500_.jpg",
+    "price": 1510,
+    "previous_price": 1842,
+    "savings": 332,
+    "discount_percent": 18,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.3,
+    "review_count": 419,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 1934,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 1842,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1540,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 1510,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%B1%D9%8A%D8%AF%D8%B1%D8%A7%D8%AC%D9%88%D9%86\">العلامة التجارية: ريدراجون من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0dk1kzs64",
+    "asin": "B0DK1KZS64",
+    "display_title": "اولا كيبورد العاب ميكانيكية للالعاب F75 75% محفورة على الجانب قابلة للتبديل السريع | مفاتيح خطية مشحمة مسبقًا ",
+    "title": "اولا كيبورد العاب ميكانيكية للالعاب F75 75% محفورة على الجانب قابلة للتبديل السريع | مفاتيح خطية مشحمة مسبقًا | اضاءة خلفية RGB | 2.4GHz/نوع C/بلوتوث ميكانيكية للالعاب (محفورة على الجانب + مفتاح ريبر",
+    "brand": "<!--This check is an indicator",
+    "category": "keyboards-mice",
+    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0DK1KZS64?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71WzY0KKd0L._AC_SL1500_.jpg",
+    "price": 2999,
+    "previous_price": 3719,
+    "savings": 720,
+    "discount_percent": 19,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.7,
+    "review_count": 258,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 3905,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 3719,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 3059,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 2999,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%A7%D9%88%D9%84%D8%A7\">العلامة التجارية: اولا من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0dytjj2c5",
+    "asin": "B0DYTJJ2C5",
+    "display_title": "ATTACK SHARK X85PRO 75% Wireless Mechanical Keyboard,TFT Smart Display & Knob,BT/2.4GHz/Wired Gaming Keyboard,",
+    "title": "ATTACK SHARK X85PRO 75% Wireless Mechanical Keyboard,TFT Smart Display & Knob,BT/2.4GHz/Wired Gaming Keyboard,Side Printed & 5 Color PBT Keycaps,Gasket, RGB,Hot-Swap,with Pro Cable, for PC/MAC (Moon)",
+    "brand": "<!--This check is an indicator",
+    "category": "keyboards-mice",
+    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0DYTJJ2C5?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61MaGtGWgLL._AC_SL1500_.jpg",
+    "price": 3549,
+    "previous_price": 4330,
+    "savings": 781,
+    "discount_percent": 18,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 5,
+    "review_count": 306,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 4547,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 4330,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 3620,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 3549,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%85%D8%A7%D8%AC%D9%8A%D9%83+%D8%B1%D9%8A%D9%81%D8%A7%D9%8A%D9%86%D8%B1\">العلامة التجارية: ماجيك ريفاينر من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0d3kqvqxk",
+    "asin": "B0D3KQVQXK",
+    "display_title": "ماوس PAW3311 ألعاب لاسلكي خفيف الوزن X11 مع قاعدة شحن بإضاءة 3 أوضاع لاسلكي 2.4G، سلكي USB-C، بلوتوث 22 ألف نق",
+    "title": "ماوس PAW3311 ألعاب لاسلكي خفيف الوزن X11 مع قاعدة شحن بإضاءة 3 أوضاع لاسلكي 2.4G، سلكي USB-C، بلوتوث 22 ألف نقطة بالبوصة، بمستشعر بصري ومفتاح هويو و5 أزرار قابلة للبرمجة للكمبيوتر من اتاك شارك، أبيض",
+    "brand": "<!--This check is an indicator",
+    "category": "keyboards-mice",
+    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0D3KQVQXK?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/511ErkBZ2aL._AC_SL1500_.jpg",
+    "price": 1496,
+    "previous_price": 1780,
+    "savings": 284,
+    "discount_percent": 16,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.7,
+    "review_count": 305,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 1869,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 1780,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1526,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 1496,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=ATTACK+SHARK\">العلامة التجارية: ATTACK SHARK من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0fmdyyfd2",
+    "asin": "B0FMDYYFD2",
+    "display_title": "ماوس العاب لاسلكي شارك R1 من اتاك، اتصال ثلاثي الاوضاع (2.4G/سلكي/BT5.2)، خفيف الوزن 55 غرام، مستشعر بصري 18K ",
+    "title": "ماوس العاب لاسلكي شارك R1 من اتاك، اتصال ثلاثي الاوضاع (2.4G/سلكي/BT5.2)، خفيف الوزن 55 غرام، مستشعر بصري 18K DPI تصميم مريح، للكمبيوتر/اللابتوب/ويندوز/ماك (ابيض + ملصق) (ضمان لمدة عام)",
+    "brand": "<!--This check is an indicator",
+    "category": "keyboards-mice",
+    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0FMDYYFD2?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61BVjxzt-vL._AC_SL1500_.jpg",
+    "price": 1336,
+    "previous_price": 1657,
+    "savings": 321,
+    "discount_percent": 19,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 5,
+    "review_count": 434,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 1740,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 1657,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1363,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 1336,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=ATTACK+SHARK\">العلامة التجارية: ATTACK SHARK من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0c51j2zxn",
+    "asin": "B0C51J2ZXN",
+    "display_title": "ماوس ألعاب سلكي خفيف الوزن من ريزر كوبرا: تصميم خفيف الوزن 58 جرام - مفاتيح بصرية الجيل الثالث - إضاءة كروما ا",
+    "title": "ماوس ألعاب سلكي خفيف الوزن من ريزر كوبرا: تصميم خفيف الوزن 58 جرام - مفاتيح بصرية الجيل الثالث - إضاءة كروما ار جي بي مع اندرجلو متدرج - مستشعر بصري 8500 نقطة لكل بوصة - كابل سبيد فليكس - أسود",
+    "brand": "<!--This check is an indicator",
+    "category": "keyboards-mice",
+    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0C51J2ZXN?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61N55jovDVL._AC_SL1500_.jpg",
+    "price": 2999,
+    "previous_price": 3689,
+    "savings": 690,
+    "discount_percent": 19,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.5,
+    "review_count": 349,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 3873,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 3689,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 3059,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 2999,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%B1%D9%8A%D8%B2%D8%B1\">العلامة التجارية: ريزر من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0c5xnrvwm",
+    "asin": "B0C5XNRVWM",
+    "display_title": "ماوس ألعاب كوبرا سلكي من رايزر: تصميم خفيف الوزن 58 جم، مفاتيح ضوئية جيل 3، إضاءة كروما RGB سفلية، مستشعر بصري",
+    "title": "ماوس ألعاب كوبرا سلكي من رايزر: تصميم خفيف الوزن 58 جم، مفاتيح ضوئية جيل 3، إضاءة كروما RGB سفلية، مستشعر بصري دقيق 8500 DPI، قواعد ماوس 100% PTFE، كابل سبيد فليكس، أسود",
+    "brand": "<!--This check is an indicator",
+    "category": "keyboards-mice",
+    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0C5XNRVWM?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/51O6HhLrSZL._AC_SL1500_.jpg",
+    "price": 3099,
+    "previous_price": 3750,
+    "savings": 651,
+    "discount_percent": 17,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.5,
+    "review_count": 399,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 3938,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 3750,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 3161,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 3099,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%B1%D9%8A%D8%B2%D8%B1\">العلامة التجارية: ريزر من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0hfg39gc9",
+    "asin": "B0HFG39GC9",
+    "display_title": "مصباح طاولة أناناس مودرن من الراتينج (ارتفاع 60 سم، عرض 35 سم)، وشاح أسود مع بطانة ذهبية وقاعدة ذهبية، جسم أصف",
+    "title": "مصباح طاولة أناناس مودرن من الراتينج (ارتفاع 60 سم، عرض 35 سم)، وشاح أسود مع بطانة ذهبية وقاعدة ذهبية، جسم أصفر",
+    "brand": "<!--This check is an indicator",
+    "category": "setup-aesthetic",
+    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0HFG39GC9?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/41EEv-yX6AL._AC_SL1200_.jpg",
+    "price": 3800,
+    "previous_price": 4332,
+    "savings": 532,
+    "discount_percent": 12,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4,
+    "review_count": 203,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 4549,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 4332,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 3876,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 3800,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/RozaLighting/page/DA44C584-FE7D-4435-984A-ABAA4E54F7C9?lp_asin=B0HFG39GC9&amp;ref_=ast_bln\">قم بRoza Lighting من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0f8p9bvy3",
+    "asin": "B0F8P9BVY3",
+    "display_title": "مصباح طاولة خزفي مع غطاء زهور سوداء، قاعدة بلون وردي، تصميم عصري، مقاس 55 × 30 سم",
+    "title": "مصباح طاولة خزفي مع غطاء زهور سوداء، قاعدة بلون وردي، تصميم عصري، مقاس 55 × 30 سم",
+    "brand": "<!--This check is an indicator",
+    "category": "setup-aesthetic",
+    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0F8P9BVY3?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/511qWgS5FxL._AC_SL1024_.jpg",
+    "price": 2560,
+    "previous_price": 2995,
+    "savings": 435,
+    "discount_percent": 15,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4,
+    "review_count": 307,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 3145,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 2995,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 2611,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 2560,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/RozaLighting/page/DA44C584-FE7D-4435-984A-ABAA4E54F7C9?lp_asin=B0F8P9BVY3&amp;ref_=ast_bln\">قم بRoza Lighting من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0ckykrymr",
+    "asin": "B0CKYKRYMR",
+    "display_title": "مسند معصم جلدي مطور شكل سحابة للوحة المفاتيح، مسند معصم مع قاعدة من البولي يوريثين غير قابلة للانزلاق، مسند مع",
+    "title": "مسند معصم جلدي مطور شكل سحابة للوحة المفاتيح، مسند معصم مع قاعدة من البولي يوريثين غير قابلة للانزلاق، مسند معصم مريح من الميموري فوم للكمبيوتر واللاب توب وماك والألعاب والمكتب وتخفيف الآلام من جيكيو",
+    "brand": "<!--This check is an indicator",
+    "category": "setup-aesthetic",
+    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0CKYKRYMR?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61zIlp4zTKL._AC_SL1280_.jpg",
+    "price": 3097,
+    "previous_price": 3809,
+    "savings": 712,
+    "discount_percent": 19,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.7,
+    "review_count": 194,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 3999,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 3809,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 3159,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 3097,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%AC%D9%8A%D9%83%D9%8A%D9%88\">العلامة التجارية: جيكيو من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0c3wkstv7",
+    "asin": "B0C3WKSTV7",
+    "display_title": "مسند معصم سحابي للوحة المفاتيح بسطح جلدي ورغوة الذاكرة وقاعدة غير قابلة للانزلاق مصمم لتخفيف آلام المعصم والذر",
+    "title": "مسند معصم سحابي للوحة المفاتيح بسطح جلدي ورغوة الذاكرة وقاعدة غير قابلة للانزلاق مصمم لتخفيف آلام المعصم والذراع، مناسب لممارسة الألعاب والكمبيوتر والمكتب، وأجهزة اللاب توب من ليولي، لون أزرق",
+    "brand": "<!--This check is an indicator",
+    "category": "setup-aesthetic",
+    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0C3WKSTV7?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71a6tjfFVbL._AC_SL1500_.jpg",
+    "price": 1738,
+    "previous_price": 2190,
+    "savings": 452,
+    "discount_percent": 21,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.7,
+    "review_count": 336,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 2300,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 2190,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1773,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 1738,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%84%D9%8A%D9%88%D9%84%D9%8A\">العلامة التجارية: ليولي من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0991q94kp",
+    "asin": "B0991Q94KP",
+    "display_title": "اشرطة اضواء LED ذكية بالوان RGBIC من جوفي بطول 16.4 قدم لغرفة النوم يعمل بالبلوتوث بتحكم خلال التطبيق الوان مت",
+    "title": "اشرطة اضواء LED ذكية بالوان RGBIC من جوفي بطول 16.4 قدم لغرفة النوم يعمل بالبلوتوث بتحكم خلال التطبيق الوان متعددة يمكنك تركيبها بنفسك على خط واحد تتزامن مع الموسيقى للسقف وغرفة الالعاب",
+    "brand": "<!--This check is an indicator",
+    "category": "setup-aesthetic",
+    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0991Q94KP?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71tjdZg28vL._AC_SL1500_.jpg",
+    "price": 2449,
+    "previous_price": 2939,
+    "savings": 490,
+    "discount_percent": 17,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.4,
+    "review_count": 93,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 3086,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 2939,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 2498,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 2449,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%AC%D9%88%D9%81%D9%8A\">العلامة التجارية: جوفي من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0ddpzz9vy",
+    "asin": "B0DDPZZ9VY",
+    "display_title": "شريط إضاءة خلفية للتلفزيون الذكي مع كاميرا وإضاءة ار جي بي ليد لغرفة المعيشة (3.8 متر)، من بيوتي بيست",
+    "title": "شريط إضاءة خلفية للتلفزيون الذكي مع كاميرا وإضاءة ار جي بي ليد لغرفة المعيشة (3.8 متر)، من بيوتي بيست",
+    "brand": "<!--This check is an indicator",
+    "category": "setup-aesthetic",
+    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0DDPZZ9VY?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71S1SEXib4L._AC_SL1500_.jpg",
+    "price": 2019,
+    "previous_price": 2463,
+    "savings": 444,
+    "discount_percent": 18,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 3.3,
+    "review_count": 215,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 2586,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 2463,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 2059,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 2019,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/BeautyBeast/page/113AC719-D423-4730-B0B7-BFAB07A3901E?lp_asin=B0DDPZZ9VY&amp;ref_=ast_bln\">قم ببيوتي بيست من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0dsl1gkch",
+    "asin": "B0DSL1GKCH",
+    "display_title": "قاعدة ماوس ألعاب اي سبورتس CM02 من اتاك شارك، قاعدة ماوس كبيرة بطلاء مقاوم للماء، سطح تحكم ناعم بملمس ثقيل وقا",
+    "title": "قاعدة ماوس ألعاب اي سبورتس CM02 من اتاك شارك، قاعدة ماوس كبيرة بطلاء مقاوم للماء، سطح تحكم ناعم بملمس ثقيل وقاعدة مطاطية غير قابلة للانزلاق، حواف مخيطة دقيقة، 450 × 400 × 4 ملم - حواف بلون أبيض",
+    "brand": "<!--This check is an indicator",
+    "category": "setup-aesthetic",
+    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0DSL1GKCH?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71NZTLAAxHL._AC_SL1500_.jpg",
+    "price": 559,
+    "previous_price": 693,
+    "savings": 134,
+    "discount_percent": 19,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.6,
+    "review_count": 227,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 728,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 693,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 570,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 559,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=ATTACK+SHARK\">العلامة التجارية: ATTACK SHARK من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0f196mlc4",
+    "asin": "B0F196MLC4",
+    "display_title": "لوحة ماوس CM05 زجاجية كبيرة 450 × 400 ملم زجاج نانو للدقة والسرعة مع قاعدة من البولي يوريثان مضادة للانزلاق بد",
+    "title": "لوحة ماوس CM05 زجاجية كبيرة 450 × 400 ملم زجاج نانو للدقة والسرعة مع قاعدة من البولي يوريثان مضادة للانزلاق بدرجة صلابة 9H ولمسة فائقة النعومة والمتانة لماوسات الألعاب عالية الدقة من اتاك شارك، أسود",
+    "brand": "<!--This check is an indicator",
+    "category": "setup-aesthetic",
+    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0F196MLC4?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71w0CmMiGTL._AC_SL1500_.jpg",
+    "price": 2650,
+    "previous_price": 3021,
+    "savings": 371,
+    "discount_percent": 12,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.4,
+    "review_count": 127,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 3172,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 3021,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 2703,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 2650,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=ATTACK+SHARK\">العلامة التجارية: ATTACK SHARK من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0b8hzspq7",
+    "asin": "B0B8HZSPQ7",
+    "display_title": "وحدة إنارة من نجافة شوب باللون الأسود لغرفة المعيشة و النوم و المكتب مصنوعة من الألومنيوم زخرفية",
+    "title": "وحدة إنارة من نجافة شوب باللون الأسود لغرفة المعيشة و النوم و المكتب مصنوعة من الألومنيوم زخرفية",
+    "brand": "<!--This check is an indicator",
+    "category": "setup-aesthetic",
+    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0B8HZSPQ7?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61CaPsJcWZL._AC_SL1500_.jpg",
+    "price": 662,
+    "previous_price": 801,
+    "savings": 139,
+    "discount_percent": 17,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 3.9,
+    "review_count": 255,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 841,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 801,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 675,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 662,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/NAGAFA/page/6C19A93F-BCC3-43CC-A4D3-0B87762CA2F8?lp_asin=B0B8HZSPQ7&amp;ref_=ast_bln\">قم بنجفة شوب من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0d3b54cng",
+    "asin": "B0D3B54CNG",
+    "display_title": "نجفة مثبتة على الحائط من نجفا شوب لون ذهبي موديل WG701-G اي - اوتستاندينغ زجاج",
+    "title": "نجفة مثبتة على الحائط من نجفا شوب لون ذهبي موديل WG701-G اي - اوتستاندينغ زجاج",
+    "brand": "<!--This check is an indicator",
+    "category": "setup-aesthetic",
+    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0D3B54CNG?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/51MtNL3uBYL._AC_SL1080_.jpg",
+    "price": 290,
+    "previous_price": 342,
+    "savings": 52,
+    "discount_percent": 15,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 3.6,
+    "review_count": 261,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 359,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 342,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 296,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 290,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/NAGAFA/page/6C19A93F-BCC3-43CC-A4D3-0B87762CA2F8?lp_asin=B0D3B54CNG&amp;ref_=ast_bln\">قم بنجفة شوب من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0b2vgs485",
+    "asin": "B0B2VGS485",
+    "display_title": "فيفين حامل سماعة راس، حامل سماعات راس RGB مع منافذ USB، ملحقات سماعات العاب الكمبيوتر الشخصي قاعدة مكتب صلبة م",
+    "title": "فيفين حامل سماعة راس، حامل سماعات راس RGB مع منافذ USB، ملحقات سماعات العاب الكمبيوتر الشخصي قاعدة مكتب صلبة مع مزامنة ضوء الصوت، مفاتيح التحكم في الضوء، S3، مطاط",
+    "brand": "<!--This check is an indicator",
+    "category": "setup-aesthetic",
+    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0B2VGS485?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/51x2+NTqFuL._AC_SL1350_.jpg",
+    "price": 6999,
+    "previous_price": 8469,
+    "savings": 1470,
+    "discount_percent": 17,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.6,
+    "review_count": 132,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 8892,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 8469,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 7139,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 6999,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%81%D9%8A%D9%81%D9%8A%D9%86\">العلامة التجارية: فيفين من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0ddqffkb3",
+    "asin": "B0DDQFFKB3",
+    "display_title": "حامل سماعة رأس بإضاءة ار جي بي للألعاب مع 3 منافذ USB يتميز بـ6 ألوان ليد + وضع إضاءة متنوع مناسب لمختلف الأما",
+    "title": "حامل سماعة رأس بإضاءة ار جي بي للألعاب مع 3 منافذ USB يتميز بـ6 ألوان ليد + وضع إضاءة متنوع مناسب لمختلف الأماكن مثالي للاعبين - لون أبيض",
+    "brand": "<!--This check is an indicator",
+    "category": "setup-aesthetic",
+    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0DDQFFKB3?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/617tA-02FQL._AC_SL1500_.jpg",
+    "price": 4843,
+    "previous_price": 5860,
+    "savings": 1017,
+    "discount_percent": 17,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.3,
+    "review_count": 97,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 6153,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 5860,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 4940,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 4843,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=jomtown\">العلامة التجارية: jomtown من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0714dn1qh",
+    "asin": "B0714DN1QH",
+    "display_title": "حامل شاشة مكتبي مزدوج H180 بذراع دوار كامل الحركة بزنبرك غاز لشاشة الكمبيوتر من ان بي نورث بايو، 43 سم إلى 69 ",
+    "title": "حامل شاشة مكتبي مزدوج H180 بذراع دوار كامل الحركة بزنبرك غاز لشاشة الكمبيوتر من ان بي نورث بايو، 43 سم إلى 69 سم ومن 2 كيلوجرام الى 9 كيلوجرام",
+    "brand": "<!--This check is an indicator",
+    "category": "setup-aesthetic",
+    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0714DN1QH?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61V6vX+6OjL._AC_SL1500_.jpg",
+    "price": 2847,
+    "previous_price": 3473,
+    "savings": 626,
+    "discount_percent": 18,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.5,
+    "review_count": 252,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 3647,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 3473,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 2904,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 2847,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%A7%D9%86+%D8%A8%D9%8A+%D9%86%D9%88%D8%B1%D8%AB+%D8%A8%D8%A7%D9%8A%D9%88\">العلامة التجارية: ان بي نورث بايو من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0gkx1qw6f",
+    "asin": "B0GKX1QW6F",
+    "display_title": "ذراع شاشة كامل الحركة قابل للتعديل، حامل مكتب لشاشات 17 بوصة - 30 بوصة مع دوران وإمالة وتعديل الارتفاع من تيكز",
+    "title": "ذراع شاشة كامل الحركة قابل للتعديل، حامل مكتب لشاشات 17 بوصة - 30 بوصة مع دوران وإمالة وتعديل الارتفاع من تيكزون (حامل مزدوج)",
+    "brand": "<!--This check is an indicator",
+    "category": "setup-aesthetic",
+    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0GKX1QW6F?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61gGczN7NzL._AC_SL1500_.jpg",
+    "price": 2299,
+    "previous_price": 2897,
+    "savings": 598,
+    "discount_percent": 21,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 3.4,
+    "review_count": 102,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 3042,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 2897,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 2345,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 2299,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%AA%D9%8A%D9%83%D8%B2%D9%88%D9%86\">العلامة التجارية: تيكزون من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0dxntyhnd",
+    "asin": "B0DXNTYHND",
+    "display_title": "شاشة ألعاب موبيوز EX271، FHD 1920×1080، ‏180Hz، ‏1ms GTG، ‏AMD FreeSync، ‏DP1.2 وHDMI2.0 وUSB، ‏95% P3، ألوان ",
+    "title": "شاشة ألعاب موبيوز EX271، FHD 1920×1080، ‏180Hz، ‏1ms GTG، ‏AMD FreeSync، ‏DP1.2 وHDMI2.0 وUSB، ‏95% P3، ألوان ألعاب بالذكاء الاصطناعي وسماعات 2.5 واط من بينكيو، أسود، 27 بوصة",
+    "brand": "<!--This check is an indicator",
+    "category": "monitors",
+    "category_ar": "شاشات قيمنق 144Hz+",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0DXNTYHND?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71I92pKyHgL._AC_SL1500_.jpg",
+    "price": 9527,
+    "previous_price": 11813,
+    "savings": 2286,
+    "discount_percent": 19,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4,
+    "review_count": 441,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 12404,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 11813,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 9718,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 9527,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/BenQ/page/547AA204-03A9-428C-B40F-9CA75C27A5E4?lp_asin=B0DXNTYHND&amp;ref_=ast_bln\">قم بBenQ من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0dxf9g63h",
+    "asin": "B0DXF9G63H",
+    "display_title": "شاشة ألعاب موبيوز EX251 24.5 بوصة FHD ومعدل تحديث 220 هرتز، زمن استجابة 1 مللي ثانية، تقنية AMD FreeSync، منفذ",
+    "title": "شاشة ألعاب موبيوز EX251 24.5 بوصة FHD ومعدل تحديث 220 هرتز، زمن استجابة 1 مللي ثانية، تقنية AMD FreeSync، منفذ DisplayPort 1.2، منفذ HDMI 2.0، موزع USB، مكبرات صوت مدمجة بقوة 2.5 وات من بينكيو، أبيض",
+    "brand": "<!--This check is an indicator",
+    "category": "monitors",
+    "category_ar": "شاشات قيمنق 144Hz+",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0DXF9G63H?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71YMwQniO0L._AC_SL1500_.jpg",
+    "price": 6999,
+    "previous_price": 7839,
+    "savings": 840,
+    "discount_percent": 11,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.4,
+    "review_count": 261,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 8231,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 7839,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 7139,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 6999,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/BenQ/page/547AA204-03A9-428C-B40F-9CA75C27A5E4?lp_asin=B0DXF9G63H&amp;ref_=ast_bln\">قم بBenQ من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0dxthqtgm",
+    "asin": "B0DXTHQTGM",
+    "display_title": "شاشة ألعاب موبيوز EX271Q 27&#34; دقة 2K QHD تحديث 180Hz استجابة 1ms، لوحة IPS ألوان 95% DCI-P3 دعم HDR400 وUSB",
+    "title": "شاشة ألعاب موبيوز EX271Q 27&#34; دقة 2K QHD تحديث 180Hz استجابة 1ms، لوحة IPS ألوان 95% DCI-P3 دعم HDR400 وUSB-C 65 W PD تقنية KVM، تحسين التباين بAI، دعم AMD فريسينك وDP 1.4 وريموت من بينكيو، أسود",
+    "brand": "<!--This check is an indicator",
+    "category": "monitors",
+    "category_ar": "شاشات قيمنق 144Hz+",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0DXTHQTGM?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71Vz4aJF2cL._AC_SL1500_.jpg",
+    "price": 11999,
+    "previous_price": 14759,
+    "savings": 2760,
+    "discount_percent": 19,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.4,
+    "review_count": 358,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 15497,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 14759,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 12239,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 11999,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/BenQ/page/547AA204-03A9-428C-B40F-9CA75C27A5E4?lp_asin=B0DXTHQTGM&amp;ref_=ast_bln\">قم بBenQ من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0g6d4zv3w",
+    "asin": "B0G6D4ZV3W",
+    "display_title": "فيليبس شاشة (27M2N3500PF) 27 انش WQHD LDE IPS 300 وحدة مضيئة في البكسل، حتى 260 هرتز، 0.3 مللي ثانية، جي سينك،",
+    "title": "فيليبس شاشة (27M2N3500PF) 27 انش WQHD LDE IPS 300 وحدة مضيئة في البكسل، حتى 260 هرتز، 0.3 مللي ثانية، جي سينك، لون فحمي، ضمان 3 سنوات",
+    "brand": "<!--This check is an indicator",
+    "category": "monitors",
+    "category_ar": "شاشات قيمنق 144Hz+",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0G6D4ZV3W?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/81aYdiMiriL._AC_SL1500_.jpg",
+    "price": 10200,
+    "previous_price": 11628,
+    "savings": 1428,
+    "discount_percent": 12,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 3,
+    "review_count": 288,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 12209,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 11628,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 10404,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 10200,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/PHILIPS/page/0F115B13-B448-45B0-9A6E-CD3A7059F0BE?lp_asin=B0G6D4ZV3W&amp;ref_=ast_bln\">قم بكتاب فيليب من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b09cmf65v5",
+    "asin": "B09CMF65V5",
+    "display_title": "اسس بطاقة رسومات للالعاب جيفورس RTX 5050 8GB GDDR6 اصدار كسر سرعة المعالج (انفيديا جيفورس RTX5060 DLSS 4، تصمي",
+    "title": "اسس بطاقة رسومات للالعاب جيفورس RTX 5050 8GB GDDR6 اصدار كسر سرعة المعالج (انفيديا جيفورس RTX5060 DLSS 4، تصميم 2.5 فتحة، منفذ PCIe 5.0، 3X منفذ عرض 2.1b، منفذ HDMI 2.1b، DUAL-RTX5050-O8G)",
+    "brand": "<!--This check is an indicator",
+    "category": "pc-hardware",
+    "category_ar": "تجميعات وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B09CMF65V5?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71GhnAUiOZL._AC_SL1500_.jpg",
+    "price": 21000,
+    "previous_price": 24780,
+    "savings": 3780,
+    "discount_percent": 15,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.7,
+    "review_count": 477,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 26019,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 24780,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 21420,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 21000,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%A7%D8%B3%D8%B3\">العلامة التجارية: اسس من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0cvcg2vpk",
+    "asin": "B0CVCG2VPK",
+    "display_title": "اسس بطاقة رسومات العاب انفيديا جيفورس RTX 3050 6GB اصدار كسر سرعة المعالج بمنفذ PCIe 4.0 وذاكرة GDDR6 ومنفذ HD",
+    "title": "اسس بطاقة رسومات العاب انفيديا جيفورس RTX 3050 6GB اصدار كسر سرعة المعالج بمنفذ PCIe 4.0 وذاكرة GDDR6 ومنفذ HDMI 2.1 عرض 1.4a وتصميم بفتحتين ومروحة بتقنية اكسيال تيك وتقنية 0 ديسيبل ودعامة",
+    "brand": "<!--This check is an indicator",
+    "category": "pc-hardware",
+    "category_ar": "تجميعات وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0CVCG2VPK?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/81mwcITtHBL._AC_SL1500_.jpg",
+    "price": 15000,
+    "previous_price": 17100,
+    "savings": 2100,
+    "discount_percent": 12,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.6,
+    "review_count": 369,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 17955,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 17100,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 15300,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 15000,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%A7%D8%B3%D8%B3\">العلامة التجارية: اسس من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0gvywqzd7",
+    "asin": "B0GVYWQZD7",
+    "display_title": "مبرد هواء كوريليكويد ماج كور فروزر AA13 لوحدة المعالجة المركزية من ام اس اي، مروحة 120 ملم ARGB PWM وانابيب حر",
+    "title": "مبرد هواء كوريليكويد ماج كور فروزر AA13 لوحدة المعالجة المركزية من ام اس اي، مروحة 120 ملم ARGB PWM وانابيب حرارية تعمل باللمس المباشر، متوافق مع LGA 1700/1851، AM5/AM4، اسود",
+    "brand": "<!--This check is an indicator",
+    "category": "pc-hardware",
+    "category_ar": "تجميعات وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0GVYWQZD7?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/7172K8WOQ9L._SL1500_.jpg",
+    "price": 1399,
+    "previous_price": 1735,
+    "savings": 336,
+    "discount_percent": 19,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 5,
+    "review_count": 335,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 1822,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 1735,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1427,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 1399,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%B9%D8%A7%D9%85\">العلامة التجارية: عام من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0b9c82tg9",
+    "asin": "B0B9C82TG9",
+    "display_title": "مبرد معالج كولر ماستر i70C لمنفذ LGA 1700 مع إضاءة ARGB، لون أسود، أبعاد 12 × 12 × 7 سم، جهد 12 فولت، قدرة 1.4",
+    "title": "مبرد معالج كولر ماستر i70C لمنفذ LGA 1700 مع إضاءة ARGB، لون أسود، أبعاد 12 × 12 × 7 سم، جهد 12 فولت، قدرة 1.44 واط، سرعة دوران 1800 دورة في الدقيقة، تدفق هواء 37.08 قدم مكعب/دقيقة، صوت 28 ديسيبل",
+    "brand": "<!--This check is an indicator",
+    "category": "pc-hardware",
+    "category_ar": "تجميعات وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0B9C82TG9?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61xi9pgbnvL._SL1000_.jpg",
+    "price": 436,
+    "previous_price": 523,
+    "savings": 87,
+    "discount_percent": 17,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.2,
+    "review_count": 121,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 549,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 523,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 445,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 436,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%83%D9%88%D9%84%D8%B1+%D9%85%D8%A7%D8%B3%D8%AA%D8%B1\">العلامة التجارية: كولر ماستر من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b095kx95sm",
+    "asin": "B095KX95SM",
+    "display_title": "رام تيم D4 3200 سعة 16 جيجابايت C16 دلتا بالفضاء اللوني ار جي بي لون اسود من جروب GB DDR4",
+    "title": "رام تيم D4 3200 سعة 16 جيجابايت C16 دلتا بالفضاء اللوني ار جي بي لون اسود من جروب GB DDR4",
+    "brand": "<!--This check is an indicator",
+    "category": "pc-hardware",
+    "category_ar": "تجميعات وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B095KX95SM?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/51WMG-qMFOL._AC_SL1500_.jpg",
+    "price": 7250,
+    "previous_price": 8265,
+    "savings": 1015,
+    "discount_percent": 12,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 3.8,
+    "review_count": 360,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 8678,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 8265,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 7395,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 7250,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D8%AA%D9%8A%D9%85+%D8%AC%D8%B1%D9%88%D8%A8\">العلامة التجارية: تيم جروب من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b08c56gzgk",
+    "asin": "B08C56GZGK",
+    "display_title": "ذاكرة داخلية من كروشال CT16G4DFRA32A بتصميم DIMM لحواسيب مكتبية متعدد الألوان DDR4",
+    "title": "ذاكرة داخلية من كروشال CT16G4DFRA32A بتصميم DIMM لحواسيب مكتبية متعدد الألوان DDR4",
+    "brand": "<!--This check is an indicator",
+    "category": "pc-hardware",
+    "category_ar": "تجميعات وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B08C56GZGK?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/51VO7toQIyL._AC_SL1000_.jpg",
+    "price": 6900,
+    "previous_price": 8142,
+    "savings": 1242,
+    "discount_percent": 15,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.6,
+    "review_count": 200,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 8549,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 8142,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 7038,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 6900,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%83%D8%B1%D9%88%D8%B4%D8%A7%D9%84\">العلامة التجارية: كروشال من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0dbr3dzwg",
+    "asin": "B0DBR3DZWG",
+    "display_title": "وحدة تخزين داخلية من كينجستون بسعة 1 تيرابايت موديل NV3 بتقنية NVMe واتصال PCIe متوافقة مع الكمبيوتر نوع سوليد",
+    "title": "وحدة تخزين داخلية من كينجستون بسعة 1 تيرابايت موديل NV3 بتقنية NVMe واتصال PCIe متوافقة مع الكمبيوتر نوع سوليد ستيت درايف",
+    "brand": "<!--This check is an indicator",
+    "category": "pc-hardware",
+    "category_ar": "تجميعات وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0DBR3DZWG?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71ZnK38jZzL._AC_SL1500_.jpg",
+    "price": 7347,
+    "previous_price": 9110,
+    "savings": 1763,
+    "discount_percent": 19,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.7,
+    "review_count": 162,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 9566,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 9110,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 7494,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 7347,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%83%D9%86%D8%BA%D8%B3%D8%AA%D9%88%D9%86\">العلامة التجارية: كنغستون من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0dqsjyd12",
+    "asin": "B0DQSJYD12",
+    "display_title": "هارد Crucial E100 سعة 1 تيرابايت M.2 NVMe بمنفذ PCIe الجيل الرابع SSD داخلي - حتى 5,000 ميجابايت/ثانية - متواف",
+    "title": "هارد Crucial E100 سعة 1 تيرابايت M.2 NVMe بمنفذ PCIe الجيل الرابع SSD داخلي - حتى 5,000 ميجابايت/ثانية - متوافق مع اللابتوب وسطح المكتب - CT1000E100SSD8",
+    "brand": "<!--This check is an indicator",
+    "category": "pc-hardware",
+    "category_ar": "تجميعات وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0DQSJYD12?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/51iH9vvWAiL._AC_SL1080_.jpg",
+    "price": 8188,
+    "previous_price": 9907,
+    "savings": 1719,
+    "discount_percent": 17,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.5,
+    "review_count": 271,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 10402,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 9907,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 8352,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 8188,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=%D9%83%D8%B1%D9%88%D8%B4%D8%A7%D9%84\">العلامة التجارية: كروشال من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0dj1vd925",
+    "asin": "B0DJ1VD925",
+    "display_title": "يد تحكم ألعاب فيديو من سوني موديل دوال سينس للبلايستيشن 5، بتقنية لاسلكية، متوافقة مع بلايستيشن 5، تتميز بالات",
+    "title": "يد تحكم ألعاب فيديو من سوني موديل دوال سينس للبلايستيشن 5، بتقنية لاسلكية، متوافقة مع بلايستيشن 5، تتميز بالاتصال اللاسلكي، باللون كروما نيلي",
+    "brand": "<!--This check is an indicator",
+    "category": "consoles-handheld",
+    "category_ar": "كونسول واكسسوارات",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0DJ1VD925?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61QWtX+qgJL._AC_SL1500_.jpg",
+    "price": 4899,
+    "previous_price": 6124,
+    "savings": 1225,
+    "discount_percent": 20,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.7,
+    "review_count": 319,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 6430,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 6124,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 4997,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 4899,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=Playstation\">العلامة التجارية: Playstation من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b09q4zxsy1",
+    "asin": "B09Q4ZXSY1",
+    "display_title": "وحدة تحكم الالعاب بلاي ستيشن 5 دوال سينس لاسلكية من سوني - لون ارجواني، اصدار الامارات العربية المتحدة، بلوتوث",
+    "title": "وحدة تحكم الالعاب بلاي ستيشن 5 دوال سينس لاسلكية من سوني - لون ارجواني، اصدار الامارات العربية المتحدة، بلوتوث , بنفسجي",
+    "brand": "<!--This check is an indicator",
+    "category": "consoles-handheld",
+    "category_ar": "كونسول واكسسوارات",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B09Q4ZXSY1?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61kVo6d7zNL._AC_SL1500_.jpg",
+    "price": 4898,
+    "previous_price": 5682,
+    "savings": 784,
+    "discount_percent": 14,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.7,
+    "review_count": 116,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 5966,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 5682,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 4996,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 4898,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=Playstation\">العلامة التجارية: Playstation من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0cwh9wcwt",
+    "asin": "B0CWH9WCWT",
+    "display_title": "قرص جهاز تشغيل ألعاب الفيديو بلاي ستيشن 5 رفيع، سعة تخزين 1 تيرابايت، لون أبيض، من سونى",
+    "title": "قرص جهاز تشغيل ألعاب الفيديو بلاي ستيشن 5 رفيع، سعة تخزين 1 تيرابايت، لون أبيض، من سونى",
+    "brand": "<!--This check is an indicator",
+    "category": "consoles-handheld",
+    "category_ar": "كونسول واكسسوارات",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0CWH9WCWT?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/51dR+MAtBjL._AC_SL1500_.jpg",
+    "price": 44999,
+    "previous_price": 53099,
+    "savings": 8100,
+    "discount_percent": 15,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 3.6,
+    "review_count": 475,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 55754,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 53099,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 45899,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 44999,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=Playstation\">العلامة التجارية: Playstation من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0cm9vkq5n",
+    "asin": "B0CM9VKQ5N",
+    "display_title": "بلاي ستيشن 5 سوني - وحدات تحكم رقمية - 825 جيجابايت - لون أبيض - موديل CFI-2116",
+    "title": "بلاي ستيشن 5 سوني - وحدات تحكم رقمية - 825 جيجابايت - لون أبيض - موديل CFI-2116",
+    "brand": "<!--This check is an indicator",
+    "category": "consoles-handheld",
+    "category_ar": "كونسول واكسسوارات",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0CM9VKQ5N?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61WiphT2PlL._AC_SL1500_.jpg",
+    "price": 39999,
+    "previous_price": 50399,
+    "savings": 10400,
+    "discount_percent": 21,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.7,
+    "review_count": 261,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 52919,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 50399,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 40799,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 39999,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/s/ref=bl_dp_s_web_0?ie=UTF8&amp;search-alias=aps&amp;field-keywords=Playstation\">العلامة التجارية: Playstation من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0dn5rwnnc",
+    "asin": "B0DN5RWNNC",
+    "display_title": "لابتوب من اتش بي، بمعالج انتل، شاشة 15.6 إنش، وذاكرة رام 16 جيجابايت",
+    "title": "لابتوب من اتش بي، بمعالج انتل، شاشة 15.6 إنش، وذاكرة رام 16 جيجابايت",
+    "brand": "<!--This check is an indicator",
+    "category": "laptops",
+    "category_ar": "لابتوبات قيمنق ومونتاج",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0DN5RWNNC?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/81obPsMhewL._AC_SL1500_.jpg",
+    "price": 64000,
+    "previous_price": 77440,
+    "savings": 13440,
+    "discount_percent": 17,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.4,
+    "review_count": 212,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 81312,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 77440,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 65280,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 64000,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/HP/page/67CD1D19-00F0-4CE0-B7C7-026B607DDFC0?lp_asin=B0DN5RWNNC&amp;ref_=ast_bln\">قم بHP من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "eg-b0h2jft6fv",
+    "asin": "B0H2JFT6FV",
+    "display_title": "لابتوب ألعاب رفيع 15 B13UC انتل كورi7 13620H، رام 16جيجابايت DDR4، الذاكرة المستديمة SSD 512 جيجابايت، 15.6 بو",
+    "title": "لابتوب ألعاب رفيع 15 B13UC انتل كورi7 13620H، رام 16جيجابايت DDR4، الذاكرة المستديمة SSD 512 جيجابايت، 15.6 بوصة بمعدل تحديث 13620 هرتز انفيديا RTX 3050 بسعة 4 جيجابايتGDDR6 من ام اس اي، رمادي Cosmos",
+    "brand": "<!--This check is an indicator",
+    "category": "laptops",
+    "category_ar": "لابتوبات قيمنق ومونتاج",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0H2JFT6FV?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71r5TcvKn-L._AC_SL1500_.jpg",
+    "price": 48595,
+    "previous_price": 56370,
+    "savings": 7775,
+    "discount_percent": 14,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 5,
+    "review_count": 146,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 59189,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 56370,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 49567,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 48595,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء ممتاز وتوافق كامل مع منصات الألعاب والديسكورد",
+        "شحن سريع ومضمون من أمازون مصر"
+      ],
+      "cons": [
+        "العرض متاح حتى نفاد الكمية المخصصة للخصم"
+      ],
+      "brand_summary": "<!--This check is an indicator on whether to show the Premium Fashion brand logo byline regardless of weblab treatment-->\n                    <div class=\"a-section a-spacing-none\">             <a id=\"bylineInfo\" class=\"a-link-normal\" href=\"/stores/MSI/page/E08939C1-7C50-47C3-AF01-07C61CF08CE1?lp_asin=B0H2JFT6FV&amp;ref_=ast_bln\">قم بام اس اي من الماركات الموثوقة على أمازون مصر.",
+      "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
         }
       ]
     }

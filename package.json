@@ -10,7 +10,8 @@
     "tracker": "node scripts/tracker.mjs",
     "tracker:watch": "node scripts/tracker-daemon.mjs",
     "add": "node scripts/quick-add.mjs",
-    "admin-bot": "node scripts/telegram-admin-bot.mjs"
+    "admin-bot": "node scripts/telegram-admin-bot.mjs",
+    "test": "node scripts/test-all-links.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.60.0",
