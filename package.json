@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "tracker": "node scripts/tracker.mjs",
-    "tracker:watch": "node scripts/tracker-daemon.mjs"
+    "tracker:watch": "node scripts/tracker-daemon.mjs",
+    "add": "node scripts/quick-add.mjs",
+    "admin-bot": "node scripts/telegram-admin-bot.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.60.0",
