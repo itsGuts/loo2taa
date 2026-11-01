@@ -94,10 +94,10 @@ function CatalogInner() {
         <div>
           <h1 className="text-2xl sm:text-3xl font-black text-white flex items-center gap-2.5">
             <Cpu className="w-6 h-6 text-[#00f0ff]" />
-            كتالوج عتاد الجيمنج والبي سي
+            كتالوج عتاد الديسكورد والجيمنج
           </h1>
           <p className="text-xs text-gray-400 mt-1">
-            تصفح جميع الصفقات المحدثة لكروت الشاشة، الشاشات، وإكسسوارات السيت أب في مصر
+            تصفح جميع الصفقات المحدثة للمايكات، السماعات، الكيبوردات، وإكسسوارات السيت أب في مصر
           </p>
         </div>
 

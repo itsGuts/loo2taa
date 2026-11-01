@@ -3,7 +3,7 @@
 /**
  * LO2TAA - Telegram Admin 1-Click Deal Publisher Bot
  * 
- * Allows the owner/admin to send any Amazon Egypt or Noon link from their phone
+ * Allows the owner/admin to send any Amazon Egypt link from their phone
  * directly to the bot. The bot instantly scrapes the product, adds it to the site catalog,
  * and publishes a beautiful deal post to the @lo2taa channel with the affiliate tag!
  * 
@@ -42,28 +42,31 @@ function formatEGP(num) {
   return Number(num).toLocaleString('ar-EG');
 }
 
-// Helper: infer category
+// Helper: infer category (Discord Focused)
 function inferCategory(title) {
   const t = title.toLowerCase();
-  if (t.includes('monitor') || t.includes('شاشة') || t.includes('144hz') || t.includes('165hz')) {
-    return { category: 'monitors', category_ar: 'شاشات جيمنج 144Hz+' };
+  if (t.includes('mic') || t.includes('مايك') || t.includes('webcam') || t.includes('كاميرا') || t.includes('stream deck') || t.includes('boom arm') || t.includes('soundcard')) {
+    return { category: 'streaming-voice', category_ar: 'مايكات وصوتيات ديسكورد' };
   }
-  if (t.includes('mouse') || t.includes('ماوس') || t.includes('keyboard') || t.includes('كيبورد')) {
-    return { category: 'peripherals', category_ar: 'ماوسات وكيبوردات ميكانيكال' };
+  if (t.includes('headset') || t.includes('headphone') || t.includes('سماعة') || t.includes('earbuds') || t.includes('kitty')) {
+    return { category: 'headsets', category_ar: 'سماعات ديسكورد وقيمنق' };
   }
-  if (t.includes('headset') || t.includes('headphone') || t.includes('سماعة') || t.includes('mic') || t.includes('مايك')) {
-    return { category: 'audio-headsets', category_ar: 'سماعات وهيدست محيطي' };
+  if (t.includes('mouse') || t.includes('ماوس') || t.includes('keyboard') || t.includes('كيبورد') || t.includes('switch') || t.includes('keycap') || t.includes('gasket')) {
+    return { category: 'keyboards-mice', category_ar: 'كيبوردات ميكانيكال وماوسات' };
   }
-  if (t.includes('laptop') || t.includes('لابتوب')) {
-    return { category: 'laptops', category_ar: 'لابتوبات جيمنج' };
+  if (t.includes('chair') || t.includes('كرسي') || t.includes('desk') || t.includes('مكتب') || t.includes('rgb') || t.includes('led') || t.includes('mousepad') || t.includes('lightbar') || t.includes('neon') || t.includes('sunset') || t.includes('arm')) {
+    return { category: 'setup-aesthetic', category_ar: 'سيت أب وديكور وإضاءة RGB' };
   }
-  if (t.includes('ps5') || t.includes('playstation') || t.includes('xbox') || t.includes('controller') || t.includes('ذراع')) {
-    return { category: 'consoles', category_ar: 'بلايستيشن وكروت ألعاب' };
+  if (t.includes('monitor') || t.includes('شاشة') || t.includes('144hz') || t.includes('165hz') || t.includes('240hz')) {
+    return { category: 'monitors', category_ar: 'شاشات قيمنق 144Hz+' };
   }
-  if (t.includes('chair') || t.includes('كرسي') || t.includes('desk') || t.includes('rgb') || t.includes('mousepad')) {
-    return { category: 'battlestation', category_ar: 'سيت أب وكراسي وإضاءة RGB' };
+  if (t.includes('laptop') || t.includes('لابتوب') || t.includes('notebook')) {
+    return { category: 'laptops', category_ar: 'لابتوبات قيمنق ومونتاج' };
   }
-  return { category: 'pc-hardware', category_ar: 'كروت شاشة وهاردوير PC' };
+  if (t.includes('playstation') || t.includes('ps5') || t.includes('ps4') || t.includes('xbox') || t.includes('nintendo') || t.includes('switch') || t.includes('controller') || t.includes('ذراع')) {
+    return { category: 'consoles-handheld', category_ar: 'كونسول واكسسوارات' };
+  }
+  return { category: 'pc-hardware', category_ar: 'تجميعات وهاردوير البي سي' };
 }
 
 // Helper: Scrape Amazon product

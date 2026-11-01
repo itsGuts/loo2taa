@@ -7,7 +7,12 @@ import {
   SlidersHorizontal,
   LayoutGrid,
   List,
-  RotateCcw
+  RotateCcw,
+  Sparkles,
+  Zap,
+  TrendingDown,
+  Flame,
+  Check
 } from "lucide-react";
 
 interface FilterBarProps {
@@ -27,13 +32,6 @@ export default function FilterBar({
 }: FilterBarProps) {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const brands = getUniqueBrands();
-
-  const handleStoreSelect = (storeKey: string) => {
-    onFilterChange({
-      ...filters,
-      marketplace: filters.marketplace === storeKey ? undefined : storeKey,
-    });
-  };
 
   const handleCategorySelect = (catId: string) => {
     onFilterChange({
@@ -66,51 +64,61 @@ export default function FilterBar({
     Boolean(filters.query) ||
     Boolean(filters.category) ||
     Boolean(filters.brand) ||
-    Boolean(filters.marketplace) ||
     Boolean(filters.minPrice) ||
     Boolean(filters.maxPrice);
 
   return (
-    <div className="space-y-3.5">
+    <div className="space-y-3">
       
-      {/* Top Bar: Store Chips & View Mode / Sort */}
+      {/* Top Bar: Clean Action Strip & Sort */}
       <div className="cyber-card rounded-2xl p-2.5 flex flex-wrap items-center justify-between gap-3">
         
-        {/* Store Chips */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none">
+        {/* Fast Quick Filter Chips (shadcn style) */}
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none text-xs font-bold">
+          
+          {/* Amazon Egypt Official Chip */}
+          <div className="px-3 py-1.5 rounded-xl bg-[#ff9900]/10 text-[#ff9900] border border-[#ff9900]/30 shrink-0 flex items-center gap-1.5 font-bold">
+            <span className="w-2 h-2 rounded-full bg-[#ff9900] animate-pulse" />
+            <span>أمازون مصر</span>
+            <span className="text-[10px] bg-[#ff9900]/20 px-1.5 py-0.2 rounded text-white font-mono">
+              {totalResults}
+            </span>
+          </div>
+
           <button
-            onClick={() => handleStoreSelect("all")}
-            className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 ${
-              !filters.marketplace || filters.marketplace === "all"
+            onClick={() => handleSortSelect("record-low")}
+            className={`px-3 py-1.5 rounded-xl transition-all shrink-0 flex items-center gap-1.5 ${
+              filters.sort === "record-low"
                 ? "bg-[#00f0ff] text-[#05070c] shadow-sm shadow-[#00f0ff]/30 font-black"
                 : "bg-[#070a12] text-[#94a3b8] hover:text-white border border-white/5"
             }`}
           >
-            كل المتاجر ({totalResults})
+            <Zap className="w-3.5 h-3.5" />
+            أقل سعر تاريخي
           </button>
 
           <button
-            onClick={() => handleStoreSelect("amazon")}
-            className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 flex items-center gap-1.5 ${
-              filters.marketplace === "amazon"
-                ? "bg-[#00f0ff]/20 text-[#00f0ff] border border-[#00f0ff]/50 font-black"
-                : "bg-[#070a12] text-gray-300 hover:text-white border border-white/5"
+            onClick={() => handleSortSelect("discount-desc")}
+            className={`px-3 py-1.5 rounded-xl transition-all shrink-0 flex items-center gap-1.5 ${
+              filters.sort === "discount-desc"
+                ? "bg-[#ff007f] text-white shadow-sm shadow-[#ff007f]/30 font-black"
+                : "bg-[#070a12] text-[#94a3b8] hover:text-white border border-white/5"
             }`}
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-[#ff9900]" />
-            أمازون مصر
+            <Flame className="w-3.5 h-3.5" />
+            أعلى نسبة خصم
           </button>
 
           <button
-            onClick={() => handleStoreSelect("noon")}
-            className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 flex items-center gap-1.5 ${
-              filters.marketplace === "noon"
-                ? "bg-[#ffd600]/20 text-[#ffd600] border border-[#ffd600]/50 font-black"
-                : "bg-[#070a12] text-gray-300 hover:text-white border border-white/5"
+            onClick={() => handleSortSelect("price-changed")}
+            className={`px-3 py-1.5 rounded-xl transition-all shrink-0 flex items-center gap-1.5 ${
+              filters.sort === "price-changed"
+                ? "bg-[#00ff9d] text-[#05070c] shadow-sm shadow-[#00ff9d]/30 font-black"
+                : "bg-[#070a12] text-[#94a3b8] hover:text-white border border-white/5"
             }`}
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-[#ffd600]" />
-            نون
+            <TrendingDown className="w-3.5 h-3.5" />
+            أحدث هبوط
           </button>
         </div>
 
@@ -169,7 +177,7 @@ export default function FilterBar({
         </div>
       </div>
 
-      {/* Category Pills Strip */}
+      {/* Category Pills Strip (Discord-Focused) */}
       <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
         {CATEGORIES.map((cat) => {
           const isSelected =
@@ -180,7 +188,7 @@ export default function FilterBar({
             <button
               key={cat.id}
               onClick={() => handleCategorySelect(cat.id)}
-              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 ${
+              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 ${
                 isSelected
                   ? "bg-[#00f0ff] text-[#05070c] shadow-md shadow-[#00f0ff]/20 font-black"
                   : "bg-[#0b101c] text-[#94a3b8] hover:text-white hover:border-[#00f0ff]/30 border border-white/5"
@@ -198,12 +206,12 @@ export default function FilterBar({
           <div className="flex items-center justify-between pb-2 border-b border-white/10">
             <h4 className="text-xs font-bold text-white flex items-center gap-1.5">
               <SlidersHorizontal className="w-3.5 h-3.5 text-[#00f0ff]" />
-              تصفية مخصصة
+              تصفية دقيقة للعتاد
             </h4>
             {hasActiveFilters && (
               <button
                 onClick={handleReset}
-                className="text-xs text-[#ff007f] hover:underline flex items-center gap-1 font-bold"
+                className="text-xs text-red-400 hover:text-red-300 flex items-center gap-1 font-bold"
               >
                 <RotateCcw className="w-3 h-3" />
                 إعادة ضبط
@@ -211,11 +219,10 @@ export default function FilterBar({
             )}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 text-xs">
+            {/* Brand Filter */}
             <div>
-              <label className="block text-[11px] font-bold text-gray-300 mb-1">
-                البراند
-              </label>
+              <label className="block text-gray-400 mb-1 font-medium">الشركة المصنعة</label>
               <select
                 value={filters.brand || ""}
                 onChange={(e) =>
@@ -224,9 +231,9 @@ export default function FilterBar({
                     brand: e.target.value || undefined,
                   })
                 }
-                className="w-full bg-[#070a12] border border-white/10 text-xs rounded-xl p-2 text-white focus:outline-hidden focus:border-[#00f0ff]"
+                className="w-full bg-[#070a12] border border-white/10 text-white rounded-xl px-3 py-2 text-xs focus:outline-hidden focus:border-[#00f0ff]"
               >
-                <option value="">جميع البراندات</option>
+                <option value="">كل الشركات ({brands.length})</option>
                 {brands.map((b) => (
                   <option key={b} value={b}>
                     {b}
@@ -235,10 +242,9 @@ export default function FilterBar({
               </select>
             </div>
 
+            {/* Min Price */}
             <div>
-              <label className="block text-[11px] font-bold text-gray-300 mb-1">
-                الحد الأدنى للسعر (ج.م)
-              </label>
+              <label className="block text-gray-400 mb-1 font-medium">الحد الأدنى للسعر (ج.م)</label>
               <input
                 type="number"
                 placeholder="مثلاً: 1000"
@@ -249,14 +255,13 @@ export default function FilterBar({
                     minPrice: e.target.value ? Number(e.target.value) : undefined,
                   })
                 }
-                className="w-full bg-[#070a12] border border-white/10 text-xs rounded-xl p-2 text-white focus:outline-hidden focus:border-[#00f0ff]"
+                className="w-full bg-[#070a12] border border-white/10 text-white rounded-xl px-3 py-2 text-xs focus:outline-hidden focus:border-[#00f0ff]"
               />
             </div>
 
+            {/* Max Price */}
             <div>
-              <label className="block text-[11px] font-bold text-gray-300 mb-1">
-                الحد الأقصى للسعر (ج.م)
-              </label>
+              <label className="block text-gray-400 mb-1 font-medium">الحد الأقصى للسعر (ج.م)</label>
               <input
                 type="number"
                 placeholder="مثلاً: 25000"
@@ -267,7 +272,7 @@ export default function FilterBar({
                     maxPrice: e.target.value ? Number(e.target.value) : undefined,
                   })
                 }
-                className="w-full bg-[#070a12] border border-white/10 text-xs rounded-xl p-2 text-white focus:outline-hidden focus:border-[#00f0ff]"
+                className="w-full bg-[#070a12] border border-white/10 text-white rounded-xl px-3 py-2 text-xs focus:outline-hidden focus:border-[#00f0ff]"
               />
             </div>
           </div>

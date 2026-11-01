@@ -1,4 +1,4 @@
-export type MarketplaceKey = 'amazon' | 'noon' | 'zoka';
+export type MarketplaceKey = 'amazon';
 
 export interface PricePoint {
   date: string;

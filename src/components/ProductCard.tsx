@@ -156,15 +156,9 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
         {/* Content Details */}
         <div className="flex-1 space-y-1.5 min-w-0 w-full">
           <div className="flex flex-wrap items-center gap-2 text-xs">
-            <span
-              className="px-2 py-0.5 rounded-md font-black text-[10px]"
-              style={{
-                backgroundColor: store.surfaceColor,
-                color: store.primaryColor,
-                border: `1px solid ${store.primaryColor}40`,
-              }}
-            >
-              {store.name}
+            <span className="px-2 py-0.5 rounded-md font-bold text-[10px] bg-[#ff9900]/10 text-[#ff9900] border border-[#ff9900]/30 flex items-center gap-1">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#ff9900]" />
+              أمازون مصر
             </span>
 
             <span className="text-[#94a3b8] font-medium text-[11px]">{product.category_ar}</span>
@@ -254,15 +248,9 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
       
       {/* Top Banner */}
       <div className="p-3 pb-0 flex items-center justify-between">
-        <span
-          className="px-2 py-0.5 rounded-md font-bold text-[10px]"
-          style={{
-            backgroundColor: store.surfaceColor,
-            color: store.primaryColor,
-            border: `1px solid ${store.primaryColor}30`,
-          }}
-        >
-          {store.name}
+        <span className="px-2 py-0.5 rounded-md font-bold text-[10px] bg-[#ff9900]/10 text-[#ff9900] border border-[#ff9900]/30 flex items-center gap-1">
+          <span className="w-1.5 h-1.5 rounded-full bg-[#ff9900]" />
+          أمازون مصر
         </span>
 
         <div className="flex items-center gap-1">

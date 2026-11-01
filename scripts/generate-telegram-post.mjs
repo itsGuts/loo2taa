@@ -27,7 +27,7 @@ function formatEGP(num) {
 }
 
 function buildTelegramPost(p) {
-  const storeName = p.store_name || (p.marketplace === 'amazon' ? 'Amazon أمازون' : 'نون Noon');
+  const storeName = 'أمازون مصر (Amazon Egypt)';
   const storeUrl = p.url.includes('tag=') ? p.url : `${p.url}?tag=${AFFILIATE_TAG}`;
   const lo2taaUrl = `https://loo2taa.vercel.app/products/${p.asin || p.id}`;
   const recordBadge = p.is_record_low ? '⚡ <b>أقل سعر مسجل في تاريخ المنتج!</b>\n' : '';

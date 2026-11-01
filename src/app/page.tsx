@@ -8,13 +8,16 @@ import ProductCard from "@/components/ProductCard";
 import FilterBar from "@/components/FilterBar";
 import {
   TrendingDown,
-  LineChart,
-  Send,
   Zap,
   Gamepad2,
-  Cpu,
   Flame,
-  ChevronLeft
+  ChevronLeft,
+  Mic,
+  Headphones,
+  Keyboard,
+  Sparkles,
+  Monitor,
+  Cpu
 } from "lucide-react";
 
 export default function HomePage() {
@@ -35,10 +38,6 @@ export default function HomePage() {
           p.brand.toLowerCase().includes(q) ||
           p.category_ar.toLowerCase().includes(q)
       );
-    }
-
-    if (filters.marketplace && filters.marketplace !== "all") {
-      list = list.filter((p) => p.marketplace === filters.marketplace);
     }
 
     if (filters.category && filters.category !== "all") {
@@ -79,45 +78,78 @@ export default function HomePage() {
     return list;
   }, [filters]);
 
-  // Dynamic hero metrics
-  const totalDeals = PRODUCTS.filter(p => p.discount_percent > 0 && p.in_stock !== false).length;
-  const maxSavings = Math.max(...PRODUCTS.filter(p => p.in_stock !== false).map(p => p.savings), 0);
-  const recordLowCount = PRODUCTS.filter(p => p.is_record_low && p.in_stock !== false).length;
+  // Dynamic metrics
+  const activeProducts = PRODUCTS.filter(p => p.in_stock !== false);
+  const totalDeals = activeProducts.length;
+  const maxSavings = Math.max(...activeProducts.map(p => p.savings), 0);
+  const recordLowCount = activeProducts.filter(p => p.is_record_low).length;
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       
-      {/* Clean Cyberpunk Hero Section */}
-      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#0c1222] via-[#070b16] to-[#12071f] border border-white/10 p-6 sm:p-10 shadow-2xl">
-        <div className="absolute top-0 right-0 w-80 h-80 bg-[#00f0ff]/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#ff007f]/10 rounded-full blur-3xl pointer-events-none" />
+      {/* Modern Discord-Centric Hero Section */}
+      <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#0a0f1d] via-[#070a14] to-[#140824] border border-white/[0.08] p-6 sm:p-10 shadow-2xl">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#5865F2]/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#00f0ff]/10 rounded-full blur-3xl pointer-events-none" />
 
-        <div className="relative z-10 max-w-2xl space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00f0ff]/10 border border-[#00f0ff]/30 text-xs font-bold text-[#00f0ff]">
+        <div className="relative z-10 max-w-3xl space-y-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5865F2]/15 border border-[#5865F2]/40 text-xs font-bold text-[#8ea1ff]">
             <span className="w-1.5 h-1.5 rounded-full bg-[#00ff9d] animate-pulse" />
-            <span>رادار صفقات الألعاب والبي سي في مصر</span>
+            <span>رادار صفقات مجتمع الديسكورد والجيمنج في مصر</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
-            <span className="font-mono text-[#00f0ff]">LO2TAA</span> // عتاد الجيمنج والسيت أب <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f0ff] to-[#00a3ff]">بأقل سعر حقيقي</span>
+            <span className="font-mono text-[#00f0ff]">LO2TAA</span> // عتاد الديسكورد والسيت أب <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f0ff] via-[#5865F2] to-[#ff007f]">بأقل سعر حقيقي</span>
           </h1>
 
-          <p className="text-xs sm:text-sm text-gray-300 leading-relaxed">
-            بنرصد أسعار كروت الشاشة، البلايستيشن، شاشات الـ 165Hz، وسماعات الألعاب على أمازون ونون. بنكشف الخصومات الوهمية ونعرضلك سجل السعر لآخر 90 يوم.
+          <p className="text-xs sm:text-sm text-gray-300 leading-relaxed max-w-2xl">
+            مايكات ستريم، سماعات وايرلس مريحة، كيبوردات ميكانيكال، إضاءة وديكور سيت أب، شاشات 165Hz، وتجميعات البي سي على أمازون مصر. بنكشف الخصم الوهمي ونعرضلك سجل السعر التاريخي لحظة بلحظة.
           </p>
 
-          {/* Dynamic Metrics */}
-          <div className="grid grid-cols-3 gap-2.5 pt-2">
-            <div className="bg-[#05070c]/70 rounded-2xl p-3 border border-white/5">
-              <span className="text-[10px] text-gray-400 block font-medium">صفقات مرصودة</span>
-              <span className="text-xl sm:text-2xl font-black text-[#00f0ff]">{totalDeals} صفقة</span>
+          {/* Quick Category Jump Chips */}
+          <div className="flex flex-wrap items-center gap-2 pt-1 text-xs font-bold">
+            <button
+              onClick={() => setFilters({ category: 'streaming-voice' })}
+              className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-200 border border-white/5 flex items-center gap-1.5 transition-colors"
+            >
+              <Mic className="w-3.5 h-3.5 text-[#00f0ff]" />
+              مايكات ستريم
+            </button>
+            <button
+              onClick={() => setFilters({ category: 'headsets' })}
+              className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-200 border border-white/5 flex items-center gap-1.5 transition-colors"
+            >
+              <Headphones className="w-3.5 h-3.5 text-[#ff007f]" />
+              سماعات ديسكورد
+            </button>
+            <button
+              onClick={() => setFilters({ category: 'keyboards-mice' })}
+              className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-200 border border-white/5 flex items-center gap-1.5 transition-colors"
+            >
+              <Keyboard className="w-3.5 h-3.5 text-[#00ff9d]" />
+              كيبوردات ميكانيكال
+            </button>
+            <button
+              onClick={() => setFilters({ category: 'setup-aesthetic' })}
+              className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-200 border border-white/5 flex items-center gap-1.5 transition-colors"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-[#ffd600]" />
+              سيت أب وديكور
+            </button>
+          </div>
+
+          {/* Clean Metric Counters */}
+          <div className="grid grid-cols-3 gap-3 pt-3">
+            <div className="bg-[#05070c]/80 rounded-2xl p-3 border border-white/5">
+              <span className="text-[10px] text-gray-400 block font-medium">صفقات نشطة الآن</span>
+              <span className="text-xl sm:text-2xl font-black text-[#00f0ff]">{totalDeals} لقطة</span>
             </div>
-            <div className="bg-[#05070c]/70 rounded-2xl p-3 border border-white/5">
-              <span className="text-[10px] text-gray-400 block font-medium">أعلى توفير</span>
+            <div className="bg-[#05070c]/80 rounded-2xl p-3 border border-white/5">
+              <span className="text-[10px] text-gray-400 block font-medium">أعلى توفير مرصود</span>
               <span className="text-xl sm:text-2xl font-black text-[#00ff9d]">{maxSavings.toLocaleString("ar-EG")} ج.م</span>
             </div>
-            <div className="bg-[#05070c]/70 rounded-2xl p-3 border border-white/5">
-              <span className="text-[10px] text-gray-400 block font-medium">أقل سعر تاريخي</span>
+            <div className="bg-[#05070c]/80 rounded-2xl p-3 border border-white/5">
+              <span className="text-[10px] text-gray-400 block font-medium">أقل سعر قياسي</span>
               <span className="text-lg sm:text-xl font-black text-white">{recordLowCount} منتج ⚡</span>
             </div>
           </div>
@@ -130,7 +162,7 @@ export default function HomePage() {
           <div className="flex items-center gap-2">
             <Flame className="w-5 h-5 text-[#ff007f]" />
             <h2 className="text-lg sm:text-xl font-black text-white">
-              أقوى صفقات الهاردوير المسجلة
+              أقوى صفقات اليوم الحية
             </h2>
           </div>
 
@@ -158,104 +190,30 @@ export default function HomePage() {
             <div className="w-12 h-12 rounded-full bg-[#00f0ff]/10 text-[#00f0ff] flex items-center justify-center mx-auto border border-[#00f0ff]/20">
               <Gamepad2 className="w-6 h-6" />
             </div>
-            <h3 className="text-sm font-bold text-white">لم يتم العثور على قطع تطابق بحثك</h3>
+            <h3 className="text-base font-bold text-white">لا توجد عروض مطابقة للفلاتر الحالية</h3>
             <p className="text-xs text-gray-400 max-w-sm mx-auto">
-              جرّب تغيير كلمات البحث أو إعادة ضبط الفلاتر لتصفح باقي الصفقات.
+              جرب تغيير خيارات التصفية أو إلغاء تحديد بعض الفئات للبحث في بقية العتاد.
             </p>
             <button
               onClick={() => setFilters({ sort: "record-low" })}
-              className="mt-2 px-4 py-2 btn-cyber-primary text-xs rounded-xl"
+              className="px-4 py-2 rounded-xl bg-[#00f0ff] text-[#05070c] font-black text-xs hover:shadow-lg hover:shadow-[#00f0ff]/30 transition-all"
             >
-              إعادة ضبط الفلاتر
+              عرض كل العتاد
             </button>
           </div>
-        ) : (
-          <div
-            className={
-              viewMode === "grid"
-                ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-                : "space-y-3"
-            }
-          >
+        ) : viewMode === "grid" ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {filteredProducts.map((product) => (
-              <ProductCard
-                key={product.id}
-                product={product}
-                viewMode={viewMode}
-              />
+              <ProductCard key={product.id} product={product} viewMode="grid" />
+            ))}
+          </div>
+        ) : (
+          <div className="space-y-3">
+            {filteredProducts.map((product) => (
+              <ProductCard key={product.id} product={product} viewMode="list" />
             ))}
           </div>
         )}
-      </section>
-
-      {/* Feature Highlights */}
-      <section className="cyber-card rounded-3xl p-6 sm:p-8 space-y-6">
-        <div className="text-center max-w-xl mx-auto space-y-1.5">
-          <h2 className="text-xl sm:text-2xl font-black text-white">
-            ليه تشتري عن طريق لقطة؟
-          </h2>
-          <p className="text-xs text-gray-400">
-            تسوّق بذكاء وتجنب العروض الوهمية في مواسم التخفيضات
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-1">
-          <div className="bg-[#05070c] rounded-2xl p-4 border border-white/5 space-y-2">
-            <div className="w-9 h-9 rounded-xl bg-[#00f0ff]/10 text-[#00f0ff] flex items-center justify-center border border-[#00f0ff]/20">
-              <LineChart className="w-4 h-4" />
-            </div>
-            <h3 className="font-bold text-sm text-white">سجل أسعار لآخر 90 يوم</h3>
-            <p className="text-xs text-gray-400 leading-relaxed">
-              شاهد بنفسك هل السعر منخفض حقيقةً أم تم رفعه قبل العرض لادعاء وجود خصم.
-            </p>
-          </div>
-
-          <div className="bg-[#05070c] rounded-2xl p-4 border border-white/5 space-y-2">
-            <div className="w-9 h-9 rounded-xl bg-[#ff007f]/10 text-[#ff007f] flex items-center justify-center border border-[#ff007f]/20">
-              <Cpu className="w-4 h-4" />
-            </div>
-            <h3 className="font-bold text-sm text-white">تقييم عتاد الجيمنج</h3>
-            <p className="text-xs text-gray-400 leading-relaxed">
-              ملخص لأداء الـ FPS، كفاءة التبريد في الصيف، وتجارب اللاعبين الحقيقية.
-            </p>
-          </div>
-
-          <div className="bg-[#05070c] rounded-2xl p-4 border border-white/5 space-y-2">
-            <div className="w-9 h-9 rounded-xl bg-[#00ff9d]/10 text-[#00ff9d] flex items-center justify-center border border-[#00ff9d]/20">
-              <Zap className="w-4 h-4" />
-            </div>
-            <h3 className="font-bold text-sm text-white">تنبيه فوري عند أدنى سعر</h3>
-            <p className="text-xs text-gray-400 leading-relaxed">
-              إشعارات لحظية عبر قناة التليجرام بمجرد تسجيل أي قطعة لأقل سعر في تاريخها.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Telegram Banner */}
-      <section className="bg-gradient-to-r from-[#0088cc]/25 via-[#070b16] to-[#00f0ff]/15 border border-[#0088cc]/30 rounded-3xl p-6 text-white flex flex-col md:flex-row items-center justify-between gap-5">
-        <div className="space-y-1.5 text-center md:text-right">
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#0088cc]/20 text-[#00f0ff] text-[11px] font-bold">
-            <Send className="w-3 h-3" />
-            قناة لقطة على تليجرام
-          </div>
-          <h3 className="text-lg sm:text-xl font-black">
-            لا تفوّت دروبات الأسعار اللحظية في مصر
-          </h3>
-          <p className="text-xs text-gray-300">
-            انضم لمجتمع الجيمرز وكن أول من يعرف بأقوى نزول في أسعار الهاردوير والكونسول.
-          </p>
-        </div>
-
-        <a
-          href="https://t.me/lo2taa"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn-cyber-primary px-5 py-2.5 rounded-xl text-xs flex items-center gap-2 shrink-0"
-        >
-          <span>انضم مجاناً للقناة</span>
-          <Send className="w-3.5 h-3.5" />
-        </a>
       </section>
     </div>
   );

@@ -22,28 +22,31 @@ const AFFILIATE_TAG = process.env.AMAZON_AFFILIATE_TAG || 'lo2taa-21';
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN || '';
 const TELEGRAM_CHANNEL_ID = process.env.TELEGRAM_CHANNEL_ID || '@lo2taa';
 
-// Helper: Infer Category from Title
+// Helper: Infer Category from Title (Discord Focused)
 function inferCategory(title) {
   const t = title.toLowerCase();
-  if (t.includes('monitor') || t.includes('شاشة') || t.includes('curved') || t.includes('144hz') || t.includes('165hz') || t.includes('240hz')) {
-    return { category: 'monitors', category_ar: 'شاشات جيمنج 144Hz+' };
+  if (t.includes('mic') || t.includes('مايك') || t.includes('webcam') || t.includes('كاميرا') || t.includes('stream deck') || t.includes('boom arm') || t.includes('soundcard')) {
+    return { category: 'streaming-voice', category_ar: 'مايكات وصوتيات ديسكورد' };
   }
-  if (t.includes('mouse') || t.includes('ماوس') || t.includes('keyboard') || t.includes('كيبورد') || t.includes('keycap') || t.includes('switch')) {
-    return { category: 'peripherals', category_ar: 'ماوسات وكيبوردات ميكانيكال' };
+  if (t.includes('headset') || t.includes('headphone') || t.includes('سماعة') || t.includes('earbuds') || t.includes('kitty')) {
+    return { category: 'headsets', category_ar: 'سماعات ديسكورد وقيمنق' };
   }
-  if (t.includes('headset') || t.includes('headphone') || t.includes('سماعة') || t.includes('mic') || t.includes('مايك') || t.includes('speaker') || t.includes('soundbar')) {
-    return { category: 'audio-headsets', category_ar: 'سماعات وهيدست محيطي' };
+  if (t.includes('mouse') || t.includes('ماوس') || t.includes('keyboard') || t.includes('كيبورد') || t.includes('switch') || t.includes('keycap') || t.includes('gasket')) {
+    return { category: 'keyboards-mice', category_ar: 'كيبوردات ميكانيكال وماوسات' };
+  }
+  if (t.includes('chair') || t.includes('كرسي') || t.includes('desk') || t.includes('مكتب') || t.includes('rgb') || t.includes('led') || t.includes('mousepad') || t.includes('lightbar') || t.includes('neon') || t.includes('sunset') || t.includes('arm')) {
+    return { category: 'setup-aesthetic', category_ar: 'سيت أب وديكور وإضاءة RGB' };
+  }
+  if (t.includes('monitor') || t.includes('شاشة') || t.includes('144hz') || t.includes('165hz') || t.includes('240hz')) {
+    return { category: 'monitors', category_ar: 'شاشات قيمنق 144Hz+' };
   }
   if (t.includes('laptop') || t.includes('لابتوب') || t.includes('notebook')) {
-    return { category: 'laptops', category_ar: 'لابتوبات جيمنج' };
+    return { category: 'laptops', category_ar: 'لابتوبات قيمنق ومونتاج' };
   }
-  if (t.includes('playstation') || t.includes('ps5') || t.includes('ps4') || t.includes('xbox') || t.includes('nintendo') || t.includes('controller') || t.includes('ذراع') || t.includes('دوال سينس')) {
-    return { category: 'consoles', category_ar: 'بلايستيشن وكروت ألعاب' };
+  if (t.includes('playstation') || t.includes('ps5') || t.includes('ps4') || t.includes('xbox') || t.includes('nintendo') || t.includes('switch') || t.includes('controller') || t.includes('ذراع')) {
+    return { category: 'consoles-handheld', category_ar: 'كونسول واكسسوارات' };
   }
-  if (t.includes('chair') || t.includes('كرسي') || t.includes('desk') || t.includes('مكتب') || t.includes('rgb') || t.includes('led') || t.includes('mousepad') || t.includes('lightbar')) {
-    return { category: 'battlestation', category_ar: 'سيت أب وكراسي وإضاءة RGB' };
-  }
-  return { category: 'pc-hardware', category_ar: 'كروت شاشة وهاردوير PC' };
+  return { category: 'pc-hardware', category_ar: 'تجميعات وهاردوير البي سي' };
 }
 
 // Helper: Scrape Amazon.eg Product
@@ -219,39 +222,24 @@ Example:
 export const MARKETPLACE_SETTINGS: Record<string, MarketplaceSetting> = {
   amazon: {
     key: 'amazon',
-    name: 'Amazon أمازون',
+    name: 'أمازون مصر',
     buttonLabel: 'اقتنص اللقطة من أمازون ⚡',
     primaryColor: '#00f0ff',
     textColor: '#07090e',
     surfaceColor: '#0d1527',
   },
-  noon: {
-    key: 'noon',
-    name: 'نون Noon',
-    buttonLabel: 'اقتنص اللقطة من نون ⚡',
-    primaryColor: '#ffd600',
-    textColor: '#07090e',
-    surfaceColor: '#1f1b0a',
-  },
-  zoka: {
-    key: 'zoka',
-    name: 'ZOKA هاردوير',
-    buttonLabel: 'عرض في ZOKA ⚡',
-    primaryColor: '#ff007f',
-    textColor: '#ffffff',
-    surfaceColor: '#260515',
-  },
 };
 
 export const CATEGORIES = [
-  { id: 'all', name: 'كل صفقات الجيمرز', icon: 'Gamepad2' },
-  { id: 'pc-hardware', name: 'كروت شاشة وهاردوير PC', icon: 'Cpu' },
-  { id: 'monitors', name: 'شاشات جيمنج 144Hz+', icon: 'Monitor' },
-  { id: 'peripherals', name: 'ماوسات وكيبوردات ميكانيكال', icon: 'Keyboard' },
-  { id: 'audio-headsets', name: 'سماعات وهيدست محيطي', icon: 'Headphones' },
-  { id: 'consoles', name: 'بلايستيشن وكروت ألعاب', icon: 'Gamepad' },
-  { id: 'laptops', name: 'لابتوبات جيمنج', icon: 'Laptop' },
-  { id: 'battlestation', name: 'سيت أب وكراسي وإضاءة RGB', icon: 'Sparkles' },
+  { id: 'all', name: 'كل اللقطات', icon: 'Zap' },
+  { id: 'streaming-voice', name: 'مايكات وصوتيات ديسكورد', icon: 'Mic' },
+  { id: 'headsets', name: 'سماعات ديسكورد وقيمنق', icon: 'Headphones' },
+  { id: 'keyboards-mice', name: 'كيبوردات ميكانيكال وماوسات', icon: 'Keyboard' },
+  { id: 'setup-aesthetic', name: 'سيت أب وديكور وإضاءة RGB', icon: 'Sparkles' },
+  { id: 'monitors', name: 'شاشات قيمنق 144Hz+', icon: 'Monitor' },
+  { id: 'pc-hardware', name: 'تجميعات وهاردوير البي سي', icon: 'Cpu' },
+  { id: 'consoles-handheld', name: 'كونسول واكسسوارات', icon: 'Gamepad2' },
+  { id: 'laptops', name: 'لابتوبات قيمنق ومونتاج', icon: 'Laptop' },
 ];
 
 export const PRODUCTS: Product[] = ${JSON.stringify(products, null, 2)};

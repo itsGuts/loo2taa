@@ -50,7 +50,7 @@ async function sendTelegramAlert(product, oldPrice, newPrice, savings, discountP
 
   const storeUrl = product.url.includes('tag=') ? product.url : `${product.url}?tag=${AFFILIATE_TAG}`;
   const lo2taaUrl = `https://loo2taa.vercel.app/products/${product.asin || product.id}`;
-  const storeName = product.store_name || (product.marketplace === 'amazon' ? 'أمازون مصر' : 'نون مصر');
+  const storeName = product.store_name || 'أمازون مصر';
 
   const text = `🔥 <b>لقطة اليوم للجيمرز من LO2TAA!</b>
 
@@ -176,39 +176,24 @@ function syncToTypeScript(products) {
 export const MARKETPLACE_SETTINGS: Record<string, MarketplaceSetting> = {
   amazon: {
     key: 'amazon',
-    name: 'Amazon أمازون',
+    name: 'أمازون مصر',
     buttonLabel: 'اقتنص اللقطة من أمازون ⚡',
     primaryColor: '#00f0ff',
     textColor: '#07090e',
     surfaceColor: '#0d1527',
   },
-  noon: {
-    key: 'noon',
-    name: 'نون Noon',
-    buttonLabel: 'اقتنص اللقطة من نون ⚡',
-    primaryColor: '#ffd600',
-    textColor: '#07090e',
-    surfaceColor: '#1f1b0a',
-  },
-  zoka: {
-    key: 'zoka',
-    name: 'ZOKA هاردوير',
-    buttonLabel: 'عرض في ZOKA ⚡',
-    primaryColor: '#ff007f',
-    textColor: '#ffffff',
-    surfaceColor: '#260515',
-  },
 };
 
 export const CATEGORIES = [
-  { id: 'all', name: 'كل صفقات الجيمرز', icon: 'Gamepad2' },
-  { id: 'pc-hardware', name: 'كروت شاشة وهاردوير PC', icon: 'Cpu' },
-  { id: 'monitors', name: 'شاشات جيمنج 144Hz+', icon: 'Monitor' },
-  { id: 'peripherals', name: 'ماوسات وكيبوردات ميكانيكال', icon: 'Keyboard' },
-  { id: 'audio-headsets', name: 'سماعات وهيدست محيطي', icon: 'Headphones' },
-  { id: 'consoles', name: 'بلايستيشن وكروت ألعاب', icon: 'Gamepad' },
-  { id: 'laptops', name: 'لابتوبات جيمنج', icon: 'Laptop' },
-  { id: 'battlestation', name: 'سيت أب وكراسي وإضاءة RGB', icon: 'Sparkles' },
+  { id: 'all', name: 'كل اللقطات', icon: 'Zap' },
+  { id: 'streaming-voice', name: 'مايكات وصوتيات ديسكورد', icon: 'Mic' },
+  { id: 'headsets', name: 'سماعات ديسكورد وقيمنق', icon: 'Headphones' },
+  { id: 'keyboards-mice', name: 'كيبوردات ميكانيكال وماوسات', icon: 'Keyboard' },
+  { id: 'setup-aesthetic', name: 'سيت أب وديكور وإضاءة RGB', icon: 'Sparkles' },
+  { id: 'monitors', name: 'شاشات قيمنق 144Hz+', icon: 'Monitor' },
+  { id: 'pc-hardware', name: 'تجميعات وهاردوير البي سي', icon: 'Cpu' },
+  { id: 'consoles-handheld', name: 'كونسول واكسسوارات', icon: 'Gamepad2' },
+  { id: 'laptops', name: 'لابتوبات قيمنق ومونتاج', icon: 'Laptop' },
 ];
 
 export const PRODUCTS: Product[] = ${JSON.stringify(products, null, 2)};

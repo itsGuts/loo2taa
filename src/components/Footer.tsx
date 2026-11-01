@@ -69,23 +69,23 @@ export default function Footer() {
             <h4 className="text-xs font-bold text-white uppercase tracking-wider">الأقسام</h4>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link href="/catalog?category=pc-hardware" className="hover:text-[#00f0ff] transition-colors">
-                  كروت شاشة وهاردوير PC
+                <Link href="/catalog?category=streaming-voice" className="hover:text-[#00f0ff] transition-colors">
+                  مايكات وصوتيات ديسكورد
                 </Link>
               </li>
               <li>
-                <Link href="/catalog?category=monitors" className="hover:text-[#00f0ff] transition-colors">
-                  شاشات جيمنج 144Hz+
+                <Link href="/catalog?category=headsets" className="hover:text-[#00f0ff] transition-colors">
+                  سماعات ديسكورد وقيمنق
                 </Link>
               </li>
               <li>
-                <Link href="/catalog?category=peripherals" className="hover:text-[#00f0ff] transition-colors">
+                <Link href="/catalog?category=keyboards-mice" className="hover:text-[#00f0ff] transition-colors">
                   ماوسات وكيبوردات ميكانيكال
                 </Link>
               </li>
               <li>
-                <Link href="/catalog?category=consoles" className="hover:text-[#00f0ff] transition-colors">
-                  بلايستيشن وكروت ألعاب
+                <Link href="/catalog?category=setup-aesthetic" className="hover:text-[#00f0ff] transition-colors">
+                  سيت أب وإضاءة وديكور RGB
                 </Link>
               </li>
             </ul>
