@@ -1,9 +1,8 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import {
-  ShieldCheck,
   Lock,
   RefreshCw,
   Plus,
@@ -75,14 +74,40 @@ export default function AdminPage() {
   const [refreshLoading, setRefreshLoading] = useState(false);
   const [refreshResult, setRefreshResult] = useState<string | null>(null);
 
+  const loadDashboard = useCallback(async (token: string) => {
+    setLoading(true);
+    try {
+      const res = await fetch("/api/admin", {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        setIsAuthenticated(true);
+        setStats(data.stats);
+        setCronLogs(data.cronLogs || []);
+        setProducts(data.products || []);
+      } else {
+        setIsAuthenticated(false);
+        sessionStorage.removeItem("lo2taa_admin_secret");
+      }
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
   // Check saved session on mount
   useEffect(() => {
-    const saved = sessionStorage.getItem("lo2taa_admin_secret");
+    const saved = typeof window !== "undefined" ? sessionStorage.getItem("lo2taa_admin_secret") : null;
     if (saved) {
       setPassword(saved);
       loadDashboard(saved);
     }
-  }, []);
+  }, [loadDashboard]);
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -108,32 +133,6 @@ export default function AdminPage() {
       await loadDashboard(password);
     } catch {
       setAuthError("حدث خطأ أثناء التحقق من الصلاحيات");
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const loadDashboard = async (token: string) => {
-    setLoading(true);
-    try {
-      const res = await fetch("/api/admin", {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
-
-      if (res.ok) {
-        const data = await res.json();
-        setIsAuthenticated(true);
-        setStats(data.stats);
-        setCronLogs(data.cronLogs || []);
-        setProducts(data.products || []);
-      } else {
-        setIsAuthenticated(false);
-        sessionStorage.removeItem("lo2taa_admin_secret");
-      }
-    } catch (err) {
-      console.error(err);
     } finally {
       setLoading(false);
     }
