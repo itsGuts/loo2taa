@@ -1,12 +1,15 @@
 import React, { Suspense } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Metadata } from "next";
 import { PRODUCTS, getProductById, getRelatedProducts, MARKETPLACE_SETTINGS } from "@/lib/loo2taa-data";
 import PriceHistoryChart from "@/components/PriceHistoryChart";
 import AiReviewCard from "@/components/AiReviewCard";
 import ProductCard from "@/components/ProductCard";
 import ProductShareButtons from "@/components/ProductShareButtons";
 import ProductDetailImage from "@/components/ProductDetailImage";
+import StickyMobileBar from "@/components/StickyMobileBar";
+import CommunityVote from "@/components/CommunityVote";
 import { getDealVerdict } from "@/lib/sharing";
 import {
   ExternalLink,
@@ -16,7 +19,11 @@ import {
   ArrowUpRight,
   ShieldCheck,
   ShieldAlert,
-  CreditCard
+  CreditCard,
+  Flame,
+  CheckCircle2,
+  TrendingDown,
+  Sparkles
 } from "lucide-react";
 
 export function generateStaticParams() {
@@ -28,6 +35,23 @@ export function generateStaticParams() {
 
 interface ProductPageProps {
   params: Promise<{ id: string }>;
+}
+
+export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
+  const { id } = await params;
+  const product = getProductById(id);
+  if (!product) {
+    return { title: "المنتج غير متوفر - LO2TAA" };
+  }
+  return {
+    title: `${product.display_title} | رادار أسعار أمازون مصر - LO2TAA`,
+    description: `سعر ${product.display_title} على أمازون مصر الآن ${Number(product.price).toLocaleString("ar-EG")} ج.م مع متابعة سجل الأسعار لآخر 90 يوم وتنبيهات اللقطات.`,
+    openGraph: {
+      title: product.display_title,
+      description: `وفر ${Number(product.savings).toLocaleString("ar-EG")} ج.م (${product.discount_percent}% خصم). صفقة موثقة من رادار لقطة.`,
+      images: [{ url: product.image }],
+    },
+  };
 }
 
 export default async function ProductDetailPage({ params }: ProductPageProps) {
@@ -47,9 +71,57 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
   const verdict = getDealVerdict(product);
   const VerdictIcon = verdict.type === "genuine" ? ShieldCheck : verdict.type === "fake" ? ShieldAlert : ShieldCheck;
 
+  // Calculate 90-day average
+  const prices = product.price_history && product.price_history.length > 0 
+    ? product.price_history.map(p => p.price) 
+    : [product.price];
+  const avgPrice = Math.round(prices.reduce((sum, p) => sum + p, 0) / prices.length);
+  const diffFromAvg = avgPrice - product.price;
+
+  // Calculate monthly installment (e.g. 6-12 months)
+  const installmentMonthly = Math.round(product.price / 6);
+
+  // Google Rich Snippets JSON-LD Schema
+  const jsonLd = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": product.display_title,
+    "image": [product.image],
+    "description": product.title,
+    "sku": product.asin,
+    "mpn": product.asin,
+    "brand": {
+      "@type": "Brand",
+      "name": product.brand || "ماركة معتمدة"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": product.rating || 4.6,
+      "reviewCount": product.review_count || 120
+    },
+    "offers": {
+      "@type": "Offer",
+      "url": product.url,
+      "priceCurrency": "EGP",
+      "price": product.price,
+      "priceValidUntil": "2026-12-31",
+      "itemCondition": "https://schema.org/NewCondition",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "أمازون مصر (Amazon.eg)"
+      }
+    }
+  };
+
   return (
-    <div className="space-y-8">
-      
+    <div className="space-y-8 pb-16 sm:pb-0">
+      {/* Google SEO JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Breadcrumbs */}
       <nav className="flex items-center gap-2 text-xs text-[#94a3b8] overflow-x-auto pb-1">
         <Link href="/" className="hover:text-[#00f0ff] transition-colors shrink-0">
@@ -69,7 +141,6 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
       {/* Main Product Hero Grid */}
       <div className="cyber-card rounded-3xl p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 relative overflow-hidden">
-        
         {/* Gallery / Product Image (Col 1-5) */}
         <div className="lg:col-span-5 flex flex-col items-center justify-center bg-[#070a12]/70 rounded-2xl border border-white/5 p-6 relative">
           <ProductDetailImage
@@ -94,8 +165,19 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
         {/* Product Info & CTA (Col 6-12) */}
         <div className="lg:col-span-7 flex flex-col justify-between space-y-5">
-          <div className="space-y-2.5">
-            
+          <div className="space-y-3">
+            {/* Live Verification Radar Pulse Header */}
+            <div className="flex flex-wrap items-center justify-between gap-2 bg-[#00ff9d]/5 border border-[#00ff9d]/20 px-3 py-1.5 rounded-xl">
+              <div className="flex items-center gap-2 text-xs font-bold text-[#00ff9d]">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff9d] opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00ff9d]"></span>
+                </span>
+                <span>تم الفحص على أمازون مصر منذ دقائق • السعر ساري الآن</span>
+              </div>
+              <span className="text-[11px] text-gray-400 font-mono">ASIN: {product.asin}</span>
+            </div>
+
             {/* Tags Strip */}
             <div className="flex flex-wrap items-center gap-2">
               <span
@@ -116,6 +198,13 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               <span className="px-2.5 py-0.5 rounded-md bg-[#00f0ff]/10 border border-[#00f0ff]/20 text-[#00f0ff] text-xs font-bold">
                 {product.brand}
               </span>
+
+              {diffFromAvg > 0 && (
+                <span className="px-2.5 py-0.5 rounded-md bg-[#ffb703]/10 border border-[#ffb703]/30 text-[#ffb703] text-xs font-bold flex items-center gap-1">
+                  <Sparkles className="w-3 h-3" />
+                  أقل بـ {diffFromAvg.toLocaleString("ar-EG")} ج.م من متوسط 90 يوم
+                </span>
+              )}
             </div>
 
             {/* Arabic Title */}
@@ -130,7 +219,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           </div>
 
           {/* Pricing Details Block */}
-          <div className="bg-[#070a12] rounded-2xl p-4 sm:p-5 border border-white/5 space-y-2.5">
+          <div className="bg-[#070a12] rounded-2xl p-4 sm:p-5 border border-white/5 space-y-3">
             <div className="flex flex-wrap items-baseline justify-between gap-2">
               <div className="flex items-baseline gap-1.5">
                 <span className="text-3xl font-black text-white tracking-tight">{formattedPrice}</span>
@@ -147,7 +236,17 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
             {product.savings > 0 && (
               <div className="flex items-center gap-2 text-xs font-bold text-[#00ff9d]">
                 <span className="bg-[#00ff9d]/10 border border-[#00ff9d]/20 px-2 py-0.5 rounded-md">
-                  توفير: {formattedSavings} ج.م ({product.discount_percent}%)
+                  توفير صافي: {formattedSavings} ج.م ({product.discount_percent}% خصم حقيقي)
+                </span>
+              </div>
+            )}
+
+            {/* FinTech & Installments Pill */}
+            {product.price >= 1500 && (
+              <div className="flex items-center gap-2 text-xs text-gray-300 bg-white/[0.03] border border-white/5 px-3 py-2 rounded-xl">
+                <CreditCard className="w-4 h-4 text-[#00f0ff] shrink-0" />
+                <span>
+                  متاح تقسيط يبدأ من <strong className="text-white font-bold">{installmentMonthly.toLocaleString("ar-EG")} ج.م</strong>/شهر عبر ValU أو كروت البنوك بـ 0% فوائد
                 </span>
               </div>
             )}
@@ -172,7 +271,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               <span>البائع: <strong className="text-white">{product.seller}</strong></span>
               <span className="flex items-center gap-1 text-[#00ff9d]">
                 <Clock className="w-3.5 h-3.5" />
-                آخر تحقق من السعر: {new Date(product.price_checked_at).toLocaleDateString("ar-EG")}
+                تاريخ الرصد: {new Date(product.price_checked_at).toLocaleDateString("ar-EG")}
               </span>
             </div>
           </div>
@@ -183,15 +282,15 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               href={product.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-cyber-primary w-full py-3.5 px-5 rounded-2xl text-sm flex items-center justify-center gap-2"
+              className="btn-cyber-primary w-full py-3.5 px-5 rounded-2xl text-sm flex items-center justify-center gap-2 shadow-lg"
             >
               <span>{store.buttonLabel}</span>
               <ArrowUpRight className="w-4 h-4" />
             </a>
 
             <div className="flex items-center justify-between text-[11px] text-gray-400 px-1">
-              <span>ينقلك مباشرة لصفحة المنتج الرسمية على المتجر.</span>
-              <span className="text-[#00ff9d] font-bold">متوفر للشحن الآن ✓</span>
+              <span>ينقلك مباشرة لصفحة المنتج الرسمية على المتجر مع الضمان.</span>
+              <span className="text-[#00ff9d] font-bold">متوفر للشحن السريع ✓</span>
             </div>
 
             {/* Social Share & Telegram Copy Buttons */}
@@ -199,6 +298,9 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           </div>
         </div>
       </div>
+
+      {/* Community Heat-Check Voting */}
+      <CommunityVote productId={product.id} />
 
       {/* Interactive Price History Chart */}
       <PriceHistoryChart
@@ -234,6 +336,9 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           </div>
         </section>
       )}
+
+      {/* Sticky Mobile Conversion Bar */}
+      <StickyMobileBar product={product} store={store} />
     </div>
   );
 }

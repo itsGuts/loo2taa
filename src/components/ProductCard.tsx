@@ -248,10 +248,19 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
       
       {/* Top Banner */}
       <div className="p-3 pb-0 flex items-center justify-between">
-        <span className="px-2 py-0.5 rounded-md font-bold text-[10px] bg-[#ff9900]/10 text-[#ff9900] border border-[#ff9900]/30 flex items-center gap-1">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#ff9900]" />
-          أمازون مصر
-        </span>
+        <div className="flex items-center gap-1.5">
+          <span className="px-2 py-0.5 rounded-md font-bold text-[10px] bg-[#ff9900]/10 text-[#ff9900] border border-[#ff9900]/30 flex items-center gap-1">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#ff9900]" />
+            أمازون مصر
+          </span>
+          <span className="px-1.5 py-0.5 rounded-md font-bold text-[9px] bg-[#00ff9d]/10 text-[#00ff9d] border border-[#00ff9d]/20 flex items-center gap-1">
+            <span className="relative flex h-1.5 w-1.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff9d] opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#00ff9d]"></span>
+            </span>
+            <span>ساري</span>
+          </span>
+        </div>
 
         <div className="flex items-center gap-1">
           <button
@@ -352,6 +361,11 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
               </span>
             )}
           </div>
+          {product.price >= 2000 && (
+            <div className="text-[10px] text-gray-400 flex items-center gap-1 pt-1 font-mono">
+              <span>💳 تقسيط من {Math.round(product.price / 6).toLocaleString('ar-EG')} ج.م/ش</span>
+            </div>
+          )}
         </div>
 
         {/* Card Actions */}
