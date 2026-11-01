@@ -62,9 +62,6 @@ function CatalogInner() {
     }
 
     switch (filters.sort) {
-      case "price-changed":
-        list.sort((a, b) => new Date(b.price_checked_at).getTime() - new Date(a.price_checked_at).getTime());
-        break;
       case "discount-desc":
         list.sort((a, b) => b.discount_percent - a.discount_percent);
         break;
@@ -88,21 +85,20 @@ function CatalogInner() {
 
   return (
     <div className="space-y-6">
-      
       {/* Header Banner */}
       <div className="cyber-card rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
           <h1 className="text-2xl sm:text-3xl font-black text-white flex items-center gap-2.5">
             <Cpu className="w-6 h-6 text-[#00f0ff]" />
-            كتالوج عتاد الديسكورد والجيمنج
+            كتالوج صفقات هاردوير البي سي والجيمنج
           </h1>
           <p className="text-xs text-gray-400 mt-1">
-            تصفح جميع الصفقات المحدثة للمايكات، السماعات، الكيبوردات، وإكسسوارات السيت أب في مصر
+            تصفح جميع الصفقات المحدثة لقطع وهاردوير البي سي، كروت الشاشة، المعالجات، الشاشات، وإكسسوارات السيت أب في مصر
           </p>
         </div>
 
-        <div className="text-xs font-black px-3 py-1.5 rounded-full bg-[#00f0ff]/10 text-[#00f0ff] border border-[#00f0ff]/20 self-start sm:self-auto">
-          {filteredProducts.length} قطعة متوفرة
+        <div className="text-xs font-black px-3.5 py-1.5 rounded-full bg-[#00f0ff]/10 text-[#00f0ff] border border-[#00f0ff]/20 self-start sm:self-auto shadow-sm">
+          {filteredProducts.length} صفقة متوفرة
         </div>
       </div>
 
@@ -129,23 +125,19 @@ function CatalogInner() {
             onClick={() => setFilters({ sort: "newest" })}
             className="mt-2 px-4 py-2 btn-cyber-primary text-xs rounded-xl"
           >
-            إعادة الضبط
+            إعادة تعيين الفلاتر
           </button>
         </div>
       ) : (
         <div
           className={
             viewMode === "grid"
-              ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
-              : "space-y-3"
+              ? "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6"
+              : "space-y-4"
           }
         >
-          {filteredProducts.map((product) => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              viewMode={viewMode}
-            />
+          {filteredProducts.map((p) => (
+            <ProductCard key={p.id} product={p} viewMode={viewMode} />
           ))}
         </div>
       )}
@@ -155,7 +147,13 @@ function CatalogInner() {
 
 export default function CatalogPage() {
   return (
-    <Suspense fallback={<div className="p-12 text-center text-xs text-gray-400">جاري تحميل الصفقات...</div>}>
+    <Suspense
+      fallback={
+        <div className="cyber-card rounded-3xl p-12 text-center text-gray-400 text-xs animate-pulse">
+          جاري تحميل الكتالوج...
+        </div>
+      }
+    >
       <CatalogInner />
     </Suspense>
   );

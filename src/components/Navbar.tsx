@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import {
-  Search,
+  Search, Sparkles,
   Heart,
   Menu,
   X,
@@ -100,6 +100,13 @@ export default function Navbar() {
               <TrendingDown className="w-3.5 h-3.5 text-[#00ff9d]" />
               عروض أمازون مصر
             </Link>
+            <Link
+              href="/inspect"
+              className="text-[#ff9900] hover:text-white transition-colors flex items-center gap-1 px-2.5 py-1 rounded-xl bg-[#ff9900]/10 border border-[#ff9900]/30"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-[#ff9900]" />
+              فاحص الصفقات 🔍
+            </Link>
           </nav>
 
           {/* Right Actions */}
@@ -176,6 +183,14 @@ export default function Navbar() {
                 className="p-2.5 rounded-xl bg-[#0b101c] text-white hover:text-[#00f0ff] border border-white/5"
               >
                 عروض أمازون
+              </Link>
+              <Link
+                href="/inspect"
+                onClick={() => setMobileMenuOpen(false)}
+                className="col-span-2 p-2.5 rounded-xl bg-[#ff9900]/10 text-[#ff9900] hover:text-white border border-[#ff9900]/30 flex items-center justify-center gap-1.5"
+              >
+                <Sparkles className="w-3.5 h-3.5 text-[#ff9900]" />
+                فاحص صفقات أمازون مصر الذكي ⚡
               </Link>
               <Link
                 href="/favorites"

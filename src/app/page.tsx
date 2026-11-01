@@ -6,6 +6,7 @@ import { PRODUCTS } from "@/lib/loo2taa-data";
 import { FilterOptions } from "@/lib/types";
 import ProductCard from "@/components/ProductCard";
 import FilterBar from "@/components/FilterBar";
+import DealInspector from "@/components/DealInspector";
 import {
   TrendingDown,
   Zap,
@@ -134,6 +135,20 @@ export default function HomePage() {
           {/* Quick Category Jump Chips */}
           <div className="flex flex-wrap items-center gap-2 pt-1 text-xs font-bold">
             <button
+              onClick={() => setFilters({ category: 'pc-hardware' })}
+              className="px-3 py-1.5 rounded-xl bg-[#00f0ff]/15 hover:bg-[#00f0ff]/25 text-[#00f0ff] border border-[#00f0ff]/30 flex items-center gap-1.5 transition-colors font-black shadow-sm"
+            >
+              <Cpu className="w-3.5 h-3.5 text-[#00f0ff]" />
+              قطع وهاردوير البي سي 🔥
+            </button>
+            <button
+              onClick={() => setFilters({ category: 'monitors' })}
+              className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-200 border border-white/5 flex items-center gap-1.5 transition-colors"
+            >
+              <Monitor className="w-3.5 h-3.5 text-[#00ff9d]" />
+              شاشات الجيمنج
+            </button>
+            <button
               onClick={() => setFilters({ category: 'streaming-voice' })}
               className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-200 border border-white/5 flex items-center gap-1.5 transition-colors"
             >
@@ -180,6 +195,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Safqa-Style Instant Deal Inspector */}
+      <DealInspector />
 
       {/* Main Filter & Explorer */}
       <section className="space-y-4">

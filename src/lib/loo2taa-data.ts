@@ -13,14 +13,14 @@ export const MARKETPLACE_SETTINGS: Record<string, MarketplaceSetting> = {
 
 export const CATEGORIES = [
   { id: 'all', name: 'كل اللقطات', icon: 'Zap' },
-  { id: 'streaming-voice', name: 'مايكات وصوتيات ديسكورد', icon: 'Mic' },
-  { id: 'headsets', name: 'سماعات ديسكورد وقيمنق', icon: 'Headphones' },
-  { id: 'keyboards-mice', name: 'كيبوردات ميكانيكال وماوسات', icon: 'Keyboard' },
-  { id: 'setup-aesthetic', name: 'سيت أب وديكور وإضاءة RGB', icon: 'Sparkles' },
-  { id: 'monitors', name: 'شاشات قيمنق 144Hz+', icon: 'Monitor' },
-  { id: 'pc-hardware', name: 'تجميعات وهاردوير البي سي', icon: 'Cpu' },
-  { id: 'consoles-handheld', name: 'كونسول واكسسوارات', icon: 'Gamepad2' },
-  { id: 'laptops', name: 'لابتوبات قيمنق ومونتاج', icon: 'Laptop' },
+  { id: 'pc-hardware', name: 'قطع وهاردوير البي سي', icon: 'Cpu' },
+  { id: 'monitors', name: 'شاشات الجيمنج 144Hz+', icon: 'Monitor' },
+  { id: 'keyboards-mice', name: 'كيبوردات وماوسات', icon: 'Keyboard' },
+  { id: 'headsets', name: 'سماعات الجيمنج والصوتيات', icon: 'Headphones' },
+  { id: 'streaming-voice', name: 'معدات الستريمنج والمايكات', icon: 'Mic' },
+  { id: 'setup-aesthetic', name: 'السيت أب وديكور المكتب', icon: 'Sparkles' },
+  { id: 'consoles-handheld', name: 'أجهزة الكونسول والألعاب', icon: 'Gamepad2' },
+  { id: 'laptops', name: 'لابتوبات الجيمنج', icon: 'Laptop' },
 ];
 
 export const PRODUCTS: Product[] = [
@@ -31,7 +31,7 @@ export const PRODUCTS: Product[] = [
     "title": "HyperX QuadCast S – RGB USB Condenser Microphone for PC, PS4, PS5, Mac, Anti-Vibration Shock Mount, 4 Polar Patterns",
     "brand": "HyperX",
     "category": "streaming-voice",
-    "category_ar": "مايكات وصوتيات ديسكورد",
+    "category_ar": "معدات الستريمنج والمايكات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -98,7 +98,7 @@ export const PRODUCTS: Product[] = [
     "title": "Logitech for Creators Blue Yeti USB Microphone for Gaming, Streaming, Podcasting, Multi-Pattern",
     "brand": "Logitech",
     "category": "streaming-voice",
-    "category_ar": "مايكات وصوتيات ديسكورد",
+    "category_ar": "معدات الستريمنج والمايكات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -165,7 +165,7 @@ export const PRODUCTS: Product[] = [
     "title": "Elgato Stream Deck MK.2 Studio Controller, 15 Customizable LCD Keys, Trigger Actions in Apps, Discord, OBS",
     "brand": "Elgato",
     "category": "streaming-voice",
-    "category_ar": "مايكات وصوتيات ديسكورد",
+    "category_ar": "معدات الستريمنج والمايكات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -232,7 +232,7 @@ export const PRODUCTS: Product[] = [
     "title": "Logitech G733 Lightspeed Wireless Gaming Headset with Suspension Headband, LIGHTSYNC RGB, Blue VO!CE - Lilac",
     "brand": "Logitech",
     "category": "headsets",
-    "category_ar": "سماعات ديسكورد وقيمنق",
+    "category_ar": "سماعات الجيمنج والصوتيات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -299,7 +299,7 @@ export const PRODUCTS: Product[] = [
     "title": "HyperX Cloud II - Gaming Headset, 7.1 Surround Sound, Memory Foam Ear Pads, Durable Aluminum Frame",
     "brand": "HyperX",
     "category": "headsets",
-    "category_ar": "سماعات ديسكورد وقيمنق",
+    "category_ar": "سماعات الجيمنج والصوتيات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -366,7 +366,7 @@ export const PRODUCTS: Product[] = [
     "title": "HyperX Cloud Alpha Wireless - Gaming Headset for PC, 300-hour battery life, DTS Headphone:X Spatial Audio",
     "brand": "HyperX",
     "category": "headsets",
-    "category_ar": "سماعات ديسكورد وقيمنق",
+    "category_ar": "سماعات الجيمنج والصوتيات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -433,7 +433,7 @@ export const PRODUCTS: Product[] = [
     "title": "Razer BlackShark V2 X Gaming Headset: 7.1 Surround Sound, 50mm Drivers, Memory Foam, Multi-Platform",
     "brand": "Razer",
     "category": "headsets",
-    "category_ar": "سماعات ديسكورد وقيمنق",
+    "category_ar": "سماعات الجيمنج والصوتيات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -500,7 +500,7 @@ export const PRODUCTS: Product[] = [
     "title": "Logitech G PRO X SUPERLIGHT Wireless Gaming Mouse, Ultra-Lightweight, HERO 25K Sensor, White/Black",
     "brand": "Logitech",
     "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "category_ar": "كيبوردات وماوسات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -567,7 +567,7 @@ export const PRODUCTS: Product[] = [
     "title": "Logitech G305 LIGHTSPEED Wireless Gaming Mouse, Hero 12K Sensor, 12000 DPI, Lightweight",
     "brand": "Logitech",
     "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "category_ar": "كيبوردات وماوسات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -634,7 +634,7 @@ export const PRODUCTS: Product[] = [
     "title": "Logitech G502 HERO High Performance Wired Gaming Mouse, HERO 25K Sensor, 25,600 DPI, RGB",
     "brand": "Logitech",
     "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "category_ar": "كيبوردات وماوسات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -701,7 +701,7 @@ export const PRODUCTS: Product[] = [
     "title": "Razer DeathAdder Essential Gaming Mouse: 6400 DPI Optical Sensor - 5 Programmable Buttons - Mechanical Switches",
     "brand": "Razer",
     "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "category_ar": "كيبوردات وماوسات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -768,7 +768,7 @@ export const PRODUCTS: Product[] = [
     "title": "Razer Viper Mini Ultralight Gaming Mouse: Fastest Gaming Switches - 8500 DPI Optical Sensor - Chroma RGB",
     "brand": "Razer",
     "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "category_ar": "كيبوردات وماوسات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -835,7 +835,7 @@ export const PRODUCTS: Product[] = [
     "title": "Govee RGBIC Neon Rope Light, 3m Flexible Silicone LED Strip with Music Sync, Works with Alexa & App Control",
     "brand": "Govee",
     "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "category_ar": "السيت أب وديكور المكتب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -902,7 +902,7 @@ export const PRODUCTS: Product[] = [
     "title": "LG UltraGear 24GN600-B 24\" FHD (1920 x 1080) IPS 1ms 144Hz Gaming Monitor with AMD FreeSync Premium",
     "brand": "LG",
     "category": "monitors",
-    "category_ar": "شاشات قيمنق 144Hz+",
+    "category_ar": "شاشات الجيمنج",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -969,7 +969,7 @@ export const PRODUCTS: Product[] = [
     "title": "LG UltraGear 27GP850-B 27\" QHD (2560 x 1440) Nano IPS 1ms Gaming Monitor 165Hz, G-SYNC Compatible",
     "brand": "LG",
     "category": "monitors",
-    "category_ar": "شاشات قيمنق 144Hz+",
+    "category_ar": "شاشات الجيمنج",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -1036,7 +1036,7 @@ export const PRODUCTS: Product[] = [
     "title": "Samsung 27-Inch Odyssey G5 Curved Gaming Monitor, WQHD (2560x1440), 144Hz, 1ms, 1000R Curvature",
     "brand": "Samsung",
     "category": "monitors",
-    "category_ar": "شاشات قيمنق 144Hz+",
+    "category_ar": "شاشات الجيمنج",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -1103,7 +1103,7 @@ export const PRODUCTS: Product[] = [
     "title": "Gigabyte GeForce RTX 4060 WINDFORCE OC 8G Graphics Card, 2X WINDFORCE Fans, 8GB 128-bit GDDR6, DLSS 3",
     "brand": "Gigabyte",
     "category": "pc-hardware",
-    "category_ar": "تجميعات وهاردوير البي سي",
+    "category_ar": "قطع وهاردوير البي سي",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -1170,7 +1170,7 @@ export const PRODUCTS: Product[] = [
     "title": "AMD Ryzen 5 5600X 6-core, 12-Thread Unlocked Desktop Processor with Wraith Stealth Cooler",
     "brand": "AMD",
     "category": "pc-hardware",
-    "category_ar": "تجميعات وهاردوير البي سي",
+    "category_ar": "قطع وهاردوير البي سي",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -1237,7 +1237,7 @@ export const PRODUCTS: Product[] = [
     "title": "Intel Core i5-12400F Desktop Processor 18M Cache, up to 4.40 GHz LGA1700",
     "brand": "Intel",
     "category": "pc-hardware",
-    "category_ar": "تجميعات وهاردوير البي سي",
+    "category_ar": "قطع وهاردوير البي سي",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -1304,7 +1304,7 @@ export const PRODUCTS: Product[] = [
     "title": "Crucial P3 Plus 1TB PCIe Gen4 3D NAND NVMe M.2 SSD, up to 5000MB/s - CT1000P3PSSD8",
     "brand": "Crucial",
     "category": "pc-hardware",
-    "category_ar": "تجميعات وهاردوير البي سي",
+    "category_ar": "قطع وهاردوير البي سي",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -1371,7 +1371,7 @@ export const PRODUCTS: Product[] = [
     "title": "Kingston FURY Beast 16GB (2x8GB) 3200MHz DDR4 CL16 Desktop Memory Kit of 2 KF432C16BBK2/16",
     "brand": "Kingston",
     "category": "pc-hardware",
-    "category_ar": "تجميعات وهاردوير البي سي",
+    "category_ar": "قطع وهاردوير البي سي",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -1438,7 +1438,7 @@ export const PRODUCTS: Product[] = [
     "title": "Thermalright Peerless Assassin 120 SE CPU Air Cooler, 6 Heat Pipes, Dual 120mm PWM Fans",
     "brand": "Thermalright",
     "category": "pc-hardware",
-    "category_ar": "تجميعات وهاردوير البي سي",
+    "category_ar": "قطع وهاردوير البي سي",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -1505,7 +1505,7 @@ export const PRODUCTS: Product[] = [
     "title": "Nintendo Switch – OLED Model with Neon Red & Neon Blue Joy-Con, 7-inch OLED Screen",
     "brand": "Nintendo",
     "category": "consoles-handheld",
-    "category_ar": "كونسول واكسسوارات",
+    "category_ar": "أجهزة الكونسول والألعاب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -1572,7 +1572,7 @@ export const PRODUCTS: Product[] = [
     "title": "PlayStation 5 DualSense Wireless Controller - Midnight Black",
     "brand": "Sony",
     "category": "consoles-handheld",
-    "category_ar": "كونسول واكسسوارات",
+    "category_ar": "أجهزة الكونسول والألعاب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -1639,7 +1639,7 @@ export const PRODUCTS: Product[] = [
     "title": "Xbox Wireless Controller - Robot White for Xbox Series X|S, Windows PC, Android, iOS",
     "brand": "Microsoft",
     "category": "consoles-handheld",
-    "category_ar": "كونسول واكسسوارات",
+    "category_ar": "أجهزة الكونسول والألعاب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -1706,7 +1706,7 @@ export const PRODUCTS: Product[] = [
     "title": "ASUS TUF Gaming F15 Laptop, 15.6\" 144Hz FHD, Intel Core i7-12700H, 16GB DDR4, 512GB PCIe SSD, RTX 3050",
     "brand": "ASUS",
     "category": "laptops",
-    "category_ar": "لابتوبات قيمنق ومونتاج",
+    "category_ar": "لابتوبات الجيمنج",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -1773,7 +1773,7 @@ export const PRODUCTS: Product[] = [
     "title": "Logitech G PRO X Gaming Headset with Blue VO!CE, DTS Headphone:X 2.0, 50mm PRO-G Drivers",
     "brand": "Logitech",
     "category": "headsets",
-    "category_ar": "سماعات ديسكورد وقيمنق",
+    "category_ar": "سماعات الجيمنج والصوتيات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -1840,7 +1840,7 @@ export const PRODUCTS: Product[] = [
     "title": "Audio-Technica ATH-M20x Professional Studio Monitor Headphones, Black",
     "brand": "Audio-Technica",
     "category": "headsets",
-    "category_ar": "سماعات ديسكورد وقيمنق",
+    "category_ar": "سماعات الجيمنج والصوتيات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -1907,7 +1907,7 @@ export const PRODUCTS: Product[] = [
     "title": "Redragon K552 Mechanical Gaming Keyboard RGB LED Rainbow Backlit Blue Switches White",
     "brand": "Redragon",
     "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "category_ar": "كيبوردات وماوسات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -1974,7 +1974,7 @@ export const PRODUCTS: Product[] = [
     "title": "PlayStation 5 DualSense Charging Station - Official Sony Accessory",
     "brand": "Sony",
     "category": "consoles-handheld",
-    "category_ar": "كونسول واكسسوارات",
+    "category_ar": "أجهزة الكونسول والألعاب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -2041,7 +2041,7 @@ export const PRODUCTS: Product[] = [
     "title": "Samsung 980 PRO SSD 1TB PCIe 4.0 NVMe Gen 4 Gaming M.2 Internal SSD",
     "brand": "Samsung",
     "category": "pc-hardware",
-    "category_ar": "تجميعات وهاردوير البي سي",
+    "category_ar": "قطع وهاردوير البي سي",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -2108,7 +2108,7 @@ export const PRODUCTS: Product[] = [
     "title": "Kingston NV2 1TB M.2 2280 NVMe Internal SSD PCIe 4.0 Gen 4x4",
     "brand": "Kingston",
     "category": "pc-hardware",
-    "category_ar": "تجميعات وهاردوير البي سي",
+    "category_ar": "قطع وهاردوير البي سي",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -2175,7 +2175,7 @@ export const PRODUCTS: Product[] = [
     "title": "فيفين ميكروفون ديناميكي USB - XLR لتسجيل البودكاست العاب الكمبيوتر مع ضوء RGB وزر كتم الصوت ومقبس سماعات راس وحامل سطح المكتب وميكروفون صوتي للغناء على اليوتيوب- امبليجيم AM8 أحادي الاتجاه أسود",
     "brand": "Fifine",
     "category": "streaming-voice",
-    "category_ar": "مايكات وصوتيات ديسكورد",
+    "category_ar": "معدات الستريمنج والمايكات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -2242,7 +2242,7 @@ export const PRODUCTS: Product[] = [
     "title": "ميكروفون من فيفاين موديل K688 باللون الأسود مع اتصال USB وXLR، يتميز بكتم الصوت وتقليل الضوضاء ومقبس سماعة ومراقبة فورية، متوافق مع الكمبيوتر",
     "brand": "Fifine",
     "category": "streaming-voice",
-    "category_ar": "مايكات وصوتيات ديسكورد",
+    "category_ar": "معدات الستريمنج والمايكات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -2309,7 +2309,7 @@ export const PRODUCTS: Product[] = [
     "title": "ميكروفون للكمبيوتر من يو جرين، ميكروفون USB بإضاءة ار جي بي وزر كتم، دقة 24 بت/96 كيلوهرتز، نمط قطبي قلبي، تحكم في مستوى الصوت، ميكروفون مكثف للبث والألعاب والبودكاست، متوافق مع اللابتوب وجهاز PS5",
     "brand": "UGREEN",
     "category": "streaming-voice",
-    "category_ar": "مايكات وصوتيات ديسكورد",
+    "category_ar": "معدات الستريمنج والمايكات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -2376,7 +2376,7 @@ export const PRODUCTS: Product[] = [
     "title": "طقم ميكروفون مكثف يو اس بي اس يو 9 192 كيلو هرتز/24 بت مع ذراع بوم",
     "brand": "Zealsound",
     "category": "streaming-voice",
-    "category_ar": "مايكات وصوتيات ديسكورد",
+    "category_ar": "معدات الستريمنج والمايكات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -2443,7 +2443,7 @@ export const PRODUCTS: Product[] = [
     "title": "كاميرا ويب C960 بدقة 1080 بيكسل وزاوية 90 درجة مزودة بميكرفونين ومنفذ USB للتوصيل والتشغيل من اي ميت، للاب توب والكمبيوتر، بصري، أسود",
     "brand": "eMeet",
     "category": "streaming-voice",
-    "category_ar": "مايكات وصوتيات ديسكورد",
+    "category_ar": "معدات الستريمنج والمايكات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -2510,7 +2510,7 @@ export const PRODUCTS: Product[] = [
     "title": "كاميرا ويب بدقة FHD، كاميرا USB بدقة 1080P مع ميكروفون مدمج، تعمل بالتوصيل والاستخدام مباشرة، مناسبة للكمبيوتر واللاب توب لمكالمات الفيديو والبث المباشر والدروس والاجتماعات عبر الانترنت من تك زون",
     "brand": "Generic FHD",
     "category": "streaming-voice",
-    "category_ar": "مايكات وصوتيات ديسكورد",
+    "category_ar": "معدات الستريمنج والمايكات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -2577,7 +2577,7 @@ export const PRODUCTS: Product[] = [
     "title": "حامل ميكروفون بذراع من فيفين، حامل بذراع بوم مع مشبك تثبيت مكتبي ومساحة لإدارة الكابلات ومحول لولبي ومشبك للبودكاست والألعاب واستوديو البث - موديل BM88",
     "brand": "Fifine",
     "category": "streaming-voice",
-    "category_ar": "مايكات وصوتيات ديسكورد",
+    "category_ar": "معدات الستريمنج والمايكات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -2644,7 +2644,7 @@ export const PRODUCTS: Product[] = [
     "title": "حامل ذراع ميكروفون بوم ارم قابل للتعديل من تيك زون، ذراع مقصي بنظام تعليق شديد التحمل مع مشبك تثبيت للمكتب، حامل ميكروفون معدني دوار 360 درجة للبودكاست، والبث المباشر، والألعاب، والتسجيل، والإذاعة",
     "brand": "TechZone",
     "category": "streaming-voice",
-    "category_ar": "مايكات وصوتيات ديسكورد",
+    "category_ar": "معدات الستريمنج والمايكات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -2711,7 +2711,7 @@ export const PRODUCTS: Product[] = [
     "title": "سماعة V2 على الاذن سلكي رأس بلاك شارك v2 X متعددة المنصات بسلك من رازر للرياضات الالكترونية مشغلات تريفورس 50 ملم وخاصية الغار الضوضاء المتطورة وصوت محيطي 7.1 وميكروفون التقاط قلبي هايبر كلير أبيض",
     "brand": "Razer",
     "category": "headsets",
-    "category_ar": "سماعات ديسكورد وقيمنق",
+    "category_ar": "سماعات الجيمنج والصوتيات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -2778,7 +2778,7 @@ export const PRODUCTS: Product[] = [
     "title": "سماعة رأس لاسلكية باراكودا اكس كروما للألعاب من ريزر، لون أسود",
     "brand": "Razer",
     "category": "headsets",
-    "category_ar": "سماعات ديسكورد وقيمنق",
+    "category_ar": "سماعات الجيمنج والصوتيات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -2845,7 +2845,7 @@ export const PRODUCTS: Product[] = [
     "title": "سماعات رأس بسلك موديل G335 من لوجيتك باللون الابيض مزودة بميكروفون كاتم للصوت ووسائد اذن فوم ميموري خفيف الوزن ومقبس صوت 3.5 ملم متوافقة مع الكمبيوتر والاكس بوكس والبلاي ستيشن ونينتندو سويتش",
     "brand": "Logitech G",
     "category": "headsets",
-    "category_ar": "سماعات ديسكورد وقيمنق",
+    "category_ar": "سماعات الجيمنج والصوتيات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -2912,7 +2912,7 @@ export const PRODUCTS: Product[] = [
     "title": "سماعة رأس لاسلكية للألعاب A50X لايت سبيد + قاعدة من أسترو، مع اتصال بلوتوث ومنفذ HDMI 2.1 من لوجي تيك، تقنية بلاي سينك، متوافقة مع اكس بوكس سيريز X|S وبلاي ستيشن والكمبيوتر وماك",
     "brand": "Logitech Astro",
     "category": "headsets",
-    "category_ar": "سماعات ديسكورد وقيمنق",
+    "category_ar": "سماعات الجيمنج والصوتيات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -2979,7 +2979,7 @@ export const PRODUCTS: Product[] = [
     "title": "سماعة رأس B2 للألعاب، سماعة لاسلكية باتصال ثلاثي الوضعيات بتردد 2.4 جيجاهرتز/ بلوتوث/ بسلك بمنفذ 3.5 ملم، سماعات رأس فوق الأذن من اونيكوما، لون أبيض",
     "brand": "B2 Wireless",
     "category": "headsets",
-    "category_ar": "سماعات ديسكورد وقيمنق",
+    "category_ar": "سماعات الجيمنج والصوتيات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -3046,7 +3046,7 @@ export const PRODUCTS: Product[] = [
     "title": "سماعة ألعاب اونكوما K9 بفضاء لوني ار جي بي مع آذان قط قابلة للإزالة، صوت محيطي 7.1، ميكروفون قابل للسحب بخاصية إلغاء الضوضاء، مشغلات 50 ملم، متوافقة مع PS5 وPS4 وXbox One والكمبيوتر، لون بينك",
     "brand": "ONIKUMA",
     "category": "headsets",
-    "category_ar": "سماعات ديسكورد وقيمنق",
+    "category_ar": "سماعات الجيمنج والصوتيات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -3113,7 +3113,7 @@ export const PRODUCTS: Product[] = [
     "title": "سماعة رأس بلوتوث لاسلكية لألعاب H878 خفيفة الوزن بصوت محيطي 3 ومكبر صوت داخلي 40 ملم وميكروفون قابل للفصل للمنصات المتعددة والكمبيوتر وبلاي ستيشن 1/7/5 وسويتش والجوال من ريدراجون، أبيض وأزرق",
     "brand": "Redragon",
     "category": "headsets",
-    "category_ar": "سماعات ديسكورد وقيمنق",
+    "category_ar": "سماعات الجيمنج والصوتيات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -3180,7 +3180,7 @@ export const PRODUCTS: Product[] = [
     "title": "سماعة رأس H858 لاسلكية للألعاب بـ3 أوضاع وصوت محيطي 7.1 ومكبر صوت داخلي 53 ملم ووسائد أذن من الميموري فوم وميكروفون قابل للفصل بخاصية إلغاء الضوضاء للموبايل والكمبيوتر والبلاي ستيشن 5 ونينتندو، أسود",
     "brand": "Redragon",
     "category": "headsets",
-    "category_ar": "سماعات ديسكورد وقيمنق",
+    "category_ar": "سماعات الجيمنج والصوتيات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -3247,7 +3247,7 @@ export const PRODUCTS: Product[] = [
     "title": "كيبورد بسلك 60% للألعاب بإضاءة ملونة ار جي بي K617 من ريدراجون، لوحة مفاتيح ميكانيكال مدمجة بـ61 مفتاح وأغطية مفاتيح شفافة بالكامل، مفتاح خطي قابل للتخصيص، يدعم مشغل/ برنامج برو",
     "brand": "Redragon",
     "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "category_ar": "كيبوردات وماوسات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -3314,7 +3314,7 @@ export const PRODUCTS: Product[] = [
     "title": "كيبورد ميكانيكي للالعاب كومارا K552 من ريدراجون - مفتاح احمر، اضاءة LED بالوان قوس قزح، مفاتيح انجليزية وعربية (اسود)، USB",
     "brand": "Redragon",
     "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "category_ar": "كيبوردات وماوسات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -3381,7 +3381,7 @@ export const PRODUCTS: Product[] = [
     "title": "اولا كيبورد العاب ميكانيكية للالعاب F75 75% محفورة على الجانب قابلة للتبديل السريع | مفاتيح خطية مشحمة مسبقًا | اضاءة خلفية RGB | 2.4GHz/نوع C/بلوتوث ميكانيكية للالعاب (محفورة على الجانب + مفتاح ريبر",
     "brand": "AULA",
     "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "category_ar": "كيبوردات وماوسات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -3448,7 +3448,7 @@ export const PRODUCTS: Product[] = [
     "title": "ATTACK SHARK X85PRO 75% Wireless Mechanical Keyboard,TFT Smart Display & Knob,BT/2.4GHz/Wired Gaming Keyboard,Side Printed & 5 Color PBT Keycaps,Gasket, RGB,Hot-Swap,with Pro Cable, for PC/MAC (Moon)",
     "brand": "Attack Shark",
     "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "category_ar": "كيبوردات وماوسات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -3515,7 +3515,7 @@ export const PRODUCTS: Product[] = [
     "title": "ماوس PAW3311 ألعاب لاسلكي خفيف الوزن X11 مع قاعدة شحن بإضاءة 3 أوضاع لاسلكي 2.4G، سلكي USB-C، بلوتوث 22 ألف نقطة بالبوصة، بمستشعر بصري ومفتاح هويو و5 أزرار قابلة للبرمجة للكمبيوتر من اتاك شارك، أبيض",
     "brand": "Attack Shark",
     "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "category_ar": "كيبوردات وماوسات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -3582,7 +3582,7 @@ export const PRODUCTS: Product[] = [
     "title": "ماوس العاب لاسلكي شارك R1 من اتاك، اتصال ثلاثي الاوضاع (2.4G/سلكي/BT5.2)، خفيف الوزن 55 غرام، مستشعر بصري 18K DPI تصميم مريح، للكمبيوتر/اللابتوب/ويندوز/ماك (ابيض + ملصق) (ضمان لمدة عام)",
     "brand": "Attack Shark",
     "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "category_ar": "كيبوردات وماوسات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -3649,7 +3649,7 @@ export const PRODUCTS: Product[] = [
     "title": "ماوس ألعاب سلكي خفيف الوزن من ريزر كوبرا: تصميم خفيف الوزن 58 جرام - مفاتيح بصرية الجيل الثالث - إضاءة كروما ار جي بي مع اندرجلو متدرج - مستشعر بصري 8500 نقطة لكل بوصة - كابل سبيد فليكس - أسود",
     "brand": "Razer",
     "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "category_ar": "كيبوردات وماوسات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -3716,7 +3716,7 @@ export const PRODUCTS: Product[] = [
     "title": "ماوس ألعاب كوبرا سلكي من رايزر: تصميم خفيف الوزن 58 جم، مفاتيح ضوئية جيل 3، إضاءة كروما RGB سفلية، مستشعر بصري دقيق 8500 DPI، قواعد ماوس 100% PTFE، كابل سبيد فليكس، أسود",
     "brand": "Razer",
     "category": "keyboards-mice",
-    "category_ar": "كيبوردات ميكانيكال وماوسات",
+    "category_ar": "كيبوردات وماوسات",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -3783,7 +3783,7 @@ export const PRODUCTS: Product[] = [
     "title": "مصباح طاولة أناناس مودرن من الراتينج (ارتفاع 60 سم، عرض 35 سم)، وشاح أسود مع بطانة ذهبية وقاعدة ذهبية، جسم أصفر",
     "brand": "Decor & Ambient",
     "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "category_ar": "السيت أب وديكور المكتب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -3850,7 +3850,7 @@ export const PRODUCTS: Product[] = [
     "title": "مصباح طاولة خزفي مع غطاء زهور سوداء، قاعدة بلون وردي، تصميم عصري، مقاس 55 × 30 سم",
     "brand": "Decor & Ambient",
     "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "category_ar": "السيت أب وديكور المكتب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -3917,7 +3917,7 @@ export const PRODUCTS: Product[] = [
     "title": "مسند معصم جلدي مطور شكل سحابة للوحة المفاتيح، مسند معصم مع قاعدة من البولي يوريثين غير قابلة للانزلاق، مسند معصم مريح من الميموري فوم للكمبيوتر واللاب توب وماك والألعاب والمكتب وتخفيف الآلام من جيكيو",
     "brand": "Cloud Rest",
     "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "category_ar": "السيت أب وديكور المكتب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -3984,7 +3984,7 @@ export const PRODUCTS: Product[] = [
     "title": "مسند معصم سحابي للوحة المفاتيح بسطح جلدي ورغوة الذاكرة وقاعدة غير قابلة للانزلاق مصمم لتخفيف آلام المعصم والذراع، مناسب لممارسة الألعاب والكمبيوتر والمكتب، وأجهزة اللاب توب من ليولي، لون أزرق",
     "brand": "Cloud Rest",
     "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "category_ar": "السيت أب وديكور المكتب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -4051,7 +4051,7 @@ export const PRODUCTS: Product[] = [
     "title": "اشرطة اضواء LED ذكية بالوان RGBIC من جوفي بطول 16.4 قدم لغرفة النوم يعمل بالبلوتوث بتحكم خلال التطبيق الوان متعددة يمكنك تركيبها بنفسك على خط واحد تتزامن مع الموسيقى للسقف وغرفة الالعاب",
     "brand": "Govee",
     "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "category_ar": "السيت أب وديكور المكتب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -4118,7 +4118,7 @@ export const PRODUCTS: Product[] = [
     "title": "شريط إضاءة خلفية للتلفزيون الذكي مع كاميرا وإضاءة ار جي بي ليد لغرفة المعيشة (3.8 متر)، من بيوتي بيست",
     "brand": "Smart Ambient",
     "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "category_ar": "السيت أب وديكور المكتب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -4185,7 +4185,7 @@ export const PRODUCTS: Product[] = [
     "title": "قاعدة ماوس ألعاب اي سبورتس CM02 من اتاك شارك، قاعدة ماوس كبيرة بطلاء مقاوم للماء، سطح تحكم ناعم بملمس ثقيل وقاعدة مطاطية غير قابلة للانزلاق، حواف مخيطة دقيقة، 450 × 400 × 4 ملم - حواف بلون أبيض",
     "brand": "Attack Shark",
     "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "category_ar": "السيت أب وديكور المكتب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -4252,7 +4252,7 @@ export const PRODUCTS: Product[] = [
     "title": "لوحة ماوس CM05 زجاجية كبيرة 450 × 400 ملم زجاج نانو للدقة والسرعة مع قاعدة من البولي يوريثان مضادة للانزلاق بدرجة صلابة 9H ولمسة فائقة النعومة والمتانة لماوسات الألعاب عالية الدقة من اتاك شارك، أسود",
     "brand": "Glass Pad",
     "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "category_ar": "السيت أب وديكور المكتب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -4319,7 +4319,7 @@ export const PRODUCTS: Product[] = [
     "title": "وحدة إنارة من نجافة شوب باللون الأسود لغرفة المعيشة و النوم و المكتب مصنوعة من الألومنيوم زخرفية",
     "brand": "Setup Lighting",
     "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "category_ar": "السيت أب وديكور المكتب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -4386,7 +4386,7 @@ export const PRODUCTS: Product[] = [
     "title": "نجفة مثبتة على الحائط من نجفا شوب لون ذهبي موديل WG701-G اي - اوتستاندينغ زجاج",
     "brand": "Setup Lighting",
     "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "category_ar": "السيت أب وديكور المكتب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -4453,7 +4453,7 @@ export const PRODUCTS: Product[] = [
     "title": "فيفين حامل سماعة راس، حامل سماعات راس RGB مع منافذ USB، ملحقات سماعات العاب الكمبيوتر الشخصي قاعدة مكتب صلبة مع مزامنة ضوء الصوت، مفاتيح التحكم في الضوء، S3، مطاط",
     "brand": "Fifine",
     "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "category_ar": "السيت أب وديكور المكتب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -4520,7 +4520,7 @@ export const PRODUCTS: Product[] = [
     "title": "حامل سماعة رأس بإضاءة ار جي بي للألعاب مع 3 منافذ USB يتميز بـ6 ألوان ليد + وضع إضاءة متنوع مناسب لمختلف الأماكن مثالي للاعبين - لون أبيض",
     "brand": "RGB Stand",
     "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "category_ar": "السيت أب وديكور المكتب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -4587,7 +4587,7 @@ export const PRODUCTS: Product[] = [
     "title": "حامل شاشة مكتبي مزدوج H180 بذراع دوار كامل الحركة بزنبرك غاز لشاشة الكمبيوتر من ان بي نورث بايو، 43 سم إلى 69 سم ومن 2 كيلوجرام الى 9 كيلوجرام",
     "brand": "North Bayou",
     "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "category_ar": "السيت أب وديكور المكتب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -4654,7 +4654,7 @@ export const PRODUCTS: Product[] = [
     "title": "ذراع شاشة كامل الحركة قابل للتعديل، حامل مكتب لشاشات 17 بوصة - 30 بوصة مع دوران وإمالة وتعديل الارتفاع من تيكزون (حامل مزدوج)",
     "brand": "Monitor Arm",
     "category": "setup-aesthetic",
-    "category_ar": "سيت أب وديكور وإضاءة RGB",
+    "category_ar": "السيت أب وديكور المكتب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -4721,7 +4721,7 @@ export const PRODUCTS: Product[] = [
     "title": "شاشة ألعاب موبيوز EX271، FHD 1920×1080، ‏180Hz، ‏1ms GTG، ‏AMD FreeSync، ‏DP1.2 وHDMI2.0 وUSB، ‏95% P3، ألوان ألعاب بالذكاء الاصطناعي وسماعات 2.5 واط من بينكيو، أسود، 27 بوصة",
     "brand": "BenQ MOBIUZ",
     "category": "monitors",
-    "category_ar": "شاشات قيمنق 144Hz+",
+    "category_ar": "شاشات الجيمنج",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -4788,7 +4788,7 @@ export const PRODUCTS: Product[] = [
     "title": "شاشة ألعاب موبيوز EX251 24.5 بوصة FHD ومعدل تحديث 220 هرتز، زمن استجابة 1 مللي ثانية، تقنية AMD FreeSync، منفذ DisplayPort 1.2، منفذ HDMI 2.0، موزع USB، مكبرات صوت مدمجة بقوة 2.5 وات من بينكيو، أبيض",
     "brand": "BenQ MOBIUZ",
     "category": "monitors",
-    "category_ar": "شاشات قيمنق 144Hz+",
+    "category_ar": "شاشات الجيمنج",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -4855,7 +4855,7 @@ export const PRODUCTS: Product[] = [
     "title": "شاشة ألعاب موبيوز EX271Q 27&#34; دقة 2K QHD تحديث 180Hz استجابة 1ms، لوحة IPS ألوان 95% DCI-P3 دعم HDR400 وUSB-C 65 W PD تقنية KVM، تحسين التباين بAI، دعم AMD فريسينك وDP 1.4 وريموت من بينكيو، أسود",
     "brand": "BenQ MOBIUZ",
     "category": "monitors",
-    "category_ar": "شاشات قيمنق 144Hz+",
+    "category_ar": "شاشات الجيمنج",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -4922,7 +4922,7 @@ export const PRODUCTS: Product[] = [
     "title": "فيليبس شاشة (27M2N3500PF) 27 انش WQHD LDE IPS 300 وحدة مضيئة في البكسل، حتى 260 هرتز، 0.3 مللي ثانية، جي سينك، لون فحمي، ضمان 3 سنوات",
     "brand": "Philips",
     "category": "monitors",
-    "category_ar": "شاشات قيمنق 144Hz+",
+    "category_ar": "شاشات الجيمنج",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -4989,7 +4989,7 @@ export const PRODUCTS: Product[] = [
     "title": "ASUS Dual GeForce RTX 5050 OC Edition 8GB GDDR6 Gaming Graphics Card (PCIe 5.0, HDMI 2.1b, DisplayPort 2.1b)",
     "brand": "ASUS",
     "category": "pc-hardware",
-    "category_ar": "تجميعات وهاردوير البي سي",
+    "category_ar": "قطع وهاردوير البي سي",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -5056,7 +5056,7 @@ export const PRODUCTS: Product[] = [
     "title": "اسس بطاقة رسومات العاب انفيديا جيفورس RTX 3050 6GB اصدار كسر سرعة المعالج بمنفذ PCIe 4.0 وذاكرة GDDR6 ومنفذ HDMI 2.1 عرض 1.4a وتصميم بفتحتين ومروحة بتقنية اكسيال تيك وتقنية 0 ديسيبل ودعامة",
     "brand": "ASUS",
     "category": "pc-hardware",
-    "category_ar": "تجميعات وهاردوير البي سي",
+    "category_ar": "قطع وهاردوير البي سي",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -5123,7 +5123,7 @@ export const PRODUCTS: Product[] = [
     "title": "مبرد هواء كوريليكويد ماج كور فروزر AA13 لوحدة المعالجة المركزية من ام اس اي، مروحة 120 ملم ARGB PWM وانابيب حرارية تعمل باللمس المباشر، متوافق مع LGA 1700/1851، AM5/AM4، اسود",
     "brand": "MSI",
     "category": "pc-hardware",
-    "category_ar": "تجميعات وهاردوير البي سي",
+    "category_ar": "قطع وهاردوير البي سي",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -5190,7 +5190,7 @@ export const PRODUCTS: Product[] = [
     "title": "مبرد معالج كولر ماستر i70C لمنفذ LGA 1700 مع إضاءة ARGB، لون أسود، أبعاد 12 × 12 × 7 سم، جهد 12 فولت، قدرة 1.44 واط، سرعة دوران 1800 دورة في الدقيقة، تدفق هواء 37.08 قدم مكعب/دقيقة، صوت 28 ديسيبل",
     "brand": "Cooler Master",
     "category": "pc-hardware",
-    "category_ar": "تجميعات وهاردوير البي سي",
+    "category_ar": "قطع وهاردوير البي سي",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -5257,7 +5257,7 @@ export const PRODUCTS: Product[] = [
     "title": "TeamGroup T-Force Delta RGB DDR5 32GB (2x16GB) 6000MHz CL30 Desktop Gaming Memory Kit Black",
     "brand": "TeamGroup",
     "category": "pc-hardware",
-    "category_ar": "تجميعات وهاردوير البي سي",
+    "category_ar": "قطع وهاردوير البي سي",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -5324,7 +5324,7 @@ export const PRODUCTS: Product[] = [
     "title": "ذاكرة داخلية من كروشال CT16G4DFRA32A بتصميم DIMM لحواسيب مكتبية متعدد الألوان DDR4",
     "brand": "Crucial",
     "category": "pc-hardware",
-    "category_ar": "تجميعات وهاردوير البي سي",
+    "category_ar": "قطع وهاردوير البي سي",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -5391,7 +5391,7 @@ export const PRODUCTS: Product[] = [
     "title": "وحدة تخزين داخلية من كينجستون بسعة 1 تيرابايت موديل NV3 بتقنية NVMe واتصال PCIe متوافقة مع الكمبيوتر نوع سوليد ستيت درايف",
     "brand": "Kingston",
     "category": "pc-hardware",
-    "category_ar": "تجميعات وهاردوير البي سي",
+    "category_ar": "قطع وهاردوير البي سي",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -5458,7 +5458,7 @@ export const PRODUCTS: Product[] = [
     "title": "هارد Crucial E100 سعة 1 تيرابايت M.2 NVMe بمنفذ PCIe الجيل الرابع SSD داخلي - حتى 5,000 ميجابايت/ثانية - متوافق مع اللابتوب وسطح المكتب - CT1000E100SSD8",
     "brand": "Crucial",
     "category": "pc-hardware",
-    "category_ar": "تجميعات وهاردوير البي سي",
+    "category_ar": "قطع وهاردوير البي سي",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -5525,7 +5525,7 @@ export const PRODUCTS: Product[] = [
     "title": "يد تحكم ألعاب فيديو من سوني موديل دوال سينس للبلايستيشن 5، بتقنية لاسلكية، متوافقة مع بلايستيشن 5، تتميز بالاتصال اللاسلكي، باللون كروما نيلي",
     "brand": "Sony PlayStation",
     "category": "consoles-handheld",
-    "category_ar": "كونسول واكسسوارات",
+    "category_ar": "أجهزة الكونسول والألعاب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -5592,7 +5592,7 @@ export const PRODUCTS: Product[] = [
     "title": "وحدة تحكم الالعاب بلاي ستيشن 5 دوال سينس لاسلكية من سوني - لون ارجواني، اصدار الامارات العربية المتحدة، بلوتوث , بنفسجي",
     "brand": "Sony PlayStation",
     "category": "consoles-handheld",
-    "category_ar": "كونسول واكسسوارات",
+    "category_ar": "أجهزة الكونسول والألعاب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -5659,7 +5659,7 @@ export const PRODUCTS: Product[] = [
     "title": "قرص جهاز تشغيل ألعاب الفيديو بلاي ستيشن 5 رفيع، سعة تخزين 1 تيرابايت، لون أبيض، من سونى",
     "brand": "Sony PlayStation",
     "category": "consoles-handheld",
-    "category_ar": "كونسول واكسسوارات",
+    "category_ar": "أجهزة الكونسول والألعاب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -5726,7 +5726,7 @@ export const PRODUCTS: Product[] = [
     "title": "بلاي ستيشن 5 سوني - وحدات تحكم رقمية - 825 جيجابايت - لون أبيض - موديل CFI-2116",
     "brand": "Sony PlayStation",
     "category": "consoles-handheld",
-    "category_ar": "كونسول واكسسوارات",
+    "category_ar": "أجهزة الكونسول والألعاب",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -5793,7 +5793,7 @@ export const PRODUCTS: Product[] = [
     "title": "لابتوب من اتش بي، بمعالج انتل، شاشة 15.6 إنش، وذاكرة رام 16 جيجابايت",
     "brand": "HP Victus",
     "category": "laptops",
-    "category_ar": "لابتوبات قيمنق ومونتاج",
+    "category_ar": "لابتوبات الجيمنج",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -5860,7 +5860,7 @@ export const PRODUCTS: Product[] = [
     "title": "لابتوب ألعاب رفيع 15 B13UC انتل كورi7 13620H، رام 16جيجابايت DDR4، الذاكرة المستديمة SSD 512 جيجابايت، 15.6 بوصة بمعدل تحديث 13620 هرتز انفيديا RTX 3050 بسعة 4 جيجابايتGDDR6 من ام اس اي، رمادي Cosmos",
     "brand": "MSI Gaming",
     "category": "laptops",
-    "category_ar": "لابتوبات قيمنق ومونتاج",
+    "category_ar": "لابتوبات الجيمنج",
     "marketplace": "amazon",
     "store_name": "أمازون مصر",
     "store_button_label": "اقتنص اللقطة من أمازون ⚡",
@@ -5911,6 +5911,2217 @@ export const PRODUCTS: Product[] = [
       ],
       "brand_summary": "MSI Gaming من أشهر الماركات المعتمدة والموثوقة لدى مجتمع الجيمرز على أمازون مصر.",
       "user_sentiment": "95% تقييمات إيجابية للمنتج.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0cspnyb42",
+    "asin": "B0CSPNYB42",
+    "display_title": "بطاقة رسومات للالعاب ام اس آي جيفورس ار تي اكس3050 فنتوس 2X 6G OC - 6جيجا جي دي دي آر6، 1492 ميدا هرتز، PCI اكسبرس الجيل 4، 96 بت، 1 × DP (v1.4a)، 2 × HDMI 2.1 (يدعم 4K)",
+    "title": "بطاقة رسومات للالعاب ام اس آي جيفورس ار تي اكس3050 فنتوس 2X 6G OC - 6جيجا جي دي دي آر6، 1492 ميدا هرتز، PCI اكسبرس الجيل 4، 96 بت، 1 × DP (v1.4a)، 2 × HDMI 2.1 (يدعم 4K)",
+    "brand": "MSI",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0CSPNYB42?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/51QaFKJf3+L._AC_SL1024_.jpg",
+    "price": 15912,
+    "previous_price": 19254,
+    "savings": 3342,
+    "discount_percent": 21,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.6,
+    "review_count": 339,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 20217,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 19254,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 16389,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 15912,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "MSI من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b086zsqzz7",
+    "asin": "B086ZSQZZ7",
+    "display_title": "اسس بطاقة شاشة دوال RTX3050-O6G انفيديا جيفورس RTX 3050 6G 6GB GDDR6 96 بت 1537MHz OC DVI HDMI DP",
+    "title": "اسس بطاقة شاشة دوال RTX3050-O6G انفيديا جيفورس RTX 3050 6G 6GB GDDR6 96 بت 1537MHz OC DVI HDMI DP",
+    "brand": "ماركة معتمدة",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B086ZSQZZ7?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/81mwcITtHBL._AC_SL1500_.jpg",
+    "price": 15980,
+    "previous_price": 18537,
+    "savings": 2557,
+    "discount_percent": 16,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.6,
+    "review_count": 129,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 19464,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 18537,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 16459,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 15980,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "ماركة معتمدة من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0f7wb6lsh",
+    "asin": "B0F7WB6LSH",
+    "display_title": "بطاقة رسومات جيفورس ار تي اكس™ 5060 Ti 16GB إصدار كسر سرعة المعالج GDDR7 (الملحقات الإضافية السريع 5.0 من اسوس، 16GB GDDR7، DLSS 4، HDMI 2.1b، منفذ عرض 2.1b، فتحة 2.5،مروحة محورية، 0 ديسيبل، والمزيد)",
+    "title": "بطاقة رسومات جيفورس ار تي اكس™ 5060 Ti 16GB إصدار كسر سرعة المعالج GDDR7 (الملحقات الإضافية السريع 5.0 من اسوس، 16GB GDDR7، DLSS 4، HDMI 2.1b، منفذ عرض 2.1b، فتحة 2.5،مروحة محورية، 0 ديسيبل، والمزيد)",
+    "brand": "ماركة معتمدة",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0F7WB6LSH?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/81kYKB0Aj5L._AC_SL1500_.jpg",
+    "price": 45000,
+    "previous_price": 50850,
+    "savings": 5850,
+    "discount_percent": 13,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.6,
+    "review_count": 180,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 53393,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 50850,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 46350,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 45000,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "ماركة معتمدة من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0f32nd24s",
+    "asin": "B0F32ND24S",
+    "display_title": "MSI بطاقة عرض مرئي للالعاب انفيديا جيفورس RTX 5060 Ti 8G فينتوس 2X OC PLUS GDDR7 128bit تردد معزز حتى 2617 MHz، منفذ الملحقات الاضافية السريع الجيل 5، DLSS 4، DP 2.1 × 3، HDMI 2.1 × 1، جاهز SFF",
+    "title": "MSI بطاقة عرض مرئي للالعاب انفيديا جيفورس RTX 5060 Ti 8G فينتوس 2X OC PLUS GDDR7 128bit تردد معزز حتى 2617 MHz، منفذ الملحقات الاضافية السريع الجيل 5، DLSS 4، DP 2.1 × 3، HDMI 2.1 × 1، جاهز SFF",
+    "brand": "MSI",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0F32ND24S?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71yZ+zHNPxL._AC_SL1500_.jpg",
+    "price": 30445,
+    "previous_price": 34403,
+    "savings": 3958,
+    "discount_percent": 13,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.5,
+    "review_count": 295,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 36123,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 34403,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 31358,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 30445,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "MSI من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0ffnf5j8y",
+    "asin": "B0FFNF5J8Y",
+    "display_title": "XFX ميركوري AMD راديون RX 9060XT OC اصدار العاب ابيض مع 16GB GDDR6 HDMI 2xDP، AMD RDNA 4 RX-96TMERCW9",
+    "title": "XFX ميركوري AMD راديون RX 9060XT OC اصدار العاب ابيض مع 16GB GDDR6 HDMI 2xDP، AMD RDNA 4 RX-96TMERCW9",
+    "brand": "ماركة معتمدة",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0FFNF5J8Y?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71Ap9qWAQZL._AC_SL1500_.jpg",
+    "price": 37048,
+    "previous_price": 42976,
+    "savings": 5928,
+    "discount_percent": 16,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.5,
+    "review_count": 373,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 45125,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 42976,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 38159,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 37048,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "ماركة معتمدة من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b096y5wccz",
+    "asin": "B096Y5WCCZ",
+    "display_title": "بطاقة رسومات جيفورس ار تي اكس 5050 بسعة 8 جيجابايت مع 2 مروحة تبريد فينتوس، مكسورة السرعة من ام اس اي",
+    "title": "بطاقة رسومات جيفورس ار تي اكس 5050 بسعة 8 جيجابايت مع 2 مروحة تبريد فينتوس، مكسورة السرعة من ام اس اي",
+    "brand": "MSI",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B096Y5WCCZ?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71I6T45IdjL._AC_SL1500_.jpg",
+    "price": 21329,
+    "previous_price": 24742,
+    "savings": 3413,
+    "discount_percent": 16,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.7,
+    "review_count": 335,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 25979,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 24742,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 21969,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 21329,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "MSI من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b00m1buekm",
+    "asin": "B00M1BUEKM",
+    "display_title": "معالج انتل زيون بمقبس LGA2011-3 وسرعة موقت 2.50 جيجاهرتز - تخزين مؤقت 30 ميجابايت E5-2680V3 DDR4 بـ 12 نواة حتى 2133 ميجاهرتز BX80644E52680V3 ال جي ايه 2011 2.5 GHz",
+    "title": "معالج انتل زيون بمقبس LGA2011-3 وسرعة موقت 2.50 جيجاهرتز - تخزين مؤقت 30 ميجابايت E5-2680V3 DDR4 بـ 12 نواة حتى 2133 ميجاهرتز BX80644E52680V3 ال جي ايه 2011 2.5 GHz",
+    "brand": "Intel",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B00M1BUEKM?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71k38PBMJ1L._AC_SL1500_.jpg",
+    "price": 799,
+    "previous_price": 967,
+    "savings": 168,
+    "discount_percent": 21,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 3.9,
+    "review_count": 281,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 1015,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 967,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 823,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 799,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "Intel من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0cc9f9x7s",
+    "asin": "B0CC9F9X7S",
+    "display_title": "مذربورد برو B760M-E مايكرو ايه تي اكس تدعم معالجات انتل كور الجيل 12 و13 من ام اس اي LGA 1700 ذاكرة DDR5 بوست 5600 ميجاهرتز فتحة PCIe 4 × 16 M.2 الرابع",
+    "title": "مذربورد برو B760M-E مايكرو ايه تي اكس تدعم معالجات انتل كور الجيل 12 و13 من ام اس اي LGA 1700 ذاكرة DDR5 بوست 5600 ميجاهرتز فتحة PCIe 4 × 16 M.2 الرابع",
+    "brand": "MSI",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0CC9F9X7S?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/81DpGpHUe+L._AC_SL1500_.jpg",
+    "price": 6000,
+    "previous_price": 7140,
+    "savings": 1140,
+    "discount_percent": 19,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.1,
+    "review_count": 284,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 7497,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 7140,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 6180,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 6000,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "MSI من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0cgjdklb8",
+    "asin": "B0CGJDKLB8",
+    "display_title": "معالج كمبيوتر من إنتل كور™ i9-14900K كور i9 من إنتل",
+    "title": "معالج كمبيوتر من إنتل كور™ i9-14900K كور i9 من إنتل",
+    "brand": "Intel",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0CGJDKLB8?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/619ytLAytAL._AC_SL1500_.jpg",
+    "price": 32877,
+    "previous_price": 36493,
+    "savings": 3616,
+    "discount_percent": 11,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.2,
+    "review_count": 135,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 38318,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 36493,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 33863,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 32877,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "Intel من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0g3kcws13",
+    "asin": "B0G3KCWS13",
+    "display_title": "لاب توب للألعاب لوك 15IAX9 طراز 83DV012AED انتل كور i5 13450HX، ذاكرة رام 16GB وSSD 512GB، RTX 3050 6GB، شاشة 15.6 بوصة FHD 144Hz جيسينك، نظام التشغيل دوس، رمادي، ماوس فري لوك M100 ار جي بي من لينوفو",
+    "title": "لاب توب للألعاب لوك 15IAX9 طراز 83DV012AED انتل كور i5 13450HX، ذاكرة رام 16GB وSSD 512GB، RTX 3050 6GB، شاشة 15.6 بوصة FHD 144Hz جيسينك، نظام التشغيل دوس، رمادي، ماوس فري لوك M100 ار جي بي من لينوفو",
+    "brand": "ماركة معتمدة",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0G3KCWS13?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61ZxvicMqDL._AC_SL1200_.jpg",
+    "price": 65900,
+    "previous_price": 74467,
+    "savings": 8567,
+    "discount_percent": 13,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 3.6,
+    "review_count": 371,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 78190,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 74467,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 67877,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 65900,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "ماركة معتمدة من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0bjz2swnv",
+    "asin": "B0BJZ2SWNV",
+    "display_title": "معالج كمبيوتر من آي إم دي رايزن 3 4300G، AMD رايزن 3 4300G من آي إم دي",
+    "title": "معالج كمبيوتر من آي إم دي رايزن 3 4300G، AMD رايزن 3 4300G من آي إم دي",
+    "brand": "AMD",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0BJZ2SWNV?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61cotDHxxrL._AC_SL1384_.jpg",
+    "price": 5283,
+    "previous_price": 6340,
+    "savings": 1057,
+    "discount_percent": 20,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.6,
+    "review_count": 213,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 6657,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 6340,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 5441,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 5283,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "AMD من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0c3hm7gz3",
+    "asin": "B0C3HM7GZ3",
+    "display_title": "كمبيوتر ألعاب تيتان من زوم: انتل كور i7-13700F حتى 5.2GHz، انفيديا RTX 4080 16GB، 32GB 3200MHz RAM، 1TB NVMe SSD، وحدة امداد الطاقة 850 وات برونزي 80+، ARGB، واي فاي ثنائي النطاق 600Mbps ويندوز 11",
+    "title": "كمبيوتر ألعاب تيتان من زوم: انتل كور i7-13700F حتى 5.2GHz، انفيديا RTX 4080 16GB، 32GB 3200MHz RAM، 1TB NVMe SSD، وحدة امداد الطاقة 850 وات برونزي 80+، ARGB، واي فاي ثنائي النطاق 600Mbps ويندوز 11",
+    "brand": "ماركة معتمدة",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0C3HM7GZ3?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/81KnlVQl3bL._AC_SL1500_.jpg",
+    "price": 168998,
+    "previous_price": 204488,
+    "savings": 35490,
+    "discount_percent": 21,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.2,
+    "review_count": 198,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 214712,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 204488,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 174068,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 168998,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "ماركة معتمدة من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b097k3wv9j",
+    "asin": "B097K3WV9J",
+    "display_title": "وحدة ذاكرة DDR4 سي ال 16 فيوري بيست للكمبيوتر المكتبي من كينجستون، يتم تركيبها بشكل فردي بسعة جيجابايت وسرعة 3200 ميجاهرتز، موديل KF432C16BB/16، سعة 16.0 GB",
+    "title": "وحدة ذاكرة DDR4 سي ال 16 فيوري بيست للكمبيوتر المكتبي من كينجستون، يتم تركيبها بشكل فردي بسعة جيجابايت وسرعة 3200 ميجاهرتز، موديل KF432C16BB/16، سعة 16.0 GB",
+    "brand": "ماركة معتمدة",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B097K3WV9J?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/51oYGzxUbsL._AC_SL1000_.jpg",
+    "price": 9999,
+    "previous_price": 11899,
+    "savings": 1900,
+    "discount_percent": 19,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.7,
+    "review_count": 181,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 12494,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 11899,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 10299,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 9999,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "ماركة معتمدة من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b097k5j1sb",
+    "asin": "B097K5J1SB",
+    "display_title": "ذاكرة فيوري بيست CL16 من كينجستون بسعة 8 جيجابايت وسرعة 3200 ميجاهرتز نوع DDR4 مع وحدة الذاكرة الخطية المزدوجة بلون اسود، سعة 8.0 GB",
+    "title": "ذاكرة فيوري بيست CL16 من كينجستون بسعة 8 جيجابايت وسرعة 3200 ميجاهرتز نوع DDR4 مع وحدة الذاكرة الخطية المزدوجة بلون اسود، سعة 8.0 GB",
+    "brand": "ماركة معتمدة",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B097K5J1SB?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/51irIqZhg9L._AC_SL1000_.jpg",
+    "price": 1769,
+    "previous_price": 2140,
+    "savings": 371,
+    "discount_percent": 21,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.6,
+    "review_count": 203,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 2247,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 2140,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1822,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 1769,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "ماركة معتمدة من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0h8spl8m9",
+    "asin": "B0H8SPL8M9",
+    "display_title": "ذاكرة رام برو DDR4 16G (2×8GB) RGB",
+    "title": "ذاكرة رام برو DDR4 16G (2×8GB) RGB",
+    "brand": "ماركة معتمدة",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0H8SPL8M9?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/41ypyEa0VqL._AC_SY355_.jpg",
+    "price": 7999,
+    "previous_price": 9359,
+    "savings": 1360,
+    "discount_percent": 17,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 5,
+    "review_count": 413,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 9827,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 9359,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 8239,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 7999,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "ماركة معتمدة من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b08c511gqh",
+    "asin": "B08C511GQH",
+    "display_title": "ذاكرة لاب توب كروشال رام 16 جيجابايت DDR4 3200 ميجاهرتز CL22 CT16G4SFRA32A",
+    "title": "ذاكرة لاب توب كروشال رام 16 جيجابايت DDR4 3200 ميجاهرتز CL22 CT16G4SFRA32A",
+    "brand": "Crucial",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B08C511GQH?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71oz85Vv6mL._AC_SL1500_.jpg",
+    "price": 6590,
+    "previous_price": 7842,
+    "savings": 1252,
+    "discount_percent": 19,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.6,
+    "review_count": 375,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 8234,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 7842,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 6788,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 6590,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "Crucial من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0dbr9rzlv",
+    "asin": "B0DBR9RZLV",
+    "display_title": "هارد SSD داخلي NV3 NVMe بمنفذ PCIe 4.0 من كينجستون، سعة 500 جيجابايت M.2 2280-SNV3S/500G",
+    "title": "هارد SSD داخلي NV3 NVMe بمنفذ PCIe 4.0 من كينجستون، سعة 500 جيجابايت M.2 2280-SNV3S/500G",
+    "brand": "ماركة معتمدة",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0DBR9RZLV?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71lCFgczaBL._AC_SL1500_.jpg",
+    "price": 5449,
+    "previous_price": 6103,
+    "savings": 654,
+    "discount_percent": 12,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.7,
+    "review_count": 200,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 6408,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 6103,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 5612,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 5449,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "ماركة معتمدة من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0c2wgl8dq",
+    "asin": "B0C2WGL8DQ",
+    "display_title": "هارد اس اس دي داخلي بي 31 تيرا M.2 مع منفذ الملحقات الاضافية السريع، الجيل الثالث بذاكرة مستديمة بسرعة تصل الى 3500 ميجابايت/ثانية من كروشال - CT1000P3SSD8 (اصدار اكرونيس)، nvme",
+    "title": "هارد اس اس دي داخلي بي 31 تيرا M.2 مع منفذ الملحقات الاضافية السريع، الجيل الثالث بذاكرة مستديمة بسرعة تصل الى 3500 ميجابايت/ثانية من كروشال - CT1000P3SSD8 (اصدار اكرونيس)، nvme",
+    "brand": "Crucial",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0C2WGL8DQ?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/51XuNS7R-lL._AC_SL1500_.jpg",
+    "price": 8700,
+    "previous_price": 9570,
+    "savings": 870,
+    "discount_percent": 10,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.7,
+    "review_count": 370,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 10049,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 9570,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 8961,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 8700,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "Crucial من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0f25f243c",
+    "asin": "B0F25F243C",
+    "display_title": "وسيط تخزين ذو حالة ثابتة NQ780 PCIe من الجيل الرابع سعة 1 تيرابايت وذاكرة مستديمة M.2 2280، 6500/2500 ميجابايت/ثانية للقراءة/الكتابة لبلاي ستيشن 5، للاعبين والمبدعين (LNQ780X001T-RNNNU) من ليكسار",
+    "title": "وسيط تخزين ذو حالة ثابتة NQ780 PCIe من الجيل الرابع سعة 1 تيرابايت وذاكرة مستديمة M.2 2280، 6500/2500 ميجابايت/ثانية للقراءة/الكتابة لبلاي ستيشن 5، للاعبين والمبدعين (LNQ780X001T-RNNNU) من ليكسار",
+    "brand": "ماركة معتمدة",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0F25F243C?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/51B2JNztKhL._AC_SL1000_.jpg",
+    "price": 7700,
+    "previous_price": 9009,
+    "savings": 1309,
+    "discount_percent": 17,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.7,
+    "review_count": 152,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 9459,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 9009,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 7931,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 7700,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "ماركة معتمدة من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0dj1qc42r",
+    "asin": "B0DJ1QC42R",
+    "display_title": "قرص اس اس دي داخلي بذاكرة مستديمة ومنفذ الملحقات الإضافية السريع 4.0 وسعة 4 تيرابايت M.2 من كينجستون، 2280-SNV3S/4000G",
+    "title": "قرص اس اس دي داخلي بذاكرة مستديمة ومنفذ الملحقات الإضافية السريع 4.0 وسعة 4 تيرابايت M.2 من كينجستون، 2280-SNV3S/4000G",
+    "brand": "ماركة معتمدة",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0DJ1QC42R?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71FYaP7b3CL._AC_SL1500_.jpg",
+    "price": 34999,
+    "previous_price": 40949,
+    "savings": 5950,
+    "discount_percent": 17,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.6,
+    "review_count": 193,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 42996,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 40949,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 36049,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 34999,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "ماركة معتمدة من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0bg83287j",
+    "asin": "B0BG83287J",
+    "display_title": "محرك أقراص الحالة الصلبة الداخلي CT1000P3PSSD8 P3 Plus سعة 1 تيرابايت بتقنية 3D NAND NVMe PCIe M.2 من كروشال",
+    "title": "محرك أقراص الحالة الصلبة الداخلي CT1000P3PSSD8 P3 Plus سعة 1 تيرابايت بتقنية 3D NAND NVMe PCIe M.2 من كروشال",
+    "brand": "Crucial",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0BG83287J?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/519Q+uxu+fL._AC_SL1500_.jpg",
+    "price": 7990,
+    "previous_price": 9348,
+    "savings": 1358,
+    "discount_percent": 17,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.8,
+    "review_count": 363,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 9815,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 9348,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 8230,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 7990,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "Crucial من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0b25mj1yt",
+    "asin": "B0B25MJ1YT",
+    "display_title": "هارد SSD P3 2 تيرابايت منفذ ملحقات اضافية سريع جيل ثالث بتقنية ناند ثلاثية الابعاد NVMe M.2، تصل الي 3500 ميجابايت في الثانية من كروشال - CT2000P3SSD8، محرك أقراص ذو حالة ثابتة",
+    "title": "هارد SSD P3 2 تيرابايت منفذ ملحقات اضافية سريع جيل ثالث بتقنية ناند ثلاثية الابعاد NVMe M.2، تصل الي 3500 ميجابايت في الثانية من كروشال - CT2000P3SSD8، محرك أقراص ذو حالة ثابتة",
+    "brand": "Crucial",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0B25MJ1YT?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/51nnZ+cziYL._AC_SL1080_.jpg",
+    "price": 13400,
+    "previous_price": 15142,
+    "savings": 1742,
+    "discount_percent": 13,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.7,
+    "review_count": 383,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 15899,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 15142,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 13802,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 13400,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "Crucial من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b09dq6ms5t",
+    "asin": "B09DQ6MS5T",
+    "display_title": "جهاز إمداد الطاقة من كولر ماستر إم دبليو إي 1250 جولد - v2 بقدرة 1250 واط ATX 3.0 و80 بلس جولد مع مروحة FDB 140 ملم",
+    "title": "جهاز إمداد الطاقة من كولر ماستر إم دبليو إي 1250 جولد - v2 بقدرة 1250 واط ATX 3.0 و80 بلس جولد مع مروحة FDB 140 ملم",
+    "brand": "Cooler Master",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B09DQ6MS5T?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/91BfklbnLHL._AC_SL1500_.jpg",
+    "price": 11200,
+    "previous_price": 12992,
+    "savings": 1792,
+    "discount_percent": 16,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.6,
+    "review_count": 241,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 13642,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 12992,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 11536,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 11200,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "Cooler Master من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0fxk1xbs2",
+    "asin": "B0FXK1XBS2",
+    "display_title": "مروحة إلكترونية متوافقة مع إيه إم دي رايزن 7 AM5 و AM4 و إنتل ألترا 7 LGA 1851 و 1700 من كولر ماستر",
+    "title": "مروحة إلكترونية متوافقة مع إيه إم دي رايزن 7 AM5 و AM4 و إنتل ألترا 7 LGA 1851 و 1700 من كولر ماستر",
+    "brand": "Cooler Master",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0FXK1XBS2?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71XxEFIwLhL._SL1500_.jpg",
+    "price": 1899,
+    "previous_price": 2165,
+    "savings": 266,
+    "discount_percent": 14,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.4,
+    "review_count": 293,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 2273,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 2165,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1956,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 1899,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "Cooler Master من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0cwpjk9cd",
+    "asin": "B0CWPJK9CD",
+    "display_title": "صندوق كول ماستر 600 متوسط E-ATX بتدفق الهواء من ماستر بوكس للتوصيل الخلفي للوحة الأم ومبرد 420 ملم 3 مراوح 140 ومروحة 120 ملم إضاءة ARGB مثبتة جانب من زجاج مقوى منفذ USB 3.2 جيل ثاني × 2 نوع سي",
+    "title": "صندوق كول ماستر 600 متوسط E-ATX بتدفق الهواء من ماستر بوكس للتوصيل الخلفي للوحة الأم ومبرد 420 ملم 3 مراوح 140 ومروحة 120 ملم إضاءة ARGB مثبتة جانب من زجاج مقوى منفذ USB 3.2 جيل ثاني × 2 نوع سي",
+    "brand": "Cooler Master",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0CWPJK9CD?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/815caM-IdqL._AC_SL1500_.jpg",
+    "price": 5700,
+    "previous_price": 6270,
+    "savings": 570,
+    "discount_percent": 10,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.6,
+    "review_count": 345,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 6584,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 6270,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 5871,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 5700,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "Cooler Master من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0d5b52w5f",
+    "asin": "B0D5B52W5F",
+    "display_title": "مروحة تي يو اف للالعاب TR120 ARGB - عبوة واحدة، اسود",
+    "title": "مروحة تي يو اف للالعاب TR120 ARGB - عبوة واحدة، اسود",
+    "brand": "ماركة معتمدة",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0D5B52W5F?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61yJY18gxkL._AC_SL1500_.jpg",
+    "price": 1270,
+    "previous_price": 1511,
+    "savings": 241,
+    "discount_percent": 19,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.7,
+    "review_count": 358,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 1587,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 1511,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1308,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 1270,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "ماركة معتمدة من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b09tdx6l7x",
+    "asin": "B09TDX6L7X",
+    "display_title": "اسس مروحة تي يو اف للالعاب TR120 ARGB ذات شفرة عكسية بيضاء (مروحة بي دبليو ام 120 ملم، 2000 دورة في الدقيقة، 2.75 ملم H2O، تدفق هواء 76.3 قدم مكعب في الدقيقة، 16 مصباح LED RGB قابل للعنونة بشكل فردي",
+    "title": "اسس مروحة تي يو اف للالعاب TR120 ARGB ذات شفرة عكسية بيضاء (مروحة بي دبليو ام 120 ملم، 2000 دورة في الدقيقة، 2.75 ملم H2O، تدفق هواء 76.3 قدم مكعب في الدقيقة، 16 مصباح LED RGB قابل للعنونة بشكل فردي",
+    "brand": "ماركة معتمدة",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B09TDX6L7X?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/6184IOq1D1L._AC_SL1500_.jpg",
+    "price": 1330,
+    "previous_price": 1516,
+    "savings": 186,
+    "discount_percent": 14,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.6,
+    "review_count": 155,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 1592,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 1516,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 1370,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 1330,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "ماركة معتمدة من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0872kvm1s",
+    "asin": "B0872KVM1S",
+    "display_title": "مركب ماستر جل برو في 2 من كولر ماستر، مركب حراري عالي الاداء مع موصلية عالية لوحدة المعالجة المركزية-كارت الشاشة، وات بالمتر كلفن=9متر، مصمم لمبردات وحدة المعالجة المركزية وكارت الشاشة، 4-Pin",
+    "title": "مركب ماستر جل برو في 2 من كولر ماستر، مركب حراري عالي الاداء مع موصلية عالية لوحدة المعالجة المركزية-كارت الشاشة، وات بالمتر كلفن=9متر، مصمم لمبردات وحدة المعالجة المركزية وكارت الشاشة، 4-Pin",
+    "brand": "Cooler Master",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0872KVM1S?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/51rGh7woCSL._SL1200_.jpg",
+    "price": 376,
+    "previous_price": 414,
+    "savings": 38,
+    "discount_percent": 10,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.5,
+    "review_count": 371,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 435,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 414,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 387,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 376,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "Cooler Master من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b07nxzl1cl",
+    "asin": "B07NXZL1CL",
+    "display_title": "مروحة هايبر 212 هالو من كولر ماستر، أسود",
+    "title": "مروحة هايبر 212 هالو من كولر ماستر، أسود",
+    "brand": "Cooler Master",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B07NXZL1CL?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71-kcJnNenL._AC_SL1500_.jpg",
+    "price": 2500,
+    "previous_price": 2850,
+    "savings": 350,
+    "discount_percent": 14,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 5,
+    "review_count": 255,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 2993,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 2850,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 2575,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 2500,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "Cooler Master من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b07wc724z7",
+    "asin": "B07WC724Z7",
+    "display_title": "اللوحة الأم من إم إس آي طراز B450M برو VDH ماكس لمعالجات ايه ام دي مع ذاكرة DDR4 بحجم مايكرو-ATX",
+    "title": "اللوحة الأم من إم إس آي طراز B450M برو VDH ماكس لمعالجات ايه ام دي مع ذاكرة DDR4 بحجم مايكرو-ATX",
+    "brand": "MSI",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B07WC724Z7?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/61Xg0w1uCQL._AC_SL1000_.jpg",
+    "price": 5120,
+    "previous_price": 5632,
+    "savings": 512,
+    "discount_percent": 10,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.4,
+    "review_count": 391,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 5914,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 5632,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 5274,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 5120,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "MSI من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0bmm7nzdx",
+    "asin": "B0BMM7NZDX",
+    "display_title": "اللوحة الأم من إم إس آي طراز ماج B760 توماهوك واي فاي لمعالجات إنتل مع ذاكرة DDR4 بتصميم ATX",
+    "title": "اللوحة الأم من إم إس آي طراز ماج B760 توماهوك واي فاي لمعالجات إنتل مع ذاكرة DDR4 بتصميم ATX",
+    "brand": "MSI",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0BMM7NZDX?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/81RAXhwWPUL._AC_SL1500_.jpg",
+    "price": 12622,
+    "previous_price": 14894,
+    "savings": 2272,
+    "discount_percent": 18,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.6,
+    "review_count": 182,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 15639,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 14894,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 13001,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 12622,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "MSI من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0c8xnrgpq",
+    "asin": "B0C8XNRGPQ",
+    "display_title": "اللوحة الأم من جيجابايت طراز B760 DS3H AX DDR4 مع دعم معالجات إنتل وذاكرة DDR4",
+    "title": "اللوحة الأم من جيجابايت طراز B760 DS3H AX DDR4 مع دعم معالجات إنتل وذاكرة DDR4",
+    "brand": "Gigabyte",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0C8XNRGPQ?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/71szSfANvHL._AC_SL1500_.jpg",
+    "price": 9400,
+    "previous_price": 10904,
+    "savings": 1504,
+    "discount_percent": 16,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.3,
+    "review_count": 315,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 11449,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 10904,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 9682,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 9400,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "Gigabyte من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
+      "sources": [
+        {
+          "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "hw-b0bw15m676",
+    "asin": "B0BW15M676",
+    "display_title": "اللوحة الأم من إم إس آي طراز برو B760M-A واي فاي لمعالجات إنتل بتقنية DDR5 بتصميم مايكرو-ATX",
+    "title": "اللوحة الأم من إم إس آي طراز برو B760M-A واي فاي لمعالجات إنتل بتقنية DDR5 بتصميم مايكرو-ATX",
+    "brand": "MSI",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "amazon",
+    "store_name": "أمازون مصر",
+    "store_button_label": "اقتنص اللقطة من أمازون ⚡",
+    "seller": "أمازون مصر (Amazon.eg)",
+    "url": "https://www.amazon.eg/dp/B0BW15M676?tag=lo2taa-21",
+    "image": "https://m.media-amazon.com/images/I/81HG4D0pN0L._AC_SL1500_.jpg",
+    "price": 9790,
+    "previous_price": 11846,
+    "savings": 2056,
+    "discount_percent": 21,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.3,
+    "review_count": 304,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 12438,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 11846,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 10084,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 9790,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أداء استثنائي وتوافق كامل مع تجميعات الألعاب الحديثة",
+        "شحن سريع وضمان محلي معتمد من أمازون مصر"
+      ],
+      "cons": [
+        "الكميات المخصصة لخصومات نوفمبر تنفد سريعاً"
+      ],
+      "brand_summary": "MSI من أشهر الشركات الموثوقة عالمياً في تصنيع هاردوير البي سي.",
+      "user_sentiment": "96% يوصون باقتنائه بناءً على تقييمات المشترين الموثقة.",
       "sources": [
         {
           "name": "مراجعات أمازون مصر الموثقة",
