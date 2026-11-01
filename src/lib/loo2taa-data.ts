@@ -185,9 +185,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T15:20:14.747Z",
     "rating": 4.9,
     "review_count": 850,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -739,12 +739,12 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01",
+    "price_checked_at": "2026-11-01T15:55:14.916Z",
     "rating": 4.7,
     "review_count": 3200,
-    "in_stock": false,
-    "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -3076,7 +3076,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 15,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T15:20:29.877Z",
+    "price_checked_at": "2026-11-01T15:55:26.963Z",
     "rating": 4.4,
     "review_count": 335,
     "in_stock": true,
@@ -3224,12 +3224,12 @@ export const PRODUCTS: Product[] = [
     "discount_percent": -188,
     "is_record_low": true,
     "price_change_direction": "up",
-    "price_checked_at": "2026-11-01T11:16:00.948Z",
+    "price_checked_at": "2026-11-01T15:55:28.423Z",
     "rating": 2,
     "review_count": 168,
-    "in_stock": false,
+    "in_stock": true,
     "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -3964,12 +3964,12 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 17,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T11:52:59.432Z",
+    "price_checked_at": "2026-11-01T15:55:32.472Z",
     "rating": 4.5,
     "review_count": 399,
-    "in_stock": false,
-    "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -4598,9 +4598,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T15:20:39.223Z",
     "rating": 3.9,
     "review_count": 255,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -4889,9 +4889,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T15:20:40.892Z",
     "rating": 4.5,
     "review_count": 252,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6262,12 +6262,12 @@ export const PRODUCTS: Product[] = [
     "discount_percent": -1,
     "is_record_low": true,
     "price_change_direction": "up",
-    "price_checked_at": "2026-11-01T14:09:32.649Z",
+    "price_checked_at": "2026-11-01T15:55:43.901Z",
     "rating": 5,
     "review_count": 146,
-    "in_stock": false,
+    "in_stock": true,
     "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6704,9 +6704,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T15:20:49.662Z",
     "rating": 4.7,
     "review_count": 335,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6783,9 +6783,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T15:20:49.674Z",
     "rating": 3.9,
     "review_count": 281,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -7209,12 +7209,12 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 19,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T14:09:37.429Z",
+    "price_checked_at": "2026-11-01T15:55:48.119Z",
     "rating": 4.7,
     "review_count": 181,
-    "in_stock": false,
-    "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -7567,9 +7567,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T15:20:54.388Z",
     "rating": 4.7,
     "review_count": 370,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -8420,9 +8420,9 @@ export const PRODUCTS: Product[] = [
     "price_checked_at": "2026-11-01T15:20:59.302Z",
     "rating": 4.4,
     "review_count": 391,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -8570,12 +8570,12 @@ export const PRODUCTS: Product[] = [
     "discount_percent": -92,
     "is_record_low": true,
     "price_change_direction": "up",
-    "price_checked_at": "2026-11-01T13:26:01.675Z",
+    "price_checked_at": "2026-11-01T15:55:54.803Z",
     "rating": 4.3,
     "review_count": 315,
-    "in_stock": false,
+    "in_stock": true,
     "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
