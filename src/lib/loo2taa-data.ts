@@ -59,7 +59,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 15,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:16:13.274Z",
+    "price_checked_at": "2026-11-01T02:02:17.187Z",
     "rating": 4.9,
     "review_count": 420,
     "price_history": [
@@ -127,7 +127,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:16:16.202Z",
+    "price_checked_at": "2026-11-01T02:02:18.796Z",
     "rating": 4.8,
     "review_count": 1850,
     "price_history": [
@@ -200,7 +200,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:16:19.071Z",
+    "price_checked_at": "2026-11-01T02:02:20.159Z",
     "rating": 4.8,
     "review_count": 2400,
     "price_history": [
@@ -273,7 +273,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 14,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:16:21.662Z",
+    "price_checked_at": "2026-11-01T02:02:22.007Z",
     "rating": 4.7,
     "review_count": 1420,
     "price_history": [
@@ -354,7 +354,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 17,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:16:24.197Z",
+    "price_checked_at": "2026-11-01T02:02:23.377Z",
     "rating": 4.6,
     "review_count": 2180,
     "price_history": [
@@ -435,7 +435,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 28,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:16:26.840Z",
+    "price_checked_at": "2026-11-01T02:02:24.742Z",
     "rating": 4.7,
     "review_count": 6700,
     "price_history": [
@@ -503,7 +503,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 17,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:16:29.476Z",
+    "price_checked_at": "2026-11-01T02:02:26.625Z",
     "rating": 4.8,
     "review_count": 140,
     "price_history": [
@@ -571,7 +571,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:16:33.224Z",
+    "price_checked_at": "2026-11-01T02:02:28.846Z",
     "rating": 4.9,
     "review_count": 850,
     "price_history": [
@@ -644,7 +644,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:16:36.167Z",
+    "price_checked_at": "2026-11-01T02:02:30.804Z",
     "rating": 4.8,
     "review_count": 3100,
     "price_history": [
@@ -730,7 +730,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 31,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:16:39.199Z",
+    "price_checked_at": "2026-11-01T02:02:32.914Z",
     "rating": 4.7,
     "review_count": 430,
     "price_history": [
@@ -798,7 +798,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 22,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:16:42.177Z",
+    "price_checked_at": "2026-11-01T02:02:34.277Z",
     "rating": 4.7,
     "review_count": 210,
     "price_history": [
@@ -879,7 +879,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:16:46.672Z",
+    "price_checked_at": "2026-11-01T02:02:36.342Z",
     "rating": 4.7,
     "review_count": 5200,
     "price_history": [
@@ -952,7 +952,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 22,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:16:50.247Z",
+    "price_checked_at": "2026-11-01T02:02:37.709Z",
     "rating": 4.8,
     "review_count": 5120,
     "price_history": [
@@ -1033,7 +1033,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 19,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:16:53.233Z",
+    "price_checked_at": "2026-11-01T02:02:39.072Z",
     "rating": 4.8,
     "review_count": 2890,
     "price_history": [
@@ -1114,7 +1114,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:16:57.230Z",
+    "price_checked_at": "2026-11-01T02:02:40.439Z",
     "rating": 4.9,
     "review_count": 7300,
     "price_history": [
@@ -1200,7 +1200,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:16:59.904Z",
+    "price_checked_at": "2026-11-01T02:02:41.801Z",
     "rating": 4.7,
     "review_count": 1100,
     "price_history": [
@@ -1281,7 +1281,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 19,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:17:03.167Z",
+    "price_checked_at": "2026-11-01T02:02:43.574Z",
     "rating": 4.8,
     "review_count": 3600,
     "price_history": [
@@ -1356,13 +1356,13 @@ export const PRODUCTS: Product[] = [
     "seller": "Amazon.eg",
     "url": "https://www.amazon.eg/dp/B084RPZD6T?tag=lo2taa-21",
     "image": "https://m.media-amazon.com/images/I/51gWCFijcqL._AC_SL1000_.jpg",
-    "price": 2465,
-    "previous_price": 2599,
-    "savings": 134,
-    "discount_percent": 5,
+    "price": 3099,
+    "previous_price": 2465,
+    "savings": 0,
+    "discount_percent": -26,
     "is_record_low": true,
-    "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:17:05.973Z",
+    "price_change_direction": "up",
+    "price_checked_at": "2026-11-01T02:02:45.523Z",
     "rating": 4.8,
     "review_count": 4800,
     "price_history": [
@@ -1399,6 +1399,11 @@ export const PRODUCTS: Product[] = [
       {
         "date": "2026-11-01",
         "price": 2465,
+        "label": "أقل سعر قياسي جديد ⚡"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 3099,
         "label": "أقل سعر قياسي جديد ⚡"
       }
     ],
@@ -1453,7 +1458,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:17:08.794Z",
+    "price_checked_at": "2026-11-01T02:02:47.563Z",
     "rating": 4.6,
     "review_count": 3900,
     "price_history": [
@@ -1539,7 +1544,7 @@ export const PRODUCTS: Product[] = [
     "discount_percent": 12,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T01:17:11.597Z",
+    "price_checked_at": "2026-11-01T02:02:49.670Z",
     "rating": 4.8,
     "review_count": 2200,
     "price_history": [
