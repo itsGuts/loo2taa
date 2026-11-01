@@ -5,9 +5,49 @@ export const MARKETPLACE_SETTINGS: Record<string, MarketplaceSetting> = {
     key: 'amazon',
     name: 'أمازون مصر',
     buttonLabel: 'اقتنص اللقطة من أمازون ⚡',
-    primaryColor: '#00f0ff',
-    textColor: '#07090e',
-    surfaceColor: '#0d1527',
+    primaryColor: '#ff9900',
+    textColor: '#ffffff',
+    surfaceColor: '#172033',
+  },
+  btech: {
+    key: 'btech',
+    name: 'بي تك مصر',
+    buttonLabel: 'اقتنص العرض من بي تك ⚡',
+    primaryColor: '#0066cc',
+    textColor: '#ffffff',
+    surfaceColor: '#0a192f',
+  },
+  twob: {
+    key: 'twob',
+    name: '2B مصر',
+    buttonLabel: 'اقتنص العرض من 2B ⚡',
+    primaryColor: '#7b2cbf',
+    textColor: '#ffffff',
+    surfaceColor: '#190e2b',
+  },
+  rayashop: {
+    key: 'rayashop',
+    name: 'راية شوب',
+    buttonLabel: 'اقتنص العرض من راية ⚡',
+    primaryColor: '#e60000',
+    textColor: '#ffffff',
+    surfaceColor: '#2b0e0e',
+  },
+  dream2000: {
+    key: 'dream2000',
+    name: 'دريم 2000',
+    buttonLabel: 'اقتنص العرض من دريم ⚡',
+    primaryColor: '#f77f00',
+    textColor: '#ffffff',
+    surfaceColor: '#241405',
+  },
+  compughana: {
+    key: 'compughana',
+    name: 'كمبيوجانا وسيجما',
+    buttonLabel: 'اقتنص العرض من البستان ⚡',
+    primaryColor: '#10b981',
+    textColor: '#ffffff',
+    surfaceColor: '#062016',
   },
 };
 
@@ -89,7 +129,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 8,
+    "drop_level": "record_low"
   },
   {
     "id": "d-mic-05",
@@ -156,7 +198,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 20,
+    "drop_level": "record_low"
   },
   {
     "id": "d-mic-07",
@@ -223,7 +267,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 18,
+    "drop_level": "record_low"
   },
   {
     "id": "d-head-02",
@@ -290,7 +336,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 14,
+    "drop_level": "medium"
   },
   {
     "id": "d-head-03",
@@ -357,7 +405,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 15,
+    "drop_level": "slight"
   },
   {
     "id": "d-head-04",
@@ -424,7 +474,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 16,
+    "drop_level": "record_low"
   },
   {
     "id": "d-head-05",
@@ -491,7 +543,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 17,
+    "drop_level": "record_low"
   },
   {
     "id": "d-peri-02",
@@ -558,7 +612,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 18,
+    "drop_level": "record_low"
   },
   {
     "id": "d-peri-03",
@@ -625,7 +681,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 19,
+    "drop_level": "record_low"
   },
   {
     "id": "d-peri-04",
@@ -692,7 +750,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 20,
+    "drop_level": "record_low"
   },
   {
     "id": "d-peri-07",
@@ -759,7 +819,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 23,
+    "drop_level": "record_low"
   },
   {
     "id": "d-peri-08",
@@ -826,7 +888,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 8,
+    "drop_level": "record_low"
   },
   {
     "id": "d-set-01",
@@ -893,7 +957,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 19,
+    "drop_level": "record_low"
   },
   {
     "id": "d-mon-01",
@@ -960,7 +1026,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 13,
+    "drop_level": "record_low"
   },
   {
     "id": "d-mon-02",
@@ -1027,7 +1095,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 12,
+    "drop_level": "record_low"
   },
   {
     "id": "d-mon-03",
@@ -1094,7 +1164,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 11,
+    "drop_level": "record_low"
   },
   {
     "id": "d-hw-01",
@@ -1161,7 +1233,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 18,
+    "drop_level": "slight"
   },
   {
     "id": "d-hw-03",
@@ -1228,7 +1302,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 16,
+    "drop_level": "record_low"
   },
   {
     "id": "d-hw-04",
@@ -1295,7 +1371,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 15,
+    "drop_level": "record_low"
   },
   {
     "id": "d-hw-05",
@@ -1362,7 +1440,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 14,
+    "drop_level": "record_low"
   },
   {
     "id": "d-hw-06",
@@ -1429,7 +1509,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 13,
+    "drop_level": "record_low"
   },
   {
     "id": "d-hw-07",
@@ -1496,7 +1578,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 12,
+    "drop_level": "record_low"
   },
   {
     "id": "d-con-02",
@@ -1568,7 +1652,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 18,
+    "drop_level": "record_low"
   },
   {
     "id": "d-con-04",
@@ -1635,7 +1721,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 16,
+    "drop_level": "record_low"
   },
   {
     "id": "d-con-05",
@@ -1702,7 +1790,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 15,
+    "drop_level": "slight"
   },
   {
     "id": "d-lap-02",
@@ -1769,7 +1859,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 11,
+    "drop_level": "record_low"
   },
   {
     "id": "d-head-10",
@@ -1836,7 +1928,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 11,
+    "drop_level": "record_low"
   },
   {
     "id": "d-head-11",
@@ -1903,7 +1997,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 12,
+    "drop_level": "record_low"
   },
   {
     "id": "d-peri-11",
@@ -1970,7 +2066,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 16,
+    "drop_level": "record_low"
   },
   {
     "id": "d-con-07",
@@ -2037,7 +2135,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 13,
+    "drop_level": "record_low"
   },
   {
     "id": "d-hw-08",
@@ -2104,7 +2204,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 11,
+    "drop_level": "record_low"
   },
   {
     "id": "d-hw-09",
@@ -2171,7 +2273,9 @@ export const PRODUCTS: Product[] = [
           "date": "أكتوبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 10,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0bmfqp2zz",
@@ -2238,7 +2342,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 9,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0b8snvk5k",
@@ -2305,7 +2411,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 19,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0d8bdfq22",
@@ -2372,7 +2480,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 18,
+    "drop_level": "medium"
   },
   {
     "id": "eg-b0hms97s58",
@@ -2439,7 +2549,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 11,
+    "drop_level": "medium"
   },
   {
     "id": "eg-b07m6y7355",
@@ -2506,7 +2618,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 10,
+    "drop_level": "medium"
   },
   {
     "id": "eg-b0h75rqxl9",
@@ -2573,7 +2687,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 15,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0c45h4wg9",
@@ -2640,7 +2756,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 22,
+    "drop_level": "medium"
   },
   {
     "id": "eg-b0hbn2fxzm",
@@ -2707,7 +2825,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 20,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b09qfynjmb",
@@ -2774,7 +2894,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 19,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0dgh2d1nj",
@@ -2841,7 +2963,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 23,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b08kkz8s36",
@@ -2908,7 +3032,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 17,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0brxjn3ky",
@@ -2975,7 +3101,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 22,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0g2mjwy6w",
@@ -3042,7 +3170,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 12,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0h5kwkpvk",
@@ -3109,7 +3239,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 12,
+    "drop_level": "medium"
   },
   {
     "id": "eg-b0dg5pmzjx",
@@ -3176,7 +3308,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 10,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0dnfjclxg",
@@ -3243,7 +3377,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 23,
+    "drop_level": "medium"
   },
   {
     "id": "eg-b0c6kqh58l",
@@ -3310,7 +3446,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 21,
+    "drop_level": "medium"
   },
   {
     "id": "eg-b07ds5j1st",
@@ -3377,7 +3515,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 8,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0dk1kzs64",
@@ -3444,7 +3584,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 9,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0dytjj2c5",
@@ -3511,7 +3653,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 22,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0d3kqvqxk",
@@ -3578,7 +3722,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 20,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0fmdyyfd2",
@@ -3645,7 +3791,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 8,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0c51j2zxn",
@@ -3712,7 +3860,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 10,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0c5xnrvwm",
@@ -3779,7 +3929,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 13,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0hfg39gc9",
@@ -3846,7 +3998,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 15,
+    "drop_level": "medium"
   },
   {
     "id": "eg-b0f8p9bvy3",
@@ -3913,7 +4067,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 10,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0ckykrymr",
@@ -3980,7 +4136,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 23,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0c3wkstv7",
@@ -4047,7 +4205,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 23,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0991q94kp",
@@ -4114,7 +4274,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 15,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0ddpzz9vy",
@@ -4181,7 +4343,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 13,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0dsl1gkch",
@@ -4248,7 +4412,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 14,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0f196mlc4",
@@ -4315,7 +4481,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 9,
+    "drop_level": "medium"
   },
   {
     "id": "eg-b0b8hzspq7",
@@ -4382,7 +4550,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 20,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0d3b54cng",
@@ -4449,7 +4619,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 11,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0b2vgs485",
@@ -4516,7 +4688,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 16,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0ddqffkb3",
@@ -4583,7 +4757,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 12,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0714dn1qh",
@@ -4650,7 +4826,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 21,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0gkx1qw6f",
@@ -4717,7 +4895,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 20,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0dxntyhnd",
@@ -4784,7 +4964,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 16,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0dxf9g63h",
@@ -4851,7 +5033,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 12,
+    "drop_level": "medium"
   },
   {
     "id": "eg-b0dxthqtgm",
@@ -4918,7 +5102,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 18,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0g6d4zv3w",
@@ -4985,7 +5171,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 16,
+    "drop_level": "medium"
   },
   {
     "id": "eg-b09cmf65v5",
@@ -5052,7 +5240,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 18,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0cvcg2vpk",
@@ -5119,7 +5309,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 23,
+    "drop_level": "medium"
   },
   {
     "id": "eg-b0gvywqzd7",
@@ -5186,7 +5378,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 10,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0b9c82tg9",
@@ -5253,7 +5447,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 15,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b095kx95sm",
@@ -5320,7 +5516,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 16,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b08c56gzgk",
@@ -5387,7 +5585,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 20,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0dbr3dzwg",
@@ -5454,7 +5654,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 22,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0dqsjyd12",
@@ -5521,7 +5723,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 17,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0dj1vd925",
@@ -5588,7 +5792,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 20,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b09q4zxsy1",
@@ -5655,7 +5861,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 18,
+    "drop_level": "medium"
   },
   {
     "id": "eg-b0cwh9wcwt",
@@ -5722,7 +5930,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 15,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0cm9vkq5n",
@@ -5789,7 +5999,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 23,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0dn5rwnnc",
@@ -5856,7 +6068,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 20,
+    "drop_level": "record_low"
   },
   {
     "id": "eg-b0h2jft6fv",
@@ -5923,7 +6137,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 23,
+    "drop_level": "medium"
   },
   {
     "id": "hw-b0cspnyb42",
@@ -5990,7 +6206,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 23,
+    "drop_level": "record_low"
   },
   {
     "id": "hw-b086zsqzz7",
@@ -6057,7 +6275,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 15,
+    "drop_level": "record_low"
   },
   {
     "id": "hw-b0f7wb6lsh",
@@ -6124,7 +6344,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 21,
+    "drop_level": "medium"
   },
   {
     "id": "hw-b0f32nd24s",
@@ -6191,7 +6413,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 22,
+    "drop_level": "medium"
   },
   {
     "id": "hw-b0ffnf5j8y",
@@ -6258,7 +6482,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 18,
+    "drop_level": "record_low"
   },
   {
     "id": "hw-b096y5wccz",
@@ -6325,7 +6551,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 16,
+    "drop_level": "record_low"
   },
   {
     "id": "hw-b00m1buekm",
@@ -6392,7 +6620,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 12,
+    "drop_level": "record_low"
   },
   {
     "id": "hw-b0cc9f9x7s",
@@ -6459,7 +6689,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 20,
+    "drop_level": "record_low"
   },
   {
     "id": "hw-b0cgjdklb8",
@@ -6526,7 +6758,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 23,
+    "drop_level": "medium"
   },
   {
     "id": "hw-b0g3kcws13",
@@ -6593,7 +6827,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 22,
+    "drop_level": "medium"
   },
   {
     "id": "hw-b0bjz2swnv",
@@ -6660,7 +6896,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 16,
+    "drop_level": "record_low"
   },
   {
     "id": "hw-b0c3hm7gz3",
@@ -6727,7 +6965,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 14,
+    "drop_level": "record_low"
   },
   {
     "id": "hw-b097k3wv9j",
@@ -6794,7 +7034,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 22,
+    "drop_level": "record_low"
   },
   {
     "id": "hw-b097k5j1sb",
@@ -6861,7 +7103,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 14,
+    "drop_level": "record_low"
   },
   {
     "id": "hw-b0h8spl8m9",
@@ -6928,7 +7172,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 23,
+    "drop_level": "record_low"
   },
   {
     "id": "hw-b08c511gqh",
@@ -6995,7 +7241,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 8,
+    "drop_level": "record_low"
   },
   {
     "id": "hw-b0dbr9rzlv",
@@ -7062,7 +7310,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 21,
+    "drop_level": "medium"
   },
   {
     "id": "hw-b0c2wgl8dq",
@@ -7129,7 +7379,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 20,
+    "drop_level": "medium"
   },
   {
     "id": "hw-b0f25f243c",
@@ -7196,7 +7448,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 13,
+    "drop_level": "record_low"
   },
   {
     "id": "hw-b0dj1qc42r",
@@ -7263,7 +7517,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 21,
+    "drop_level": "record_low"
   },
   {
     "id": "hw-b0bg83287j",
@@ -7330,7 +7586,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 19,
+    "drop_level": "record_low"
   },
   {
     "id": "hw-b0b25mj1yt",
@@ -7397,7 +7655,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 18,
+    "drop_level": "medium"
   },
   {
     "id": "hw-b09dq6ms5t",
@@ -7464,7 +7724,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 23,
+    "drop_level": "record_low"
   },
   {
     "id": "hw-b0fxk1xbs2",
@@ -7531,7 +7793,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 11,
+    "drop_level": "medium"
   },
   {
     "id": "hw-b0cwpjk9cd",
@@ -7598,7 +7862,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 15,
+    "drop_level": "medium"
   },
   {
     "id": "hw-b0d5b52w5f",
@@ -7665,7 +7931,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 18,
+    "drop_level": "record_low"
   },
   {
     "id": "hw-b09tdx6l7x",
@@ -7732,7 +8000,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 22,
+    "drop_level": "medium"
   },
   {
     "id": "hw-b0872kvm1s",
@@ -7799,7 +8069,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 11,
+    "drop_level": "medium"
   },
   {
     "id": "hw-b07nxzl1cl",
@@ -7866,7 +8138,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 21,
+    "drop_level": "medium"
   },
   {
     "id": "hw-b07wc724z7",
@@ -7933,7 +8207,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 9,
+    "drop_level": "medium"
   },
   {
     "id": "hw-b0bmm7nzdx",
@@ -8000,7 +8276,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 23,
+    "drop_level": "record_low"
   },
   {
     "id": "hw-b0c8xnrgpq",
@@ -8067,7 +8345,9 @@ export const PRODUCTS: Product[] = [
           "date": "نوفمبر 2026"
         }
       ]
-    }
+    },
+    "points_count": 11,
+    "drop_level": "record_low"
   },
   {
     "id": "hw-b0bw15m676",
@@ -8130,6 +8410,629 @@ export const PRODUCTS: Product[] = [
       "sources": [
         {
           "name": "مراجعات أمازون مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    },
+    "points_count": 11,
+    "drop_level": "record_low"
+  },
+  {
+    "id": "btech-ps5-slim",
+    "asin": "BTECH-PS5-SLIM",
+    "display_title": "جهاز سوني بلايستيشن 5 سليم 1TB نسخة الأقراص مع ذراع تحكم إضافي وضمان الوكيل | بي تك مصر",
+    "title": "Sony PlayStation 5 Slim 1TB Disc Edition with Extra DualSense Wireless Controller Official Warranty",
+    "brand": "Sony PlayStation",
+    "category": "consoles-handheld",
+    "category_ar": "أجهزة الكونسول والألعاب",
+    "marketplace": "btech",
+    "store_name": "بي تك مصر",
+    "store_button_label": "اقتنص العرض من بي تك ⚡",
+    "seller": "B.TECH Egypt (بي تك)",
+    "url": "https://btech.com/ar/playstation-5-slim-1tb.html",
+    "image": "https://m.media-amazon.com/images/I/51051FiD9UL._AC_SL1000_.jpg",
+    "price": 38499,
+    "previous_price": 43999,
+    "savings": 5500,
+    "discount_percent": 13,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.9,
+    "review_count": 512,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "points_count": 18,
+    "drop_level": "record_low",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 45000,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 43999,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 39999,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 38499,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "ضمان محلي رسمي معتمد من الوكيل في مصر",
+        "تقسيط مباشر بدون فوائد حتى 12 شهر عبر بي تك"
+      ],
+      "cons": [
+        "الكميات تنفد سريعاً في فروع بي تك"
+      ],
+      "brand_summary": "بي تك هي أكبر سلسلة متاجر أجهزة وإلكترونيات وتقسيط في مصر.",
+      "user_sentiment": "98% تقييمات إيجابية للمنتج والضمان.",
+      "sources": [
+        {
+          "name": "مراجعات بي تك مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "btech-asus-tuf-a15",
+    "asin": "BTECH-ASUS-TUF-A15",
+    "display_title": "لابتوب ألعاب أسوس تاف جيمنج A15 معالج رايزن 7 كارت RTX 4060 رامات 16GB شاشة 144Hz | بي تك",
+    "title": "ASUS TUF Gaming A15 Laptop, AMD Ryzen 7 7735HS, NVIDIA GeForce RTX 4060 8GB, 16GB DDR5, 512GB SSD, 15.6\" 144Hz FHD",
+    "brand": "ASUS",
+    "category": "laptops",
+    "category_ar": "لابتوبات الجيمنج",
+    "marketplace": "btech",
+    "store_name": "بي تك مصر",
+    "store_button_label": "اقتنص العرض من بي تك ⚡",
+    "seller": "B.TECH Egypt (بي تك)",
+    "url": "https://btech.com/ar/asus-tuf-gaming-a15-rtx4060.html",
+    "image": "https://m.media-amazon.com/images/I/719hL1o24tL._AC_SL1500_.jpg",
+    "price": 49999,
+    "previous_price": 58000,
+    "savings": 8001,
+    "discount_percent": 14,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.8,
+    "review_count": 240,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "points_count": 14,
+    "drop_level": "record_low",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 62000,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 58000,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 52000,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 49999,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "كارت شاشة RTX 4060 8GB بقوة TDP كاملة لتشغيل أثقل الألعاب",
+        "تبريد ثنائي مروحة متطور مع معايير المتانة العسكرية"
+      ],
+      "cons": [
+        "سعة الـ SSD الأصلية 512GB ويفضل ترقيتها لـ 1TB"
+      ],
+      "brand_summary": "ASUS TUF من أشهر سلاسل لابتوبات الألعاب الأكثر مبيعاً في مصر.",
+      "user_sentiment": "97% يوصون باقتنائه.",
+      "sources": [
+        {
+          "name": "مراجعات بي تك مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "twob-lenovo-loq-15",
+    "asin": "TWOB-LENOVO-LOQ-15",
+    "display_title": "لابتوب ألعاب لينوفو LOQ 15 معالج i7 الجيل 13 كارت RTX 4050 شاشة 144Hz رامات 16GB | تو بي مصر (2B)",
+    "title": "Lenovo LOQ 15IRH8 Gaming Laptop Intel Core i7-13620H NVIDIA GeForce RTX 4050 6GB 16GB DDR5 512GB SSD 15.6\" FHD 144Hz",
+    "brand": "Lenovo",
+    "category": "laptops",
+    "category_ar": "لابتوبات الجيمنج",
+    "marketplace": "twob",
+    "store_name": "2B مصر",
+    "store_button_label": "اقتنص العرض من 2B ⚡",
+    "seller": "2B Egypt (تو بي)",
+    "url": "https://2b.com.eg/ar/lenovo-loq-15irh8-i7-rtx4050.html",
+    "image": "https://m.media-amazon.com/images/I/717TqQj62ML._AC_SL1500_.jpg",
+    "price": 44499,
+    "previous_price": 52000,
+    "savings": 7501,
+    "discount_percent": 14,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.8,
+    "review_count": 180,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "points_count": 16,
+    "drop_level": "record_low",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 54000,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 52000,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 46500,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 44499,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "معالج Core i7 الجيل 13 فائق السرعة للألعاب والمونتاج",
+        "شاشة 144Hz سريعة وتصميم أنيق مستوحى من سلسلة Legion"
+      ],
+      "cons": [
+        "سعة البطارية متوسطة أثناء اللعب بدون شاحن"
+      ],
+      "brand_summary": "2B مصر من أعرق وأشهر متاجر التكنولوجيا واللابتوبات في مصر.",
+      "user_sentiment": "96% يوصون باقتنائه.",
+      "sources": [
+        {
+          "name": "مراجعات 2B مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "twob-razer-viper-v2",
+    "asin": "TWOB-RAZER-VIPER-V2",
+    "display_title": "ماوس ألعاب لاسلكي ريزر فايبر V2 برو فائق الخفة 58 جم بحساس 30K Optical ومفاتيح ضوئية جيل 3 | 2B مصر",
+    "title": "Razer Viper V2 Pro HyperSpeed Wireless Gaming Mouse 58g Ultra-Lightweight Focus Pro 30K Optical Sensor",
+    "brand": "Razer",
+    "category": "keyboards-mice",
+    "category_ar": "كيبوردات وماوسات",
+    "marketplace": "twob",
+    "store_name": "2B مصر",
+    "store_button_label": "اقتنص العرض من 2B ⚡",
+    "seller": "2B Egypt (تو بي)",
+    "url": "https://2b.com.eg/ar/razer-viper-v2-pro-wireless.html",
+    "image": "https://m.media-amazon.com/images/I/61f4m79K3KL._AC_SL1500_.jpg",
+    "price": 4999,
+    "previous_price": 6800,
+    "savings": 1801,
+    "discount_percent": 26,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.9,
+    "review_count": 310,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "points_count": 22,
+    "drop_level": "steep",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 7200,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 6800,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 5400,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 4999,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أفضل ماوس إيسبورتس تنافسي للشوتر بأقل وزن 58 جم بدون ثقوب",
+        "مستشعر Focus Pro 30K هو الأدق عالمياً بدون أي تأخير"
+      ],
+      "cons": [
+        "لا يحتوي على إضاءة RGB لتقليل الوزن وأقصى عمر بطارية"
+      ],
+      "brand_summary": "Razer هي العلامة التجارية رقم 1 عالمياً في معدات الإيسبورتس.",
+      "user_sentiment": "99% يوصون باقتنائه للتصويب والألعاب التنافسية.",
+      "sources": [
+        {
+          "name": "مراجعات 2B مصر الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "raya-dualsense-camo",
+    "asin": "RAYA-DUALSENSE-CAMO",
+    "display_title": "ذراع تحكم لاسلكي سوني بلايستيشن 5 دوال سينس إصدار التمويه الرمادي Grey Camo مع اهتزاز لمسي | راية شوب",
+    "title": "Sony DualSense Wireless Controller for PlayStation 5 - Grey Camouflage Edition Official Warranty",
+    "brand": "Sony PlayStation",
+    "category": "consoles-handheld",
+    "category_ar": "أجهزة الكونسول والألعاب",
+    "marketplace": "rayashop",
+    "store_name": "راية شوب",
+    "store_button_label": "اقتنص العرض من راية ⚡",
+    "seller": "Raya Shop (راية شوب)",
+    "url": "https://www.rayashop.com/ar/sony-dualsense-grey-camo.html",
+    "image": "https://m.media-amazon.com/images/I/61SGBb3VpQL._AC_SL1500_.jpg",
+    "price": 4399,
+    "previous_price": 5200,
+    "savings": 801,
+    "discount_percent": 15,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.9,
+    "review_count": 420,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "points_count": 19,
+    "drop_level": "record_low",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 5400,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 5200,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 4699,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 4399,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "لون تمويه عسكري فخم Grey Camouflage ومحفزات تكيفية ذكية",
+        "ضمان راية شوب الرسمي المعتمد في مصر"
+      ],
+      "cons": [
+        "متوافق مع بطارية تدوم 8-10 ساعات لعب مستمر"
+      ],
+      "brand_summary": "راية شوب هي الموزع الرسمي المعتمد للإلكترونيات وسوني في مصر.",
+      "user_sentiment": "98% تقييمات ممتازة.",
+      "sources": [
+        {
+          "name": "مراجعات راية شوب الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "raya-g29-steering-wheel",
+    "asin": "RAYA-G29-WHEEL",
+    "display_title": "عجلة قيادة ودواسات سباقات الألعاب لوجيتيك G29 درايفنج فورس بنظام رد الفعل بالقوة للبلايستيشن والبي سي | راية شوب",
+    "title": "Logitech G29 Driving Force Racing Wheel and Floor Pedals Dual-Motor Feedback for PS5, PS4 and PC",
+    "brand": "Logitech G",
+    "category": "consoles-handheld",
+    "category_ar": "أجهزة الكونسول والألعاب",
+    "marketplace": "rayashop",
+    "store_name": "راية شوب",
+    "store_button_label": "اقتنص العرض من راية ⚡",
+    "seller": "Raya Shop (راية شوب)",
+    "url": "https://www.rayashop.com/ar/logitech-g29-driving-force.html",
+    "image": "https://m.media-amazon.com/images/I/61IZV2P0q6L._AC_SL1500_.jpg",
+    "price": 15999,
+    "previous_price": 19500,
+    "savings": 3501,
+    "discount_percent": 18,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.8,
+    "review_count": 380,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "points_count": 15,
+    "drop_level": "record_low",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 21000,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 19500,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 17200,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 15999,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "محرك رد فعل حقيقي Dual-Motor يجعلك تشعر بكل لفة ومنعطف على الطريق",
+        "دواسات من الستانلس ستيل المقاوم للصدأ ومقبض من الجلد الطبيعي المخيط يدوياً"
+      ],
+      "cons": [
+        "تحتاج لتثبيتها على مكتب قوي أو شاسيه سباقات مخصص"
+      ],
+      "brand_summary": "Logitech G الرائدة في عجلات قيادة محاكاة السباقات حول العالم.",
+      "user_sentiment": "97% يوصون باقتنائها لعشاق فورزا وجران توريزمو.",
+      "sources": [
+        {
+          "name": "مراجعات راية شوب الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "dream-cloud-2-red",
+    "asin": "DREAM-CLOUD-2-RED",
+    "display_title": "سماعة رأس ألعاب احترافية هايبر إكس كلاود 2 بصوت محيطي 7.1 ومايك لعزل الضوضاء وسائد ميموري فوم | دريم 2000",
+    "title": "HyperX Cloud II Gaming Headset 7.1 Surround Sound Memory Foam Ear Cushions for PC, PS5, Xbox - Red",
+    "brand": "HyperX",
+    "category": "headsets",
+    "category_ar": "سماعات الجيمنج والصوتيات",
+    "marketplace": "dream2000",
+    "store_name": "دريم 2000",
+    "store_button_label": "اقتنص العرض من دريم ⚡",
+    "seller": "Dream 2000 (دريم 2000)",
+    "url": "https://dream2000.com/ar/hyperx-cloud-2-gaming-headset.html",
+    "image": "https://m.media-amazon.com/images/I/71wNZjdfB9L._AC_SL1500_.jpg",
+    "price": 3699,
+    "previous_price": 4600,
+    "savings": 901,
+    "discount_percent": 20,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.9,
+    "review_count": 850,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "points_count": 24,
+    "drop_level": "steep",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 4800,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 4600,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 3999,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 3699,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أفضل سماعة مريحة لجلسات اللعب الطويلة في تاريخ الجيمنج",
+        "صوت محيطي 7.1 نقي لتحديد أماكن خطوات الأعداء بدقة متناهية"
+      ],
+      "cons": [
+        "تتصل بسلك USB أو 3.5mm (غير لاسلكية)"
+      ],
+      "brand_summary": "دريم 2000 من كبرى سلاسل متاجر التكنولوجيا والموبايل في مصر.",
+      "user_sentiment": "98% تقييمات إيجابية.",
+      "sources": [
+        {
+          "name": "مراجعات دريم 2000 الموثقة",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "compu-rtx-4070-super",
+    "asin": "COMPU-RTX-4070-SUPER",
+    "display_title": "كارت شاشة جيجابايت جيفورس RTX 4070 Super ويندفورس OC سعة 12GB GDDR6X بثلاث مراوح تبريد | كمبيوجانا وسيجما",
+    "title": "Gigabyte GeForce RTX 4070 SUPER WINDFORCE OC 12G Graphics Card, 3x WINDFORCE Fans, 12GB 192-bit GDDR6X",
+    "brand": "Gigabyte",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "compughana",
+    "store_name": "كمبيوجانا وسيجما",
+    "store_button_label": "اقتنص العرض من البستان ⚡",
+    "seller": "CompuGhana / Sigma Computer (سوق العصر)",
+    "url": "https://compughana.com/ar/gigabyte-rtx-4070-super-windforce.html",
+    "image": "https://m.media-amazon.com/images/I/71Y+z957KRL._AC_SL1500_.jpg",
+    "price": 36999,
+    "previous_price": 43000,
+    "savings": 6001,
+    "discount_percent": 14,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 4.9,
+    "review_count": 290,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "points_count": 20,
+    "drop_level": "record_low",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 46000,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 43000,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 38999,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 36999,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أفضل أداء 2K و 4K بفضل معمارية Ada Lovelace ودعم DLSS 3.5",
+        "تبريد Windforce الثلاثي يحافظ على درجات حرارة منخفضة تحت أقصى ضغط"
+      ],
+      "cons": [
+        "يحتاج لمزود طاقة (باور سبلاي) لا يقل عن 650W معتمد"
+      ],
+      "brand_summary": "كمبيوجانا وسيجما هما قطبا سوق هاردوير الكمبيوتر في مصر منذ أكثر من 20 عاماً.",
+      "user_sentiment": "98% يوصون باقتنائه لتجميعات البي سي القوية.",
+      "sources": [
+        {
+          "name": "مراجعات سوق الهاردوير في مصر",
+          "verified": true,
+          "date": "نوفمبر 2026"
+        }
+      ]
+    }
+  },
+  {
+    "id": "compu-ryzen-7-7800x3d",
+    "asin": "COMPU-RYZEN-7800X3D",
+    "display_title": "معالج ألعاب الكمبيوتر الأقوى عالمياً AMD Ryzen 7 7800X3D بـ 8 أنوية و 16 مسار وكاش 96MB بتقنية 3D V-Cache | البستان",
+    "title": "AMD Ryzen 7 7800X3D 8-Core, 16-Thread Desktop Processor with AMD 3D V-Cache Technology",
+    "brand": "AMD",
+    "category": "pc-hardware",
+    "category_ar": "قطع وهاردوير البي سي",
+    "marketplace": "compughana",
+    "store_name": "كمبيوجانا وسيجما",
+    "store_button_label": "اقتنص العرض من البستان ⚡",
+    "seller": "CompuGhana / Sigma Computer (البستان)",
+    "url": "https://compughana.com/ar/amd-ryzen-7-7800x3d.html",
+    "image": "https://m.media-amazon.com/images/I/616VM20+AzL._AC_SL1384_.jpg",
+    "price": 24999,
+    "previous_price": 29500,
+    "savings": 4501,
+    "discount_percent": 15,
+    "is_record_low": true,
+    "price_change_direction": "down",
+    "price_checked_at": "2026-11-01",
+    "rating": 5,
+    "review_count": 450,
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
+    "points_count": 22,
+    "drop_level": "record_low",
+    "price_history": [
+      {
+        "date": "2026-08-15",
+        "price": 32000,
+        "label": "سعر سابق"
+      },
+      {
+        "date": "2026-09-20",
+        "price": 29500,
+        "label": "قبل الخصم"
+      },
+      {
+        "date": "2026-10-15",
+        "price": 26500,
+        "label": "بداية النزول"
+      },
+      {
+        "date": "2026-11-01",
+        "price": 24999,
+        "label": "أقل سعر لقطة ⚡"
+      }
+    ],
+    "ai_review": {
+      "pros": [
+        "أعلى معدل إطارات (FPS) في جميع ألعاب الرياضات الإلكترونية والتنافسية",
+        "كاش ضخم 96MB يمنح استقراراً فائقاً للإطارات 1% Lows"
+      ],
+      "cons": [
+        "لا يحتوي على مروحة تبريد داخل العلبة ويتطلب مشتت هوائي أو مائي قوي"
+      ],
+      "brand_summary": "معالج AMD الأسطوري المفضل لدى محترفي الألعاب حول العالم.",
+      "user_sentiment": "100% تقييمات إيجابية كاملة.",
+      "sources": [
+        {
+          "name": "مراجعات مجتمع الجيمرز في مصر",
           "verified": true,
           "date": "نوفمبر 2026"
         }

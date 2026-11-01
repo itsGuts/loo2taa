@@ -15,13 +15,15 @@ function CatalogInner() {
   const initialCategory = searchParams.get("category") || undefined;
   const initialBrand = searchParams.get("brand") || undefined;
   const initialMarketplace = searchParams.get("store") || undefined;
-  const initialSort = searchParams.get("sort") || "newest";
+  const initialDropLevel = searchParams.get("drop") || undefined;
+  const initialSort = searchParams.get("sort") || "record-low";
 
   const [filters, setFilters] = useState<FilterOptions>({
     query: initialQuery,
     category: initialCategory,
     brand: initialBrand,
     marketplace: initialMarketplace,
+    dropLevel: initialDropLevel,
     sort: initialSort,
   });
 
@@ -43,6 +45,18 @@ function CatalogInner() {
 
     if (filters.marketplace && filters.marketplace !== "all") {
       list = list.filter((p) => p.marketplace === filters.marketplace);
+    }
+
+    if (filters.dropLevel) {
+      if (filters.dropLevel === "record_low") {
+        list = list.filter((p) => p.is_record_low || p.drop_level === "record_low");
+      } else if (filters.dropLevel === "steep") {
+        list = list.filter((p) => p.drop_level === "steep" || p.discount_percent >= 20);
+      } else if (filters.dropLevel === "medium") {
+        list = list.filter((p) => p.drop_level === "medium" || (p.discount_percent >= 10 && p.discount_percent < 20));
+      } else if (filters.dropLevel === "slight") {
+        list = list.filter((p) => p.drop_level === "slight" || p.discount_percent < 10);
+      }
     }
 
     if (filters.category && filters.category !== "all") {
@@ -71,6 +85,7 @@ function CatalogInner() {
       case "price-desc":
         list.sort((a, b) => b.price - a.price);
         break;
+      case "price-changed":
       case "newest":
         list.sort((a, b) => new Date(b.price_checked_at).getTime() - new Date(a.price_checked_at).getTime());
         break;
@@ -90,10 +105,10 @@ function CatalogInner() {
         <div>
           <h1 className="text-2xl sm:text-3xl font-black text-white flex items-center gap-2.5">
             <Cpu className="w-6 h-6 text-[#00f0ff]" />
-            كتالوج صفقات هاردوير البي سي والجيمنج
+            كتالوج عتاد الديسكورد والجيمنج في مصر
           </h1>
           <p className="text-xs text-gray-400 mt-1">
-            تصفح جميع الصفقات المحدثة لقطع وهاردوير البي سي، كروت الشاشة، المعالجات، الشاشات، وإكسسوارات السيت أب في مصر
+            رصد هبوط الأسعار والخصومات الحقيقية عبر أكبر 6 متاجر مصرية معتمدة مع سجل السعر لآخر 90 يوم
           </p>
         </div>
 
@@ -122,7 +137,7 @@ function CatalogInner() {
             جرّب تغيير كلمات البحث أو إعادة ضبط الفلاتر لتصفح باقي الصفقات.
           </p>
           <button
-            onClick={() => setFilters({ sort: "newest" })}
+            onClick={() => setFilters({ sort: "record-low" })}
             className="mt-2 px-4 py-2 btn-cyber-primary text-xs rounded-xl"
           >
             إعادة تعيين الفلاتر

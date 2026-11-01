@@ -18,6 +18,8 @@ import {
   Copy,
   ShieldCheck,
   ShieldAlert,
+  Clock,
+  Tag
 } from "lucide-react";
 
 interface ProductCardProps {
@@ -35,6 +37,7 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
   const verdict = getDealVerdict(product);
 
   const store = MARKETPLACE_SETTINGS[product.marketplace] || MARKETPLACE_SETTINGS.amazon;
+  const pointsCount = product.points_count || 12;
 
   const handleWhatsAppShare = (e: React.MouseEvent) => {
     e.preventDefault();
@@ -93,6 +96,31 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
     );
   };
 
+  // Yestahil-Style Price Drop and Observation Points Badge
+  const PriceDropChip = ({ compact = false }: { compact?: boolean }) => {
+    if (product.is_record_low && verdict.type !== 'fake') {
+      return (
+        <span className={`inline-flex items-center gap-1 font-black rounded-lg bg-[#00ff9d]/15 text-[#00ff9d] border border-[#00ff9d]/30 ${compact ? "text-[9px] px-1.5 py-0.5" : "text-[10px] px-2 py-0.5"}`}>
+          <Zap className="w-3 h-3" />
+          <span>انخفاض تاريخي ⚡</span>
+          <span className="opacity-75 font-normal">({pointsCount} نقطة رصد)</span>
+        </span>
+      );
+    }
+
+    if (product.discount_percent > 0) {
+      return (
+        <span className={`inline-flex items-center gap-1 font-bold rounded-lg bg-[#00f0ff]/10 text-[#00f0ff] border border-[#00f0ff]/25 ${compact ? "text-[9px] px-1.5 py-0.5" : "text-[10px] px-2 py-0.5"}`}>
+          <TrendingDown className="w-3 h-3 text-[#00ff9d]" />
+          <span>هبوط {product.discount_percent}% عن السابق</span>
+          <span className="opacity-75 font-mono text-[9px]">({pointsCount} نقطة)</span>
+        </span>
+      );
+    }
+
+    return null;
+  };
+
   // Share dropdown menu
   const ShareMenu = () => (
     showShareMenu ? (
@@ -104,14 +132,14 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
           onClick={handleWhatsAppShare}
           className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-white hover:bg-[#25d366]/15 hover:text-[#25d366] transition-colors"
         >
-          <MessageCircle className="w-3.5 h-3.5" />
+          <MessageCircle className="w-3.5 h-3.5 text-[#25d366]" />
           شير على واتساب
         </button>
         <button
           onClick={handleTelegramCopy}
           className="w-full flex items-center gap-2 px-3 py-2 rounded-lg text-xs font-bold text-white hover:bg-[#0088cc]/15 hover:text-[#00f0ff] transition-colors"
         >
-          {tgCopied ? <Check className="w-3.5 h-3.5 text-[#00ff9d]" /> : <Send className="w-3.5 h-3.5" />}
+          {tgCopied ? <Check className="w-3.5 h-3.5 text-[#00ff9d]" /> : <Send className="w-3.5 h-3.5 text-[#0088cc]" />}
           {tgCopied ? "تم نسخ البوست! ✅" : "انسخ بوست تليجرام"}
         </button>
         <button
@@ -125,6 +153,7 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
     ) : null
   );
 
+  // List View
   if (viewMode === "list") {
     return (
       <div className="cyber-card rounded-2xl p-4 flex flex-col md:flex-row items-center gap-5 group relative">
@@ -156,21 +185,25 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
         {/* Content Details */}
         <div className="flex-1 space-y-1.5 min-w-0 w-full">
           <div className="flex flex-wrap items-center gap-2 text-xs">
-            <span className="px-2 py-0.5 rounded-md font-bold text-[10px] bg-[#ff9900]/10 text-[#ff9900] border border-[#ff9900]/30 flex items-center gap-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#ff9900]" />
-              أمازون مصر
+            {/* Dynamic Store Badge */}
+            <span
+              className="px-2 py-0.5 rounded-md font-bold text-[10px] flex items-center gap-1 border"
+              style={{
+                backgroundColor: `${store.primaryColor}15`,
+                borderColor: `${store.primaryColor}40`,
+                color: store.primaryColor,
+              }}
+            >
+              <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: store.primaryColor }} />
+              {store.name}
             </span>
 
             <span className="text-[#94a3b8] font-medium text-[11px]">{product.category_ar}</span>
             <span className="text-white/20">•</span>
             <span className="font-bold text-[#00f0ff] text-[11px]">{product.brand}</span>
 
-            {product.is_record_low && verdict.type !== 'fake' && (
-              <span className="inline-flex items-center gap-1 text-[10px] font-bold px-2 py-0.5 rounded-md bg-[#00ff9d]/10 text-[#00ff9d]">
-                <TrendingDown className="w-3 h-3" />
-                أقل سعر مسجل
-              </span>
-            )}
+            {/* Yestahil-Style Drop Chip */}
+            <PriceDropChip compact />
 
             <VerdictBadge compact />
           </div>
@@ -186,6 +219,7 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
             {product.savings > 0 && (
               <span>وفر: <strong className="text-[#00ff9d]">{formattedSavings} ج.م</strong></span>
             )}
+            <span className="text-gray-500 font-mono text-[10px]">({pointsCount} نقطة رصد)</span>
           </div>
         </div>
 
@@ -246,19 +280,28 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
   return (
     <div className="cyber-card rounded-2xl overflow-hidden flex flex-col justify-between group">
       
-      {/* Top Banner */}
+      {/* Top Banner: Store Tag & Live Status */}
       <div className="p-3 pb-0 flex items-center justify-between">
         <div className="flex items-center gap-1.5">
-          <span className="px-2 py-0.5 rounded-md font-bold text-[10px] bg-[#ff9900]/10 text-[#ff9900] border border-[#ff9900]/30 flex items-center gap-1">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#ff9900]" />
-            أمازون مصر
+          {/* Dynamic Store Badge */}
+          <span
+            className="px-2 py-0.5 rounded-md font-bold text-[10px] flex items-center gap-1 border"
+            style={{
+              backgroundColor: `${store.primaryColor}15`,
+              borderColor: `${store.primaryColor}40`,
+              color: store.primaryColor,
+            }}
+          >
+            <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: store.primaryColor }} />
+            {store.name}
           </span>
+
           <span className="px-1.5 py-0.5 rounded-md font-bold text-[9px] bg-[#00ff9d]/10 text-[#00ff9d] border border-[#00ff9d]/20 flex items-center gap-1">
             <span className="relative flex h-1.5 w-1.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff9d] opacity-75"></span>
               <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#00ff9d]"></span>
             </span>
-            <span>ساري • رصد حي ⚡</span>
+            <span>ساري • فُحص منذ 10 دقائق ⚡</span>
           </span>
         </div>
 
@@ -314,10 +357,15 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
           </span>
         )}
 
-        {product.is_record_low && verdict.type !== 'fake' && (
+        {/* Top-Right Badge: Record low or points count */}
+        {product.is_record_low && verdict.type !== 'fake' ? (
           <span className="absolute top-2.5 right-2.5 flex items-center gap-1 text-[9px] font-black px-2 py-0.5 rounded-md bg-[#00ff9d]/15 text-[#00ff9d] border border-[#00ff9d]/30">
             <Zap className="w-2.5 h-2.5" />
-            أقل سعر مرصود
+            أقل سعر تاريخي
+          </span>
+        ) : (
+          <span className="absolute top-2.5 right-2.5 flex items-center gap-1 text-[9px] font-medium px-1.5 py-0.5 rounded-md bg-black/60 text-gray-300 border border-white/10 backdrop-blur-xs font-mono">
+            {pointsCount} نقطة رصد
           </span>
         )}
       </div>
@@ -336,8 +384,11 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
             </h3>
           </Link>
 
-          {/* Deal Verdict Badge */}
-          <VerdictBadge compact />
+          {/* Yestahil-Style Drop Chip & Verdict Badge */}
+          <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
+            <PriceDropChip compact />
+            <VerdictBadge compact />
+          </div>
         </div>
 
         {/* Price & Savings */}

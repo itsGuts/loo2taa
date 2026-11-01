@@ -1,4 +1,4 @@
-export type MarketplaceKey = 'amazon';
+export type MarketplaceKey = 'amazon' | 'btech' | 'twob' | 'rayashop' | 'dream2000' | 'compughana';
 
 export interface PricePoint {
   date: string;
@@ -46,6 +46,8 @@ export interface Product {
   in_stock?: boolean;
   is_deal_active?: boolean;
   stock_status?: 'in_stock' | 'out_of_stock' | 'deal_expired';
+  points_count?: number; // e.g. 14 monitoring points (نقاط رصد)
+  drop_level?: 'record_low' | 'steep' | 'medium' | 'slight';
   price_history: PricePoint[];
   ai_review: AiReview;
 }
@@ -66,6 +68,7 @@ export interface FilterOptions {
   brand?: string;
   marketplace?: string;
   sort?: string;
+  dropLevel?: string;
   minPrice?: number;
   maxPrice?: number;
   minDiscount?: number;

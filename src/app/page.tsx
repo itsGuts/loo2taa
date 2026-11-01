@@ -18,7 +18,8 @@ import {
   Keyboard,
   Sparkles,
   Monitor,
-  Cpu
+  Cpu,
+  Store
 } from "lucide-react";
 
 export default function HomePage() {
@@ -39,6 +40,22 @@ export default function HomePage() {
           p.brand.toLowerCase().includes(q) ||
           p.category_ar.toLowerCase().includes(q)
       );
+    }
+
+    if (filters.marketplace && filters.marketplace !== "all") {
+      list = list.filter((p) => p.marketplace === filters.marketplace);
+    }
+
+    if (filters.dropLevel) {
+      if (filters.dropLevel === "record_low") {
+        list = list.filter((p) => p.is_record_low || p.drop_level === "record_low");
+      } else if (filters.dropLevel === "steep") {
+        list = list.filter((p) => p.drop_level === "steep" || p.discount_percent >= 20);
+      } else if (filters.dropLevel === "medium") {
+        list = list.filter((p) => p.drop_level === "medium" || (p.discount_percent >= 10 && p.discount_percent < 20));
+      } else if (filters.dropLevel === "slight") {
+        list = list.filter((p) => p.drop_level === "slight" || p.discount_percent < 10);
+      }
     }
 
     if (filters.category && filters.category !== "all") {
@@ -99,7 +116,7 @@ export default function HomePage() {
               <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-[#ff007f] text-white shadow-sm">White Friday Live</span>
             </div>
             <p className="text-[11px] text-gray-300 leading-relaxed">
-              تنبيه حماية الجيمرز: مع بداية نوفمبر، يلجأ بعض التجار لرفع الأسعار قبل خصومات 11.11. خوارزمية لقطة تكشف الخصم الوهمي فوراً وتقارن مع متوسط الـ 90 يوماً.
+              تنبيه حماية الجيمرز: مع بداية نوفمبر، يلجأ بعض التجار لرفع الأسعار قبل خصومات 11.11. خوارزمية لقطة تكشف الخصم الوهمي فوراً وتقارن مع متوسط الـ 90 يوماً عبر أكبر 6 متاجر مصرية معتمدة.
             </p>
           </div>
         </div>
@@ -121,15 +138,15 @@ export default function HomePage() {
         <div className="relative z-10 max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5865F2]/15 border border-[#5865F2]/40 text-xs font-bold text-[#8ea1ff]">
             <span className="w-1.5 h-1.5 rounded-full bg-[#00ff9d] animate-pulse" />
-            <span>رادار صفقات مجتمع الديسكورد والجيمنج في مصر</span>
+            <span>رادار هبوط الأسعار الشامل لمجتمع الجيمنج والديسكورد في مصر</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
-            <span className="font-mono text-[#00f0ff]">LO2TAA</span> // عتاد الديسكورد والسيت أب <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f0ff] via-[#5865F2] to-[#ff007f]">بأقل سعر حقيقي</span>
+            <span className="font-mono text-[#00f0ff]">LO2TAA</span> // تتبع هبوط الأسعار <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f0ff] via-[#5865F2] to-[#ff007f]">عبر 6 متاجر معتمدة</span>
           </h1>
 
           <p className="text-xs sm:text-sm text-gray-300 leading-relaxed max-w-2xl">
-            مايكات ستريم، سماعات وايرلس مريحة، كيبوردات ميكانيكال، إضاءة وديكور سيت أب، شاشات 165Hz، وتجميعات البي سي على أمازون مصر. بنكشف الخصم الوهمي ونعرضلك سجل السعر التاريخي لحظة بلحظة.
+            رصد حي ومقارنة فورية بين كبرى المتاجر الرسمية في مصر: أمازون مصر، بي تك، 2B، راية شوب، دريم 2000، وكمبيوجانا وسيجما. مع نقاط رصد مستمرة لكشف الخصومات الوهمية وتوفير السعر الحقيقي.
           </p>
 
           {/* Quick Category Jump Chips */}
@@ -179,17 +196,21 @@ export default function HomePage() {
           </div>
 
           {/* Clean Metric Counters */}
-          <div className="grid grid-cols-3 gap-3 pt-3">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-3">
             <div className="bg-[#05070c]/80 rounded-2xl p-3 border border-white/5">
               <span className="text-[10px] text-gray-400 block font-medium">صفقات نشطة الآن</span>
               <span className="text-xl sm:text-2xl font-black text-[#00f0ff]">{totalDeals} لقطة</span>
+            </div>
+            <div className="bg-[#05070c]/80 rounded-2xl p-3 border border-white/5">
+              <span className="text-[10px] text-gray-400 block font-medium">المتاجر المعتمدة</span>
+              <span className="text-xl sm:text-2xl font-black text-[#ffd600]">6 متاجر</span>
             </div>
             <div className="bg-[#05070c]/80 rounded-2xl p-3 border border-white/5">
               <span className="text-[10px] text-gray-400 block font-medium">أعلى توفير مرصود</span>
               <span className="text-xl sm:text-2xl font-black text-[#00ff9d]">{maxSavings.toLocaleString("ar-EG")} ج.م</span>
             </div>
             <div className="bg-[#05070c]/80 rounded-2xl p-3 border border-white/5">
-              <span className="text-[10px] text-gray-400 block font-medium">أقل سعر قياسي</span>
+              <span className="text-[10px] text-gray-400 block font-medium">انخفاض تاريخي قياسي</span>
               <span className="text-lg sm:text-xl font-black text-white">{recordLowCount} منتج ⚡</span>
             </div>
           </div>
@@ -205,7 +226,7 @@ export default function HomePage() {
           <div className="flex items-center gap-2">
             <Flame className="w-5 h-5 text-[#ff007f]" />
             <h2 className="text-lg sm:text-xl font-black text-white">
-              أقوى صفقات اليوم الحية
+              أقوى صفقات اليوم وهبوط الأسعار
             </h2>
           </div>
 
@@ -213,7 +234,7 @@ export default function HomePage() {
             href="/catalog"
             className="text-xs font-bold text-[#00f0ff] hover:underline flex items-center gap-0.5"
           >
-            عرض الكل
+            عرض الكتالوج الشامل
             <ChevronLeft className="w-4 h-4" />
           </Link>
         </div>
@@ -235,7 +256,7 @@ export default function HomePage() {
             </div>
             <h3 className="text-base font-bold text-white">لا توجد عروض مطابقة للفلاتر الحالية</h3>
             <p className="text-xs text-gray-400 max-w-sm mx-auto">
-              جرب تغيير خيارات التصفية أو إلغاء تحديد بعض الفئات للبحث في بقية العتاد.
+              جرب تغيير خيارات التصفية أو إلغاء تحديد بعض المتاجر للبحث في بقية العتاد.
             </p>
             <button
               onClick={() => setFilters({ sort: "record-low" })}

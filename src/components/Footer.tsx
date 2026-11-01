@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Gamepad2, Send, ShieldCheck, LineChart, Flame } from "lucide-react";
+import { Gamepad2, Send, ShieldCheck, LineChart, Flame, Store } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -22,7 +22,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-xs text-gray-400 leading-relaxed">
-              منصة تتبع ورصد أسعار عتاد الديسكورد والجيمنج وهاردوير البي سي في مصر. نكشف الخصومات الوهمية ونحسب السعر الحقيقي مقارنة بسجل الـ 90 يوماً.
+              منصة تتبع ورصد هبوط الأسعار لعتاد الديسكورد والجيمنج وهاردوير البي سي عبر أكبر 6 متاجر مصرية معتمدة. نكشف الخصومات الوهمية ونحسب السعر الحقيقي مقارنة بسجل الـ 90 يوماً.
             </p>
             <div className="pt-1">
               <a
@@ -39,7 +39,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-2.5">
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider">تصفح لقطة</h4>
+            <h4 className="text-xs font-bold text-white uppercase tracking-wider">المتاجر والصفقات</h4>
             <ul className="space-y-2 text-xs">
               <li>
                 <Link href="/" className="hover:text-[#00f0ff] transition-colors">
@@ -47,8 +47,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/catalog?sort=record-low" className="hover:text-[#00f0ff] transition-colors">
-                  أقل الأسعار المسجلة ⚡
+                <Link href="/catalog?drop=record_low" className="hover:text-[#00f0ff] transition-colors">
+                  انخفاض تاريخي قياسي ⚡
                 </Link>
               </li>
               <li>
@@ -58,13 +58,23 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/amazon-deals" className="hover:text-[#00f0ff] transition-colors">
-                  عروض أمازون مصر الموثقة
+                <Link href="/catalog?store=amazon" className="hover:text-[#ff9900] transition-colors">
+                  أمازون مصر (Amazon.eg)
                 </Link>
               </li>
               <li>
-                <Link href="/favorites" className="hover:text-[#ff007f] transition-colors">
-                  العتاد المحفوظ (المفضلة)
+                <Link href="/catalog?store=btech" className="hover:text-[#0066cc] transition-colors">
+                  بي تك مصر (B.TECH)
+                </Link>
+              </li>
+              <li>
+                <Link href="/catalog?store=twob" className="hover:text-[#7b2cbf] transition-colors">
+                  2B مصر (2B Egypt)
+                </Link>
+              </li>
+              <li>
+                <Link href="/catalog?store=compughana" className="hover:text-[#10b981] transition-colors">
+                  كمبيوجانا وسيجما (مول البستان)
                 </Link>
               </li>
             </ul>
@@ -103,11 +113,15 @@ export default function Footer() {
 
           {/* Trust */}
           <div className="space-y-2.5">
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider">الشفافية</h4>
+            <h4 className="text-xs font-bold text-white uppercase tracking-wider">الشفافية والتوثيق</h4>
             <div className="space-y-2 text-xs text-gray-400">
               <div className="flex items-start gap-2">
+                <Store className="w-4 h-4 text-[#ffd600] shrink-0 mt-0.5" />
+                <span>رصد دوري للأسعار عبر 6 متاجر مصرية معتمدة.</span>
+              </div>
+              <div className="flex items-start gap-2">
                 <ShieldCheck className="w-4 h-4 text-[#00ff9d] shrink-0 mt-0.5" />
-                <span>رصد تلقائي لحظي للأسعار على أمازون مصر.</span>
+                <span>حساب نقاط الرصد وتحديد الهبوط الحقيقي عن أدنى سعر.</span>
               </div>
               <div className="flex items-start gap-2">
                 <LineChart className="w-4 h-4 text-[#00f0ff] shrink-0 mt-0.5" />
@@ -126,7 +140,7 @@ export default function Footer() {
         {/* Affiliate Disclaimer */}
         <div className="pt-6 flex flex-col md:flex-row items-center justify-between text-[11px] text-gray-500 gap-3 text-center md:text-right">
           <p>
-            تنويه: لقطة تشارك في برنامج التسويق بالعمولة لأمازون مصر (Amazon Associates). عند الشراء عبر روابطنا، نحصل على عمولة رسمية تدعم استمرار الخدمة مجاناً دون أي زيادة في السعر عليك.
+            تنويه: لقطة تشارك في برنامج التسويق بالعمولة لأمازون مصر (Amazon Associates) ومتاجر التجزئة المصرية المعتمدة. عند الشراء عبر روابطنا، نحصل على عمولة رسمية تدعم استمرار الخدمة مجاناً دون أي زيادة في السعر عليك.
           </p>
           <p className="shrink-0 font-medium font-mono">
             © 2026 LO2TAA (لقطة). جميع الحقوق محفوظة.
