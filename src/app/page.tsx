@@ -260,63 +260,64 @@ function HomePageContent() {
             رصد لحظي وتتبع ذكي لأكثر من 4,600+ صفقة حقيقية على أمازون مصر: من الموبايلات واللابتوبات وقطع البي سي، إلى الأجهزة المنزلية، الساعات، العطور، والعدد الأصلية مع كشف الخصومات الوهمية وتنبيهات القاع التاريخي.
           </p>
 
-          {/* Quick Category Jump Chips - Clean English Tags with Icons */}
-          <div className="flex flex-wrap items-center gap-2 pt-1 text-xs">
+                    {/* Quick Category Jump Chips - Clean English Tags with Icons */}
+          <div className="flex flex-wrap items-center gap-2 pt-1 text-xs font-sans">
             <button
-              onClick={() => setFilters({ ...filters, category: "pc-hardware", page: 1 })}
-              className="px-3.5 py-1.5 rounded-full bg-cyan-500/15 hover:bg-cyan-500/25 text-cyan-300 border border-cyan-400/40 flex items-center gap-1.5 transition-all font-semibold font-sans shadow-sm"
+              onClick={() => setFilters({ ...filters, category: "mobile-phones", page: 1 })}
+              className="px-3.5 py-1.5 rounded-full bg-cyan-500/15 hover:bg-cyan-500/25 text-cyan-300 border border-cyan-400/40 flex items-center gap-1.5 transition-all font-semibold shadow-sm"
             >
-              <Cpu className="w-3.5 h-3.5 text-cyan-400" />
-              <span>PC Hardware (333) 🔥</span>
+              <span>📱 Mobiles & Tablets (226)</span>
             </button>
             <button
-              onClick={() => setFilters({ ...filters, category: "monitors", page: 1 })}
-              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium font-sans"
+              onClick={() => setFilters({ ...filters, category: "pc-hardware", page: 1 })}
+              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium"
             >
-              <Monitor className="w-3.5 h-3.5 text-emerald-400" />
-              <span>Monitors (91)</span>
+              <Cpu className="w-3.5 h-3.5 text-cyan-400" />
+              <span>PC Hardware (357) 🔥</span>
+            </button>
+            <button
+              onClick={() => setFilters({ ...filters, category: "home-kitchen", page: 1 })}
+              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium"
+            >
+              <span>🍳 Home & Kitchen (435)</span>
+            </button>
+            <button
+              onClick={() => setFilters({ ...filters, category: "watches", page: 1 })}
+              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium"
+            >
+              <span>⌚ Watches (449)</span>
+            </button>
+            <button
+              onClick={() => setFilters({ ...filters, category: "beauty-health", page: 1 })}
+              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium"
+            >
+              <span>🧴 Beauty & Perfumes (232)</span>
+            </button>
+            <button
+              onClick={() => setFilters({ ...filters, category: "electronics", page: 1 })}
+              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium"
+            >
+              <span>📺 Electronics & TVs (1,511)</span>
+            </button>
+            <button
+              onClick={() => setFilters({ ...filters, category: "tools-automotive", page: 1 })}
+              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium"
+            >
+              <span>🔧 Tools & Hardware (214)</span>
             </button>
             <button
               onClick={() => setFilters({ ...filters, category: "keyboards-mice", page: 1 })}
-              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium font-sans"
+              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium"
             >
               <Keyboard className="w-3.5 h-3.5 text-amber-400" />
-              <span>Keyboards & Mice (106)</span>
+              <span>Keyboards & Mice (144)</span>
             </button>
             <button
               onClick={() => setFilters({ ...filters, category: "headsets", page: 1 })}
-              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium font-sans"
+              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium"
             >
               <Headphones className="w-3.5 h-3.5 text-rose-400" />
-              <span>Headsets (49)</span>
-            </button>
-            <button
-              onClick={() => setFilters({ ...filters, category: "laptops", page: 1 })}
-              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium font-sans"
-            >
-              <Laptop className="w-3.5 h-3.5 text-indigo-400" />
-              <span>Laptops (22)</span>
-            </button>
-            <button
-              onClick={() => setFilters({ ...filters, category: "streaming-voice", page: 1 })}
-              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium font-sans"
-            >
-              <Mic className="w-3.5 h-3.5 text-cyan-400" />
-              <span>Streaming & Mics (42)</span>
-            </button>
-            <button
-              onClick={() => setFilters({ ...filters, category: "setup-aesthetic", page: 1 })}
-              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium font-sans"
-            >
-              <Sparkles className="w-3.5 h-3.5 text-pink-400" />
-              <span>Setup & Desk (39)</span>
-            </button>
-            <button
-              onClick={() => setFilters({ ...filters, category: "consoles-handheld", page: 1 })}
-              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium font-sans"
-            >
-              <Gamepad2 className="w-3.5 h-3.5 text-amber-400" />
-              <span>Consoles (18)</span>
+              <span>Headsets (136)</span>
             </button>
           </div>
 

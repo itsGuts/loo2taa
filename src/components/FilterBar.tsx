@@ -27,7 +27,16 @@ import {
   Search,
   Check,
   Eye,
-  ShieldCheck
+  ShieldCheck,
+  Smartphone,
+  Tv,
+  BatteryCharging,
+  Coffee,
+  Watch,
+  Wrench,
+  Dumbbell,
+  Shirt,
+  Radio
 } from "lucide-react";
 
 interface FilterBarProps {
@@ -41,13 +50,25 @@ interface FilterBarProps {
 // Clean English Category Tags with specific icons
 export const CORE_CATEGORIES = [
   { id: "all", name: "All Deals", icon: Zap },
+  // Electronics & Tech
+  { id: "mobile-phones", name: "Mobiles & Tablets", icon: Smartphone },
   { id: "pc-hardware", name: "PC Hardware", icon: Cpu },
-  { id: "monitors", name: "Monitors", icon: Monitor },
   { id: "laptops", name: "Laptops", icon: Laptop },
+  { id: "monitors", name: "Monitors", icon: Monitor },
   { id: "keyboards-mice", name: "Keyboards & Mice", icon: Keyboard },
   { id: "headsets", name: "Headsets & Audio", icon: Headphones },
+  { id: "smart-tv", name: "Smart TVs", icon: Tv },
+  { id: "phone-accessories", name: "Mobile Acc", icon: BatteryCharging },
   { id: "streaming-voice", name: "Streaming & Mics", icon: Mic },
   { id: "consoles-handheld", name: "Consoles", icon: Gamepad2 },
+  { id: "electronics", name: "Electronics", icon: Radio },
+  // Megastore Categories (Yestahil Style)
+  { id: "home-kitchen", name: "Home & Kitchen", icon: Coffee },
+  { id: "beauty-health", name: "Beauty & Perfumes", icon: Sparkles },
+  { id: "watches", name: "Watches", icon: Watch },
+  { id: "tools-automotive", name: "Tools & Hardware", icon: Wrench },
+  { id: "sports-outdoors", name: "Sports & Fitness", icon: Dumbbell },
+  { id: "fashion", name: "Fashion", icon: Shirt },
   { id: "setup-aesthetic", name: "Setup & Desk", icon: Sparkles },
 ];
 
