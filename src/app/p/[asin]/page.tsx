@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   const product = getProductById(asin) || PRODUCTS.find((p) => p.asin.toUpperCase() === asin.toUpperCase());
   
   if (!product) {
-    return { title: "المنتج غير متوفر - LO2TAA" };
+    return { title: "المنتج غير متوفر - LOO2TAA" };
   }
 
   const store = MARKETPLACE_SETTINGS[product.marketplace] || MARKETPLACE_SETTINGS.amazon;
@@ -52,18 +52,18 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   const formattedSavings = Number(product.savings).toLocaleString("ar-EG");
 
   return {
-    title: `${product.display_title} | رادار الأسعار - LO2TAA`,
+    title: `${product.display_title} | رادار الأسعار - LOO2TAA`,
     description: `سعر ${product.display_title} على ${store.name} الآن ${formattedPrice} ج.م مع متابعة السعر المرجعي لآخر 90 يوماً وتنبيهات اللقطات المباشرة.`,
     alternates: {
       canonical: `https://loo2taa.vercel.app/p/${product.asin || product.id}`,
     },
     openGraph: {
       title: product.display_title,
-      description: `وفر ${formattedSavings} ج.م (${product.discount_percent}% خصم). صفقة موثقة من رادار لقطة على ${store.name}.`,
+      description: `وفر ${formattedSavings} ج.م (${product.discount_percent}% خصم). صفقة موثقة من رادار لُقطة على ${store.name}.`,
       images: [{ url: product.image }],
       type: "website",
       locale: "ar_EG",
-      siteName: "LO2TAA - لقطة",
+      siteName: "LOO2TAA - لُقطة",
     },
     twitter: {
       card: "summary_large_image",
@@ -345,7 +345,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         referencePrice={product.reference_price}
       />
 
-      {/* LO2TAA AI Review & Verdict */}
+      {/* LOO2TAA AI Review & Verdict */}
       <AiReviewCard
         review={product.ai_review}
         brand={product.brand}

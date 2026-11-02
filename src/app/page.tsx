@@ -31,13 +31,14 @@ const PAGE_SIZE = 24;
 
 function matchesCategory(prodCategory: string, filterCat?: string): boolean {
   if (!filterCat || filterCat === "all") return true;
-  if (filterCat === "gaming_pc") {
+  if (prodCategory === filterCat) return true;
+  if (filterCat === "gaming_pc" || filterCat === "pc-hardware") {
     return ["pc-hardware", "consoles-handheld", "laptops", "gaming_pc"].includes(prodCategory);
   }
   if (filterCat === "electronics") {
     return ["monitors", "keyboards-mice", "headsets", "streaming-voice", "electronics"].includes(prodCategory);
   }
-  if (filterCat === "home_kitchen") {
+  if (filterCat === "home_kitchen" || filterCat === "setup-aesthetic") {
     return ["setup-aesthetic", "home_kitchen", "home-kitchen"].includes(prodCategory);
   }
   if (filterCat === "tools_auto") {
@@ -49,7 +50,7 @@ function matchesCategory(prodCategory: string, filterCat?: string): boolean {
   if (filterCat === "other") {
     return !["pc-hardware", "consoles-handheld", "laptops", "monitors", "keyboards-mice", "headsets", "streaming-voice"].includes(prodCategory);
   }
-  return prodCategory === filterCat;
+  return false;
 }
 
 function HomePageContent() {
@@ -82,7 +83,7 @@ function HomePageContent() {
 
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
-  // Sync state to URL for shareable URLs (?sort=record-low&category=gaming_pc)
+  // Sync state to URL for shareable URLs (?sort=record-low&category=pc-hardware)
   useEffect(() => {
     const params = new URLSearchParams();
     if (filters.sort && filters.sort !== "record-low") params.set("sort", filters.sort);
@@ -220,11 +221,11 @@ function HomePageContent() {
           </div>
           <div className="space-y-0.5">
             <div className="flex items-center gap-2">
-              <span className="text-xs sm:text-sm font-black text-white">رادار عروض الجمعة البيضاء 11.11 (نوفمبر 2026) ⚡</span>
+              <span className="text-xs sm:text-sm font-black text-white">رادار عروض وتخفيضات نوفمبر 2026 ⚡</span>
               <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-[#ff007f] text-white shadow-sm">White Friday Live</span>
             </div>
             <p className="text-[11px] text-gray-300 leading-relaxed">
-              تنبيه حماية الجيمرز: مع بداية نوفمبر، يلجأ بعض التجار لرفع الأسعار قبل خصومات 11.11. خوارزمية لقطة تكشف الخصم الوهمي فوراً وتقارن مع متوسط الـ 90 يوماً عبر أكبر 6 متاجر مصرية معتمدة.
+              تنبيه حماية المشترين: مع بداية نوفمبر، يلجأ بعض التجار لرفع الأسعار قبل التخفيضات لخلق خصم وهمي. خوارزمية لُقطة تكشف السعر الحقيقي فوراً وتقارن مع متوسط الـ 90 يوماً والقاع التاريخي على أمازون مصر.
             </p>
           </div>
         </div>
@@ -237,61 +238,61 @@ function HomePageContent() {
         </button>
       </div>
 
-      {/* Modern Discord-Centric Hero Section */}
+      {/* Modern Hardware-Centric Hero Section */}
       <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#0a0f1d] via-[#070a14] to-[#140824] border border-white/[0.08] p-6 sm:p-10 shadow-2xl">
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#5865F2]/10 rounded-full blur-3xl pointer-events-none" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#00f0ff]/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 max-w-3xl space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5865F2]/15 border border-[#5865F2]/40 text-xs font-bold text-[#8ea1ff]">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00f0ff]/10 border border-[#00f0ff]/30 text-xs font-bold text-[#00f0ff]">
             <span className="w-1.5 h-1.5 rounded-full bg-[#00ff9d] animate-pulse" />
-            <span>رادار هبوط الأسعار الشامل لمجتمع الجيمنج والديسكورد في مصر</span>
+            <span>رادار هبوط الأسعار الحقيقي لهاردوير الكمبيوتر والجيمنج في مصر</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
-            <span className="font-mono text-[#00f0ff]">LO2TAA</span> // تتبع هبوط الأسعار <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f0ff] via-[#5865F2] to-[#ff007f]">عبر 6 متاجر معتمدة</span>
+            <span className="font-mono text-[#00f0ff]">LOO2TAA</span> // صفقات وهاردوير <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f0ff] via-[#5865F2] to-[#ff007f]">أمازون مصر الحقيقية</span>
           </h1>
 
           <p className="text-xs sm:text-sm text-gray-300 leading-relaxed max-w-2xl">
-            رصد حي ومقارنة فورية بين كبرى المتاجر الرسمية في مصر: أمازون مصر، بي تك، 2B، راية شوب، دريم 2000، وكمبيوجانا وسيجما. مع نقاط رصد مستمرة لكشف الخصومات الوهمية وتوفير السعر الحقيقي.
+            رصد لحظي وتتبع دقيق لأسعار قطع وهاردوير البي سي، كروت الشاشة، المعالجات، الشاشات، وإكسسوارات الجيمنج على أمازون مصر. مع خوارزمية ذكية لكشف الخصومات الوهمية وتنبيهك عند الوصول للقاع التاريخي.
           </p>
 
           {/* Quick Category Jump Chips */}
           <div className="flex flex-wrap items-center gap-2 pt-1 text-xs font-bold">
             <button
-              onClick={() => setFilters({ ...filters, category: "gaming_pc", page: 1 })}
+              onClick={() => setFilters({ ...filters, category: "pc-hardware", page: 1 })}
               className="px-3 py-1.5 rounded-xl bg-[#00f0ff]/15 hover:bg-[#00f0ff]/25 text-[#00f0ff] border border-[#00f0ff]/30 flex items-center gap-1.5 transition-colors font-black shadow-sm"
             >
               <Cpu className="w-3.5 h-3.5 text-[#00f0ff]" />
-              هاردوير وتجميعات الجيمنج 🔥
+              قطع وهاردوير البي سي (151 صفقة) 🔥
             </button>
             <button
-              onClick={() => setFilters({ ...filters, category: "electronics", page: 1 })}
+              onClick={() => setFilters({ ...filters, category: "monitors", page: 1 })}
               className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-200 border border-white/5 flex items-center gap-1.5 transition-colors"
             >
               <Monitor className="w-3.5 h-3.5 text-[#00ff9d]" />
-              شاشات وإلكترونيات
+              شاشات الكمبيوتر والألعاب
             </button>
             <button
-              onClick={() => setFilters({ ...filters, category: "home_kitchen", page: 1 })}
+              onClick={() => setFilters({ ...filters, category: "keyboards-mice", page: 1 })}
               className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-200 border border-white/5 flex items-center gap-1.5 transition-colors"
             >
-              <Home className="w-3.5 h-3.5 text-[#ffd600]" />
-              المنزل والسيت أب
+              <Keyboard className="w-3.5 h-3.5 text-[#ffd600]" />
+              كيبوردات وماوسات
             </button>
             <button
-              onClick={() => setFilters({ ...filters, category: "tools_auto", page: 1 })}
+              onClick={() => setFilters({ ...filters, category: "headsets", page: 1 })}
               className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-200 border border-white/5 flex items-center gap-1.5 transition-colors"
             >
-              <Wrench className="w-3.5 h-3.5 text-[#ff007f]" />
-              أدوات وعدد
+              <Headphones className="w-3.5 h-3.5 text-[#ff007f]" />
+              سماعات وصوتيات
             </button>
             <button
-              onClick={() => setFilters({ ...filters, category: "fashion", page: 1 })}
+              onClick={() => setFilters({ ...filters, category: "laptops", page: 1 })}
               className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-200 border border-white/5 flex items-center gap-1.5 transition-colors"
             >
               <Sparkles className="w-3.5 h-3.5 text-[#8ea1ff]" />
-              أزياء واكسسوارات
+              أجهزة لابتوب
             </button>
           </div>
 
@@ -299,14 +300,14 @@ function HomePageContent() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-3">
             <div className="bg-[#05070c]/80 rounded-2xl p-3 border border-white/5">
               <span className="text-[10px] text-gray-400 block font-medium">صفقات نشطة الآن</span>
-              <span className="text-xl sm:text-2xl font-black text-[#00f0ff]">{totalDeals} لقطة</span>
+              <span className="text-xl sm:text-2xl font-black text-[#00f0ff]">{totalDeals} لُقطة</span>
             </div>
             <div className="bg-[#05070c]/80 rounded-2xl p-3 border border-white/5">
-              <span className="text-[10px] text-gray-400 block font-medium">المتاجر المعتمدة</span>
-              <span className="text-xl sm:text-2xl font-black text-[#ffd600]">6 متاجر</span>
+              <span className="text-[10px] text-gray-400 block font-medium">المتجر والرصد</span>
+              <span className="text-lg sm:text-xl font-black text-[#ffd600]">أمازون مصر ⚡</span>
             </div>
             <div className="bg-[#05070c]/80 rounded-2xl p-3 border border-white/5">
-              <span className="text-[10px] text-gray-400 block font-medium">أعلى توفير مرصود</span>
+              <span className="text-[10px] text-gray-400 block font-medium">أعلى توفير حقيقي</span>
               <span className="text-xl sm:text-2xl font-black text-[#00ff9d]">{maxSavings.toLocaleString("ar-EG")} ج.م</span>
             </div>
             <div className="bg-[#05070c]/80 rounded-2xl p-3 border border-white/5">
@@ -352,13 +353,13 @@ function HomePageContent() {
             </div>
             <h3 className="text-base font-bold text-white">لا توجد عروض مطابقة للفلاتر الحالية</h3>
             <p className="text-xs text-gray-400 max-w-sm mx-auto">
-              جرب تغيير خيارات التصفية أو إلغاء تحديد بعض المتاجر للبحث في بقية العتاد.
+              جرب تغيير خيارات التصفية أو اختيار قسم آخر لعرض الصفقات المتاحة.
             </p>
             <button
               onClick={() => setFilters({ sort: "record-low", page: 1 })}
               className="px-4 py-2 rounded-xl bg-[#00f0ff] text-[#05070c] font-black text-xs hover:shadow-lg hover:shadow-[#00f0ff]/30 transition-all"
             >
-              عرض كل العتاد
+              عرض كل الصفقات
             </button>
           </div>
         ) : viewMode === "grid" ? (
@@ -424,7 +425,7 @@ export default function HomePage() {
     <Suspense
       fallback={
         <div className="cyber-card rounded-3xl p-12 text-center text-gray-400 text-xs animate-pulse">
-          جاري تحميل صفقات لقطة...
+          جاري تحميل صفقات لُقطة...
         </div>
       }
     >

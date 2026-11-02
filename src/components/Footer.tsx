@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Gamepad2, Send, ShieldCheck, LineChart, Flame, Store } from "lucide-react";
+import { Gamepad2, Send, ShieldCheck, LineChart, Flame, Store, Search, Sparkles } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -17,12 +17,12 @@ export default function Footer() {
                 </div>
               </div>
               <span className="text-lg font-black text-white flex items-center gap-2">
-                <span className="font-mono text-[#00f0ff]">LO2TAA</span>
-                <span className="text-xs text-gray-400 font-bold">لقطة</span>
+                <span className="font-mono text-[#00f0ff]">LOO2TAA</span>
+                <span className="text-xs text-gray-400 font-bold">لُقطة</span>
               </span>
             </div>
             <p className="text-xs text-gray-400 leading-relaxed">
-              منصة تتبع ورصد هبوط الأسعار لعتاد الديسكورد والجيمنج وهاردوير البي سي عبر أكبر 6 متاجر مصرية معتمدة. نكشف الخصومات الوهمية ونحسب السعر الحقيقي مقارنة بسجل الـ 90 يوماً.
+              منصة متخصصة في تتبع ورصد هبوط أسعار هاردوير وعتاد الكمبيوتر والجيمنج على أمازون مصر. نكشف الخصومات الوهمية ونحسب السعر الحقيقي مقارنة بسجل الـ 90 يوماً والقاع التاريخي.
             </p>
             <div className="pt-1">
               <a
@@ -39,7 +39,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-2.5">
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider">المتاجر والصفقات</h4>
+            <h4 className="text-xs font-bold text-white uppercase tracking-wider">روابط سريعة والصفقات</h4>
             <ul className="space-y-2 text-xs">
               <li>
                 <Link href="/" className="hover:text-[#00f0ff] transition-colors">
@@ -54,59 +54,55 @@ export default function Footer() {
               <li>
                 <Link href="/catalog?sort=discount-desc" className="hover:text-[#ff9900] transition-colors flex items-center gap-1">
                   <Flame className="w-3 h-3 text-[#ff9900]" />
-                  عروض الجمعة البيضاء 11.11
+                  أعلى نسبة خصم حقيقي
                 </Link>
               </li>
               <li>
-                <Link href="/catalog?store=amazon" className="hover:text-[#ff9900] transition-colors">
-                  أمازون مصر (Amazon.eg)
+                <Link href="/amazon-deals" className="hover:text-[#ff9900] transition-colors">
+                  عروض وتخفيضات أمازون مصر
                 </Link>
               </li>
               <li>
-                <Link href="/catalog?store=btech" className="hover:text-[#0066cc] transition-colors">
-                  بي تك مصر (B.TECH)
+                <Link href="/inspect" className="hover:text-[#00f0ff] transition-colors flex items-center gap-1">
+                  <Sparkles className="w-3 h-3 text-[#00f0ff]" />
+                  فاحص الصفقات الذكي 🔍
                 </Link>
               </li>
               <li>
-                <Link href="/catalog?store=twob" className="hover:text-[#7b2cbf] transition-colors">
-                  2B مصر (2B Egypt)
-                </Link>
-              </li>
-              <li>
-                <Link href="/catalog?store=compughana" className="hover:text-[#10b981] transition-colors">
-                  كمبيوجانا وسيجما (مول البستان)
+                <Link href="/favorites" className="hover:text-[#ff007f] transition-colors">
+                  قائمة المفضلة
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* 8 Categories Synchronized */}
+          {/* 8 Clean Categories */}
           <div className="space-y-2.5">
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider">أقسام العتاد</h4>
+            <h4 className="text-xs font-bold text-white uppercase tracking-wider">أقسام العتاد والهاردوير</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 text-xs">
-              <Link href="/catalog?category=streaming-voice" className="hover:text-[#00f0ff] transition-colors truncate">
-                مايكات وصوتيات ديسكورد
-              </Link>
-              <Link href="/catalog?category=headsets" className="hover:text-[#00f0ff] transition-colors truncate">
-                سماعات ديسكورد وقيمنق
-              </Link>
-              <Link href="/catalog?category=keyboards-mice" className="hover:text-[#00f0ff] transition-colors truncate">
-                كيبوردات ميكانيكال وماوسات
-              </Link>
-              <Link href="/catalog?category=setup-aesthetic" className="hover:text-[#00f0ff] transition-colors truncate">
-                سيت أب وديكور وإضاءة RGB
+              <Link href="/catalog?category=pc-hardware" className="hover:text-[#00f0ff] transition-colors truncate">
+                قطع وهاردوير البي سي
               </Link>
               <Link href="/catalog?category=monitors" className="hover:text-[#00f0ff] transition-colors truncate">
-                شاشات قيمنق 144Hz+
-              </Link>
-              <Link href="/catalog?category=pc-hardware" className="hover:text-[#00f0ff] transition-colors truncate">
-                تجميعات وهاردوير البي سي
-              </Link>
-              <Link href="/catalog?category=consoles-handheld" className="hover:text-[#00f0ff] transition-colors truncate">
-                كونسول واكسسوارات
+                شاشات الكمبيوتر والألعاب
               </Link>
               <Link href="/catalog?category=laptops" className="hover:text-[#00f0ff] transition-colors truncate">
-                لابتوبات قيمنق ومونتاج
+                أجهزة اللابتوب والقيمنق
+              </Link>
+              <Link href="/catalog?category=keyboards-mice" className="hover:text-[#00f0ff] transition-colors truncate">
+                كيبوردات وماوسات
+              </Link>
+              <Link href="/catalog?category=headsets" className="hover:text-[#00f0ff] transition-colors truncate">
+                سماعات وصوتيات
+              </Link>
+              <Link href="/catalog?category=streaming-voice" className="hover:text-[#00f0ff] transition-colors truncate">
+                مايكات ومعدات بث
+              </Link>
+              <Link href="/catalog?category=consoles-handheld" className="hover:text-[#00f0ff] transition-colors truncate">
+                أجهزة ألعاب وكونسول
+              </Link>
+              <Link href="/catalog?category=setup-aesthetic" className="hover:text-[#00f0ff] transition-colors truncate">
+                إكسسوارات السيت أب
               </Link>
             </div>
           </div>
@@ -117,7 +113,7 @@ export default function Footer() {
             <div className="space-y-2 text-xs text-gray-400">
               <div className="flex items-start gap-2">
                 <Store className="w-4 h-4 text-[#ffd600] shrink-0 mt-0.5" />
-                <span>رصد دوري للأسعار عبر 6 متاجر مصرية معتمدة.</span>
+                <span>رصد دوري لأسعار أمازون مصر وتحديث فوري للصفقات.</span>
               </div>
               <div className="flex items-start gap-2">
                 <ShieldCheck className="w-4 h-4 text-[#00ff9d] shrink-0 mt-0.5" />
@@ -132,7 +128,7 @@ export default function Footer() {
               href="/about"
               className="inline-block text-xs font-bold text-[#00f0ff] hover:underline pt-1"
             >
-              عن لقطة وكيف نعمل ↗
+              عن لُقطة وكيف نعمل ↗
             </Link>
           </div>
         </div>
@@ -146,7 +142,7 @@ export default function Footer() {
             <Link href="/admin" className="text-gray-600 hover:text-gray-400 transition-colors">
               لوحة الإدارة 🔒
             </Link>
-            <span>© 2026 LO2TAA (لقطة). جميع الحقوق محفوظة.</span>
+            <span>© 2026 LOO2TAA (لُقطة). جميع الحقوق محفوظة.</span>
           </div>
         </div>
       </div>

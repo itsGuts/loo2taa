@@ -18,7 +18,7 @@ export default function AboutPage() {
       <div className="cyber-card rounded-3xl p-6 sm:p-10 shadow-2xl space-y-3 text-center sm:text-right border border-white/10 relative overflow-hidden">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#00f0ff]/10 text-xs font-bold text-[#00f0ff] border border-[#00f0ff]/30">
           <Gamepad2 className="w-3.5 h-3.5" />
-          عن منصة لقطة
+          عن منصة لُقطة
         </div>
 
         <h1 className="text-2xl sm:text-4xl font-black text-white">
@@ -26,7 +26,7 @@ export default function AboutPage() {
         </h1>
 
         <p className="text-xs sm:text-sm text-gray-300 leading-relaxed max-w-2xl">
-          انطلقت منصة «لقطة» لتمنح المتسوق المصري أداة واضحة ومستقلة لمعرفة ما إذا كان التخفيض حقيقياً ويستحق الشراء، أم مجرد رفع مسبق للسعر قبل العروض الموسمية.
+          انطلقت منصة «لُقطة» لتمنح المتسوق المصري أداة واضحة ومستقلة لمعرفة ما إذا كان التخفيض حقيقياً ويستحق الشراء، أم مجرد رفع مسبق للسعر قبل العروض الموسمية.
         </p>
       </div>
 
@@ -58,7 +58,7 @@ export default function AboutPage() {
               ختم «أقل سعر مرصود»
             </div>
             <p className="text-xs text-gray-400 leading-relaxed">
-              لا نطلق على المنتج كلمة «لقطة» إلا إذا نزل سعره لأدنى نقطة تاريخية مرصودة لدينا وتأكدنا من موثوقية البائع.
+              لا نطلق على المنتج كلمة «لُقطة» إلا إذا نزل سعره لأدنى نقطة تاريخية مرصودة لدينا وتأكدنا من موثوقية البائع.
             </p>
           </div>
         </div>
@@ -93,7 +93,7 @@ export default function AboutPage() {
           تنويه الشفافية ونموذج العمل
         </h2>
         <p className="text-xs text-gray-300 leading-relaxed">
-          منصة لقطة مجانية 100% للمستخدمين في مصر. ولكي نتمكن من تغطية تكاليف الخوادم وتطوير خوارزميات رصد الأسعار، نشارك في برامج التسويق بالعمولة الرسمية (Amazon Associates وغيرها).
+          منصة لُقطة مجانية 100% للمستخدمين في مصر. ولكي نتمكن من تغطية تكاليف الخوادم وتطوير خوارزميات رصد الأسعار، نشارك في برامج التسويق بالعمولة الرسمية (Amazon Associates وغيرها).
         </p>
         <p className="text-xs text-[#00ff9d] font-bold">
           عند نقرك على روابط الشراء وإتمام الطلب، قد نحصل على عمولة تسويقية بسيطة من المتجر دون أن تدفع أي مليم إضافي في سعر المنتج!
@@ -112,7 +112,7 @@ export default function AboutPage() {
           className="btn-cyber-primary inline-flex items-center gap-2 px-6 py-3 rounded-2xl text-xs"
         >
           <Send className="w-4 h-4" />
-          انضم لقناة لقطة على تليجرام
+          انضم لقناة لُقطة على تليجرام
         </a>
       </div>
     </div>

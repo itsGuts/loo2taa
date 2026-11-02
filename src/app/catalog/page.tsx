@@ -12,13 +12,14 @@ const PAGE_SIZE = 24;
 
 function matchesCategory(prodCategory: string, filterCat?: string): boolean {
   if (!filterCat || filterCat === "all") return true;
-  if (filterCat === "gaming_pc") {
+  if (prodCategory === filterCat) return true;
+  if (filterCat === "gaming_pc" || filterCat === "pc-hardware") {
     return ["pc-hardware", "consoles-handheld", "laptops", "gaming_pc"].includes(prodCategory);
   }
   if (filterCat === "electronics") {
     return ["monitors", "keyboards-mice", "headsets", "streaming-voice", "electronics"].includes(prodCategory);
   }
-  if (filterCat === "home_kitchen") {
+  if (filterCat === "home_kitchen" || filterCat === "setup-aesthetic") {
     return ["setup-aesthetic", "home_kitchen", "home-kitchen"].includes(prodCategory);
   }
   if (filterCat === "tools_auto") {
@@ -30,7 +31,7 @@ function matchesCategory(prodCategory: string, filterCat?: string): boolean {
   if (filterCat === "other") {
     return !["pc-hardware", "consoles-handheld", "laptops", "monitors", "keyboards-mice", "headsets", "streaming-voice"].includes(prodCategory);
   }
-  return prodCategory === filterCat;
+  return false;
 }
 
 function CatalogInner() {
@@ -182,10 +183,10 @@ function CatalogInner() {
         <div>
           <h1 className="text-2xl sm:text-3xl font-black text-white flex items-center gap-2.5">
             <Cpu className="w-6 h-6 text-[#00f0ff]" />
-            كتالوج عتاد الديسكورد والجيمنج في مصر
+            كتالوج صفقات وهاردوير الكمبيوتر والجيمنج في مصر
           </h1>
           <p className="text-xs text-gray-400 mt-1">
-            رصد هبوط الأسعار والخصومات الحقيقية عبر أكبر 6 متاجر مصرية معتمدة مع سجل السعر لآخر 90 يوم
+            رصد هبوط الأسعار والخصومات الحقيقية على أمازون مصر مع سجل تاريخي لآخر 90 يوماً
           </p>
         </div>
 

@@ -13,15 +13,15 @@ export const MARKETPLACE_SETTINGS: Record<string, MarketplaceSetting> = {
 };
 
 export const CATEGORIES = [
-  { id: 'all', name: 'كل اللقطات', icon: 'Zap' },
-  { id: 'streaming-voice', name: 'مايكات وصوتيات ديسكورد', icon: 'Mic' },
-  { id: 'headsets', name: 'سماعات ديسكورد وقيمنق', icon: 'Headphones' },
+  { id: 'all', name: 'كل الصفقات', icon: 'Zap' },
+  { id: 'pc-hardware', name: 'قطع وهاردوير البي سي', icon: 'Cpu' },
+  { id: 'monitors', name: 'شاشات الكمبيوتر والألعاب', icon: 'Monitor' },
+  { id: 'laptops', name: 'أجهزة اللابتوب والقيمنق', icon: 'Laptop' },
   { id: 'keyboards-mice', name: 'كيبوردات ميكانيكال وماوسات', icon: 'Keyboard' },
-  { id: 'setup-aesthetic', name: 'سيت أب وديكور وإضاءة RGB', icon: 'Sparkles' },
-  { id: 'monitors', name: 'شاشات قيمنق 144Hz+', icon: 'Monitor' },
-  { id: 'pc-hardware', name: 'تجميعات وهاردوير البي سي', icon: 'Cpu' },
-  { id: 'consoles-handheld', name: 'كونسول واكسسوارات', icon: 'Gamepad2' },
-  { id: 'laptops', name: 'لابتوبات قيمنق ومونتاج', icon: 'Laptop' },
+  { id: 'headsets', name: 'سماعات الألعاب والصوتيات', icon: 'Headphones' },
+  { id: 'streaming-voice', name: 'مايكات ومعدات البث', icon: 'Mic' },
+  { id: 'consoles-handheld', name: 'أجهزة ألعاب وكونسول', icon: 'Gamepad2' },
+  { id: 'setup-aesthetic', name: 'إكسسوارات السيت أب والمكتب', icon: 'Sparkles' },
 ];
 
 export const PRODUCTS: Product[] = productsData as unknown as Product[];

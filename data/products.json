@@ -140,7 +140,7 @@
   {
     "id": "d-mic-07",
     "asin": "B09738CV2G",
-    "display_title": "جهاز إلجاتو ستريم ديك MK.2 بـ 15 مفتاح LCD تفاعلي للتحكم برومات الديسكورد والبث (Elgato Stream Deck MK.2)",
+    "display_title": "جهاز إلجاتو ستريم ديك MK.2 بـ 15 مفتاح LCD تفاعلي للتحكم بالبث والمونتاج (Elgato Stream Deck MK.2)",
     "title": "Elgato Stream Deck MK.2 Studio Controller, 15 Customizable LCD Keys, Trigger Actions in Apps, Discord, OBS",
     "brand": "Elgato",
     "category": "streaming-voice",
@@ -209,7 +209,7 @@
   {
     "id": "d-head-02",
     "asin": "B081415GCS",
-    "display_title": "سماعة لوجيتيك G733 لايت سبيد لاسلكية إصدار ليلك البنفسجي الفاتح بوزن ريشة 278 جم (Logitech G733 Lilac Wireless)",
+    "display_title": "سماعة لوجيتيك G733 لايت سبيد لاسلكية إصدار ليلك البنفسجي الفاتح 278 جم (Logitech G733 Lilac Wireless)",
     "title": "Logitech G733 Lightspeed Wireless Gaming Headset with Suspension Headband, LIGHTSYNC RGB, Blue VO!CE - Lilac",
     "brand": "Logitech",
     "category": "headsets",
@@ -278,7 +278,7 @@
   {
     "id": "d-head-03",
     "asin": "B00SAYCXWG",
-    "display_title": "سماعة هايبر إكس كلاود 2 ة بصوت محيطي 7.1 ووسائد جلد وقطيفة (HyperX Cloud II Red/Gunmetal)",
+    "display_title": "سماعة هايبر إكس كلاود 2 بصوت محيطي 7.1 ووسائد جلد وقطيفة (HyperX Cloud II Red/Gunmetal)",
     "title": "HyperX Cloud II - Gaming Headset, 7.1 Surround Sound, Memory Foam Ear Pads, Durable Aluminum Frame",
     "brand": "HyperX",
     "category": "headsets",
@@ -347,7 +347,7 @@
   {
     "id": "d-head-04",
     "asin": "B09TRW57WB",
-    "display_title": "هايبر إكس كلاود ألفا لاسلكية تعمل 300 ساعة بشحنة واحدة فقط (HyperX Cloud Alpha Wireless 300h)",
+    "display_title": "هايبر إكس كلاود ألفا لاسلكية تعمل 300 ساعة (HyperX Cloud Alpha Wireless 300h)",
     "title": "HyperX Cloud Alpha Wireless - Gaming Headset for PC, 300-hour battery life, DTS Headphone:X Spatial Audio",
     "brand": "HyperX",
     "category": "headsets",
@@ -2403,7 +2403,7 @@
   {
     "id": "eg-b0d8bdfq22",
     "asin": "B0D8BDFQ22",
-    "display_title": "ميكروفون كمبيوتر USB من يو جرين مع إضاءة RGB وزر لمسي لكتم الصوت للديسكورد (UGREEN USB Gaming Mic)",
+    "display_title": "ميكروفون كمبيوتر USB من يو جرين مع إضاءة RGB وزر لمسي لكتم الصوت (UGREEN USB Gaming Mic)",
     "title": "ميكروفون للكمبيوتر من يو جرين، ميكروفون USB بإضاءة ار جي بي وزر كتم، دقة 24 بت/96 كيلوهرتز، نمط قطبي قلبي، تحكم في مستوى الصوت، ميكروفون مكثف للبث والألعاب والبودكاست، متوافق مع اللابتوب وجهاز PS5",
     "brand": "UGREEN",
     "category": "streaming-voice",
@@ -9781,7 +9781,7 @@
   {
     "id": "amz-b08c7bgv3d",
     "asin": "B08C7BGV3D",
-    "display_title": "كيسة كورسير 4000D إيرفلو زجاج مقسى بتدفق هواء استثنائي (Corsair 4000D Airflow Case)",
+    "display_title": "كيسة كورسير 4000D إيرفلو زجاج مقسى بتدفق هواء (Corsair 4000D Airflow Case)",
     "title": "Corsair 4000D Airflow Tempered Glass Mid-Tower ATX PC Case - High-Airflow - Cable Management System - Black",
     "brand": "Corsair",
     "category": "pc-hardware",
@@ -11851,7 +11851,7 @@
   {
     "id": "amz-b0btzb7f88",
     "asin": "B0BTZB7F88",
-    "display_title": "معالج الألعاب الأقوى في العالم رايزن 7 مع تقنية 3D V-Cache (AMD Ryzen 7 7800X3D)",
+    "display_title": "معالج الألعاب رايزن 7 مع تقنية 3D V-Cache (AMD Ryzen 7 7800X3D)",
     "title": "AMD Ryzen 7 7800X3D 8-Core, 16-Thread Desktop Processor, 104MB Cache, 5.0 GHz Max Boost, Socket AM5, PCIe 5.0 Support",
     "brand": "AMD",
     "category": "pc-hardware",

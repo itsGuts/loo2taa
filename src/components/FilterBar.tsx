@@ -18,13 +18,16 @@ import {
   Clock,
   Cpu,
   Monitor,
-  Home,
-  Wrench,
-  Shirt,
+  Laptop,
+  Keyboard,
+  Headphones,
+  Mic,
+  Gamepad2,
   Package,
   Search,
   Check,
-  Eye
+  Eye,
+  ShieldCheck
 } from "lucide-react";
 
 interface FilterBarProps {
@@ -35,15 +38,17 @@ interface FilterBarProps {
   totalResults: number;
 }
 
-// 6 Core Categories required + All
+// 9 Clean Categories matching actual catalog deals
 export const CORE_CATEGORIES = [
-  { id: "all", name: "كل الأقسام", icon: Zap },
-  { id: "gaming_pc", name: "تجميعات وهاردوير الجيمنج", icon: Cpu },
-  { id: "electronics", name: "إلكترونيات وشاشات", icon: Monitor },
-  { id: "home_kitchen", name: "المنزل والمطبخ والسيت أب", icon: Home },
-  { id: "tools_auto", name: "أدوات وسيارات وعدد", icon: Wrench },
-  { id: "fashion", name: "أزياء واكسسوارات", icon: Shirt },
-  { id: "other", name: "أقسام أخرى", icon: Package },
+  { id: "all", name: "كل الصفقات", icon: Zap },
+  { id: "pc-hardware", name: "قطع وهاردوير البي سي", icon: Cpu },
+  { id: "monitors", name: "شاشات الكمبيوتر والألعاب", icon: Monitor },
+  { id: "laptops", name: "أجهزة اللابتوب والقيمنق", icon: Laptop },
+  { id: "keyboards-mice", name: "كيبوردات ميكانيكال وماوسات", icon: Keyboard },
+  { id: "headsets", name: "سماعات الألعاب والصوتيات", icon: Headphones },
+  { id: "streaming-voice", name: "مايكات ومعدات البث", icon: Mic },
+  { id: "consoles-handheld", name: "أجهزة ألعاب وكونسول", icon: Gamepad2 },
+  { id: "setup-aesthetic", name: "إكسسوارات السيت أب والمكتب", icon: Sparkles },
 ];
 
 // 6 Core Sort Tabs required
@@ -70,15 +75,10 @@ export default function FilterBar({
   const [drawerOpen, setDrawerOpen] = useState(false);
   const brands = getUniqueBrands();
 
-  // Stores metadata with deal counts
+  // Active stores with verified deals
   const stores = [
-    { key: "all", name: "جميع المتاجر", count: PRODUCTS.length, color: "#00f0ff" },
-    { key: "amazon", name: "أمازون مصر", count: PRODUCTS.filter(p => p.marketplace === "amazon").length, color: "#ff9900" },
-    { key: "btech", name: "بي تك", count: PRODUCTS.filter(p => p.marketplace === "btech").length, color: "#0066cc" },
-    { key: "twob", name: "2B مصر", count: PRODUCTS.filter(p => p.marketplace === "twob").length, color: "#7b2cbf" },
-    { key: "rayashop", name: "راية شوب", count: PRODUCTS.filter(p => p.marketplace === "rayashop").length, color: "#e60000" },
-    { key: "dream2000", name: "دريم 2000", count: PRODUCTS.filter(p => p.marketplace === "dream2000").length, color: "#f77f00" },
-    { key: "compughana", name: "كمبيوجانا وسيجما", count: PRODUCTS.filter(p => p.marketplace === "compughana").length, color: "#10b981" },
+    { key: "all", name: "جميع الصفقات", count: PRODUCTS.length, color: "#00f0ff" },
+    { key: "amazon", name: "أمازون مصر (Amazon.eg)", count: PRODUCTS.filter(p => p.marketplace === "amazon").length, color: "#ff9900" },
   ];
 
   const handleCategorySelect = (catId: string) => {
@@ -151,7 +151,7 @@ export default function FilterBar({
           <Search className="w-4 h-4 text-gray-400 absolute right-3.5 top-1/2 -translate-y-1/2" />
           <input
             type="text"
-            placeholder="ابحث باسم المنتج، الموديل، أو الشركة (مثل: RTX 4070، HyperX، سامسونج)..."
+            placeholder="ابحث باسم المنتج، الموديل، أو الشركة (مثل: RTX 4070، Ryzen 7800X3D، HyperX، لوجيتيك)..."
             value={filters.query || ""}
             onChange={(e) => handleSearchChange(e.target.value)}
             className="w-full bg-[#070a12] border border-white/10 text-white rounded-xl pr-10 pl-4 py-2 text-xs focus:outline-hidden focus:border-[#00f0ff] placeholder-gray-500 font-medium"
@@ -174,7 +174,7 @@ export default function FilterBar({
               <button
                 key={st.key}
                 onClick={() => handleStoreSelect(st.key)}
-                className={`px-2.5 py-1.5 rounded-xl transition-all shrink-0 flex items-center gap-1.5 text-xs ${
+                className={`px-3 py-1.5 rounded-xl transition-all shrink-0 flex items-center gap-1.5 text-xs ${
                   isSelected
                     ? "bg-white/15 text-white shadow-md border font-black"
                     : "bg-[#070a12] text-gray-400 hover:text-white border border-white/5 hover:border-white/20"
@@ -263,7 +263,7 @@ export default function FilterBar({
         </div>
       </div>
 
-      {/* 3. Six Core Categories Strip */}
+      {/* 3. Nine Core Categories Strip */}
       <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
         {CORE_CATEGORIES.map((cat) => {
           const isSelected = (!filters.category && cat.id === "all") || filters.category === cat.id;

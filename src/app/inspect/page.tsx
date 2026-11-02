@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ChevronLeft, ShieldCheck, Zap, LineChart, Award } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "فاحص صفقات أمازون مصر الذكي | كشف الخصومات الوهمية - LO2TAA",
+  title: "فاحص صفقات أمازون مصر الذكي | كشف الخصومات الوهمية - LOO2TAA",
   description: "أداة فحص صفقات وعروض أمازون مصر المباشرة (مثل صفقة Safqa). الصق أي رابط منتج واكتشف فوراً هل السعر لقطة حقيقية أم خصم وهمي مع سجل الأسعار لآخر 90 يوم.",
 };
 
