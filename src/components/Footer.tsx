@@ -78,31 +78,31 @@ export default function Footer() {
 
           {/* 8 Clean Categories */}
           <div className="space-y-2.5">
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider">أقسام العتاد والهاردوير</h4>
+            <h4 className="text-xs font-bold text-white uppercase tracking-wider">Hardware Categories</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 text-xs">
               <Link href="/catalog?category=pc-hardware" className="hover:text-[#00f0ff] transition-colors truncate">
-                قطع وهاردوير البي سي
+                PC Hardware
               </Link>
               <Link href="/catalog?category=monitors" className="hover:text-[#00f0ff] transition-colors truncate">
-                شاشات الكمبيوتر والألعاب
+                Monitors
               </Link>
               <Link href="/catalog?category=laptops" className="hover:text-[#00f0ff] transition-colors truncate">
-                أجهزة اللابتوب والقيمنق
+                Laptops
               </Link>
               <Link href="/catalog?category=keyboards-mice" className="hover:text-[#00f0ff] transition-colors truncate">
-                كيبوردات وماوسات
+                Keyboards & Mice
               </Link>
               <Link href="/catalog?category=headsets" className="hover:text-[#00f0ff] transition-colors truncate">
-                سماعات وصوتيات
+                Headsets & Audio
               </Link>
               <Link href="/catalog?category=streaming-voice" className="hover:text-[#00f0ff] transition-colors truncate">
-                مايكات ومعدات بث
+                Streaming & Mics
               </Link>
               <Link href="/catalog?category=consoles-handheld" className="hover:text-[#00f0ff] transition-colors truncate">
-                أجهزة ألعاب وكونسول
+                Consoles
               </Link>
               <Link href="/catalog?category=setup-aesthetic" className="hover:text-[#00f0ff] transition-colors truncate">
-                إكسسوارات السيت أب
+                Setup & Desk
               </Link>
             </div>
           </div>

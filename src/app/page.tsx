@@ -21,10 +21,13 @@ import {
   Sparkles,
   Monitor,
   Cpu,
+  Laptop,
   Store,
   ArrowUpDown,
   Home,
-  Wrench
+  Wrench,
+  Activity,
+  Layers
 } from "lucide-react";
 
 const PAGE_SIZE = 24;
@@ -222,7 +225,7 @@ function HomePageContent() {
           <div className="space-y-0.5">
             <div className="flex items-center gap-2">
               <span className="text-xs sm:text-sm font-black text-white">رادار عروض وتخفيضات نوفمبر 2026 ⚡</span>
-              <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-[#ff007f] text-white shadow-sm">White Friday Live</span>
+              <span className="text-[10px] font-black px-2 py-0.5 rounded-full bg-[#ff007f] text-white shadow-sm font-sans">White Friday Live</span>
             </div>
             <p className="text-[11px] text-gray-300 leading-relaxed">
               تنبيه حماية المشترين: مع بداية نوفمبر، يلجأ بعض التجار لرفع الأسعار قبل التخفيضات لخلق خصم وهمي. خوارزمية لُقطة تكشف السعر الحقيقي فوراً وتقارن مع متوسط الـ 90 يوماً والقاع التاريخي على أمازون مصر.
@@ -231,10 +234,10 @@ function HomePageContent() {
         </div>
         <button
           onClick={() => setFilters({ ...filters, sort: "discount-desc", page: 1 })}
-          className="px-4 py-2 rounded-xl bg-gradient-to-r from-[#ff9900] to-[#ffaa00] hover:from-[#ffaa00] hover:to-[#ffbb00] text-black text-xs font-black shrink-0 transition-transform active:scale-95 flex items-center gap-1.5 shadow-lg shadow-[#ff9900]/20"
+          className="px-4 py-2 rounded-xl bg-gradient-to-r from-[#ff9900] to-[#ffaa00] hover:from-[#ffaa00] hover:to-[#ffbb00] text-black text-xs font-black shrink-0 transition-transform active:scale-95 flex items-center gap-1.5 shadow-lg shadow-[#ff9900]/20 font-sans"
         >
           <Flame className="w-3.5 h-3.5" />
-          <span>أقوى خصومات نوفمبر الحقيقية</span>
+          <span>Top Verified Deals</span>
         </button>
       </div>
 
@@ -244,9 +247,9 @@ function HomePageContent() {
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#00f0ff]/10 rounded-full blur-3xl pointer-events-none" />
 
         <div className="relative z-10 max-w-3xl space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00f0ff]/10 border border-[#00f0ff]/30 text-xs font-bold text-[#00f0ff]">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#00f0ff]/10 border border-[#00f0ff]/30 text-xs font-semibold text-[#00f0ff] font-sans">
             <span className="w-1.5 h-1.5 rounded-full bg-[#00ff9d] animate-pulse" />
-            <span>رادار هبوط الأسعار الحقيقي لهاردوير الكمبيوتر والجيمنج في مصر</span>
+            <span>REAL-TIME PC HARDWARE & GAMING DEALS IN EGYPT</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
@@ -257,68 +260,68 @@ function HomePageContent() {
             رصد لحظي وتتبع دقيق لأسعار قطع وهاردوير البي سي، كروت الشاشة، المعالجات، الشاشات، وإكسسوارات الجيمنج على أمازون مصر. مع خوارزمية ذكية لكشف الخصومات الوهمية وتنبيهك عند الوصول للقاع التاريخي.
           </p>
 
-          {/* Quick Category Jump Chips */}
-          <div className="flex flex-wrap items-center gap-2 pt-1 text-xs font-bold">
+          {/* Quick Category Jump Chips - Clean English Tags with Icons */}
+          <div className="flex flex-wrap items-center gap-2 pt-1 text-xs">
             <button
               onClick={() => setFilters({ ...filters, category: "pc-hardware", page: 1 })}
-              className="px-3 py-1.5 rounded-xl bg-[#00f0ff]/15 hover:bg-[#00f0ff]/25 text-[#00f0ff] border border-[#00f0ff]/30 flex items-center gap-1.5 transition-colors font-black shadow-sm"
+              className="px-3.5 py-1.5 rounded-full bg-cyan-500/15 hover:bg-cyan-500/25 text-cyan-300 border border-cyan-400/40 flex items-center gap-1.5 transition-all font-semibold font-sans shadow-sm"
             >
-              <Cpu className="w-3.5 h-3.5 text-[#00f0ff]" />
-              قطع وهاردوير البي سي (151 صفقة) 🔥
+              <Cpu className="w-3.5 h-3.5 text-cyan-400" />
+              <span>PC Hardware (333) 🔥</span>
             </button>
             <button
               onClick={() => setFilters({ ...filters, category: "monitors", page: 1 })}
-              className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-200 border border-white/5 flex items-center gap-1.5 transition-colors"
+              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium font-sans"
             >
-              <Monitor className="w-3.5 h-3.5 text-[#00ff9d]" />
-              شاشات الكمبيوتر والألعاب
+              <Monitor className="w-3.5 h-3.5 text-emerald-400" />
+              <span>Monitors (91)</span>
             </button>
             <button
               onClick={() => setFilters({ ...filters, category: "keyboards-mice", page: 1 })}
-              className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-200 border border-white/5 flex items-center gap-1.5 transition-colors"
+              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium font-sans"
             >
-              <Keyboard className="w-3.5 h-3.5 text-[#ffd600]" />
-              كيبوردات وماوسات
+              <Keyboard className="w-3.5 h-3.5 text-amber-400" />
+              <span>Keyboards & Mice (106)</span>
             </button>
             <button
               onClick={() => setFilters({ ...filters, category: "headsets", page: 1 })}
-              className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-200 border border-white/5 flex items-center gap-1.5 transition-colors"
+              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium font-sans"
             >
-              <Headphones className="w-3.5 h-3.5 text-[#ff007f]" />
-              سماعات وصوتيات
+              <Headphones className="w-3.5 h-3.5 text-rose-400" />
+              <span>Headsets (49)</span>
             </button>
             <button
               onClick={() => setFilters({ ...filters, category: "laptops", page: 1 })}
-              className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-gray-200 border border-white/5 flex items-center gap-1.5 transition-colors"
+              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium font-sans"
             >
-              <Sparkles className="w-3.5 h-3.5 text-[#8ea1ff]" />
-              أجهزة لابتوب
+              <Laptop className="w-3.5 h-3.5 text-indigo-400" />
+              <span>Laptops (22)</span>
             </button>
           </div>
 
           {/* Clean Metric Counters */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-3">
             <div className="bg-[#05070c]/80 rounded-2xl p-3 border border-white/5">
-              <span className="text-[10px] text-gray-400 block font-medium">صفقات نشطة الآن</span>
-              <span className="text-xl sm:text-2xl font-black text-[#00f0ff]">{totalDeals} لُقطة</span>
+              <span className="text-[10px] text-gray-400 block font-medium font-sans">ACTIVE DEALS</span>
+              <span className="text-xl sm:text-2xl font-black text-[#00f0ff] font-mono">{totalDeals}</span>
             </div>
             <div className="bg-[#05070c]/80 rounded-2xl p-3 border border-white/5">
-              <span className="text-[10px] text-gray-400 block font-medium">المتجر والرصد</span>
-              <span className="text-lg sm:text-xl font-black text-[#ffd600]">أمازون مصر ⚡</span>
+              <span className="text-[10px] text-gray-400 block font-medium font-sans">VERIFIED STORE</span>
+              <span className="text-lg sm:text-xl font-black text-[#ffd600] font-sans">Amazon.eg ⚡</span>
             </div>
             <div className="bg-[#05070c]/80 rounded-2xl p-3 border border-white/5">
-              <span className="text-[10px] text-gray-400 block font-medium">أعلى توفير حقيقي</span>
-              <span className="text-xl sm:text-2xl font-black text-[#00ff9d]">{maxSavings.toLocaleString("ar-EG")} ج.م</span>
+              <span className="text-[10px] text-gray-400 block font-medium font-sans">MAX SAVINGS</span>
+              <span className="text-xl sm:text-2xl font-black text-[#00ff9d] font-mono">{maxSavings.toLocaleString("ar-EG")} ج.م</span>
             </div>
             <div className="bg-[#05070c]/80 rounded-2xl p-3 border border-white/5">
-              <span className="text-[10px] text-gray-400 block font-medium">انخفاض تاريخي قياسي</span>
-              <span className="text-lg sm:text-xl font-black text-white">{recordLowCount} منتج ⚡</span>
+              <span className="text-[10px] text-gray-400 block font-medium font-sans">RECORD LOWS</span>
+              <span className="text-lg sm:text-xl font-black text-white font-mono">{recordLowCount} ⚡</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Safqa-Style Instant Deal Inspector */}
+      {/* Instant Deal Inspector */}
       <DealInspector />
 
       {/* Main Filter & Explorer */}
@@ -332,8 +335,59 @@ function HomePageContent() {
           </div>
 
           <div className="text-xs text-gray-400 font-mono">
-            عرض {Math.min(filteredProducts.length, (currentPage - 1) * PAGE_SIZE + 1)} - {Math.min(filteredProducts.length, currentPage * PAGE_SIZE)} من أصل {filteredProducts.length} صفقة
+            {filteredProducts.length} deals available
           </div>
+        </div>
+
+        {/* Yestahil-Style Quick Discovery Presets Strip */}
+        <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none text-xs font-semibold font-sans">
+          <button
+            onClick={() => setFilters({ ...filters, sort: "record-low", minDiscount: undefined, page: 1 })}
+            className={`px-4 py-2 rounded-full transition-all shrink-0 flex items-center gap-1.5 border ${
+              (filters.sort === "record-low" && !filters.minDiscount)
+                ? "bg-emerald-500/20 text-emerald-300 border-emerald-400/50 shadow-[0_0_15px_rgba(0,255,157,0.2)] font-bold scale-[1.02]"
+                : "bg-white/[0.03] text-slate-400 hover:text-white border-white/[0.08] hover:border-white/20"
+            }`}
+          >
+            <Zap className="w-3.5 h-3.5 text-emerald-400" />
+            <span>⚡ Record Lows (انخفاضات قياسية)</span>
+          </button>
+
+          <button
+            onClick={() => setFilters({ ...filters, sort: "discount-desc", minDiscount: 20, page: 1 })}
+            className={`px-4 py-2 rounded-full transition-all shrink-0 flex items-center gap-1.5 border ${
+              (filters.sort === "discount-desc" && filters.minDiscount === 20)
+                ? "bg-rose-500/20 text-rose-300 border-rose-400/50 shadow-[0_0_15px_rgba(255,0,127,0.2)] font-bold scale-[1.02]"
+                : "bg-white/[0.03] text-slate-400 hover:text-white border-white/[0.08] hover:border-white/20"
+            }`}
+          >
+            <Flame className="w-3.5 h-3.5 text-rose-400" />
+            <span>🔥 20%+ Drops (أقوى الخصومات)</span>
+          </button>
+
+          <button
+            onClick={() => setFilters({ ...filters, sort: "newest-drop", minDiscount: undefined, page: 1 })}
+            className={`px-4 py-2 rounded-full transition-all shrink-0 flex items-center gap-1.5 border ${
+              filters.sort === "newest-drop"
+                ? "bg-cyan-500/20 text-cyan-300 border-cyan-400/50 shadow-[0_0_15px_rgba(0,240,255,0.2)] font-bold scale-[1.02]"
+                : "bg-white/[0.03] text-slate-400 hover:text-white border-white/[0.08] hover:border-white/20"
+            }`}
+          >
+            <TrendingDown className="w-3.5 h-3.5 text-cyan-400" />
+            <span>📉 Price Movements (تحركات الأسعار)</span>
+          </button>
+
+          <button
+            onClick={() => setFilters({ ...filters, sort: "most-tracked", minDiscount: undefined, page: 1 })}
+            className={`px-4 py-2 rounded-full transition-all shrink-0 flex items-center gap-1.5 border ${
+              filters.sort === "most-tracked"
+                ? "bg-purple-500/20 text-purple-300 border-purple-400/50 shadow-[0_0_15px_rgba(168,85,247,0.2)] font-bold scale-[1.02]"
+                : "bg-white/[0.03] text-slate-400 hover:text-white border-white/[0.08] hover:border-white/20"
+            }`}
+          >
+            <Sparkles className="w-3.5 h-3.5 text-purple-400" />
+            <span>👁️ Most Tracked (الأكثر طلباً)</span>
+          </button>
         </div>
 
         {/* Filter Controls Bar */}
@@ -347,19 +401,19 @@ function HomePageContent() {
 
         {/* Products Grid / List */}
         {filteredProducts.length === 0 ? (
-          <div className="cyber-card rounded-3xl p-12 text-center space-y-3">
+          <div className="cyber-card rounded-3xl p-12 text-center space-y-3 border border-white/10">
             <div className="w-12 h-12 rounded-full bg-[#00f0ff]/10 text-[#00f0ff] flex items-center justify-center mx-auto border border-[#00f0ff]/20">
               <Gamepad2 className="w-6 h-6" />
             </div>
-            <h3 className="text-base font-bold text-white">لا توجد عروض مطابقة للفلاتر الحالية</h3>
+            <h3 className="text-base font-bold text-white font-sans">No matching deals found</h3>
             <p className="text-xs text-gray-400 max-w-sm mx-auto">
-              جرب تغيير خيارات التصفية أو اختيار قسم آخر لعرض الصفقات المتاحة.
+              Try adjusting your search keywords or switching category filters.
             </p>
             <button
               onClick={() => setFilters({ sort: "record-low", page: 1 })}
-              className="px-4 py-2 rounded-xl bg-[#00f0ff] text-[#05070c] font-black text-xs hover:shadow-lg hover:shadow-[#00f0ff]/30 transition-all"
+              className="px-5 py-2.5 rounded-full bg-[#00f0ff] text-[#05070c] font-bold text-xs hover:shadow-lg hover:shadow-[#00f0ff]/30 transition-all font-sans"
             >
-              عرض كل الصفقات
+              Reset Filters
             </button>
           </div>
         ) : viewMode === "grid" ? (
@@ -382,10 +436,10 @@ function HomePageContent() {
             <button
               onClick={() => handlePageChange(currentPage - 1)}
               disabled={currentPage <= 1}
-              className="px-3.5 py-2 rounded-xl text-xs font-bold bg-[#070a12] border border-white/10 text-gray-300 hover:text-white disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1"
+              className="px-4 py-2 rounded-full text-xs font-semibold bg-[#070a12] border border-white/10 text-gray-300 hover:text-white disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1 font-sans"
             >
               <ChevronRight className="w-4 h-4" />
-              <span>السابق</span>
+              <span>Prev</span>
             </button>
 
             {Array.from({ length: totalPages }, (_, i) => i + 1).map((pg) => {
@@ -394,7 +448,7 @@ function HomePageContent() {
                 <button
                   key={pg}
                   onClick={() => handlePageChange(pg)}
-                  className={`w-9 h-9 rounded-xl text-xs font-bold transition-all ${
+                  className={`w-9 h-9 rounded-full text-xs font-semibold transition-all font-mono ${
                     isCurr
                       ? "bg-[#00f0ff] text-[#05070c] font-black shadow-md shadow-[#00f0ff]/20"
                       : "bg-[#070a12] border border-white/10 text-gray-300 hover:text-white"
@@ -408,9 +462,9 @@ function HomePageContent() {
             <button
               onClick={() => handlePageChange(currentPage + 1)}
               disabled={currentPage >= totalPages}
-              className="px-3.5 py-2 rounded-xl text-xs font-bold bg-[#070a12] border border-white/10 text-gray-300 hover:text-white disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1"
+              className="px-4 py-2 rounded-full text-xs font-semibold bg-[#070a12] border border-white/10 text-gray-300 hover:text-white disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1 font-sans"
             >
-              <span>التالي</span>
+              <span>Next</span>
               <ChevronLeft className="w-4 h-4" />
             </button>
           </div>
@@ -425,7 +479,7 @@ export default function HomePage() {
     <Suspense
       fallback={
         <div className="cyber-card rounded-3xl p-12 text-center text-gray-400 text-xs animate-pulse">
-          جاري تحميل صفقات لُقطة...
+          Loading deals...
         </div>
       }
     >

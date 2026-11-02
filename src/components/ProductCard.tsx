@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Product } from "@/lib/types";
-import { MARKETPLACE_SETTINGS } from "@/lib/loo2taa-data";
+import { MARKETPLACE_SETTINGS, CATEGORY_NAMES_EN } from "@/lib/loo2taa-data";
 import PriceAlertModal from "./PriceAlertModal";
 import { useFavorites } from "@/lib/favorites";
 import { getDealVerdict, getWhatsAppShareUrl, getTelegramPost } from "@/lib/sharing";
@@ -30,24 +30,19 @@ interface ProductCardProps {
 }
 
 function getRelativeTimeAr(dateString?: string): string {
-  if (!dateString) return "فُحص مؤخراً ⚡";
+  if (!dateString) return "Just checked ⚡";
   try {
     const diffMs = Date.now() - new Date(dateString).getTime();
-    if (isNaN(diffMs) || diffMs < 0) return "فُحص مؤخراً ⚡";
+    if (isNaN(diffMs) || diffMs < 0) return "Just checked ⚡";
     const diffMins = Math.floor(diffMs / (1000 * 60));
-    if (diffMins < 1) return "فُحص الآن ⚡";
-    if (diffMins < 60) return `منذ ${diffMins} دقيقة`;
+    if (diffMins < 1) return "Just now ⚡";
+    if (diffMins < 60) return `${diffMins}m ago`;
     const diffHours = Math.floor(diffMins / 60);
-    if (diffHours === 1) return "منذ ساعة";
-    if (diffHours === 2) return "منذ ساعتين";
-    if (diffHours <= 10) return `منذ ${diffHours} ساعات`;
-    if (diffHours < 24) return `منذ ${diffHours} ساعة`;
+    if (diffHours < 24) return `${diffHours}h ago`;
     const diffDays = Math.floor(diffHours / 24);
-    if (diffDays === 1) return "منذ يوم";
-    if (diffDays === 2) return "منذ يومين";
-    return `منذ ${diffDays} أيام`;
+    return `${diffDays}d ago`;
   } catch {
-    return "فُحص مؤخراً ⚡";
+    return "Recently checked ⚡";
   }
 }
 
@@ -64,6 +59,7 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
   const store = MARKETPLACE_SETTINGS[product.marketplace] || MARKETPLACE_SETTINGS.amazon;
   const pointsCount = product.points_count || 12;
   const relativeTime = getRelativeTimeAr(product.price_checked_at);
+  const categoryEn = CATEGORY_NAMES_EN[product.category] || product.category;
 
   // Clean product detail link (/p/[asin] or fallback)
   const productHref = `/p/${product.asin || product.id}`;
@@ -107,13 +103,17 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
   const formattedBaseline = Number(baselinePrice).toLocaleString("ar-EG");
   const formattedSavings = Number(product.savings).toLocaleString("ar-EG");
 
-  // Deal verdict badge
+  // Deal verdict badge with clean English tag
   const VerdictBadge = ({ compact = false }: { compact?: boolean }) => {
-    const Icon = verdict.type === "genuine" ? ShieldCheck : verdict.type === "fake" ? ShieldAlert : ShieldCheck;
+    const isGenuine = verdict.type === "genuine";
+    const isFake = verdict.type === "fake";
+    const Icon = isGenuine ? ShieldCheck : isFake ? ShieldAlert : ShieldCheck;
+    const label = isFake ? "FAKE DISCOUNT ⚠️" : isGenuine ? "VERIFIED DEAL" : "REGULAR PRICE";
+
     return (
       <span
-        className={`inline-flex items-center gap-1 font-bold rounded-md border ${
-          compact ? "text-[9px] px-1.5 py-0.5" : "text-[10px] px-2 py-0.5"
+        className={`inline-flex items-center gap-1 font-bold rounded-full border tracking-wide font-sans ${
+          compact ? "text-[9px] px-2 py-0.5" : "text-[10px] px-2.5 py-0.5"
         }`}
         style={{
           color: verdict.color,
@@ -123,33 +123,31 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
         title={verdict.label}
       >
         <Icon className={compact ? "w-2.5 h-2.5" : "w-3 h-3"} />
-        {compact ? verdict.labelShort : verdict.label}
+        <span>{label}</span>
       </span>
     );
   };
 
-  // Yestahil-Style Price Drop and Observation Points Badge
+  // Clean Price Drop Tag
   const PriceDropChip = ({ compact = false }: { compact?: boolean }) => {
     if (product.is_record_low && verdict.type !== 'fake') {
       return (
-        <span className={`inline-flex items-center gap-1 font-black rounded-lg bg-[#00ff9d]/15 text-[#00ff9d] border border-[#00ff9d]/30 ${
-          compact ? "text-[9px] px-1.5 py-0.5" : "text-[10px] px-2 py-0.5"
+        <span className={`inline-flex items-center gap-1 font-black rounded-full bg-emerald-500/15 text-emerald-300 border border-emerald-500/35 tracking-wider font-sans ${
+          compact ? "text-[9px] px-2 py-0.5" : "text-[10px] px-2.5 py-0.5"
         }`}>
-          <Zap className="w-3 h-3" />
-          <span>انخفاض تاريخي ⚡</span>
-          <span className="opacity-75 font-normal">({pointsCount} نقطة رصد)</span>
+          <Zap className="w-2.5 h-2.5 text-emerald-400" />
+          <span>RECORD LOW ⚡</span>
         </span>
       );
     }
 
     if (product.discount_percent > 0) {
       return (
-        <span className={`inline-flex items-center gap-1 font-bold rounded-lg bg-[#00f0ff]/10 text-[#00f0ff] border border-[#00f0ff]/25 ${
-          compact ? "text-[9px] px-1.5 py-0.5" : "text-[10px] px-2 py-0.5"
+        <span className={`inline-flex items-center gap-1 font-bold rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/25 tracking-wide font-sans ${
+          compact ? "text-[9px] px-2 py-0.5" : "text-[10px] px-2.5 py-0.5"
         }`}>
-          <TrendingDown className="w-3 h-3 text-[#00ff9d]" />
-          <span>هبوط {product.discount_percent}% عن المرجعي</span>
-          <span className="opacity-75 font-mono text-[9px]">({pointsCount} نقطة)</span>
+          <TrendingDown className="w-3 h-3 text-cyan-400" />
+          <span>-{product.discount_percent}% DROP</span>
         </span>
       );
     }
@@ -192,7 +190,7 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
   // List View
   if (viewMode === "list") {
     return (
-      <div className="cyber-card rounded-2xl p-4 flex flex-col md:flex-row items-center gap-5 group relative">
+      <div className="cyber-card rounded-2xl p-4 flex flex-col md:flex-row items-center gap-5 group relative border border-white/[0.08] hover:border-cyan-500/40 hover:shadow-[0_8px_30px_rgba(0,240,255,0.12)] transition-all duration-300">
         {/* Product Image Area */}
         <div className="relative w-32 h-32 shrink-0 bg-[#070a12] border border-white/5 rounded-xl p-3 flex items-center justify-center overflow-hidden">
           <Link href={productHref} className="w-full h-full flex items-center justify-center">
@@ -212,18 +210,18 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
             )}
           </Link>
           {product.discount_percent > 0 && (
-            <span className="absolute top-2 right-2 px-2 py-0.5 rounded-md bg-[#ff007f] text-white text-[10px] font-black">
-              {product.discount_percent}%-
+            <span className="absolute top-2 right-2 px-2 py-0.5 rounded-full bg-rose-600/90 text-white text-[10px] font-black font-sans shadow-md">
+              -{product.discount_percent}%
             </span>
           )}
         </div>
 
         {/* Content Details */}
-        <div className="flex-1 space-y-1.5 min-w-0 w-full">
+        <div className="flex-1 space-y-2 min-w-0 w-full">
           <div className="flex flex-wrap items-center gap-2 text-xs">
             {/* Store Badge */}
             <span
-              className="px-2 py-0.5 rounded-md font-bold text-[10px] flex items-center gap-1 border"
+              className="px-2.5 py-0.5 rounded-full font-semibold text-[10px] flex items-center gap-1.5 border font-sans"
               style={{
                 backgroundColor: `${store.primaryColor}15`,
                 borderColor: `${store.primaryColor}40`,
@@ -231,20 +229,19 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
               }}
             >
               <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: store.primaryColor }} />
-              {store.name}
+              Amazon.eg
             </span>
 
-            {/* Category Chip */}
-            <span className="px-2 py-0.5 rounded-md bg-[#00f0ff]/10 text-[#00f0ff] border border-[#00f0ff]/20 text-[10px] font-bold">
-              {product.category_ar}
+            {/* Clean English Category Tag */}
+            <span className="px-2.5 py-0.5 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/25 text-[10px] font-semibold tracking-wide font-sans">
+              {categoryEn}
             </span>
 
             <span className="text-white/20">•</span>
-            <span className="font-bold text-gray-300 text-[11px]">{product.brand}</span>
+            <span className="font-bold text-slate-200 text-[11px] font-sans">{product.brand}</span>
 
-            {/* Yestahil-Style Drop Chip */}
+            {/* Clean Drop & Verdict Chips */}
             <PriceDropChip compact />
-
             <VerdictBadge compact />
           </div>
 
@@ -255,11 +252,10 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
           </Link>
 
           <div className="flex flex-wrap items-center gap-3 text-xs text-gray-400">
-            <span>البائع: <strong className="text-gray-200">{product.seller}</strong></span>
             {product.savings > 0 && (
-              <span>وفر: <strong className="text-[#00ff9d]">{formattedSavings} ج.م</strong></span>
+              <span>توفير: <strong className="text-[#00ff9d]">{formattedSavings} ج.م</strong></span>
             )}
-            <span className="text-gray-500 font-mono text-[10px] flex items-center gap-1">
+            <span className="text-slate-400 font-mono text-[10px] flex items-center gap-1">
               <Clock className="w-3 h-3 text-[#00f0ff]" />
               {relativeTime}
             </span>
@@ -274,56 +270,32 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
               <span className="text-xs font-bold text-[#00f0ff]">ج.م</span>
             </div>
             {baselinePrice > product.price && (
-              <div className="text-xs text-gray-500 line-through" title="السعر المرجعي (وسيط 90 يوم)">
-                مرجعي: {formattedBaseline} ج.م
+              <div className="text-xs text-slate-500 line-through font-mono">
+                {formattedBaseline} ج.م
               </div>
             )}
           </div>
 
           <div className="flex items-center gap-2">
             <button
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                setShowAlertModal(true);
-              }}
-              className="p-2 rounded-xl border border-white/10 text-gray-400 hover:text-[#00ff9d] hover:border-[#00ff9d]/40 transition-colors"
-              title="نبهني عند انخفاض السعر 🔔"
-            >
-              <Bell className="w-4 h-4" />
-            </button>
-
-            <button
               onClick={() => toggle(product.id)}
               className={`p-2 rounded-xl border transition-colors ${
                 isFav
                   ? "bg-[#ff007f]/20 border-[#ff007f] text-[#ff007f]"
-                  : "border-white/10 text-gray-400 hover:text-[#ff007f]"
+                  : "border-white/10 text-gray-400 hover:text-[#ff007f] bg-[#070a12]"
               }`}
               title="حفظ في المفضلة"
             >
               <Heart className={`w-4 h-4 ${isFav ? "fill-current" : ""}`} />
             </button>
 
-            <div className="relative">
-              <button
-                onClick={toggleShareMenu}
-                className="p-2 rounded-xl border border-white/10 text-gray-400 hover:text-[#00f0ff] transition-colors"
-                title="مشاركة"
-              >
-                <Share2 className="w-4 h-4" />
-              </button>
-              <ShareMenu />
-            </div>
-
             <a
               href={product.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-cyber-primary px-4 py-2 rounded-xl text-xs flex items-center gap-1.5"
+              className="btn-cyber-primary py-2 px-4 rounded-xl text-xs flex items-center gap-1.5"
             >
-              <span>{store.buttonLabel}</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
+              <span>Buy on Amazon ↗</span>
             </a>
           </div>
         </div>
@@ -341,13 +313,13 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
 
   // Grid view (Default)
   return (
-    <div className="cyber-card rounded-2xl overflow-hidden flex flex-col justify-between group">
+    <div className="cyber-card rounded-2xl overflow-hidden flex flex-col justify-between group border border-white/[0.08] hover:border-cyan-500/40 hover:shadow-[0_8px_30px_rgba(0,240,255,0.12)] transition-all duration-300">
       
       {/* Top Banner: Store Tag & Live Status */}
       <div className="p-3 pb-0 flex items-center justify-between">
         <div className="flex items-center gap-1.5">
           <span
-            className="px-2 py-0.5 rounded-md font-bold text-[10px] flex items-center gap-1 border"
+            className="px-2.5 py-0.5 rounded-full font-semibold text-[10px] flex items-center gap-1.5 border font-sans"
             style={{
               backgroundColor: `${store.primaryColor}15`,
               borderColor: `${store.primaryColor}40`,
@@ -355,13 +327,13 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
             }}
           >
             <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: store.primaryColor }} />
-            {store.name}
+            Amazon.eg
           </span>
 
-          <span className="px-1.5 py-0.5 rounded-md font-bold text-[9px] bg-[#00ff9d]/10 text-[#00ff9d] border border-[#00ff9d]/20 flex items-center gap-1">
+          <span className="px-2 py-0.5 rounded-full font-medium text-[9px] bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 flex items-center gap-1 font-sans">
             <span className="relative flex h-1.5 w-1.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff9d] opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#00ff9d]"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-emerald-400"></span>
             </span>
             <span>{relativeTime}</span>
           </span>
@@ -374,20 +346,20 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
               e.stopPropagation();
               setShowAlertModal(true);
             }}
-            className="p-1.5 rounded-lg border border-white/10 text-gray-400 hover:text-[#00ff9d] hover:border-[#00ff9d]/40 bg-[#070a12] transition-colors"
-            title="نبهني عند انخفاض السعر 🔔"
+            className="p-1.5 rounded-full border border-white/10 text-gray-400 hover:text-emerald-400 hover:border-emerald-400/40 bg-[#070a12] transition-colors"
+            title="Set Price Alert"
           >
             <Bell className="w-3.5 h-3.5" />
           </button>
 
           <button
             onClick={() => toggle(product.id)}
-            className={`p-1.5 rounded-lg border transition-colors ${
+            className={`p-1.5 rounded-full border transition-colors ${
               isFav
                 ? "bg-[#ff007f]/20 border-[#ff007f] text-[#ff007f]"
                 : "border-white/10 text-gray-400 hover:text-[#ff007f] hover:border-[#ff007f]/40 bg-[#070a12]"
             }`}
-            title="حفظ في المفضلة"
+            title="Save to Favorites"
           >
             <Heart className={`w-3.5 h-3.5 ${isFav ? "fill-current" : ""}`} />
           </button>
@@ -395,8 +367,8 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
           <div className="relative">
             <button
               onClick={toggleShareMenu}
-              className="p-1.5 rounded-lg border border-white/10 text-gray-400 hover:text-[#00f0ff] bg-[#070a12] transition-colors"
-              title="مشاركة"
+              className="p-1.5 rounded-full border border-white/10 text-gray-400 hover:text-[#00f0ff] bg-[#070a12] transition-colors"
+              title="Share"
             >
               <Share2 className="w-3.5 h-3.5" />
             </button>
@@ -411,8 +383,8 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
           {imgError ? (
             <div className="w-full h-full flex flex-col items-center justify-center text-center p-3 rounded-xl bg-gradient-to-br from-[#0c1222] to-[#162035] border border-cyan-500/20">
               <Zap className="w-8 h-8 text-[#00f0ff] mb-1.5 opacity-80" />
-              <span className="text-xs font-bold text-gray-200 line-clamp-1">{product.brand}</span>
-              <span className="text-[10px] text-cyan-400 font-mono tracking-wider mt-0.5">LO2TAA RADAR</span>
+              <span className="text-xs font-bold text-gray-200 line-clamp-1 font-sans">{product.brand}</span>
+              <span className="text-[10px] text-cyan-400 font-mono tracking-wider mt-0.5">LOO2TAA RADAR</span>
             </div>
           ) : (
             <img
@@ -426,20 +398,20 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
         </Link>
 
         {product.discount_percent > 0 && (
-          <span className="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-[#ff007f] text-white text-[10px] font-black shadow-md">
-            خصم {product.discount_percent}%
+          <span className="absolute bottom-2.5 right-2.5 px-2.5 py-0.5 rounded-full bg-rose-600/90 text-white text-[10px] font-black font-sans shadow-md tracking-wide">
+            -{product.discount_percent}% OFF
           </span>
         )}
 
-        {/* Top-Right Badge: Record low or points count */}
+        {/* Top-Right Badge: Record low */}
         {product.is_record_low && verdict.type !== 'fake' ? (
-          <span className="absolute top-2.5 right-2.5 flex items-center gap-1 text-[9px] font-black px-2 py-0.5 rounded-md bg-[#00ff9d]/15 text-[#00ff9d] border border-[#00ff9d]/30">
-            <Zap className="w-2.5 h-2.5" />
-            أقل سعر تاريخي
+          <span className="absolute top-2.5 right-2.5 flex items-center gap-1 text-[9px] font-black px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/40 backdrop-blur-xs font-sans tracking-wider shadow-sm">
+            <Zap className="w-2.5 h-2.5 text-emerald-400" />
+            RECORD LOW
           </span>
         ) : (
-          <span className="absolute top-2.5 right-2.5 flex items-center gap-1 text-[9px] font-medium px-1.5 py-0.5 rounded-md bg-black/60 text-gray-300 border border-white/10 backdrop-blur-xs font-mono">
-            {pointsCount} نقطة رصد
+          <span className="absolute top-2.5 right-2.5 flex items-center gap-1 text-[9px] font-medium px-2 py-0.5 rounded-full bg-black/60 text-slate-300 border border-white/10 backdrop-blur-xs font-mono">
+            {pointsCount} checks
           </span>
         )}
       </div>
@@ -448,10 +420,10 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
       <div className="p-4 flex-1 flex flex-col justify-between space-y-3">
         <div className="space-y-1.5">
           <div className="flex items-center justify-between text-[11px] text-[#94a3b8]">
-            <span className="px-2 py-0.5 rounded-md bg-[#00f0ff]/10 text-[#00f0ff] border border-[#00f0ff]/20 text-[10px] font-bold">
-              {product.category_ar}
+            <span className="px-2.5 py-0.5 rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/25 text-[10px] font-semibold tracking-wide font-sans">
+              {categoryEn}
             </span>
-            <span className="font-bold text-gray-300">{product.brand}</span>
+            <span className="font-bold text-slate-200 font-sans">{product.brand}</span>
           </div>
 
           <Link href={productHref}>
@@ -460,14 +432,10 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
             </h3>
           </Link>
 
-          {/* Yestahil-Style Drop Chip & Verdict Badge */}
+          {/* Clean Drop & Verdict Badges */}
           <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
             <PriceDropChip compact />
             <VerdictBadge compact />
-          </div>
-
-          <div className="text-[11px] text-gray-400">
-            <span>البائع: <strong className="text-gray-300">{product.seller}</strong></span>
           </div>
         </div>
 
@@ -480,23 +448,18 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
                 <span className="text-xs font-bold text-[#00f0ff]">ج.م</span>
               </div>
               {baselinePrice > product.price && (
-                <div className="text-xs text-gray-500 line-through" title="السعر المرجعي (وسيط 90 يوم)">
-                  مرجعي: {formattedBaseline} ج.م
+                <div className="text-xs text-slate-500 line-through font-mono">
+                  {formattedBaseline} ج.م
                 </div>
               )}
             </div>
 
             {product.savings > 0 && (
-              <span className="text-[10px] font-bold text-[#00ff9d] bg-[#00ff9d]/10 border border-[#00ff9d]/20 px-2 py-0.5 rounded-md">
+              <span className="text-[10px] font-bold text-emerald-300 bg-emerald-500/10 border border-emerald-500/25 px-2.5 py-0.5 rounded-full font-mono">
                 وفر {formattedSavings} ج.م
               </span>
             )}
           </div>
-          {product.price >= 2000 && (
-            <div className="text-[10px] text-gray-400 flex items-center gap-1 pt-1 font-mono">
-              <span>💳 قسط تقديري (6 شهور): {Math.round(product.price / 6).toLocaleString('ar-EG')} ج.م/ش</span>
-            </div>
-          )}
         </div>
 
         {/* Card Actions */}
@@ -505,26 +468,18 @@ export default function ProductCard({ product, viewMode = "grid" }: ProductCardP
             href={product.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-cyber-primary w-full py-2.5 px-3 rounded-xl text-xs flex items-center justify-center gap-1.5"
+            className="btn-cyber-primary w-full py-2.5 px-3 rounded-full text-xs flex items-center justify-center gap-1.5 font-bold font-sans tracking-wide shadow-md"
           >
-            <span>{store.buttonLabel}</span>
-            <ArrowUpRight className="w-3.5 h-3.5" />
+            <span>Buy on Amazon ↗</span>
           </a>
 
           <div className="flex gap-1.5">
             <Link
               href={productHref}
-              className="flex-1 py-2 px-3 rounded-xl text-[11px] font-bold text-gray-300 hover:text-[#00f0ff] bg-white/[0.04] hover:bg-white/[0.08] border border-white/5 flex items-center justify-center transition-colors"
+              className="flex-1 py-1.5 px-3 rounded-full text-[11px] font-semibold text-slate-300 hover:text-cyan-400 bg-white/[0.04] hover:bg-white/[0.08] border border-white/5 flex items-center justify-center transition-colors font-sans"
             >
-              سجل السعر والمنحنى ↗
+              Price History & Details
             </Link>
-            <button
-              onClick={handleWhatsAppShare}
-              className="p-2 rounded-xl bg-[#25d366]/10 border border-[#25d366]/20 text-[#25d366] hover:bg-[#25d366]/20 transition-colors"
-              title="شير على واتساب"
-            >
-              <MessageCircle className="w-4 h-4" />
-            </button>
           </div>
         </div>
       </div>

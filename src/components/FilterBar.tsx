@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { getUniqueBrands, MARKETPLACE_SETTINGS, PRODUCTS } from "@/lib/loo2taa-data";
 import { FilterOptions } from "@/lib/types";
 import {
@@ -38,27 +38,26 @@ interface FilterBarProps {
   totalResults: number;
 }
 
-// 9 Clean Categories matching actual catalog deals
+// Clean English Category Tags with specific icons
 export const CORE_CATEGORIES = [
-  { id: "all", name: "كل الصفقات", icon: Zap },
-  { id: "pc-hardware", name: "قطع وهاردوير البي سي", icon: Cpu },
-  { id: "monitors", name: "شاشات الكمبيوتر والألعاب", icon: Monitor },
-  { id: "laptops", name: "أجهزة اللابتوب والقيمنق", icon: Laptop },
-  { id: "keyboards-mice", name: "كيبوردات ميكانيكال وماوسات", icon: Keyboard },
-  { id: "headsets", name: "سماعات الألعاب والصوتيات", icon: Headphones },
-  { id: "streaming-voice", name: "مايكات ومعدات البث", icon: Mic },
-  { id: "consoles-handheld", name: "أجهزة ألعاب وكونسول", icon: Gamepad2 },
-  { id: "setup-aesthetic", name: "إكسسوارات السيت أب والمكتب", icon: Sparkles },
+  { id: "all", name: "All Deals", icon: Zap },
+  { id: "pc-hardware", name: "PC Hardware", icon: Cpu },
+  { id: "monitors", name: "Monitors", icon: Monitor },
+  { id: "laptops", name: "Laptops", icon: Laptop },
+  { id: "keyboards-mice", name: "Keyboards & Mice", icon: Keyboard },
+  { id: "headsets", name: "Headsets & Audio", icon: Headphones },
+  { id: "streaming-voice", name: "Streaming & Mics", icon: Mic },
+  { id: "consoles-handheld", name: "Consoles", icon: Gamepad2 },
+  { id: "setup-aesthetic", name: "Setup & Desk", icon: Sparkles },
 ];
 
-// 6 Core Sort Tabs required
+// Clean English Sort Options
 export const SORT_OPTIONS = [
-  { id: "record-low", label: "انخفاض تاريخي (Record-Low) ⚡", icon: Zap },
-  { id: "discount-desc", label: "أعلى نسبة خصم (Biggest Discount) 🏷️", icon: Flame },
-  { id: "newest-drop", label: "أحدث هبوط في السعر (Newest Drop) 📉", icon: TrendingDown },
-  { id: "biggest-rise", label: "أكبر ارتفاع (Biggest Rise) 📈", icon: TrendingUp },
-  { id: "price-asc", label: "السعر: الأقل للأعلى (Price Low to High) 💵", icon: ArrowUpDownIcon },
-  { id: "most-tracked", label: "الأكثر متابعة وطلباً (Most Tracked) 👁️", icon: Eye },
+  { id: "record-low", label: "Record Low ⚡", icon: Zap },
+  { id: "discount-desc", label: "Top Discounts 🔥", icon: Flame },
+  { id: "newest-drop", label: "Recent Drops 📉", icon: TrendingDown },
+  { id: "price-asc", label: "Price: Low to High 💵", icon: ArrowUpDownIcon },
+  { id: "most-tracked", label: "Most Tracked 👁️", icon: Eye },
 ];
 
 function ArrowUpDownIcon(props: any) {
@@ -75,10 +74,19 @@ export default function FilterBar({
   const [drawerOpen, setDrawerOpen] = useState(false);
   const brands = getUniqueBrands();
 
+  // Compute live category item counts
+  const categoryCounts = useMemo(() => {
+    const counts: Record<string, number> = { all: PRODUCTS.length };
+    for (const p of PRODUCTS) {
+      counts[p.category] = (counts[p.category] || 0) + 1;
+    }
+    return counts;
+  }, []);
+
   // Active stores with verified deals
   const stores = [
-    { key: "all", name: "جميع الصفقات", count: PRODUCTS.length, color: "#00f0ff" },
-    { key: "amazon", name: "أمازون مصر (Amazon.eg)", count: PRODUCTS.filter(p => p.marketplace === "amazon").length, color: "#ff9900" },
+    { key: "all", name: "All Deals", count: PRODUCTS.length, color: "#00f0ff" },
+    { key: "amazon", name: "Amazon Egypt", count: PRODUCTS.filter(p => p.marketplace === "amazon").length, color: "#ff9900" },
   ];
 
   const handleCategorySelect = (catId: string) => {
@@ -145,16 +153,16 @@ export default function FilterBar({
     <div className="space-y-3.5">
       
       {/* 1. Fast Search & Stores Bar */}
-      <div className="cyber-card rounded-2xl p-2.5 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3">
+      <div className="cyber-card rounded-2xl p-2.5 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3 shadow-lg border border-white/[0.08]">
         {/* Search Input */}
         <div className="relative flex-1 min-w-[240px]">
-          <Search className="w-4 h-4 text-gray-400 absolute right-3.5 top-1/2 -translate-y-1/2" />
+          <Search className="w-4 h-4 text-cyan-400 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
           <input
             type="text"
-            placeholder="ابحث باسم المنتج، الموديل، أو الشركة (مثل: RTX 4070، Ryzen 7800X3D، HyperX، لوجيتيك)..."
+            placeholder="Search deals by name, model, GPU or brand (e.g. RTX 4070, Ryzen, HyperX, ASUS)..."
             value={filters.query || ""}
             onChange={(e) => handleSearchChange(e.target.value)}
-            className="w-full bg-[#070a12] border border-white/10 text-white rounded-xl pr-10 pl-4 py-2 text-xs focus:outline-hidden focus:border-[#00f0ff] placeholder-gray-500 font-medium"
+            className="w-full bg-[#070a12] border border-white/10 text-white rounded-xl pr-10 pl-4 py-2 text-xs focus:outline-hidden focus:border-[#00f0ff] focus:ring-1 focus:ring-[#00f0ff]/30 placeholder-gray-500 font-medium transition-all"
           />
           {filters.query && (
             <button
@@ -167,26 +175,26 @@ export default function FilterBar({
         </div>
 
         {/* Store Chips Strip */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0 scrollbar-none text-xs font-bold">
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 md:pb-0 scrollbar-none text-xs">
           {stores.map((st) => {
             const isSelected = (!filters.marketplace && st.key === "all") || filters.marketplace === st.key;
             return (
               <button
                 key={st.key}
                 onClick={() => handleStoreSelect(st.key)}
-                className={`px-3 py-1.5 rounded-xl transition-all shrink-0 flex items-center gap-1.5 text-xs ${
+                className={`px-3 py-1.5 rounded-full transition-all shrink-0 flex items-center gap-2 text-xs font-semibold border ${
                   isSelected
-                    ? "bg-white/15 text-white shadow-md border font-black"
-                    : "bg-[#070a12] text-gray-400 hover:text-white border border-white/5 hover:border-white/20"
+                    ? "bg-white/15 text-white shadow-md border-white/30 font-bold"
+                    : "bg-[#070a12] text-slate-400 hover:text-white border-white/[0.06] hover:border-white/20"
                 }`}
                 style={{
                   borderColor: isSelected ? st.color : undefined,
-                  boxShadow: isSelected ? `0 0 10px ${st.color}25` : undefined,
+                  boxShadow: isSelected ? `0 0 12px ${st.color}35` : undefined,
                 }}
               >
                 <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: st.color }} />
-                <span>{st.name}</span>
-                <span className="text-[10px] px-1 py-0.2 rounded bg-white/10 text-gray-300 font-mono">
+                <span className="font-sans">{st.name}</span>
+                <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-white/10 text-slate-300 font-mono">
                   {st.count}
                 </span>
               </button>
@@ -195,11 +203,11 @@ export default function FilterBar({
         </div>
       </div>
 
-      {/* 2. Six Sort Tabs & Controls */}
-      <div className="cyber-card rounded-2xl p-2.5 flex flex-wrap items-center justify-between gap-2.5">
+      {/* 2. Sort Tabs & Controls */}
+      <div className="cyber-card rounded-2xl p-2.5 flex flex-wrap items-center justify-between gap-2.5 border border-white/[0.08]">
         
         {/* Sort Chips */}
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none text-xs font-bold">
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0 scrollbar-none text-xs">
           {SORT_OPTIONS.map((opt) => {
             const isSelected = (filters.sort || "record-low") === opt.id;
             const Icon = opt.icon;
@@ -207,14 +215,14 @@ export default function FilterBar({
               <button
                 key={opt.id}
                 onClick={() => handleSortSelect(opt.id)}
-                className={`px-3 py-1.5 rounded-xl transition-all shrink-0 flex items-center gap-1.5 ${
+                className={`px-3 py-1.5 rounded-full transition-all shrink-0 flex items-center gap-1.5 font-medium border ${
                   isSelected
-                    ? "bg-[#00f0ff] text-[#05070c] shadow-sm shadow-[#00f0ff]/30 font-black"
-                    : "bg-[#070a12] text-[#94a3b8] hover:text-white border border-white/5"
+                    ? "bg-[#00f0ff] text-[#05070c] shadow-md shadow-[#00f0ff]/25 font-bold border-transparent"
+                    : "bg-[#070a12] text-slate-400 hover:text-white border-white/[0.06] hover:border-white/20"
                 }`}
               >
                 <Icon className="w-3.5 h-3.5" />
-                <span>{opt.label}</span>
+                <span className="font-sans">{opt.label}</span>
               </button>
             );
           })}
@@ -224,38 +232,38 @@ export default function FilterBar({
         <div className="flex items-center gap-2 mr-auto sm:mr-0">
           <button
             onClick={() => setDrawerOpen(!drawerOpen)}
-            className={`p-1.5 rounded-xl border text-xs font-bold flex items-center gap-1.5 transition-colors ${
+            className={`px-3 py-1.5 rounded-full border text-xs font-semibold flex items-center gap-1.5 transition-all ${
               hasActiveFilters || drawerOpen
-                ? "bg-[#00f0ff]/20 border-[#00f0ff] text-[#00f0ff]"
-                : "bg-[#070a12] border-white/10 text-[#94a3b8] hover:text-white"
+                ? "bg-[#00f0ff]/20 border-[#00f0ff] text-[#00f0ff] shadow-sm shadow-[#00f0ff]/20"
+                : "bg-[#070a12] border-white/10 text-slate-400 hover:text-white hover:border-white/20"
             }`}
             title="فلاتر متقدمة"
           >
-            <SlidersHorizontal className="w-4 h-4" />
-            <span className="hidden sm:inline">فلاتر متقدمة</span>
+            <SlidersHorizontal className="w-3.5 h-3.5" />
+            <span className="font-sans">Filters</span>
             {hasActiveFilters && <span className="w-2 h-2 rounded-full bg-[#00f0ff] animate-pulse" />}
           </button>
 
-          <div className="hidden sm:flex items-center bg-[#070a12] border border-white/10 p-0.5 rounded-xl">
+          <div className="hidden sm:flex items-center bg-[#070a12] border border-white/10 p-0.5 rounded-full">
             <button
               onClick={() => onViewModeChange("grid")}
-              className={`p-1.5 rounded-lg transition-colors ${
+              className={`p-1.5 rounded-full transition-colors ${
                 viewMode === "grid"
                   ? "bg-[#00f0ff] text-[#05070c] shadow-xs"
                   : "text-gray-400 hover:text-white"
               }`}
-              title="عرض شبكة"
+              title="Grid View"
             >
               <LayoutGrid className="w-3.5 h-3.5" />
             </button>
             <button
               onClick={() => onViewModeChange("list")}
-              className={`p-1.5 rounded-lg transition-colors ${
+              className={`p-1.5 rounded-full transition-colors ${
                 viewMode === "list"
                   ? "bg-[#00f0ff] text-[#05070c] shadow-xs"
                   : "text-gray-400 hover:text-white"
               }`}
-              title="عرض قائمة"
+              title="List View"
             >
               <List className="w-3.5 h-3.5" />
             </button>
@@ -263,24 +271,34 @@ export default function FilterBar({
         </div>
       </div>
 
-      {/* 3. Nine Core Categories Strip */}
-      <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
+      {/* 3. Nine Clean English Category Tags (Enhanced UI/UX) */}
+      <div className="flex items-center gap-2 overflow-x-auto pb-1.5 pt-0.5 scrollbar-none">
         {CORE_CATEGORIES.map((cat) => {
           const isSelected = (!filters.category && cat.id === "all") || filters.category === cat.id;
           const Icon = cat.icon;
+          const count = categoryCounts[cat.id] || 0;
 
           return (
             <button
               key={cat.id}
               onClick={() => handleCategorySelect(cat.id)}
-              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all shrink-0 flex items-center gap-1.5 ${
+              className={`px-3.5 py-1.5 rounded-full text-xs transition-all shrink-0 flex items-center gap-2 border font-sans ${
                 isSelected
-                  ? "bg-[#00f0ff] text-[#05070c] shadow-md shadow-[#00f0ff]/20 font-black"
-                  : "bg-[#0b101c] text-[#94a3b8] hover:text-white hover:border-[#00f0ff]/30 border border-white/5"
+                  ? "bg-gradient-to-r from-cyan-500/20 to-blue-500/20 text-cyan-300 border-cyan-400/60 shadow-[0_0_18px_rgba(0,240,255,0.22)] font-bold scale-[1.02]"
+                  : "bg-white/[0.04] text-slate-300 hover:text-white border-white/[0.08] hover:border-white/25 hover:bg-white/[0.08] font-medium"
               }`}
             >
-              <Icon className="w-3.5 h-3.5" />
-              <span>{cat.name}</span>
+              <Icon className={`w-3.5 h-3.5 ${isSelected ? "text-cyan-400" : "text-slate-400"}`} />
+              <span className="tracking-wide">{cat.name}</span>
+              <span
+                className={`text-[10px] px-1.5 py-0.2 rounded-full font-mono ${
+                  isSelected
+                    ? "bg-cyan-400/20 text-cyan-200 font-bold"
+                    : "bg-white/10 text-slate-400"
+                }`}
+              >
+                {count}
+              </span>
             </button>
           );
         })}
@@ -288,19 +306,19 @@ export default function FilterBar({
 
       {/* 4. Advanced Filter Drawer */}
       {drawerOpen && (
-        <div className="cyber-card rounded-2xl p-4 space-y-4 animate-in fade-in duration-200">
+        <div className="cyber-card rounded-2xl p-4 space-y-4 animate-in fade-in duration-200 border border-white/10">
           <div className="flex items-center justify-between pb-2 border-b border-white/10">
-            <h4 className="text-xs font-bold text-white flex items-center gap-1.5">
+            <h4 className="text-xs font-bold text-white flex items-center gap-1.5 font-sans">
               <SlidersHorizontal className="w-3.5 h-3.5 text-[#00f0ff]" />
-              تصفية دقيقة للأسعار والخصومات
+              Advanced Filters
             </h4>
             {hasActiveFilters && (
               <button
                 onClick={handleReset}
-                className="text-xs text-red-400 hover:text-red-300 flex items-center gap-1 font-bold"
+                className="text-xs text-rose-400 hover:text-rose-300 flex items-center gap-1 font-semibold font-sans"
               >
                 <RotateCcw className="w-3 h-3" />
-                إعادة ضبط الكل
+                Reset All
               </button>
             )}
           </div>
@@ -308,7 +326,7 @@ export default function FilterBar({
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
             {/* Brand Filter */}
             <div>
-              <label className="block text-gray-400 mb-1 font-medium">الشركة المصنعة</label>
+              <label className="block text-slate-400 mb-1 font-medium font-sans">Brand / Manufacturer</label>
               <select
                 value={filters.brand || ""}
                 onChange={(e) =>
@@ -318,9 +336,9 @@ export default function FilterBar({
                     page: 1,
                   })
                 }
-                className="w-full bg-[#070a12] border border-white/10 text-white rounded-xl px-3 py-2 text-xs focus:outline-hidden focus:border-[#00f0ff]"
+                className="w-full bg-[#070a12] border border-white/10 text-white rounded-xl px-3 py-2 text-xs focus:outline-hidden focus:border-[#00f0ff] font-sans"
               >
-                <option value="">كل الشركات ({brands.length})</option>
+                <option value="">All Brands ({brands.length})</option>
                 {brands.map((b) => (
                   <option key={b} value={b}>
                     {b}
@@ -331,7 +349,7 @@ export default function FilterBar({
 
             {/* Min Discount % */}
             <div>
-              <label className="block text-gray-400 mb-1 font-medium">الحد الأدنى للخصم الحقيقي</label>
+              <label className="block text-slate-400 mb-1 font-medium font-sans">Minimum Discount %</label>
               <select
                 value={filters.minDiscount || ""}
                 onChange={(e) =>
@@ -341,22 +359,22 @@ export default function FilterBar({
                     page: 1,
                   })
                 }
-                className="w-full bg-[#070a12] border border-white/10 text-white rounded-xl px-3 py-2 text-xs focus:outline-hidden focus:border-[#00f0ff]"
+                className="w-full bg-[#070a12] border border-white/10 text-white rounded-xl px-3 py-2 text-xs focus:outline-hidden focus:border-[#00f0ff] font-sans"
               >
-                <option value="">أي نسبة خصم</option>
-                <option value="10">خصم 10%+ على الأقل</option>
-                <option value="20">خصم 20%+ على الأقل (هبوط حاد)</option>
-                <option value="30">خصم 30%+ على الأقل</option>
-                <option value="50">خصم 50%+ (لقطات استثنائية)</option>
+                <option value="">Any Discount</option>
+                <option value="10">10%+ Off</option>
+                <option value="20">20%+ Off (Significant Drop)</option>
+                <option value="30">30%+ Off</option>
+                <option value="50">50%+ Off (Record Low Deals)</option>
               </select>
             </div>
 
             {/* Min Price */}
             <div>
-              <label className="block text-gray-400 mb-1 font-medium">الحد الأدنى للسعر (ج.م)</label>
+              <label className="block text-slate-400 mb-1 font-medium font-sans">Min Price (EGP)</label>
               <input
                 type="number"
-                placeholder="مثلاً: 500"
+                placeholder="e.g. 500"
                 value={filters.minPrice || ""}
                 onChange={(e) =>
                   onFilterChange({
@@ -365,16 +383,16 @@ export default function FilterBar({
                     page: 1,
                   })
                 }
-                className="w-full bg-[#070a12] border border-white/10 text-white rounded-xl px-3 py-2 text-xs focus:outline-hidden focus:border-[#00f0ff]"
+                className="w-full bg-[#070a12] border border-white/10 text-white rounded-xl px-3 py-2 text-xs focus:outline-hidden focus:border-[#00f0ff] font-mono"
               />
             </div>
 
             {/* Max Price */}
             <div>
-              <label className="block text-gray-400 mb-1 font-medium">الحد الأقصى للسعر (ج.م)</label>
+              <label className="block text-slate-400 mb-1 font-medium font-sans">Max Price (EGP)</label>
               <input
                 type="number"
-                placeholder="مثلاً: 25000"
+                placeholder="e.g. 25000"
                 value={filters.maxPrice || ""}
                 onChange={(e) =>
                   onFilterChange({
@@ -383,14 +401,14 @@ export default function FilterBar({
                     page: 1,
                   })
                 }
-                className="w-full bg-[#070a12] border border-white/10 text-white rounded-xl px-3 py-2 text-xs focus:outline-hidden focus:border-[#00f0ff]"
+                className="w-full bg-[#070a12] border border-white/10 text-white rounded-xl px-3 py-2 text-xs focus:outline-hidden focus:border-[#00f0ff] font-mono"
               />
             </div>
           </div>
 
           {/* In-Stock Only Toggle */}
           <div className="pt-2 border-t border-white/5 flex items-center justify-between">
-            <label className="flex items-center gap-2 cursor-pointer text-xs text-gray-300 font-bold">
+            <label className="flex items-center gap-2 cursor-pointer text-xs text-slate-300 font-semibold font-sans">
               <input
                 type="checkbox"
                 checked={Boolean(filters.inStockOnly)}
@@ -403,10 +421,10 @@ export default function FilterBar({
                 }
                 className="w-4 h-4 rounded-md accent-[#00f0ff]"
               />
-              <span>إظهار المنتجات المتوفرة في المخزن فقط (In-Stock Only)</span>
+              <span>In-Stock Only</span>
             </label>
-            <span className="text-[11px] text-gray-400 font-mono">
-              إجمالي النتائج: {totalResults}
+            <span className="text-[11px] text-slate-400 font-mono">
+              Results: {totalResults} deals
             </span>
           </div>
         </div>

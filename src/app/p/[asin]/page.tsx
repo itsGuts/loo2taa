@@ -2,8 +2,9 @@ import React from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
-import { PRODUCTS, getProductById, getRelatedProducts, MARKETPLACE_SETTINGS } from "@/lib/loo2taa-data";
+import { PRODUCTS, getProductById, getRelatedProducts, MARKETPLACE_SETTINGS, CATEGORY_NAMES_EN } from "@/lib/loo2taa-data";
 import PriceHistoryChart from "@/components/PriceHistoryChart";
+import PriceJourneyCard from "@/components/PriceJourneyCard";
 import AiReviewCard from "@/components/AiReviewCard";
 import ProductCard from "@/components/ProductCard";
 import ProductShareButtons from "@/components/ProductShareButtons";
@@ -52,7 +53,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   const formattedSavings = Number(product.savings).toLocaleString("ar-EG");
 
   return {
-    title: `${product.display_title} | رادار الأسعار - LOO2TAA`,
+    title: `${product.display_title} | رادار الأسعار - LOO2TAA // لُقطة`,
     description: `سعر ${product.display_title} على ${store.name} الآن ${formattedPrice} ج.م مع متابعة السعر المرجعي لآخر 90 يوماً وتنبيهات اللقطات المباشرة.`,
     alternates: {
       canonical: `https://loo2taa.vercel.app/p/${product.asin || product.id}`,
@@ -76,77 +77,59 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
 export default async function ProductDetailPage({ params }: ProductPageProps) {
   const { asin } = await params;
-  const rawProduct = getProductById(asin) || PRODUCTS.find((p) => p.asin.toUpperCase() === asin.toUpperCase());
+  const product = getProductById(asin) || PRODUCTS.find((p) => p.asin.toUpperCase() === asin.toUpperCase());
 
-  if (!rawProduct) {
+  if (!product) {
     notFound();
   }
 
-  // Compute deal math metrics dynamically
-  const metrics = computeProductMetrics(
-    rawProduct.price,
-    rawProduct.previous_price,
-    rawProduct.price_history
-  );
-
-  const product = {
-    ...rawProduct,
-    reference_price: metrics.reference_price,
-    savings: metrics.savings_vs_reference,
-    discount_percent: metrics.real_discount_percent,
-    is_record_low: metrics.is_record_low,
-    drop_level: metrics.drop_level === 'none' ? undefined : metrics.drop_level,
-    points_count: metrics.points_count,
-  };
-
-  const related = getRelatedProducts(rawProduct, 4);
   const store = MARKETPLACE_SETTINGS[product.marketplace] || MARKETPLACE_SETTINGS.amazon;
+  const related = getRelatedProducts(product, 4);
+  const categoryEn = CATEGORY_NAMES_EN[product.category] || product.category;
 
   const formattedPrice = Number(product.price).toLocaleString("ar-EG");
-  const formattedBaseline = Number(product.reference_price).toLocaleString("ar-EG");
+  const baselinePrice = product.reference_price || product.previous_price;
+  const formattedBaseline = Number(baselinePrice).toLocaleString("ar-EG");
   const formattedSavings = Number(product.savings).toLocaleString("ar-EG");
+  const installmentMonthly = Math.round(Number(product.price) / 6);
+
+  // Affiliate URL tag
+  const buyUrl =  `https://www.amazon.eg/dp/${product.asin}?tag=lo2taa-21`;
+
+  // Compute metrics with step2 math verification
+  const metrics = computeProductMetrics(product.price, product.previous_price || product.price, (product.price_history || []) as any);
   const verdict = metrics.verdict;
   const VerdictIcon = verdict.type === "fake_discount" ? ShieldAlert : ShieldCheck;
 
-  // Calculate monthly installment (6 months estimate)
-  const installmentMonthly = Math.round(product.price / 6);
-
-  // Affiliate URL with AFFILIATE_TAG from environment
-  const affiliateTag = process.env.AFFILIATE_TAG || "lo2taa-21";
-  const buyUrl = product.marketplace === "amazon" && !product.url.includes("tag=")
-    ? `${product.url}${product.url.includes("?") ? "&" : "?"}tag=${affiliateTag}`
-    : product.url;
-
-  // Google Rich Snippets JSON-LD Schema
+  // Structured Data Schema.org (Product + Offer)
   const jsonLd = {
-    "@context": "https://schema.org/",
+    "@context": "https://schema.org",
     "@type": "Product",
     "name": product.display_title,
     "image": [product.image],
-    "description": product.title,
+    "description": `${product.display_title} متاح على ${store.name} بسعر ${formattedPrice} ج.م`,
     "sku": product.asin,
-    "mpn": product.asin,
     "brand": {
       "@type": "Brand",
-      "name": product.brand || "ماركة معتمدة"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": product.rating || 4.6,
-      "reviewCount": product.review_count || 120
+      "name": product.brand,
     },
     "offers": {
       "@type": "Offer",
-      "url": buyUrl,
       "priceCurrency": "EGP",
       "price": product.price,
-      "priceValidUntil": "2026-12-31",
+      "priceValidUntil": new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10),
       "itemCondition": "https://schema.org/NewCondition",
-      "availability": product.in_stock !== false ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+      "availability": product.in_stock ? "https://schema.org/InStock" : "https://schema.org/OutOfStock",
+      "url": buyUrl,
       "seller": {
         "@type": "Organization",
-        "name": store.name
-      }
+        "name": store.name,
+      },
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": product.rating || "4.6",
+      "reviewCount": product.review_count || "120",
     }
   };
 
@@ -159,24 +142,26 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       />
 
       {/* Breadcrumbs */}
-      <nav className="flex items-center gap-2 text-xs text-[#94a3b8] overflow-x-auto pb-1">
+      <nav className="flex items-center gap-2 text-xs text-[#94a3b8] overflow-x-auto pb-1 font-sans">
         <Link href="/" className="hover:text-[#00f0ff] transition-colors shrink-0">
-          الرئيسية
+          Home
         </Link>
         <ChevronLeft className="w-3.5 h-3.5 text-gray-600 shrink-0" />
         <Link href="/catalog" className="hover:text-[#00f0ff] transition-colors shrink-0">
-          الكتالوج
+          Catalog
         </Link>
         <ChevronLeft className="w-3.5 h-3.5 text-gray-600 shrink-0" />
-        <span className="text-gray-500 shrink-0">{store.name}</span>
+        <Link href={`/catalog?category=${product.category}`} className="text-cyan-400 hover:underline shrink-0">
+          {categoryEn}
+        </Link>
         <ChevronLeft className="w-3.5 h-3.5 text-gray-600 shrink-0" />
-        <span className="font-semibold text-white truncate max-w-xs">
+        <span className="font-semibold text-white truncate max-w-xs font-sans">
           {product.display_title}
         </span>
       </nav>
 
       {/* Main Product Hero Grid */}
-      <div className="cyber-card rounded-3xl p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 relative overflow-hidden">
+      <div className="cyber-card rounded-3xl p-6 sm:p-8 grid grid-cols-1 lg:grid-cols-12 gap-8 relative overflow-hidden border border-white/[0.08]">
         {/* Gallery / Product Image (Col 1-5) */}
         <div className="lg:col-span-5 flex flex-col items-center justify-center bg-[#070a12]/70 rounded-2xl border border-white/5 p-6 relative">
           <ProductDetailImage
@@ -186,15 +171,15 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           />
 
           {product.discount_percent > 0 && (
-            <span className="absolute top-3.5 right-3.5 px-2.5 py-1 rounded-xl bg-[#ff007f] text-white text-xs font-black shadow-md z-20">
-              خصم {product.discount_percent}%
+            <span className="absolute top-3.5 right-3.5 px-3 py-1 rounded-full bg-rose-600 text-white text-xs font-black shadow-md z-20 font-sans tracking-wide">
+              -{product.discount_percent}% OFF
             </span>
           )}
 
           {product.is_record_low && verdict.type !== 'fake_discount' && (
-            <span className="absolute bottom-3.5 right-3.5 flex items-center gap-1 px-2.5 py-1 rounded-xl bg-[#00ff9d]/15 text-[#00ff9d] text-xs font-black border border-[#00ff9d]/30 z-20">
-              <Zap className="w-3.5 h-3.5" />
-              أقل سعر تاريخي ⚡
+            <span className="absolute bottom-3.5 right-3.5 flex items-center gap-1 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-black border border-emerald-400/40 z-20 font-sans tracking-wider shadow-sm">
+              <Zap className="w-3.5 h-3.5 text-emerald-400" />
+              RECORD LOW ⚡
             </span>
           )}
         </div>
@@ -203,40 +188,34 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
         <div className="lg:col-span-7 flex flex-col justify-between space-y-5">
           <div className="space-y-3">
             {/* Live Verification Radar Pulse Header */}
-            <div className="flex flex-wrap items-center justify-between gap-2 bg-[#00ff9d]/5 border border-[#00ff9d]/20 px-3 py-1.5 rounded-xl">
-              <div className="flex items-center gap-2 text-xs font-bold text-[#00ff9d]">
+            <div className="flex flex-wrap items-center justify-between gap-2 bg-emerald-500/10 border border-emerald-500/25 px-3.5 py-1.5 rounded-full">
+              <div className="flex items-center gap-2 text-xs font-semibold text-emerald-300 font-sans">
                 <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00ff9d] opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00ff9d]"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
                 </span>
-                <span>تم الفحص على {store.name} مؤخراً • السعر ساري الآن (موسم عروض نوفمبر 2026)</span>
+                <span>Verified Price on Amazon Egypt • Active Real-Time Deal</span>
               </div>
-              <span className="text-[11px] text-gray-400 font-mono">ASIN: {product.asin}</span>
+              <span className="text-[11px] text-slate-400 font-mono">ASIN: {product.asin}</span>
             </div>
 
-            {/* Tags Strip */}
+            {/* Clean English Tags Strip */}
             <div className="flex flex-wrap items-center gap-2">
-              <span
-                className="px-2.5 py-0.5 rounded-md font-bold text-xs"
-                style={{
-                  backgroundColor: store.surfaceColor,
-                  color: store.primaryColor,
-                  border: `1px solid ${store.primaryColor}40`,
-                }}
-              >
-                {store.name}
+              <span className="px-3 py-0.5 rounded-full font-semibold text-xs border bg-amber-500/10 text-amber-300 border-amber-500/30 flex items-center gap-1.5 font-sans">
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
+                Amazon.eg
               </span>
 
-              <span className="px-2.5 py-0.5 rounded-md bg-[#070a12] border border-white/5 text-gray-300 text-xs font-semibold">
-                {product.category_ar}
+              <span className="px-3 py-0.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-semibold font-sans">
+                {categoryEn}
               </span>
 
-              <span className="px-2.5 py-0.5 rounded-md bg-[#00f0ff]/10 border border-[#00f0ff]/20 text-[#00f0ff] text-xs font-bold">
+              <span className="px-3 py-0.5 rounded-full bg-white/[0.04] border border-white/10 text-slate-200 text-xs font-bold font-sans">
                 {product.brand}
               </span>
 
-              <span className="px-2 py-0.5 rounded-md bg-white/5 text-gray-400 text-xs font-mono">
-                {product.points_count} نقطة رصد
+              <span className="px-2.5 py-0.5 rounded-full bg-white/5 text-slate-400 text-xs font-mono">
+                {product.points_count || 12} check points
               </span>
             </div>
 
@@ -246,7 +225,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
             </h1>
 
             {/* Original English Title */}
-            <p className="text-xs text-gray-400 font-mono" dir="ltr">
+            <p className="text-xs text-slate-400 font-mono leading-relaxed" dir="ltr">
               {product.title}
             </p>
           </div>
@@ -255,31 +234,21 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
           <div className="bg-[#070a12] rounded-2xl p-4 sm:p-5 border border-white/5 space-y-3">
             <div className="flex flex-wrap items-baseline justify-between gap-2">
               <div className="flex items-baseline gap-1.5">
-                <span className="text-3xl font-black text-white tracking-tight">{formattedPrice}</span>
+                <span className="text-3xl font-black text-white tracking-tight font-mono">{formattedPrice}</span>
                 <span className="text-sm font-bold text-[#00f0ff]">جنيه مصري</span>
               </div>
 
-              {product.reference_price > product.price && (
-                <div className="text-xs sm:text-sm text-gray-500 line-through" title="السعر المرجعي (وسيط 90 يوم)">
+              {product.reference_price && product.reference_price > product.price && (
+                <div className="text-xs sm:text-sm text-slate-500 line-through font-mono" title="السعر المرجعي (وسيط 90 يوم)">
                   السعر المرجعي: {formattedBaseline} ج.م
                 </div>
               )}
             </div>
 
             {product.savings > 0 && (
-              <div className="flex items-center gap-2 text-xs font-bold text-[#00ff9d]">
-                <span className="bg-[#00ff9d]/10 border border-[#00ff9d]/20 px-2 py-0.5 rounded-md">
+              <div className="flex items-center gap-2 text-xs font-bold text-emerald-300">
+                <span className="bg-emerald-500/10 border border-emerald-500/25 px-2.5 py-1 rounded-full font-mono">
                   توفير حقيقي: {formattedSavings} ج.م ({product.discount_percent}% خصم عن السعر المرجعي)
-                </span>
-              </div>
-            )}
-
-            {/* Installments Pill */}
-            {product.price >= 1500 && (
-              <div className="flex items-center gap-2 text-xs text-gray-300 bg-white/[0.03] border border-white/5 px-3 py-2 rounded-xl">
-                <CreditCard className="w-4 h-4 text-[#00f0ff] shrink-0" />
-                <span>
-                  متاح قسط تقديري (6 شهور) يبدأ من <strong className="text-white font-bold">{installmentMonthly.toLocaleString("ar-EG")} ج.م</strong>/شهر (عبر ValU أو بطاقات البنوك المؤهلة)
                 </span>
               </div>
             )}
@@ -295,16 +264,16 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
             >
               <VerdictIcon className="w-4 h-4 shrink-0 mt-0.5" />
               <div className="text-xs">
-                <span className="font-black block">{verdict.labelShort}</span>
+                <span className="font-black block font-sans">{verdict.labelShort}</span>
                 <span className="opacity-80 text-[11px]">{verdict.label}</span>
               </div>
             </div>
 
-            <div className="pt-2 border-t border-white/5 flex flex-wrap items-center justify-between text-xs text-[#94a3b8] gap-2">
-              <span>البائع: <strong className="text-white">{product.seller}</strong></span>
-              <span className="flex items-center gap-1 text-[#00ff9d]">
+            <div className="pt-2 border-t border-white/5 flex flex-wrap items-center justify-between text-xs text-slate-400 gap-2 font-sans">
+              <span>Sold by: <strong className="text-white">{product.seller}</strong></span>
+              <span className="flex items-center gap-1 text-emerald-400 font-mono">
                 <Clock className="w-3.5 h-3.5" />
-                تاريخ الرصد: {new Date(product.price_checked_at).toLocaleDateString("ar-EG")}
+                Checked: {new Date(product.price_checked_at).toLocaleDateString("en-US", { month: "short", day: "numeric" })}
               </span>
             </div>
           </div>
@@ -315,15 +284,15 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               href={buyUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-cyber-primary w-full py-3.5 px-5 rounded-2xl text-sm flex items-center justify-center gap-2 shadow-lg"
+              className="btn-cyber-primary w-full py-3.5 px-5 rounded-full text-sm flex items-center justify-center gap-2 shadow-lg font-bold font-sans tracking-wide"
             >
-              <span>{store.buttonLabel}</span>
+              <span>Buy on Amazon Egypt ↗</span>
               <ArrowUpRight className="w-4 h-4" />
             </a>
 
-            <div className="flex items-center justify-between text-[11px] text-gray-400 px-1">
-              <span>ينقلك مباشرة لصفحة المنتج الرسمية على المتجر مع الضمان المعتمد.</span>
-              <span className="text-[#00ff9d] font-bold">متوفر للشحن السريع ✓</span>
+            <div className="flex items-center justify-between text-[11px] text-slate-400 px-1 font-sans">
+              <span>Direct official Amazon.eg store link with authorized warranty.</span>
+              <span className="text-emerald-400 font-semibold">Fast Shipping ✓</span>
             </div>
 
             {/* Price Alert Button */}
@@ -337,6 +306,9 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
       {/* Community Heat-Check Voting */}
       <CommunityVote productId={product.id} />
+
+      {/* Yestahil-Style Price Journey & Stats Overview */}
+      <PriceJourneyCard product={product} />
 
       {/* Advanced Interactive Price History Chart (1M / 3M / 6M / All) */}
       <PriceHistoryChart
@@ -355,14 +327,14 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       {related.length > 0 && (
         <section className="space-y-4 pt-4">
           <div className="flex items-center justify-between">
-            <h3 className="text-lg font-black text-white">
-              منتجات مشابهة في قسم {product.category_ar}
+            <h3 className="text-lg font-black text-white font-sans">
+              Similar Products in {categoryEn}
             </h3>
             <Link
               href={`/catalog?category=${encodeURIComponent(product.category)}`}
-              className="text-xs font-bold text-[#00f0ff] hover:underline"
+              className="text-xs font-semibold text-[#00f0ff] hover:underline font-sans"
             >
-              عرض المزيد ↗
+              View More ↗
             </Link>
           </div>
 
