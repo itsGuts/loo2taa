@@ -297,6 +297,27 @@ function HomePageContent() {
               <Laptop className="w-3.5 h-3.5 text-indigo-400" />
               <span>Laptops (22)</span>
             </button>
+            <button
+              onClick={() => setFilters({ ...filters, category: "streaming-voice", page: 1 })}
+              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium font-sans"
+            >
+              <Mic className="w-3.5 h-3.5 text-cyan-400" />
+              <span>Streaming & Mics (42)</span>
+            </button>
+            <button
+              onClick={() => setFilters({ ...filters, category: "setup-aesthetic", page: 1 })}
+              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium font-sans"
+            >
+              <Sparkles className="w-3.5 h-3.5 text-pink-400" />
+              <span>Setup & Desk (39)</span>
+            </button>
+            <button
+              onClick={() => setFilters({ ...filters, category: "consoles-handheld", page: 1 })}
+              className="px-3.5 py-1.5 rounded-full bg-white/[0.04] hover:bg-white/[0.08] text-slate-300 hover:text-white border border-white/[0.08] hover:border-white/20 flex items-center gap-1.5 transition-all font-medium font-sans"
+            >
+              <Gamepad2 className="w-3.5 h-3.5 text-amber-400" />
+              <span>Consoles (18)</span>
+            </button>
           </div>
 
           {/* Clean Metric Counters */}
