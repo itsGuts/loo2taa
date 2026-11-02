@@ -5,12 +5,15 @@ import { PRODUCTS } from "@/lib/loo2taa-data";
 import { FilterOptions } from "@/lib/types";
 import ProductCard from "@/components/ProductCard";
 import FilterBar from "@/components/FilterBar";
-import { ShieldCheck, Radio } from "lucide-react";
+import { ShieldCheck, Radio, ChevronLeft, ChevronRight } from "lucide-react";
+
+const PAGE_SIZE = 24;
 
 export default function AmazonDealsPage() {
   const [filters, setFilters] = useState<FilterOptions>({
     marketplace: "amazon",
     sort: "record-low",
+    page: 1,
   });
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
 
@@ -58,6 +61,20 @@ export default function AmazonDealsPage() {
     return list;
   }, [filters]);
 
+  const currentPage = filters.page || 1;
+  const totalPages = Math.ceil(amazonProducts.length / PAGE_SIZE) || 1;
+
+  const paginatedProducts = useMemo(() => {
+    const start = (currentPage - 1) * PAGE_SIZE;
+    return amazonProducts.slice(start, start + PAGE_SIZE);
+  }, [amazonProducts, currentPage]);
+
+  const handlePageChange = (newPage: number) => {
+    if (newPage < 1 || newPage > totalPages) return;
+    setFilters({ ...filters, page: newPage });
+    window.scrollTo({ top: 400, behavior: "smooth" });
+  };
+
   return (
     <div className="space-y-6">
       
@@ -69,22 +86,22 @@ export default function AmazonDealsPage() {
             عروض أمازون مصر الرسمية (Amazon.eg)
           </div>
 
-          <h1 className="text-2xl sm:text-3xl font-black text-white">
-            تخفيضات عتاد أمازون مصر الموثقة
+          <h1 className="text-2xl sm:text-3xl font-black text-white font-sans">
+            تخفيضات وصفقات أمازون مصر الموثقة
           </h1>
 
           <p className="text-xs text-gray-300 leading-relaxed">
-            جميع صفقات الألعاب وقطع الهاردوير المفحوصة آلياً بواسطة لقطة للتأكد من أن السعر يمثل انخفاضاً حقيقياً وموثوقاً.
+            جميع صفقات الأجهزة والإلكترونيات والمستلزمات المفحوصة آلياً بواسطة لقطة للتأكد من أن السعر يمثل انخفاضاً حقيقياً وموثوقاً.
           </p>
 
-          <div className="flex flex-wrap items-center gap-4 pt-1 text-xs text-gray-400">
+          <div className="flex flex-wrap items-center gap-4 pt-1 text-xs text-gray-400 font-sans">
             <span className="flex items-center gap-1.5">
               <ShieldCheck className="w-4 h-4 text-[#00ff9d]" />
               بائعين معتمدين وضمان محلي
             </span>
             <span className="flex items-center gap-1.5">
               <Radio className="w-4 h-4 text-[#00f0ff]" />
-              تتبع فوري للمخزون
+              تتبع فوري للمخزون (4,644 منتج)
             </span>
           </div>
         </div>
@@ -107,7 +124,7 @@ export default function AmazonDealsPage() {
             : "space-y-3"
         }
       >
-        {amazonProducts.map((product) => (
+        {paginatedProducts.map((product) => (
           <ProductCard
             key={product.id}
             product={product}
@@ -115,6 +132,33 @@ export default function AmazonDealsPage() {
           />
         ))}
       </div>
+
+      {/* Pagination Controls */}
+      {totalPages > 1 && (
+        <div className="flex items-center justify-center gap-2 pt-6 pb-4">
+          <button
+            onClick={() => handlePageChange(currentPage - 1)}
+            disabled={currentPage <= 1}
+            className="px-4 py-2 rounded-full text-xs font-semibold bg-[#070a12] border border-white/10 text-gray-300 hover:text-white disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1 font-sans"
+          >
+            <ChevronRight className="w-4 h-4" />
+            <span>Previous</span>
+          </button>
+
+          <span className="text-xs text-slate-400 font-mono px-3">
+            Page {currentPage} of {totalPages}
+          </span>
+
+          <button
+            onClick={() => handlePageChange(currentPage + 1)}
+            disabled={currentPage >= totalPages}
+            className="px-4 py-2 rounded-full text-xs font-semibold bg-[#070a12] border border-white/10 text-gray-300 hover:text-white disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1 font-sans"
+          >
+            <span>Next</span>
+            <ChevronLeft className="w-4 h-4" />
+          </button>
+        </div>
+      )}
     </div>
   );
 }
