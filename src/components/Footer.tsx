@@ -78,7 +78,7 @@ export default function Footer() {
 
           {/* 8 Clean Categories */}
           <div className="space-y-2.5">
-            <h4 className="text-xs font-bold text-white uppercase tracking-wider">Hardware Categories</h4>
+            <h4 className="text-xs font-bold text-white uppercase tracking-wider">Categories & Deals</h4>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 text-xs">
               <Link href="/catalog?category=pc-hardware" className="hover:text-[#00f0ff] transition-colors truncate">
                 PC Hardware

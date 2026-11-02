@@ -29,8 +29,11 @@ import {
   Tag
 } from "lucide-react";
 
+export const dynamicParams = true;
+export const revalidate = 3600;
+
 export function generateStaticParams() {
-  return PRODUCTS.flatMap((p) => [
+  return PRODUCTS.slice(0, 200).flatMap((p) => [
     { asin: p.asin },
     { asin: p.id },
   ]);

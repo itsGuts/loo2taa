@@ -35,23 +35,23 @@ const PAGE_SIZE = 24;
 function matchesCategory(prodCategory: string, filterCat?: string): boolean {
   if (!filterCat || filterCat === "all") return true;
   if (prodCategory === filterCat) return true;
-  if (filterCat === "gaming_pc" || filterCat === "pc-hardware") {
-    return ["pc-hardware", "consoles-handheld", "laptops", "gaming_pc"].includes(prodCategory);
+  if (filterCat === "mobile-phones") {
+    return ["mobile-phones", "phone-accessories"].includes(prodCategory);
+  }
+  if (filterCat === "pc-hardware") {
+    return ["pc-hardware", "gaming_pc"].includes(prodCategory);
   }
   if (filterCat === "electronics") {
-    return ["monitors", "keyboards-mice", "headsets", "streaming-voice", "electronics"].includes(prodCategory);
+    return ["electronics", "smart-tv", "monitors"].includes(prodCategory);
   }
-  if (filterCat === "home_kitchen" || filterCat === "setup-aesthetic") {
-    return ["setup-aesthetic", "home_kitchen", "home-kitchen"].includes(prodCategory);
+  if (filterCat === "home-kitchen" || filterCat === "home_kitchen") {
+    return ["home-kitchen", "home_kitchen"].includes(prodCategory);
   }
-  if (filterCat === "tools_auto") {
-    return ["tools_auto", "tools", "auto"].includes(prodCategory);
+  if (filterCat === "tools-automotive" || filterCat === "tools_auto") {
+    return ["tools-automotive", "tools_auto", "tools", "auto"].includes(prodCategory);
   }
   if (filterCat === "fashion") {
     return ["fashion", "apparel"].includes(prodCategory);
-  }
-  if (filterCat === "other") {
-    return !["pc-hardware", "consoles-handheld", "laptops", "monitors", "keyboards-mice", "headsets", "streaming-voice"].includes(prodCategory);
   }
   return false;
 }
@@ -249,15 +249,15 @@ function HomePageContent() {
         <div className="relative z-10 max-w-3xl space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#00f0ff]/10 border border-[#00f0ff]/30 text-xs font-semibold text-[#00f0ff] font-sans">
             <span className="w-1.5 h-1.5 rounded-full bg-[#00ff9d] animate-pulse" />
-            <span>REAL-TIME PC HARDWARE & GAMING DEALS IN EGYPT</span>
+            <span>REAL-TIME TECH, MOBILES & MEGASTORE DEALS IN EGYPT</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight leading-tight">
-            <span className="font-mono text-[#00f0ff]">LOO2TAA</span> // صفقات وهاردوير <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f0ff] via-[#5865F2] to-[#ff007f]">أمازون مصر الحقيقية</span>
+            <span className="font-mono text-[#00f0ff]">LOO2TAA</span> // رادار صفقات <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00f0ff] via-[#5865F2] to-[#ff007f]">أمازون مصر الشامل</span>
           </h1>
 
           <p className="text-xs sm:text-sm text-gray-300 leading-relaxed max-w-2xl">
-            رصد لحظي وتتبع دقيق لأسعار قطع وهاردوير البي سي، كروت الشاشة، المعالجات، الشاشات، وإكسسوارات الجيمنج على أمازون مصر. مع خوارزمية ذكية لكشف الخصومات الوهمية وتنبيهك عند الوصول للقاع التاريخي.
+            رصد لحظي وتتبع ذكي لأكثر من 4,600+ صفقة حقيقية على أمازون مصر: من الموبايلات واللابتوبات وقطع البي سي، إلى الأجهزة المنزلية، الساعات، العطور، والعدد الأصلية مع كشف الخصومات الوهمية وتنبيهات القاع التاريخي.
           </p>
 
           {/* Quick Category Jump Chips - Clean English Tags with Icons */}
