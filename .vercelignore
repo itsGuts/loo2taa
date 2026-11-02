@@ -2,5 +2,9 @@ node_modules
 .next
 .git
 .agents
+*.exe
+offerflow.exe
+installer*
 scripts/*.html
 scripts/*.txt
+scripts/*.sample

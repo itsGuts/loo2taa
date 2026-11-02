@@ -44,6 +44,6 @@ jobs:
           if git diff --staged --quiet; then
             echo "No price changes detected. Everything up to date."
           else
-            git commit -m "chore(tracker): auto-update live deals and price history"
+            git commit -m "chore(tracker): auto-update live deals and price history [skip ci]"
             git push origin main
           fi
