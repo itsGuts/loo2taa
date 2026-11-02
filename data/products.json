@@ -160,9 +160,9 @@
     "price_checked_at": "2026-11-02T07:54:43.316Z",
     "rating": 4.9,
     "review_count": 850,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -714,7 +714,7 @@
     "discount_percent": 18,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-02T07:54:48.228Z",
+    "price_checked_at": "2026-11-02T08:52:46.878Z",
     "rating": 4.7,
     "review_count": 3200,
     "in_stock": true,
@@ -1545,9 +1545,9 @@
     "price_checked_at": "2026-11-02T07:54:53.951Z",
     "rating": 4.9,
     "review_count": 980,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -1708,9 +1708,9 @@
     "price_checked_at": "2026-11-02T07:54:55.649Z",
     "rating": 4.8,
     "review_count": 2100,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -3130,12 +3130,12 @@
     "discount_percent": -117,
     "is_record_low": true,
     "price_change_direction": "up",
-    "price_checked_at": "2026-11-02T02:24:37.750Z",
+    "price_checked_at": "2026-11-02T08:53:01.102Z",
     "rating": 5,
     "review_count": 198,
-    "in_stock": false,
+    "in_stock": true,
     "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -3212,9 +3212,9 @@
     "price_checked_at": "2026-11-02T07:55:04.543Z",
     "rating": 2,
     "review_count": 168,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -3518,9 +3518,9 @@
     "price_checked_at": "2026-11-02T07:55:06.101Z",
     "rating": 4.3,
     "review_count": 419,
-    "in_stock": true,
+    "in_stock": false,
     "is_deal_active": false,
-    "stock_status": "in_stock",
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -4746,9 +4746,9 @@
     "price_checked_at": "2026-11-02T07:55:13.987Z",
     "rating": 4.6,
     "review_count": 132,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -5552,12 +5552,12 @@
     "discount_percent": 17,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-02T00:14:16.234Z",
+    "price_checked_at": "2026-11-02T08:53:14.238Z",
     "rating": 4.2,
     "review_count": 121,
-    "in_stock": false,
-    "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6050,12 +6050,12 @@
     "discount_percent": 15,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-02T06:28:42.236Z",
+    "price_checked_at": "2026-11-02T08:53:18.382Z",
     "rating": 3.6,
     "review_count": 475,
-    "in_stock": false,
-    "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6193,12 +6193,12 @@
     "discount_percent": -8,
     "is_record_low": true,
     "price_change_direction": "up",
-    "price_checked_at": "2026-11-02T05:25:47.368Z",
+    "price_checked_at": "2026-11-02T08:53:18.755Z",
     "rating": 4.4,
     "review_count": 212,
-    "in_stock": false,
+    "in_stock": true,
     "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6711,12 +6711,12 @@
     "discount_percent": -2,
     "is_record_low": true,
     "price_change_direction": "up",
-    "price_checked_at": "2026-11-02T03:17:12.334Z",
+    "price_checked_at": "2026-11-02T08:53:22.356Z",
     "rating": 4.7,
     "review_count": 335,
-    "in_stock": false,
+    "in_stock": true,
     "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -6790,12 +6790,12 @@
     "discount_percent": 21,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-02T05:25:52.174Z",
+    "price_checked_at": "2026-11-02T08:53:22.349Z",
     "rating": 3.9,
     "review_count": 281,
-    "in_stock": false,
-    "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -7086,12 +7086,12 @@
     "discount_percent": 20,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-02T03:17:13.786Z",
+    "price_checked_at": "2026-11-02T08:53:23.980Z",
     "rating": 4.6,
     "review_count": 213,
-    "in_stock": false,
-    "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -7365,9 +7365,9 @@
     "price_checked_at": "2026-11-02T07:55:27.387Z",
     "rating": 5,
     "review_count": 413,
-    "in_stock": true,
-    "is_deal_active": true,
-    "stock_status": "in_stock",
+    "in_stock": false,
+    "is_deal_active": false,
+    "stock_status": "out_of_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -7579,12 +7579,12 @@
     "discount_percent": -2,
     "is_record_low": true,
     "price_change_direction": "up",
-    "price_checked_at": "2026-11-02T05:25:57.659Z",
+    "price_checked_at": "2026-11-02T08:53:28.103Z",
     "rating": 4.7,
     "review_count": 370,
-    "in_stock": false,
+    "in_stock": true,
     "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
@@ -8432,12 +8432,12 @@
     "discount_percent": 15,
     "is_record_low": true,
     "price_change_direction": "down",
-    "price_checked_at": "2026-11-01T23:41:40.083Z",
+    "price_checked_at": "2026-11-02T08:53:33.722Z",
     "rating": 4.4,
     "review_count": 391,
-    "in_stock": false,
-    "is_deal_active": false,
-    "stock_status": "out_of_stock",
+    "in_stock": true,
+    "is_deal_active": true,
+    "stock_status": "in_stock",
     "price_history": [
       {
         "date": "2026-08-15",
