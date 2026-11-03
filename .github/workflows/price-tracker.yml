@@ -2,8 +2,8 @@ name: LO2TAA Deals Tracker & Auto-Poster
 
 on:
   schedule:
-    # Runs every 5 minutes automatically (24/7 autonomous deal radar & out-of-stock cleanup)
-    - cron: '*/5 * * * *'
+    # Runs every 6 hours automatically (4 times daily) to keep prices fresh without spamming Vercel builds
+    - cron: '0 */6 * * *'
   workflow_dispatch:
     # Allows manual trigger anytime from GitHub Actions tab
 
@@ -40,10 +40,10 @@ jobs:
         run: |
           git config --global user.name "LO2TAA Deals Bot"
           git config --global user.email "bot@lo2taa.local"
-          git add data/products.json src/lib/loo2taa-data.ts
+          git add data/products.json
           if git diff --staged --quiet; then
             echo "No price changes detected. Everything up to date."
           else
-            git commit -m "chore(tracker): auto-update live deals and price history [skip ci]"
+            git commit -m "chore(tracker): auto-update live deals and price history [skip ci] [skip vercel]"
             git push origin main
           fi
